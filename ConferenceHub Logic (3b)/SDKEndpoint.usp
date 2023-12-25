@@ -1,0 +1,390 @@
+/******************************************************************************
+//  ConMed Integrated Systems
+//  Copyright 2009
+//
+//  $Id$
+//  Template Endpoint for SDK Use
+//
+******************************************************************************/
+//  PURPOSE
+//	-------------
+//	This module provides the unique control for the endpoint - in this case, the
+//  Viewing room.  It provides all of the other endpoint control, including GUI
+//  page transitions and button presses.
+//
+//	REVISION HISTORY
+//	------------------
+//
+//  $Log$          
+//
+/*******************************************************************************/
+
+
+/******************************************************************************
+  Compiler Directives
+******************************************************************************/
+// GUI Page Identifiers
+//-----------------------------------------------------------
+// Page count has been moved to the configuration USL file
+
+#DEFINE_CONSTANT	PG_VTC_CONFERENCE 	1
+
+//VTC Configuration... set VTC_MODE to one of the following values:
+// 0 = no VTC at all
+// 1 = VTC Locally
+// 2 = VTC Remotely (at a hub or another room)
+//-----------------------------------------------------------
+#DEFINE_CONSTANT	VTC_MODE					0
+
+//#DEFINE_CONSTANT	VTC_NONE					0
+//#DEFINE_CONSTANT	VTC_DEDICATED				1
+//#DEFINE_CONSTANT	VTC_SHARED					2 
+
+/*******************************************************************************************
+  Global configuration library
+*******************************************************************************************/
+
+#USER_LIBRARY "CMIS_Hub_Library"
+
+/******************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+******************************************************************************/ 
+
+//Button presses
+//------------------
+				/* Source Select minipage Buttons */
+DIGITAL_INPUT	pbConfStart;
+DIGITAL_INPUT	pbConfVideoIn;
+DIGITAL_INPUT	pbConfCancel;
+DIGITAL_INPUT	fbCallStateFlash;
+DIGITAL_INPUT	dipulseCloseRoomSelect;
+DIGITAL_INPUT	pbSubPageDone;
+                
+DIGITAL_INPUT	pbVTC_Disconnect;
+DIGITAL_INPUT	sigVtcControlActive;
+DIGITAL_INPUT	sigConferenceActive;
+DIGITAL_INPUT	errVtcControl;
+DIGITAL_INPUT	pbSource[4];
+DIGITAL_INPUT	pbTarget[4];
+
+                					
+//Popup minipage output controls.  When these are active, the relevant minipage
+//is displayed.
+//------------------------------------------------------------------------------
+				/* Source Select Minipages */
+DIGITAL_OUTPUT	dopgVideo;
+DIGITAL_OUTPUT	dopgRoomSelect;
+                       	            
+				/* Conference minipages */
+DIGITAL_OUTPUT	mpVTC_NotAvailable;
+
+DIGITAL_OUTPUT	dopgHwRestart;
+DIGITAL_OUTPUT	dosigHwRestart; 
+DIGITAL_OUTPUT	dosigConfRoute_Trig;
+DIGITAL_OUTPUT	dofbConfVideo;
+
+DIGITAL_OUTPUT	pbSource_fb[4];
+DIGITAL_OUTPUT	pbTarget_fb[4];
+
+ANALOG_OUTPUT	aobtnVideoEnable;
+//ANALOG_OUTPUT	aobtnVTCEnable;	// used to disable VTC button when room conference already in progress
+								// na does not have this control - FIXME - not used now
+
+
+ANALOG_OUTPUT	aoGeneralButtonsEnable;		// Microphones (Room Conf, VTC, Equipment page), 
+											// ... Equipment Devices (DVD, VCR, Cameras), and VTC controls
+ANALOG_OUTPUT   aobtnConferenceCancelEnable;	// Enable/Disable cancel button for room conferencing
+
+//FUTURE ELIMINATE
+ANALOG_OUTPUT	aoRmVTC_Mode;			/* Conference - VTC Mode - none, local, or remote (Hub) */
+ANALOG_OUTPUT	aoTarget1Source;
+ANALOG_OUTPUT	aoTarget2Source;
+//END ELIMINATE
+
+STRING_OUTPUT	soConferenceOutSource[4];  /* Video Source names */
+
+//END ELIMINATE
+
+/******************************************************************************
+  Global Variables
+******************************************************************************/
+integer		giCurrentPage;			//Keeps track of the currently active page 
+
+integer		giTarget1Source;
+integer		giTarget2Source;
+
+/******************************************************************************
+  Functions
+******************************************************************************/ 
+
+function HideMPRestart()
+{
+	// Disable restart minipage, enable equipment button elements
+    aoGeneralButtonsEnable = ON;
+	//mpRestart = HIDE;
+}
+
+function HideConfSubpages()
+{
+	// If current page is VTC Conference, buttons should be enabled when closing subpages
+	if (giCurrentPage = PG_VTC_CONFERENCE)
+	{
+		aobtnVideoEnable = BTN_ENABLED;
+	}
+	ProcessLogic();				// When closing VideoOutbound page, wait for DVP4 mini to hide
+	dopgRoomSelect = HIDE;		//KFF-051221 Added minipage
+	aoGeneralButtonsEnable = ON;
+}
+
+//---------------------------------------------------------------------------------
+// function: InitializePages
+//---------------------------------------------------------------------------------
+// This function initializes all the active page outputs and feedback indicators.
+// It also clears all minipage output controls.
+//---------------------------------------------------------------------------------
+function InitializePages()
+{ 
+	integer i;
+
+	/* Don't do anything with the HELP/ABOUT page */
+	/* Trying to minimize page flicker at bootup. */
+
+	//Deactivate all minipages
+	//---------------------------
+	dopgVideo = HIDE;
+	call HideMPRestart();
+	call HideConfSubpages();
+		
+}
+
+
+
+/******************************************************************************
+  Event Handlers
+******************************************************************************/
+
+//------------------------------------------
+// Minipage controls for Source Selection.   
+//------------------------------------------
+
+
+// When room conference begins, enable Video Out and In 
+PUSH sigConferenceActive
+{
+    integer i;
+
+	aobtnVideoEnable = BTN_ENABLED;
+
+    // Reroute video
+    aoTarget1Source = giTarget1Source-1;
+	pulse(50, dosigConfRoute_Trig);
+    delay(10);
+    aoTarget2Source = giTarget2Source-1;
+	pulse(50, dosigConfRoute_Trig);
+	for (i=1 to 4)
+		if (giTarget1Source = i)
+			pbSource_fb[i] = ON;
+		else
+			pbSource_fb[i] = OFF;
+			
+	for (i=1 to 4)
+		if (giTarget2Source = i)
+			pbTarget_fb[i] = ON;
+		else
+			pbTarget_fb[i] = OFF;
+}   
+    
+// When room conference ends, disable Video Out and In, go back to     
+RELEASE sigConferenceActive
+{
+	integer i;
+	
+	aobtnVideoEnable = BTN_DISABLED;
+	call HideConfSubpages();
+
+	giTarget1Source = 1;              
+	aoTarget1Source = 0;
+	for (i=1 to 4)
+		if (giTarget1Source = i)
+			pbSource_fb[i] = ON;
+		else
+			pbSource_fb[i] = OFF;
+
+    delay(10);
+	giTarget2Source = 4;
+	aoTarget2Source = 3;
+	for (i=1 to 4)
+		if (giTarget2Source = i)
+			pbTarget_fb[i] = ON;
+		else
+			pbTarget_fb[i] = OFF;
+
+    // Return to restart screen
+	dopgVideo = HIDE;
+	dopgRoomSelect = HIDE;
+	dopgHwRestart = SHOW;
+}
+
+// Conference SELECT button is pressed...
+//-------------------------------------------------------
+
+PUSH pbConfStart
+{
+	//Needed to add a look at the CallStateFlash, because that is the
+	//only requesting indication I have without adding another join...
+	//Cannot allow a user to push the Start button unless the state is
+	//Ready.... Issue #184
+	if ((sigConferenceActive = OFF) && (fbCallStateFlash = OFF))
+	{
+		aoGeneralButtonsEnable = OFF; 
+		dopgRoomSelect = SHOW;
+		dopgHwRestart = HIDE;
+	}
+}
+
+
+// Source Select/Video In/Video Out minipage, DONE button is pressed...
+// Note, there is a distinction between these two buttons.
+// The pbSourceSelectDone is also used by the Video Setup
+// functions to route video choices.  Also, the Video functions
+// don't want the DONE button displayed until a selection button
+// been pressed.  So, I've added a SubPage done button function
+// that basically does the same stuff, except the video routes
+// are not affected.  Kayf 051221
+//----------------------------------------------------  
+PUSH pbSubPageDone 
+{
+	call HideConfSubpages();
+
+	if (sigConferenceActive = ON)
+	{
+		aobtnConferenceCancelEnable = BTN_ENABLED;  
+	}
+	if ((sigConferenceActive = ON) || (sigVtcControlActive = ON))
+	{
+		aobtnVideoEnable = BTN_ENABLED;
+    }                  
+    
+	dopgHwRestart = HIDE;	
+	dopgHwRestart = SHOW;
+
+}
+
+PUSH dipulseCloseRoomSelect
+{    
+	dopgRoomSelect = HIDE;
+	dopgHwRestart = SHOW;
+	aoGeneralButtonsEnable = ON;
+}
+
+PUSH pbConfVideoIn
+{
+	if (sigConferenceActive = ON)
+	{
+		dofbConfVideo = ON;
+		dopgHwRestart = HIDE;
+		dopgVideo = SHOW;
+	}
+}
+
+RELEASE pbConfVideoIn
+{
+	dofbConfVideo = OFF;
+}
+
+PUSH pbConfCancel
+{
+	dopgVideo = HIDE;
+	dopgHwRestart = SHOW;
+}
+
+PUSH errVtcControl
+{
+//	if (giCurrentPage = PG_CONFERENCE)
+//	{
+		aoGeneralButtonsEnable = OFF;
+		mpVTC_NotAvailable = SHOW;
+//	}
+}
+
+PUSH pbSource
+{
+	integer i,j;
+	
+	i= GetLastModifiedArrayIndex();
+
+	for (j=1 to 4)	
+		if (i = j)
+			pbSource_fb[j] = ON;
+		else
+			pbSource_fb[j] = OFF; 
+	
+	aoTarget1Source = i-1;
+	pulse(50, dosigConfRoute_Trig);
+}
+
+PUSH pbTarget
+{
+	integer i,j;
+	
+	i= GetLastModifiedArrayIndex();
+
+	for (j=1 to 4)	
+		if (i = j)
+			pbTarget_fb[j] = ON;
+		else
+			pbTarget_fb[j] = OFF;
+
+	aoTarget2Source = i-1;
+	pulse(50, dosigConfRoute_Trig);
+}
+
+
+/******************************************************************************
+  Main()
+******************************************************************************/
+
+Function Main()
+{
+	integer i;
+
+	dosigHwRestart = OFF;
+	dosigConfRoute_Trig = OFF; 
+
+	giTarget1Source = 1;              
+	aoTarget1Source = 0;
+	for (i=1 to 4)
+		if (giTarget1Source = i)
+			pbSource_fb[i] = ON;
+		else
+			pbSource_fb[i] = OFF;
+
+    delay(10);
+	giTarget2Source = 4;
+	aoTarget2Source = 3;
+	for (i=1 to 4)
+		if (giTarget2Source = i)
+			pbTarget_fb[i] = ON;
+		else
+			pbTarget_fb[i] = OFF;
+
+	aoRmVTC_Mode = VTC_MODE;   
+	
+	soConferenceOutSource[1] = "aaa";
+	soConferenceOutSource[2] = "bbb";
+	soConferenceOutSource[3] = "ccc";
+	soConferenceOutSource[4] = "ddd";
+
+    WaitForInitializationComplete();
+
+    dopgHwRestart = SHOW;    	
+	
+	//InitializePages();	// handled in sigAudioStartupDone
+
+	aobtnVideoEnable	= BTN_DISABLED;
+
+}
+/******************************************************************************
+  END OF CODE
+******************************************************************************/
+
