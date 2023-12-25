@@ -1,0 +1,202 @@
+/******************************************************************************
+//  Initialization Manager Module
+******************************************************************************/
+//
+//  PURPOSE
+//	-------------
+//	This module is used only at powerup, and is used to step the Nurse's Assistant
+//	software through a controlled stage-by-stage initialization process.  This module
+//	will move from one initialization stage to the next only after all modules have
+//	reported success in the previous stage.
+//
+//	STAGE 0:
+//	--------
+//	Initiation of Stage 0 is assumed for each module.  All Stage 0 activities should be
+//	performed in MAIN().  Stage 0 activities include:
+//		1. Variable initialization
+//		2. Profile Initialization (Rack Specific Parameters)
+//		3. Configuration Variable file read and join assertion (THIS MODULE ONLY)
+//	
+//	At the end MAIN() in every module the "doStage0Complete" variable should be driven HIGH
+//
+//	STAGE 1:
+//	--------
+//	Inintiation of Stage 1 will occur when all modules have reported back that they have 
+//	commpleted Stage 0 successfully.  Stage 1 activities should include:
+//		1. Assertion of configurable variables.
+//		
+//	Upon completion of all Stage 1 activities, each module should drive the "doStage1Complete"
+//	variable to a HIGH of ON state.
+//	
+//	STAGE 2:
+//	--------
+//	Initialization of Stage 2 will occur when all modules have reported back that they have
+//	successfully conpleted all Stage 1 activities.  Stage 2 activities include:
+//		1. Enable I/0.
+//		2. Initialize Rack Components such as routers and power relays.
+//		
+//	Upon completion of all Stage 2 activities, each module should drive the "doStage2Complete"
+//	variable to a HIGH of ON state.
+//
+//	STAGE 3:
+//	--------
+//	Initialization of Stage 3 will occur when all modules have reported back that they have
+//	successfully conpleted all Stage 2 activities.  Stage 3 activities include:
+//		1. Activate the Touch Panel.
+//		2. Initialize Devices.
+//		
+//	Upon completion of all Stage 3 activities, each module should drive the "doStage3Complete"
+//	variable to a HIGH of ON state.  At this time, this simply notifies the Initialization 
+//	Manager that it's job is connplete (and reports this to the console).  In the future, this
+//	could be used to start such processes as instigation of background polling...
+//
+//	REVISION HISTORY
+//	------------------
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+// #SYMBOL_NAME ""
+// #HINT ""
+// #DEFINE_CONSTANT
+// #CATEGORY "" 
+// #DEFAULT_VOLATILE
+// #DIGITAL_EXPAND 
+// #ANALOG_SERIAL_EXPAND 
+// #OUTPUT_SHIFT
+
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+/*******************************************************************************************
+  Include Libraries
+  (Uncomment and include additional libraries as needed)
+*******************************************************************************************/
+// #CRESTRON_LIBRARY ""
+
+#USER_LIBRARY "CMIS_Hub_Library"
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+DIGITAL_INPUT 	diStage0Complete,
+				diStage1Complete,
+				diStage2Complete,
+				diStage3Complete;
+
+// ANALOG_INPUT 
+// STRING_INPUT 
+// BUFFER_INPUT 
+
+DIGITAL_OUTPUT 	doAssertStage1,
+				doAssertStage2,
+				doAssertStage3;
+// ANALOG_OUTPUT 
+// STRING_OUTPUT 
+
+/*******************************************************************************************
+  Structure Definitions
+  (Uncomment and define structure definitions as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: struct.myString = "";
+*******************************************************************************************/
+/*
+STRUCTURE MyStruct1
+{
+};
+
+MyStruct1 struct;
+*/
+
+/*******************************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+*******************************************************************************************/
+// INTEGER
+// LONG_INTEGER
+// SIGNED_INTEGER
+// SIGNED_LONG_INTEGER
+// STRING
+
+INTEGER InitState;
+
+/*******************************************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+*******************************************************************************************/
+//
+//
+//
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+PUSH diStage0Complete
+{
+	while(1)
+	{
+		if(InitState > INIT_STAGE_0)
+			break;
+	}
+	print("Initialization Stage 0 complete. Asserting Stage 1\n");
+	
+	doAssertStage1 = ON;	
+}
+
+PUSH diStage1Complete
+{
+	print("Initialization Stage 1 complete. Asserting Stage 2\n");
+
+	doAssertStage2 = ON;	
+	InitState = INIT_STAGE_2;
+}
+
+PUSH diStage2Complete
+{
+	print("Initialization Stage 2 complete. Asserting Stage 3\n");
+
+	doAssertStage3 = ON;	
+	InitState = INIT_STAGE_3;
+}
+
+PUSH diStage3Complete
+{
+	print("Step-by-Step Initializaton Process complete.\n");
+}
+
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+
+Function Main()
+{
+    // TODO:  Add code here
+    // Initialize declared global and local variables/arrays as needed.
+
+    InitState = INIT_STAGE_0;
+    
+	WaitForInitializationComplete();
+     
+    // If you are reading any Input or Output variables, uncomment
+    //   the WaitForInitializationComplete statement above and read
+    //   them afterwards.  Input/Output variables will not have
+    //   their correct values set until after the logic processor
+    //   runs and propagates the values to them.
+    
+    InitState = INIT_STAGE_1;
+}
+
+

@@ -1,0 +1,1090 @@
+/*******************************************************************************************
+  XML.usl - XML parsing functions
+  
+  $Id: CMIS_Hub_XML.usl,v 1.1 2008/12/05 01:03:47 jjohns Exp $
+  
+
+*******************************************************************************************/
+
+#DEFINE_CONSTANT XML_BUFFER_SIZE 					255
+#DEFINE_CONSTANT XML_INPUT_TYPE_FILE				1
+#DEFINE_CONSTANT XML_INPUT_TYPE_STRING				2
+#DEFINE_CONSTANT XML_DATA_ARRAY_SIZE                      20
+#DEFINE_CONSTANT XML_STRING_ARRAY_SIZE                     20
+
+#DEFINE_CONSTANT XML_DATA_FILE_ID                    1
+#DEFINE_CONSTANT XML_DATA_INPUT_TYPE                 2
+#DEFINE_CONSTANT XML_DATA_BUFFER_INDEX               3
+#DEFINE_CONSTANT XML_DATA_BUFFER_END                 4
+#DEFINE_CONSTANT XML_DATA_TAG_CLOSE                5
+#DEFINE_CONSTANT XML_DATA_TAG_SINGLE               6
+#DEFINE_CONSTANT XML_DATA_TAG_COMMENT              7
+#DEFINE_CONSTANT XML_DATA_START_BRACKET              8
+#DEFINE_CONSTANT XML_DATA_END_BRACKET                9
+#DEFINE_CONSTANT XML_DATA_BUFFER_FILLED              10
+#DEFINE_CONSTANT XML_DATA_NUM_ATTRIBUTES             11
+#DEFINE_CONSTANT XML_DATA_FILE_OTHER                 12
+#DEFINE_CONSTANT XML_DATA_DEBUG_PRINT                 13
+#DEFINE_CONSTANT XML_DATA_EOF                         14
+
+
+#DEFINE_CONSTANT XML_STRINGS_BUFFER                    1
+#DEFINE_CONSTANT XML_STRINGS_TAG                    2
+#DEFINE_CONSTANT XML_STRINGS_VALUE                    3
+#DEFINE_CONSTANT XML_STRINGS_TEMP                    4
+#DEFINE_CONSTANT XML_STRINGS_TAG_STRING                    5
+#DEFINE_CONSTANT XML_STRINGS_ATTRIBUTES_NAMES         6
+#DEFINE_CONSTANT XML_STRINGS_ATTRIBUTES_VALUES         10
+
+//-----------------------------------------------------------------------------
+//
+// Clears data arrays
+
+Function xmlInit(string xmlStrings[], 
+                  integer xmlData[])
+{
+    integer i;
+    
+    // Initialize parsing data structures to Zero/NULL
+    for (i = 1 to XML_DATA_ARRAY_SIZE)
+        xmlData[i] = 0;
+        
+    for (i = 1 to XML_STRING_ARRAY_SIZE)
+        xmlStrings[i] = "";
+        
+}
+
+//-----------------------------------------------------------------------------
+// Fills up input buffer with next set of data from the file.  
+
+Integer_Function xmlFillBuffer(string xmlStrings[], 
+                                integer xmlData[] )
+{
+	integer inLen, inRead, remainLen;
+	string buf[255];
+    
+	//if (xmlData[XML_DATA_DEBUG_PRINT]) print("xmlFillBuffer: before, index %d, end %d, buffer [%s]\n",xmlData[XML_DATA_BUFFER_INDEX],xmlData[XML_DATA_BUFFER_END],xmlStrings[XML_STRINGS_BUFFER]);
+    // Make sure that there is a file open, it may be a passed string
+    if (xmlData[XML_DATA_FILE_ID] = 0)
+    {
+        //print("xmlFillBuffer: File not open\n");
+        xmlData[XML_DATA_EOF] = 1;
+        return (0);
+    }
+    
+    // Is there anything left in the buffer?
+	if (xmlData[XML_DATA_BUFFER_END] <= xmlData[XML_DATA_BUFFER_INDEX])
+	{
+		inRead = FileRead(xmlData[XML_DATA_FILE_ID],xmlStrings[XML_STRINGS_BUFFER],XML_BUFFER_SIZE);
+		xmlData[XML_DATA_BUFFER_END] = inRead;
+		xmlData[XML_DATA_BUFFER_INDEX] = 1;
+	}
+	else
+	{
+		//print("Concatenate read %d %d [%s]\n",xmlStrings[XML_STRINGS_BUFFER]Index,xmlData[XML_DATA_BUFFER_END],xmlStrings[XML_STRINGS_BUFFER]);
+        remainLen = xmlData[XML_DATA_BUFFER_END]-xmlData[XML_DATA_BUFFER_INDEX] + 1;
+		inLen = XML_BUFFER_SIZE-remainLen;
+		if (inLen)
+		{
+			inRead = FileRead(xmlData[XML_DATA_FILE_ID],buf,inLen);
+            if (inRead <= 0)
+            {
+                //print("xmlFillBuffer: End of file or read error encountered %d\n",inRead);
+                xmlData[XML_DATA_EOF] = 1;
+                return (0);
+            }
+			xmlStrings[XML_STRINGS_BUFFER] = mid(xmlStrings[XML_STRINGS_BUFFER],xmlData[XML_DATA_BUFFER_INDEX],remainLen) + buf;
+			xmlData[XML_DATA_BUFFER_END] = remainLen + inRead;
+			xmlData[XML_DATA_BUFFER_INDEX] = remainLen+1;
+			//xmlData[XML_DATA_BUFFER_INDEX] = 1;
+		//print("WARNING: first multiple buffer read!  Check these values carefully\n");
+		//print("\t%d %d [%s]\n",xmlData[XML_DATA_BUFFER_INDEX],xmlData[XML_DATA_BUFFER_END],xmlStrings[XML_STRINGS_BUFFER]);
+		}
+		else
+		{
+			xmlData[XML_DATA_BUFFER_END] = 0;
+		}
+    }
+	if (xmlData[XML_DATA_DEBUG_PRINT]) print("xmlFillBuffer: after, index %d, end %d, buffer [%s]\n",xmlData[XML_DATA_BUFFER_INDEX],xmlData[XML_DATA_BUFFER_END],xmlStrings[XML_STRINGS_BUFFER]);
+	//print("Read %d characters from file [%s]\n",inRead,xmlStrings[XML_STRINGS_BUFFER]);
+	return (inRead);
+}
+
+//-----------------------------------------------------------------------------
+// Fills input buffer with everything to the index.  
+
+Integer_Function xmlFillToIndex(string xmlStrings[], 
+                                integer xmlData[] )
+{
+	integer inLen, inRead, remainLen;
+	string buf[255];
+    
+	//if (xmlData[XML_DATA_DEBUG_PRINT]) print("xmlFillToIndex: before, index %d, end %d, buffer [%s]\n",xmlData[XML_DATA_BUFFER_INDEX],xmlData[XML_DATA_BUFFER_END],xmlStrings[XML_STRINGS_BUFFER]);
+    // Make sure that there is a file open, it may be a passed string
+    if (xmlData[XML_DATA_FILE_ID] = 0)
+    {
+        //print("xmlFillBuffer: File not open\n");
+        xmlData[XML_DATA_EOF] = 1;
+        return (0);
+    }
+    
+	//print("Concatenate read %d %d [%s]\n",xmlStrings[XML_STRINGS_BUFFER]Index,xmlData[XML_DATA_BUFFER_END],xmlStrings[XML_STRINGS_BUFFER]);
+    remainLen = xmlData[XML_DATA_BUFFER_END]-xmlData[XML_DATA_BUFFER_INDEX] + 1;
+	inLen = XML_BUFFER_SIZE-remainLen;
+	if (inLen)
+	{
+		inRead = FileRead(xmlData[XML_DATA_FILE_ID],buf,inLen);
+           if (inRead <= 0)
+           {
+               //print("xmlFillBuffer: End of file or read error encountered %d\n",inRead);
+               xmlData[XML_DATA_EOF] = 1;
+               return (0);
+           }
+		xmlStrings[XML_STRINGS_BUFFER] = mid(xmlStrings[XML_STRINGS_BUFFER],xmlData[XML_DATA_BUFFER_INDEX],remainLen) + buf;
+		xmlData[XML_DATA_BUFFER_END] = remainLen + inRead;
+		//xmlData[XML_DATA_BUFFER_INDEX] = remainLen+1;
+		xmlData[XML_DATA_BUFFER_INDEX] = 1;
+	//print("WARNING: first multiple buffer read!  Check these values carefully\n");
+	//print("\t%d %d [%s]\n",xmlData[XML_DATA_BUFFER_INDEX],xmlData[XML_DATA_BUFFER_END],xmlStrings[XML_STRINGS_BUFFER]);
+	}
+	else
+	{
+		xmlData[XML_DATA_BUFFER_END] = 0;
+		inRead = 0;
+	}
+
+	if (xmlData[XML_DATA_DEBUG_PRINT]) print("xmlFillToIndex: after, index %d, end %d, buffer [%s]\n",xmlData[XML_DATA_BUFFER_INDEX],xmlData[XML_DATA_BUFFER_END],xmlStrings[XML_STRINGS_BUFFER]);
+	//print("Read %d characters from file [%s]\n",inRead,xmlStrings[XML_STRINGS_BUFFER]);
+	return (inRead);
+}
+
+//-----------------------------------------------------------------------------
+
+Integer_Function xmlEOF(integer xmlData[])
+{
+    //print("xmlEOF, %d %d\n",xmlData[XML_DATA_EOF],FileEOF(xmlData[XML_DATA_FILE_ID]));
+	if (xmlData[XML_DATA_EOF] || FileEOF(xmlData[XML_DATA_FILE_ID]))
+        return (1); 
+    return (0); 
+}
+
+//-----------------------------------------------------------------------------
+// Fills up input buffer with next set of data from the file.  
+
+Integer_Function xmlPutBuffer(string xmlStrings[], 
+                                integer xmlData[],
+                                string buffer )
+{
+    // 
+    xmlStrings[XML_STRINGS_BUFFER] = buffer;
+	xmlData[XML_DATA_BUFFER_END] = len(buffer);
+	xmlData[XML_DATA_BUFFER_INDEX] = 1;
+}
+
+//-----------------------------------------------------------------------------
+// 1. Extracts tag string from brackets.
+// 2. Parses attributes within brackets.  Max 4 attributes per tag.
+// 3. Identifies single tags Ex. <tag/>
+// 4. Itentifies close tags Ex. </tag>
+
+Integer_Function xmlParseTagId(string xmlStrings[], 
+                                integer xmlData[])
+{
+
+	integer length;
+	integer index;
+	integer pos;
+	integer posSingle;
+	integer posDouble;
+	integer found;
+	integer start;
+	integer end;
+	integer startValue;
+	integer endValue;
+	string temp[256];
+	string attributeGroup[256];
+	integer foundAttribute;
+	integer done;
+	integer inch;
+    integer attributeIndex;
+
+	length = len(xmlStrings[XML_STRINGS_TEMP]);
+	index = 1;
+	found = length;
+	end = 0;
+	foundAttribute = 0;
+	
+	//print("xmlStrings[XML_STRINGS_TAG]Id, length = %d, [%s] [%s]\n",length,xmlStrings[XML_STRINGS_TEMP],xmlValue);
+	// Search for terminator character '/'
+	pos	 = find("/",xmlStrings[XML_STRINGS_TEMP]);
+    if (pos )
+	{
+		xmlData[XML_DATA_TAG_CLOSE] = 1;
+		if (pos = 1)
+		{
+			index = 2;
+		}
+		else
+		{
+			found = pos - 1;
+			xmlData[XML_DATA_TAG_SINGLE] = 1;
+		}
+	}
+	//print("xmlStrings[XML_STRINGS_TAG]Id, close %d, found %d\n",xmlData[XML_DATA_TAG_CLOSE],found);
+
+	// Find white space
+    temp = mid(xmlStrings[XML_STRINGS_TEMP],index,found-index+1);
+
+	// Parse tag
+	xmlStrings[XML_STRINGS_TAG] = mid(xmlStrings[XML_STRINGS_TEMP],index,found-index+1);
+	//print("xmlParseTagId, xmlTag [%s]\n",xmlStrings[XML_STRINGS_TAG]);
+	/*
+	if (find(">",xmlStrings[XML_STRINGS_TAG]))
+	{
+		print("***** xmlParseTagId: Error! start %d, end %d, [%s], buffer [%s]\n",
+				index,found,xmlStrings[XML_STRINGS_TAG],xmlStrings[XML_STRINGS_BUFFER]);
+	}
+    */
+	// Check for attributes
+	attributeIndex = 0;
+	pos	 = find(" ",xmlStrings[XML_STRINGS_TAG]);
+    if (pos )
+	{
+		foundAttribute = 1;
+		temp = mid(xmlStrings[XML_STRINGS_TAG],1,pos-1);
+		attributeGroup = mid(xmlStrings[XML_STRINGS_TAG],pos+1,len(xmlStrings[XML_STRINGS_TAG]));
+		end = len(attributeGroup);
+		start = 1;
+		xmlStrings[XML_STRINGS_TAG] = temp;
+		//print("Found attribute [%s] [%s] [%s]\n",xmlStrings[XML_STRINGS_TAG],temp,attributeGroup);
+		done = 0;
+		do
+		{
+			temp = mid(attributeGroup,start,end);
+			pos = find("=",attributeGroup);
+			//print("Find '=' [%s] %d\n",attributeGroup,pos);
+			if (pos)
+			{
+				attributeIndex = attributeIndex+1;
+                //print("***** attribute %d\n",attributeIndex);
+				index = pos-1;
+				// Eat white space at front and back
+				inch = byte(attributeGroup,start);
+				while(inch = 0x20 || inch = 0x0A || inch = 0x0D || inch = 0x09)
+				{
+					start = start + 1;
+					inch = byte(attributeGroup,start);
+				}
+				while(mid(attributeGroup,index,1) = " ")
+					index = index-1;
+
+				xmlStrings[XML_STRINGS_ATTRIBUTES_NAMES + attributeIndex - 1] = mid(attributeGroup,start,index-start+1);
+				start = pos+1;
+				temp = mid(attributeGroup,start,end-start+1);
+				posSingle = find("\'",temp);
+				posDouble = find("\"",temp);
+				//print("Searching for quotes %d %d\n",posSingle,posDouble);
+				if ((posSingle > 0) && (!(posDouble) || (posSingle < posDouble)))
+				{
+					pos = posSingle+1;
+					posSingle = find("'",right(temp,len(temp)-pos+1));
+					//print("posSingle [%s] %d, pos %d\n",temp,posSingle,pos);
+					xmlStrings[XML_STRINGS_ATTRIBUTES_VALUES + attributeIndex - 1] = mid(temp,pos,posSingle-1);
+					start = start + posSingle + pos;
+				}
+				else
+				{
+					if (posDouble)
+					{
+						pos = posDouble+1;
+						posDouble = find("\"",right(temp,len(temp)-pos+1));
+						//print("posDouble [%s] %d, pos %d\n",temp,posDouble,pos);
+						xmlStrings[XML_STRINGS_ATTRIBUTES_VALUES + attributeIndex - 1] = mid(temp,pos,posDouble-1);
+						start = start + posDouble + pos;
+					}
+					else
+					{
+						done = 1;
+						print("Error, attribute with no value\n");
+						attributeIndex = attributeIndex - 1;
+						break;
+					}
+				}
+
+				//print("\tAttribute [%s], value [%s]\n",
+				//		xmlAttributeNames[attributeIndex],
+				//		xmlAttributeValues[attributeIndex]);
+				attributeGroup = mid(attributeGroup,start,len(attributeGroup)-start+1);
+				end = len(attributeGroup);
+				start = 1;
+			}
+			else
+			{
+        		done = 1;
+			}
+			//done = 1;
+		} until(done);
+	}
+    xmlData[XML_DATA_NUM_ATTRIBUTES] = attributeIndex;
+    //print("**** num attributes %d\n",attributeIndex);
+}
+
+ 
+//-----------------------------------------------------------------------------
+// Reads input until next symbol (char) is found.  Primarily used to find opening
+// and closing brackets of a tag.
+
+Integer_Function xmlParseToSymbol(string xmlStrings[], 
+                                integer xmlData[],
+                                string Symbol, 
+                                integer saveValue)
+{
+	integer index;
+	index = 0;
+	xmlData[XML_DATA_BUFFER_FILLED] = 0;
+	do
+	{
+		index = Find(Symbol,xmlStrings[XML_STRINGS_BUFFER],xmlData[XML_DATA_BUFFER_INDEX]);
+		//print("xmlParseToSymbol index = %d\n",index);
+		if (!index)
+		{
+			//print("xmlParseToSymbol Filling Buffer\n");
+			if (saveValue)
+			{
+				xmlStrings[XML_STRINGS_VALUE] = xmlStrings[XML_STRINGS_VALUE] + mid(xmlStrings[XML_STRINGS_BUFFER],xmlData[XML_DATA_BUFFER_INDEX],xmlData[XML_DATA_BUFFER_END]-xmlData[XML_DATA_BUFFER_INDEX]+1);
+				xmlData[XML_DATA_BUFFER_FILLED] = 1;
+				//print("xmlParseToSymbol: Saving end of line [%s]\n",xmlValue);
+			}
+			if (!xmlFillBuffer(xmlStrings,xmlData))
+			{
+				//print("xmlParseToSymbol() EOF\n");
+				return (0);
+			}
+		}
+	} until (index);
+		//print("xmlParseToSymbol, found index = %d\n",index);
+	return (index);
+}
+
+ 
+//-----------------------------------------------------------------------------
+// Reads input until next string (char) is found.  
+
+Integer_Function xmlParseToString(string xmlStrings[], 
+                                integer xmlData[],
+                                string sString, 
+                                integer saveValue)
+{
+	integer index;
+	integer iLen;
+	iLen = len(sString);
+	index = 0;
+	xmlData[XML_DATA_BUFFER_FILLED] = 0;
+	do
+	{
+		index = Find(sString,xmlStrings[XML_STRINGS_BUFFER],xmlData[XML_DATA_BUFFER_INDEX]);
+		//print("xmlParseToSymbol index = %d\n",index);
+		if (!index)
+		{
+			//print("xmlParseToSymbol Filling Buffer\n");
+			if (saveValue)
+			{
+				xmlStrings[XML_STRINGS_VALUE] = xmlStrings[XML_STRINGS_VALUE] + mid(xmlStrings[XML_STRINGS_BUFFER],xmlData[XML_DATA_BUFFER_INDEX],xmlData[XML_DATA_BUFFER_END]-xmlData[XML_DATA_BUFFER_INDEX]+1);
+				xmlData[XML_DATA_BUFFER_FILLED] = 1;
+				//print("xmlParseToSymbol: Saving end of line [%s]\n",xmlValue);
+			}
+			
+			// Keep the end of the buffer in case the symbol is broken by the buffer
+			if (xmlData[XML_DATA_DEBUG_PRINT]) print("xmlParseToString: refilling buffer, index %d, len %d, [%s]\n",index,iLen,sString);
+			xmlData[XML_DATA_BUFFER_INDEX] = xmlData[XML_DATA_BUFFER_END] - iLen;
+			if (!xmlFillBuffer(xmlStrings,xmlData))
+			{
+				print("xmlParseToString() EOF\n");
+				return (0);
+			}
+			xmlData[XML_DATA_BUFFER_INDEX] = 1;
+		}
+	} until (index);
+	if (xmlData[XML_DATA_DEBUG_PRINT]) print("xmlParseToSymbol, found index = %d\n",index);
+	return (index);
+}
+
+//-----------------------------------------------------------------------------
+// Reads input until next symbol (char) is found.  Primarily used to find opening
+// and closing brackets of a tag.
+
+Integer_Function ParseToEndComment(string xmlStrings[], 
+                                integer xmlData[])
+{
+	integer done;
+	integer index;
+	integer endComment;
+	integer start;
+	integer end;
+	done = 0;
+
+	if (xmlData[XML_DATA_DEBUG_PRINT]) print("ParseToEndComment: start of comment found %d [%s]\n",
+												xmlData[XML_DATA_BUFFER_INDEX],
+												mid(xmlStrings[XML_STRINGS_BUFFER],
+														xmlData[XML_DATA_BUFFER_INDEX],
+														xmlData[XML_DATA_BUFFER_END]));
+	index = xmlParseToString(xmlStrings,xmlData,"-->",0);
+	if (index)
+		xmlData[XML_DATA_BUFFER_INDEX] = index + 3;
+	return (index+3);
+}
+
+//-----------------------------------------------------------------------------
+// 1. Finds the next tag in the input buffer.
+// 2. Identifies comments.  
+
+Integer_Function xmlGetTag(string xmlStrings[], 
+                            integer xmlData[],integer saveValue)
+{
+	integer status;
+	string inch[1];
+	string temp[256];
+	integer start,end,inLen,oldIndex;
+    //string xmlTag[256];
+    //string xmlValue[256];
+    //string xmlStrings[XML_STRINGS_TEMP][256];
+    //string xmlTagString[256];
+
+	// Initialize global variables
+	xmlStrings[XML_STRINGS_TAG] = "";
+	xmlStrings[XML_STRINGS_VALUE] = "";
+	xmlStrings[XML_STRINGS_TEMP] = "";
+	//xmlStrings[XML_STRINGS_VALUE] = "";
+	xmlData[XML_DATA_TAG_CLOSE] = 0;
+	xmlData[XML_DATA_TAG_SINGLE] = 0;
+	xmlData[XML_DATA_TAG_COMMENT] = 0;
+    
+	// find start symbol
+	start = xmlParseToSymbol(xmlStrings,xmlData,"<",saveValue);
+	oldIndex = xmlData[XML_DATA_BUFFER_INDEX];
+	//print("xmlGetTag: Found start, index %d, start %d, [%s]\n",oldIndex,start,xmlStrings[XML_STRINGS_BUFFER]);
+	
+	
+	// If saveValue that store the string before start into xmlValue
+	if (start && saveValue)
+	{
+		inLen = start - xmlData[XML_DATA_BUFFER_INDEX];
+		xmlStrings[XML_STRINGS_VALUE] = xmlStrings[XML_STRINGS_VALUE] + mid(xmlStrings[XML_STRINGS_BUFFER],xmlData[XML_DATA_BUFFER_INDEX],inLen);
+	}
+    
+	// Fill buffer if start is near end of buffer.
+	if (start > xmlData[XML_DATA_BUFFER_END]-4)
+	{
+		xmlData[XML_DATA_BUFFER_INDEX] = start;
+		//print("xmlGetTag: Refilling buffer in middle of tag, start %d, [%s]\n",start,xmlStrings[XML_STRINGS_BUFFER]);
+		xmlFillToIndex(xmlStrings,xmlData);
+		start = xmlData[XML_DATA_BUFFER_INDEX];
+		if (xmlData[XML_DATA_DEBUG_PRINT]) print("xmlGetTag: Buffer refilled in middle of tag, start %d, [%s]\n",start,xmlStrings[XML_STRINGS_BUFFER]);
+		oldIndex = xmlData[XML_DATA_BUFFER_INDEX];
+	}
+	
+	//inch = mid(xmlStrings[XML_STRINGS_BUFFER],start+1,1);
+	if ("!--" = mid(xmlStrings[XML_STRINGS_BUFFER],start+1,3))
+	{
+		if (xmlData[XML_DATA_DEBUG_PRINT]) print("xmlGetTag: Comment found after finding start tag %d\n",start);
+		xmlData[XML_DATA_TAG_COMMENT] = 1;
+		xmlData[XML_DATA_BUFFER_INDEX]=start+4;
+		ParseToEndComment(xmlStrings,xmlData);
+		return(1);
+	}
+
+	// Find the end symbol
+	end = xmlParseToSymbol(xmlStrings,xmlData,">",0);
+
+	// If both start and end found
+	if (start && end)
+	{ 
+		// If the buffer was refilled between start and end then reset start
+		if (xmlData[XML_DATA_BUFFER_INDEX] != oldIndex)
+		{
+			start = start-oldIndex+1;
+		}
+
+		// Parse the tag for name, close '/', and attributes
+		xmlStrings[XML_STRINGS_TEMP] = mid(xmlStrings[XML_STRINGS_BUFFER],start+1,end - start - 1);
+		xmlStrings[XML_STRINGS_TAG_STRING] = mid(xmlStrings[XML_STRINGS_BUFFER],start,end-start+1);
+		//inch = mid(xmlStrings[XML_STRINGS_BUFFER],start+1,1);
+		if (xmlData[XML_DATA_DEBUG_PRINT]) print("xmlGetTag: Found tag [%s]\n",xmlStrings[XML_STRINGS_TAG_STRING]);
+		if (xmlData[XML_DATA_DEBUG_PRINT] && (len(xmlStrings[XML_STRINGS_TAG_STRING]) < 1))
+			print("xmlGetTag: Error, zero length tag start %d, end %d, tag [%s], temp[%s], buffer [%s]\n",
+					start,end,xmlStrings[XML_STRINGS_TAG_STRING],xmlStrings[XML_STRINGS_TEMP],xmlStrings[XML_STRINGS_BUFFER]);
+		xmlParseTagId(xmlStrings,xmlData);
+         
+		// Is it a comment?
+		/*
+		if (mid(xmlStrings[XML_STRINGS_BUFFER],start+1,3) = "!--")
+		{
+			print("xmlGetTag: Comment found after finding end bracket %d\n",start);
+			xmlData[XML_DATA_TAG_COMMENT] = 1;
+			xmlData[XML_DATA_BUFFER_INDEX]=start+4;
+			ParseToEndComment(xmlStrings,xmlData);
+			return(1);
+		}
+		*/
+	}
+	else
+	{
+        print("xmlGetTag: Error return, start %d, end %d, buffer [%s]\n",start,end,xmlStrings[XML_STRINGS_BUFFER]);
+		return (0);
+	}
+  //print("xmlGetTag: start %d, end %d, tag [%s], buffer [%s]\n",start,end,xmlStrings[XML_STRINGS_TAG_STRING],xmlStrings[XML_STRINGS_BUFFER]);
+  xmlData[XML_DATA_BUFFER_INDEX] = end + 1;
+	return (1);
+}
+	
+//-----------------------------------------------------------------------------
+// Parses input until close tag found.  Used to find all info in an encapsulated
+// element.
+
+Integer_Function xmlParseToClose(string xmlStrings[], 
+                                integer xmlData[],
+                                string xmlParams)
+{
+	integer status;
+	string inch[1];
+	integer start,end;
+	integer lastBuffer;
+	integer count;
+	string tag[255];
+	string name[255];
+	string temp[255];
+	integer valueLen;
+    string xmlTag[256];
+	
+	// scan until you find the close tag
+	tag = xmlStrings[XML_STRINGS_TAG];
+	xmlParams = "";
+  //print("xmlParseToClose: Searching for tag , index = %d, tag [%s], buffer [%s]\n",xmlData[XML_DATA_BUFFER_INDEX],tag,xmlStrings[XML_STRINGS_BUFFER]);
+
+	// Parse until close tag found
+	while (1)
+	{
+		// Find next tag bracket
+		status = xmlGetTag(xmlStrings, xmlData,1);
+		if (!status)
+    {
+      //print("xmlParseToClose: error searching for tag\n");
+			return (0);
+    }
+    xmlTag = xmlStrings[XML_STRINGS_TAG];
+    if (xmlData[XML_DATA_DEBUG_PRINT]) print("xmlParseToClose: tag found, [%s]\n",xmlTag);
+
+		// Save the data 
+		xmlParams = xmlParams + xmlStrings[XML_STRINGS_VALUE];
+
+		// Check for close tag
+		if (xmlStrings[XML_STRINGS_TAG] = tag)
+		{
+			if (xmlData[XML_DATA_TAG_CLOSE])
+			{
+        //print("xmlParseToClose: found end tag, [%s]\n\t[%s]\n",xmlStrings[XML_STRINGS_TAG],xmlParams);
+				return (1);
+			}
+			else
+			{
+				print("xmlParseToClose: Error recursion not allowed\n");
+				return (0);
+			}
+		}
+		else
+		{
+			// Save tag too
+			xmlParams = xmlParams + xmlStrings[XML_STRINGS_TAG_STRING];
+		}
+	}
+}
+	
+//-----------------------------------------------------------------------------
+// Parses from start of file to header.  
+// Returns 1 when header found, otherwise returns 0.
+
+Integer_Function xmlParseHeader(string xmlStrings[], 
+                                integer xmlData[] )
+{
+	integer start,end;
+
+	// Fill the buffer to start 
+	if (!xmlFillBuffer(xmlStrings, xmlData))
+	{
+		print("xmlParseHeader: Failed to fill initial buffer\n");
+		return (0);
+	}
+
+	// This is not a normally formatted tag
+	start = Find("<?",xmlStrings[XML_STRINGS_BUFFER]);
+	if (start = 0)
+	{
+		print("xmlParseHeader:Failed to find file header %d\n",start);
+		return (0);
+	}
+	end = Find("?>",xmlStrings[XML_STRINGS_BUFFER]);
+	if (end = 0)
+	{
+		print("xmlParseHeader:Failed to find end header\n");
+		return (0);
+	}
+	xmlData[XML_DATA_BUFFER_INDEX] = end + 2;
+	//print("Found file header, index %d, [%s]\n",xmlData[XML_DATA_BUFFER_INDEX],mid(xmlStrings[XML_STRINGS_BUFFER],start + 2, end - start - 2));
+	//print("xmlParseHeader: Found file header, index %d\n",xmlData[XML_DATA_BUFFER_INDEX]);
+	
+	return (1);
+}
+
+	
+
+//-----------------------------------------------------------------------------
+// Returns data between open and close tag of an element.
+
+String_Function xmlGetValue(string xmlStrings[], 
+                           integer xmlData[])
+{
+	xmlGetTag(xmlStrings,xmlData,1);
+	return (xmlStrings[XML_STRINGS_VALUE]);
+}
+
+//-----------------------------------------------------------------------------
+// Returns value as a string.
+
+String_Function xmlGetString(string xmlStrings[], 
+                           integer xmlData[])
+{
+	string src[255];
+	string dst[255];
+	string token[16];
+	integer pos;
+	integer next,end;
+	integer iSrcLen;
+	
+	if (xmlData[XML_DATA_TAG_SINGLE])
+	{
+		return ("");
+	}
+	
+	src = xmlGetValue(xmlStrings,xmlData);
+	
+	// Check for escape sequences
+	dst = "";
+	iSrcLen = len(src);
+	pos = 1;
+	next = find("&",src,pos);
+	while (next)
+	{
+		dst = dst + mid(src,pos,next - pos);
+		end = find(";",src,next);
+		if (end < next)
+		{
+			print ("xmlGetString, & character without matching ;, %s, %d\n",src,next);
+			return ("");
+		}
+		token = lower(mid(src,next+1,end - next - 1));
+		if ("apos" = token)
+		{
+			dst = dst + "'";
+		}
+		else if ("cr" = token)
+		{
+			dst = dst + "\n";
+		}
+		//print("xmlGetString: Escape found, src [%s], next %d, end %d, token [%s], dst [%s]\n",
+		//		src,next,end,token,dst);
+		// we should handle &x000D; non-printing characters
+		
+		pos = end+1;
+		next = find("&",src,pos);
+	}
+	dst = dst + right(src,iSrcLen - pos + 1);
+
+	// Check for backslash codes
+	src = dst;
+	dst = "";
+	iSrcLen = len(src);
+	pos = 1;
+	next = find("\\",src,pos);
+	while (next)
+	{
+		dst = dst + mid(src,pos,next - pos);
+		token = lower(mid(src,next+1,1));
+		if ("\\" = token)
+		{
+			dst = dst + "\\";
+		}
+		else if ("n" = token)
+		{
+			dst = dst + "\n";
+		}
+		else if ("r" = token)
+		{
+			dst = dst + "\r";
+		}
+		//print("xmlGetString: Escape found, src [%s], next %d, token [%s], dst [%s]\n",
+		//		src,next,token,dst);
+		
+		// we should handle &x000D; non-printing characters
+		
+		pos = next+2;
+		next = find("\\",src,pos);
+	}
+	dst = dst + right(src,iSrcLen - pos + 1);
+	//print("xmlGetString, src [%s], dst [%s]\n",src,dst);
+	return (dst);
+}
+
+//-----------------------------------------------------------------------------
+// Converts value to an integer.
+
+Integer_Function xmlGetInt(string xmlStrings[], 
+                           integer xmlData[])
+{
+	integer v;
+	// Single elements can be thought of as Boolean TRUE
+	if (xmlData[XML_DATA_TAG_SINGLE])
+	{
+		return (1);
+	}
+	xmlGetValue(xmlStrings,xmlData);
+	v = atoi(xmlStrings[XML_STRINGS_VALUE]);
+	return (v);
+}
+
+//-----------------------------------------------------------------------------
+// Converts value to a long integer.
+
+Long_Integer_Function xmlGetLong(string xmlStrings[], 
+                           integer xmlData[])
+{
+	long_integer v;
+	// Single elements can be thought of as Boolean TRUE
+	if (xmlData[XML_DATA_TAG_SINGLE])
+	{
+		return (1);
+	}
+	xmlGetValue(xmlStrings,xmlData);
+	v = atol(xmlStrings[XML_STRINGS_VALUE]);
+	return (v);
+}
+
+//-----------------------------------------------------------------------------
+// Finds the next tag and finds the index of the match in an array of tags.
+
+Signed_Integer_Function xmlGetNextTag(string xmlStrings[], 
+                           integer xmlData[],
+                           byref string xmlParentTag,
+                           string xmlTagArray[],
+                           integer num)
+{
+    integer i;
+    string tag[256];
+    
+     do
+    {
+      // Get tag
+      xmlGetTag(xmlStrings,xmlData,0);
+      if (xmlData[XML_DATA_DEBUG_PRINT]) print("xmlGetNextTag: tag [%s], comment %d, single %d\n",
+      		xmlStrings[XML_STRINGS_TAG],
+      		xmlData[XML_DATA_TAG_COMMENT],
+      		xmlData[XML_DATA_TAG_SINGLE]);
+
+      // Don't process itif is a comment
+      if (!xmlData[XML_DATA_TAG_COMMENT])
+      {
+	      tag = xmlStrings[XML_STRINGS_TAG];
+	      if (xmlData[XML_DATA_DEBUG_PRINT]) print("xmlGetNextTag found tag [%s]\n",tag);
+	      
+	      if (xmlData[XML_DATA_TAG_CLOSE] && (tag = xmlParentTag))
+	      {
+	          // Found encapsulating element
+	          //print("xmlGetNextTag found end tag\n");
+	          return(-1);
+	      }
+	    
+	      // Find tag in list
+	      for (i = 1 to num)
+	      {
+	          if (CompareStringsNoCase(tag,xmlTagArray[i]) = 0)
+	          {
+	               return (i);
+	          }
+	      } 
+	  }
+	} until(!xmlData[XML_DATA_TAG_COMMENT]);
+    
+    // failed to find tag
+    return (0);
+
+}
+
+//-----------------------------------------------------------------------------
+
+Integer_Function xmlCRC(string sData, integer iStart)
+{
+	integer iLen;
+	integer iCrc;
+	integer iVar1, iVar2, iChar, iPoly;
+	
+    iVar1 = 0;
+    iVar2 = 0;
+    iChar = 0;
+    iCrc  = iStart;
+    iPoly = 0x1021;
+    
+	iLen = len(sData);
+    while(iLen>0)
+    {         
+        iLen = iLen - 1;
+        iVar1 = iVar1 + 1;
+        //if( iVar1 > len(sData))	// This line will prevent any buffer overflow situation
+        //	break;
+        iChar = byte(sData, iVar1) & 0x00FF;
+        iCrc = iCrc ^ iChar << 8;
+        for (iVar2 = 0 to 7) 
+        {
+            if(iCrc & 0x8000)
+                iCrc = (iCrc << 1) ^ iPoly;
+            else
+                iCrc = iCrc << 1;
+        }
+        //print("CRC %04X, ch %c\n",iCrc,iChar);
+    } // End of While loop
+    return (iCRC);
+}
+
+
+//-----------------------------------------------------------------------------
+// Scans entire file calculating CRC.  
+// Returns 1 when CRC correct, otherwise returns 0.
+
+Integer_Function xmlVerifyCRC(string xmlStrings[], 
+                                	integer xmlData[] )
+{
+	integer iStart,iEnd;
+	string sFileCRC[8];
+	integer iCRC;
+	integer iFileCRC;
+	string sToken[64];
+    string tag[256];
+    integer iFound;
+    integer bStatus;
+    integer iTotal;
+    integer iBracket;
+    integer iLen;
+    integer iStop;
+    integer iCRCSize;
+    integer iNextStart;
+    string sSubString[255];
+    
+	if (!xmlParseHeader(xmlStrings, xmlData))
+	{
+		return (0);
+	}
+
+    bStatus = 0;
+    iTotal = 0;
+    do
+    {
+      // Get tag
+      xmlGetTag(xmlStrings,xmlData,0);
+      
+      // Don't process it if is a comment
+      if (!xmlData[XML_DATA_TAG_COMMENT])
+      {
+	      tag = xmlStrings[XML_STRINGS_TAG];
+	      //print("xmlVerifyCRC found tag [%s]\n",tag);
+	      
+	      // Find tag in list
+	      if ("Configuration" != tag)
+	      {
+	      	print("xmlVerifyCRC, Root node [%s] not configuration\n",tag);
+	      	return (0);
+	      }
+	  }    
+	} until(!xmlData[XML_DATA_TAG_COMMENT]);
+	
+	// Save CRC
+	if ("crc" != lower(xmlStrings[XML_STRINGS_ATTRIBUTES_NAMES]))
+	{
+     	print("xmlVerifyCRC, Root node [%s] not configuration\n",tag);
+     	return (0);
+	}
+	sFileCRC = xmlStrings[XML_STRINGS_ATTRIBUTES_VALUES];
+	iFileCRC = hextoi(sFileCRC);
+	//print("xmlVerifyCRC, CRC found [%s], %x\n",sFileCRC,iFileCRC);
+	
+	// Scan file calculating CRC
+	iFound = 0;
+    iCRC  = 0xFFFF;
+    iNextStart = 1;
+    iStart = xmlData[XML_DATA_BUFFER_INDEX];
+	do
+	{
+		//iStart = xmlData[XML_DATA_BUFFER_INDEX];
+		iEnd = xmlData[XML_DATA_BUFFER_END];
+		iFound = find("</Configuration>",xmlStrings[XML_STRINGS_BUFFER]);
+		//print("\n*******\nxmlVerifyCRC, iStart %d, iEnd %d, iFound %d\n",iStart,iEnd,iFound);
+		if (iFound)
+		{
+			// CRC to found
+			if (iFound > iStart)
+			{
+				sSubString = mid(xmlStrings[XML_STRINGS_BUFFER],iStart,iFound - iStart);
+				iCRC = xmlCRC(sSubString,iCRC);
+			}
+			//iFound = 1;
+    		iTotal = iTotal + (iFound - iStart);
+			//print("xmlVerifyCRC, iFound %d, iStart %d, iCRC %x, iTotal %d\n",
+			//		iFound,iStart,iCRC,iTotal);
+		}
+		else
+		{
+			// Make sure that we don't run off the end of the buffer and split the end tag
+			iBracket = reversefind("<",xmlStrings[XML_STRINGS_BUFFER]);
+			iLen = iEnd - iBracket + 1;
+			if (iBracket && (iLen < 20))
+			{
+				// Special case if bracket is last character
+				// The fill buffer assumes that the entire buffer should
+				// be filled
+				if (1 = iLen)
+				{
+            		iStop = iBracket-1;
+            		iCRCSize = iBracket - iStart;
+            		iNextStart = 2;
+				}
+				else
+				{
+            		iStop = iBracket;
+            		iCRCSize = iBracket - iStart;
+            		iNextStart = 1;
+            	}
+            }
+            else
+            {
+            	iStop = iEnd;
+            	iCRCSize = iEnd - iStart + 1;
+            	iNextStart = 1;
+            }
+			// CRC to end and refill
+			iCRC = xmlCRC(mid(xmlStrings[XML_STRINGS_BUFFER],iStart,iCRCSize),iCRC);
+
+			xmlData[XML_DATA_BUFFER_INDEX] = iStop;
+			//print("Filling buffer, iEnd %d. iBracket %d, iStop %d, iLen %d, index %d, [%s]\n",
+			//	iEnd,iBracket,iStop,iLen,xmlData[XML_DATA_BUFFER_INDEX],
+			//	right(xmlStrings[XML_STRINGS_BUFFER],20));
+			
+			// Get new buffer data				
+			iLen = xmlFillBuffer(xmlStrings,xmlData);
+			if (iLen <= 0)
+			{
+				print("xmlVerifyCRC: Error, end tag not found\n");
+				return (0);
+			}
+    		iTotal = iTotal + (iEnd - iStart + 1);
+    		/*
+			print("Filled buffer, index %d, end %d, iTotal %d, [%s], [%s]\n",
+				xmlData[XML_DATA_BUFFER_INDEX],
+				xmlData[XML_DATA_BUFFER_END], 
+				iTotal,
+				left(xmlStrings[XML_STRINGS_BUFFER],20),
+				right(xmlStrings[XML_STRINGS_BUFFER],20));
+				*/
+			iStart = iNextStart;
+		}
+		//print("xmlVerifyCRC, found %d, crc %x, count %d\n",iFound,iCRC,iTotal);
+		
+	} until (iFound);
+	
+	// Verify CRC
+	if (iFileCRC = iCRC)
+	{
+		print("Checksum passed\n");
+		bStatus = 1;
+	}
+	else
+	{
+		print("Checksum failed, file %04X, calculated %04X\n",iFileCRC,iCRC);
+	}
+	if (FileSeek( xmlData[XML_DATA_FILE_ID], 0, SEEK_SET) < 0)
+		print("xmlVerifyCRC: Error rewinding file\n");
+		
+	return (bStatus);
+}
+
+//  REVISION HISTORY
+//  ------------------ 
+//  $Log: CMIS_Hub_XML.usl,v $
+//  Revision 1.1  2008/12/05 01:03:47  jjohns
+//  Add ConferenceHub Rivulet.
+//
+//  Revision 1.9.16.1  2008/06/21 00:12:20  jjohns
+//  SCR379: Make Configuration Files case-insensitive.
+//  2 limitations:
+//  (1) The opening and closing tags must still be "Configuration"
+//  (2) Per the XML standard, any pair of opening and closing tags should use the same case (No use of <ITEM>...</item>)
+//
+//  Revision 1.9  2007/11/15 19:54:16  tbaker
+//  Changes made by K. Vallance
+//  1. PIP utility re-write, small bug fixes, and removal of debug print statements
+//  2.  Addressed Select Source Bug, Endo System Error Page Bug, and Video Printer
+//      Field/Frame string write flicker
+//
+//  Changes made by K. Fleskes
+//  1.  Simpl+ was using analog output from another module to determine behavior
+//      within the VTC control module.  VTC control module should have defined
+//      parameter as an input, not an output.  fixed.
+//
+//  Changes made by J. Johns
+//  1.  32" monitor fixes thus far
+//  2.  Rework PIP per NDS information
+//  3.  32" Radiance HD - now prevents user from selecting PIP mode unless monitor
+//      is displaying a DVI source.  Changes back to full screen if the user routes
+//      a non-DVI source to the main window when PIP is on.
+//  4.  23" Radiance HD - After changing a signal, if the monitor is in any PIP mode
+//     (not fullscreen), the PIP mode will be sent 4 times, 3 seconds apart - for a
+//     duration of roughly 9 seconds from start to end.  Command retry interval also
+//     changed to 3 seconds (down from 5).
+//
+//  Changes made by T. Baker:
+//  1. Removed disabled button graphics from Equipment Shutdown dialog.
+//  2. Fixed problem with CRC calculation when the end tag spans a buffer boundary.
+//
+//  Revision 1.8  2007/10/17 20:02:55  tbaker
+//  Fixed xml parsing end of comment bug.
+//
+//  Revision 1.7  2007/10/15 17:37:18  tbaker
+//  Removed unused code from xml parsing function.
+//
+//  Revision 1.6  2007/10/15 17:23:53  tbaker
+//  Changes made by T. Baker for configuration file parsing.
+//  1. Fixed bug in parsing end of comment tokens.
+//  2. Added code to verify CRC code.
+//
+//  Revision 1.5  2007/10/11 22:15:38  tbaker
+//  Added non-printing character support in xml file.
+//  Added line feeds to button names in reference.xml.
+//
+//  Revision 1.4  2007/10/11 16:59:32  tbaker
+//  Added Audio processing logic.
+//  Miscellaneous Monitor and Video Routing bug fixes.
+//
+//  Revision 1.3  2007/10/10 16:50:50  tbaker
+//  Fixed bugs in parsing xml comments.
+//  Added xmlGetLong() function for parsing large integers.
+//
+//  Revision 1.2  2007/10/09 00:31:15  tbaker
+//  Added CMIS_XML.usl xml parsing file.
+//
+//  Revision 1.1.4.1  2007/09/04 16:51:23  tbaker
+//  Merged XML parsing into SoftConfigure branch.
+//
+//  Revision 1.1.2.2  2007/08/31 15:55:45  tbaker
+//  XML file read working, all current tags supported.
+//
+//  Revision 1.1.2.1  2007/08/29 17:47:42  tbaker
+//  Added XML parsing routines.
+//  XML parsing working.  Need to implement all of file tags.
+//
+//
