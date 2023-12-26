@@ -1,0 +1,45 @@
+<version> 1.0
+<type> IHNH
+<name> CMIS World Headquarters
+<svideo> 32
+<rgb> 8
+<hd> 2
+<audio> 12
+<vtc> 1
+<simulate> 0
+
+# OR 1 - ID 03 - should see ORs + CRm
+<ep> 1
+  <type> OR
+  <connection> eth 2
+  <svideo> 5 4 5 4
+  <rivulet> 1 1 1 1 0 0
+  <rgb> 2 1 2 1
+  <hd> 1 1 1 1
+  <audio> 2 1 2 1
+</ep>
+
+# OR 2 - ID 04 - should see ORs + CRm
+<ep> 2
+  <type> OR
+  <connection> eth 1
+  <svideo> 1 4 1 4
+  <rivulet> 1 1 1 1 0 0
+  <rgb> 1 1 1 1
+  <hd> 1 1 1 1
+  <audio> 1 1 1 1
+</ep>
+
+# OR 3 - VEC connection
+<ep> 3
+  <type> LR
+  <connection> local 1
+  <svideo> 5 4 5 4
+  <rgb> 2 1 2 1
+  <hd> 1 1 0 0
+  <audio> 2 1 2 1
+  <rivulet> 1 1 1 0 0 0
+  <vecIP>10.151.6.23
+  <lrattr> 1 1 "VEC" "VEC"
+</ep>
+

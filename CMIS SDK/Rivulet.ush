@@ -1,0 +1,85 @@
+[BEGIN]
+  Version=1
+[END]
+[BEGIN]
+  ObjTp=FSgntr
+  Sgntr=UserSPlus
+  RelVrs=1
+  IntStrVrs=1
+  SPlusVrs=3.03.08
+  InclDatVrs=1.69
+  CrossCplrVrs=1.2
+[END]
+[BEGIN]
+  ObjTp=Symbol
+  Exclusions=1,19,20,21,88,89,167,168,179,216,225,248,249,266,310,718,756,854,
+  Name=Rivulet
+  SmplCName=Rivulet.usp
+  Code=1
+  SysRev5=3.154
+  SMWRev=2.02.05
+  InputCue1=sigStartupComplete
+  InputSigType1=Digital
+  InputCue2=sigRivuletConnected
+  InputSigType2=Digital
+  InputCue3=diDebug
+  InputSigType3=Digital
+  OutputCue1=doRivLinkEnable
+  OutputSigType1=Digital
+  InputList2Cue1=aiRivLinkStatus
+  InputList2SigType1=Analog
+  InputList2Cue2=RxRivulet
+  InputList2SigType2=Serial
+  InputList2Cue3=siRivuletConfig
+  InputList2SigType3=Serial
+  InputList2Cue4=siVidRoute
+  InputList2SigType4=Serial
+  OutputList2Cue1=TxRivulet
+  OutputList2SigType1=Serial
+  OutputList2Cue2=aoEndpointStatus[#]
+  OutputList2SigType2=Analog
+  ParamCue1=[Reference Name]
+  MinVariableInputs=3
+  MaxVariableInputs=3
+  MinVariableInputsList2=4
+  MaxVariableInputsList2=4
+  MinVariableOutputs=1
+  MaxVariableOutputs=1
+  MinVariableOutputsList2=2
+  MaxVariableOutputsList2=25
+  MinVariableParams=0
+  MaxVariableParams=0
+  Expand=expand_separately
+  Expand2=expand_separately
+  ProgramTree=Logic
+  SymbolTree=32
+  Hint=
+  PdfHelp=
+  HelpID= 
+  Render=4
+  Smpl-C=16
+  CompilerCode=-48
+  CompilerParamCode=27
+  CompilerParamCode5=14
+  NumFixedParams=1
+  Pp1=1
+  MPp=1
+  NVStorage=10
+  ParamSigType1=String
+  SmplCInputCue1=o#
+  SmplCOutputCue1=i#
+  SmplCInputList2Cue1=an#
+  SmplCOutputList2Cue1=ai#
+  SPlus2CompiledName=S2_Rivulet
+  SymJam=NonExclusive
+  Usl1=CMIS_Hub_Library.usl
+  Usl2=CMIS_Hub_Library.usl
+  Usl3=CMIS_Hub_XML.usl
+  Usl4=CMIS_Hub_XML.usl
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=1
+  Tp=1
+  NoS=False
+[END]

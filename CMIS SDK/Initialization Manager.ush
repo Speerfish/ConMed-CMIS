@@ -1,0 +1,77 @@
+[BEGIN]
+  Version=1
+[END]
+[BEGIN]
+  ObjTp=FSgntr
+  Sgntr=UserSPlus
+  RelVrs=1
+  IntStrVrs=1
+  SPlusVrs=3.03.08
+  InclDatVrs=1.69
+  CrossCplrVrs=1.2
+[END]
+[BEGIN]
+  ObjTp=Symbol
+  Exclusions=1,19,20,21,88,89,167,168,179,216,225,248,249,266,310,718,756,854,
+  Name=Initialization Manager
+  SmplCName=Initialization Manager.usp
+  Code=1
+  SysRev5=3.090
+  SMWRev=2.02.05
+  InputCue1=diStage0Complete
+  InputSigType1=Digital
+  InputCue2=diStage1Complete
+  InputSigType2=Digital
+  InputCue3=diStage2Complete
+  InputSigType3=Digital
+  InputCue4=diStage3Complete
+  InputSigType4=Digital
+  OutputCue1=doAssertStage1
+  OutputSigType1=Digital
+  OutputCue2=doAssertStage2
+  OutputSigType2=Digital
+  OutputCue3=doAssertStage3
+  OutputSigType3=Digital
+  ParamCue1=[Reference Name]
+  MinVariableInputs=4
+  MaxVariableInputs=4
+  MinVariableInputsList2=0
+  MaxVariableInputsList2=0
+  MinVariableOutputs=3
+  MaxVariableOutputs=3
+  MinVariableOutputsList2=0
+  MaxVariableOutputsList2=0
+  MinVariableParams=0
+  MaxVariableParams=0
+  Expand=expand_separately
+  Expand2=expand_separately
+  ProgramTree=Logic
+  SymbolTree=32
+  Hint=
+  PdfHelp=
+  HelpID= 
+  Render=4
+  Smpl-C=16
+  CompilerCode=-48
+  CompilerParamCode=27
+  CompilerParamCode5=14
+  NumFixedParams=1
+  Pp1=1
+  MPp=1
+  NVStorage=10
+  ParamSigType1=String
+  SmplCInputCue1=o#
+  SmplCOutputCue1=i#
+  SmplCInputList2Cue1=an#
+  SmplCOutputList2Cue1=ai#
+  SPlus2CompiledName=S2_Initialization_Manager
+  SymJam=NonExclusive
+  Usl1=CMIS_Hub_Library.usl
+  Usl2=CMIS_Hub_Library.usl
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=1
+  Tp=1
+  NoS=False
+[END]
