@@ -1,0 +1,436 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x80000000         0x00500000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00000000                __DYNAMIC=0x0
+                0x00400000                PROVIDE (__stack, 0x400000)
+                0x00000000                PROVIDE (hardware_init_hook, 0x0)
+                0x00000000                PROVIDE (_hardware_init_hook, 0x0)
+                0x00000000                PROVIDE (software_init_hook, 0x0)
+                0x00000000                PROVIDE (_software_init_hook, 0x0)
+
+.text           0x80000000    0x43780
+ *(.text)
+ .text          0x80000000    0x12daa S2_ConferenceHub.o
+                0x800102c2                S2_ConferenceHubEventHandler00008
+                0x8001051c                S2_ConferenceHubEventHandler00009
+                0x8000f650                S2_ConferenceHubEventHandler00003
+                0x800109f2                S2_ConferenceHub_main
+                0x8000f94e                S2_ConferenceHubEventHandler00004
+                0x8000fd22                S2_ConferenceHubEventHandler00006
+                0x80012d30                S2_ConferenceHub_ENDPOINT_Destructor
+                0x8000f482                S2_ConferenceHubEventHandler00002
+                0x8000ebf2                S2_ConferenceHubEventHandler00001
+                0x8000fb38                S2_ConferenceHubEventHandler00005
+                0x80012d4e                S2_ConferenceHubEventHandler0000A
+                0x80012d3a                S2_ConferenceHub_VTC_RESOURCE_Constructor
+                0x8000e620                S2_ConferenceHubEventHandler00000
+                0x8000fff2                S2_ConferenceHubEventHandler00007
+                0x80012caa                S2_ConferenceHub_ENDPOINT_Constructor
+                0x80010848                S2_ConferenceHub_EventHandler
+                0x80012d44                S2_ConferenceHub_VTC_RESOURCE_Destructor
+ *fill*         0x80012daa        0x2
+ .text          0x80012dac      0x32e S2_CMIS_Hub_Library.o
+                0x80013094                S2_CMIS_Hub_Library_main
+                0x80012dac                S2_CMIS_Hub_Library__SUBSTITUTESTRING
+                0x80013014                S2_CMIS_Hub_Library_EventHandler
+ *fill*         0x800130da        0x2
+ .text          0x800130dc      0x43c S2_Initialization_Manager.o
+                0x8001321c                S2_Initialization_Manager_EventHandler
+                0x80013188                S2_Initialization_Manager_main
+                0x800134bc                S2_Initialization_ManagerEventHandler00003
+                0x80013380                S2_Initialization_ManagerEventHandler00001
+                0x800132a6                S2_Initialization_ManagerEventHandler00000
+                0x8001341e                S2_Initialization_ManagerEventHandler00002
+ .text          0x80013518     0xebee S2_EndpointComm.o
+                0x80021fa4                S2_EndpointCommEventHandler00017
+                0x80021958                S2_EndpointCommEventHandler00007
+                0x8002180a                S2_EndpointComm_CALLSTATUS_Constructor
+                0x800217d6                S2_EndpointComm_HUBSTATUS_Destructor
+                0x8001ebbc                S2_EndpointCommEventHandler0000F
+                0x80021bee                S2_EndpointCommEventHandler0000C
+                0x800214c8                S2_EndpointComm_main
+                0x8001fdf4                S2_EndpointCommEventHandler0001C
+                0x80021780                S2_EndpointComm_SYSTEMSTATUS_Constructor
+                0x8001e2fa                S2_EndpointCommEventHandler00004
+                0x800217e0                S2_EndpointComm_ROOMSTATUS_Constructor
+                0x8001f398                S2_EndpointCommEventHandler0001A
+                0x80022054                S2_EndpointCommEventHandler00019
+                0x800217c2                S2_EndpointComm_SYSTEMSTATUS_Destructor
+                0x80021d6e                S2_EndpointCommEventHandler00011
+                0x80021b00                S2_EndpointCommEventHandler00009
+                0x800217cc                S2_EndpointComm_HUBSTATUS_Constructor
+                0x80021856                S2_EndpointCommEventHandler00001
+                0x80020b8a                S2_EndpointCommEventHandler0001F
+                0x8001f05e                S2_EndpointCommEventHandler00013
+                0x80021800                S2_EndpointComm_ROOMSTATUS_Destructor
+                0x80021f4c                S2_EndpointCommEventHandler00016
+                0x80021cc4                S2_EndpointCommEventHandler0000D
+                0x8001e75a                S2_EndpointCommEventHandler0000A
+                0x8001e5f6                S2_EndpointCommEventHandler00006
+                0x8002184c                S2_EndpointComm_CALLSTATUS_Destructor
+                0x800220ac                S2_EndpointCommEventHandler0001D
+                0x8001df6a                S2_EndpointCommEventHandler00003
+                0x8001f194                S2_EndpointCommEventHandler00015
+                0x80021ffc                S2_EndpointCommEventHandler00018
+                0x80021a88                S2_EndpointCommEventHandler00008
+                0x8001d470                S2_EndpointCommEventHandler00000
+                0x8001ef0a                S2_EndpointCommEventHandler00012
+                0x8001e90a                S2_EndpointCommEventHandler0000E
+                0x80021b96                S2_EndpointCommEventHandler0000B
+                0x8001e446                S2_EndpointCommEventHandler00005
+                0x8001f4d6                S2_EndpointCommEventHandler0001B
+                0x80020880                S2_EndpointCommEventHandler0001E
+                0x800213b6                S2_EndpointComm_EventHandler
+                0x8001dcd2                S2_EndpointCommEventHandler00002
+                0x8001ed10                S2_EndpointCommEventHandler00010
+                0x80021e80                S2_EndpointCommEventHandler00014
+ *fill*         0x80022106        0x2
+ .text          0x80022108     0x1a60 S2_SDKEndpoint.o
+                0x80022518                S2_SDKEndpointEventHandler00001
+                0x80022b0c                S2_SDKEndpointEventHandler00009
+                0x80023932                S2_SDKEndpointEventHandler00005
+                0x80023a0a                S2_SDKEndpointEventHandler00006
+                0x80022fd4                S2_SDKEndpoint_main
+                0x80022c6a                S2_SDKEndpointEventHandler0000A
+                0x80023796                S2_SDKEndpointEventHandler00002
+                0x80022f26                S2_SDKEndpoint_EventHandler
+                0x80023a62                S2_SDKEndpointEventHandler00007
+                0x800228de                S2_SDKEndpointEventHandler00003
+                0x80023886                S2_SDKEndpointEventHandler00004
+                0x8002226e                S2_SDKEndpointEventHandler00000
+                0x80023ae4                S2_SDKEndpointEventHandler00008
+ .text          0x80023b68      0xcce S2_Conference___RoomControl.o
+                0x80024660                S2_Conference___RoomControlEventHandler00000
+                0x80024728                S2_Conference___RoomControlEventHandler00001
+                0x8002414e                S2_Conference___RoomControl_main
+                0x800247be                S2_Conference___RoomControlEventHandler00003
+                0x80023d64                S2_Conference___RoomControlEventHandler00002
+                0x80024028                S2_Conference___RoomControl_EventHandler
+ *fill*         0x80024836        0x2
+ .text          0x80024838     0xa908 S2_Rivulet.o
+                0x8002df4e                S2_Rivulet_EventHandler
+                0x8002cb38                S2_RivuletEventHandler00004
+                0x8002c264                S2_RivuletEventHandler00001
+                0x8002f080                S2_Rivulet_FIXED_ENDPOINT_Constructor
+                0x8002eeee                S2_Rivulet_VIDEOENDPOINT_Destructor
+                0x8002f0c2                S2_Rivulet_FIXED_ENDPOINT_Destructor
+                0x8002eef8                S2_Rivulet_CONNECTION_Constructor
+                0x8002efe4                S2_Rivulet_RESPONSEDATA_Constructor
+                0x8002d72c                S2_RivuletEventHandler00005
+                0x8002f076                S2_Rivulet_RESPONSEDATA_Destructor
+                0x8002b30a                S2_RivuletEventHandler00000
+                0x8002eea8                S2_Rivulet_VIDEOENDPOINT_Constructor
+                0x8002e094                S2_Rivulet_main
+                0x8002efda                S2_Rivulet_CONNECTION_Destructor
+                0x8002f0cc                S2_RivuletEventHandler00002
+                0x8002c4fc                S2_RivuletEventHandler00003
+ .text          0x8002f140     0x96b0 S2_CMIS_Hub_XML.o
+                0x80032598                S2_CMIS_Hub_XML__XMLPARSETOSYMBOL
+                0x800316ee                S2_CMIS_Hub_XML__XMLPARSETAGID
+                0x80038622                S2_CMIS_Hub_XML_EventHandler
+                0x80032c74                S2_CMIS_Hub_XML__XMLPARSETOSTRING
+                0x80033d74                S2_CMIS_Hub_XML__XMLGETTAG
+                0x800387aa                S2_CMIS_Hub_XML_main
+                0x80036ec6                S2_CMIS_Hub_XML__XMLGETLONG
+                0x8003870c                S2_CMIS_Hub_XML__XMLCRC
+                0x80035590                S2_CMIS_Hub_XML__XMLPARSETOCLOSE
+                0x80035c0c                S2_CMIS_Hub_XML__XMLPARSEHEADER
+                0x80036cfe                S2_CMIS_Hub_XML__XMLGETINT
+                0x80037880                S2_CMIS_Hub_XML__XMLVERIFYCRC
+                0x80031286                S2_CMIS_Hub_XML__XMLEOF
+                0x80030546                S2_CMIS_Hub_XML__XMLFILLTOINDEX
+                0x8002f140                S2_CMIS_Hub_XML__XMLINIT
+                0x800337fc                S2_CMIS_Hub_XML__PARSETOENDCOMMENT
+                0x800386a2                S2_CMIS_Hub_XML__XMLGETVALUE
+                0x80035ec2                S2_CMIS_Hub_XML__XMLGETSTRING
+                0x8003708c                S2_CMIS_Hub_XML__XMLGETNEXTTAG
+                0x8002f38c                S2_CMIS_Hub_XML__XMLFILLBUFFER
+                0x80031468                S2_CMIS_Hub_XML__XMLPUTBUFFER
+ .text          0x800387f0     0x56fa library.o
+                0x8003c93e                RotateRightLong
+                0x8003cf22                IsSystem
+                0x8003c8a2                Seed
+                0x8003a1d8                Remove
+                0x8003c51e                Ltoa
+                0x8003c24a                Atoi
+                0x8003b5b2                InitRampInfoArray
+                0x8003ccf8                Right
+                0x8003c7cc                Mod
+                0x8003c9b4                Getc
+                0x8003c700                SMuldiv
+                0x8003cf04                IsHidden
+                0x8003c5e4                Min
+                0x8003db12                hextosi
+                0x8003d0a8                WriteIntegerArray
+                0x8003d61e                GetSignedIntArrayElementPtr
+                0x8003bf6c                CheckStructArray
+                0x8003db26                hextosl
+                0x8003d22e                WriteSignedIntegerArray
+                0x8003bc34                InitStringParamArray
+                0x8003af02                ReadSignedLongIntegerArray
+                0x80039ebc                GatherToDelimiter
+                0x8003ba58                InitStringArray
+                0x8003c5be                Max
+                0x8003cf5e                IsReadOnly
+                0x8003c6c8                SMax
+                0x8003a034                GatherByLength
+                0x8003c458                Chr
+                0x8003d080                ReadSignedLongInteger
+                0x8003c4d6                Itohex
+                0x8003bede                GetStructArrayElement
+                0x8003c1d2                UNS_SetByte
+                0x8003cccc                ReverseFindi
+                0x8003b3ae                ReadStringArray
+                0x8003d42e                GetIntArrayElementPtr
+                0x8003cb08                Lower
+                0x8003c8be                RotateLeft
+                0x8003dc46                ResizeIfAutogrow
+                0x8003b6de                CheckInputArray
+                0x80038d5e                ResizeStringArray
+                0x8003c3ea                Atosl
+                0x8003c212                High
+                0x8003c86e                Rnd
+                0x8003c790                UMod
+                0x8003c914                RotateLeftLong
+                0x8003dcfe                FindNumericChar
+                0x8003d876                CheckIOArrayBounds2
+                0x8003c6e4                SMin
+                0x8003ca3c                Left
+                0x8003c97e                CheckBufferThreshold
+                0x8003d038                ReadSignedInteger
+                0x8003c23c                LowWord
+                0x800387f0                Bit
+                0x8003cfe8                ReadLongInteger
+                0x8003c050                Byte
+                0x8003d526                GetLongArrayElementPtr
+                0x8003cc9e                ReverseFind
+                0x8003ddca                InitTcpServer
+                0x8003caf0                Len
+                0x8003d946                InitializeRampInfoInternal
+                0x8003c60a                Divide
+                0x8003c356                Atol
+                0x8003d80e                CheckIOArrayBounds
+                0x8003b738                CheckStringInputArray
+                0x8003d2f0                WriteSignedLongIntegerArray
+                0x8003be28                GetStringArrayElement
+                0x8003c562                Ltohex
+                0x8003c48e                Itoa
+                0x8003c8e8                RotateRight
+                0x8003a484                InternalReverseFind
+                0x8003cfc8                WriteLongInteger
+                0x8003b95c                InitDynamicStringStruct
+                0x8003b84e                SetStringArray
+                0x8003ace0                ReadSignedIntegerArray
+                0x8003b792                SetOutputArray
+                0x8003cf78                WriteInteger
+                0x8003bdbc                InitStructDynamicArray
+                0x8003a70e                SetString
+                0x8003c808                Random
+                0x8003d010                WriteSignedInteger
+                0x80038a54                Find
+                0x8003cbdc                Mid
+                0x8003dd3c                InitTcpClient
+                0x80039942                ResizeStructArray
+                0x8003d716                GetSignedLongArrayElementPtr
+                0x8003db38                hextol
+                0x8003b124                ReadString
+                0x8003baee                InitDynamicStringArray
+                0x8003dc1e                UpperChar
+                0x8003c2e6                Atosi
+                0x8003cfa0                ReadInteger
+                0x8003c67c                Muldiv
+                0x8003b800                SetStringOutputArray
+                0x8003d3b4                WriteString
+                0x800393b6                ResizeIntegerArray
+                0x8003b6a6                InitInOutArray
+                0x8003bcfc                InitNvramStringArray
+                0x8003c5a6                Abs
+                0x8003c74c                SDivide
+                0x8003a89e                ReadIntegerArray
+                0x80038900                CompareStrings
+                0x8003dbf6                LowerChar
+                0x8003de5a                InitUdpSocket
+                0x8003c966                ClearBuffer
+                0x8003cdb4                Upper
+                0x8003bd98                InitStructArray
+                0x8003ce8a                MakeLower
+                0x8003cf40                IsVolume
+                0x8003a30a                RemoveByLength
+                0x8003bfe8                CheckStringOutputArrayIndex
+                0x8003d16a                WriteLongIntegerArray
+                0x8003d9f2                InitRampInfoStructArray
+                0x8003c22e                HighWord
+                0x80038bc8                ResizeString
+                0x8003cee6                IsDirectory
+                0x8003aabe                ReadLongIntegerArray
+                0x8003c220                Low
+                0x80039d6c                Gather
+                0x8003ceb8                MakeUpper
+                0x8003b91e                InitStringStruct
+                0x8003d8de                CheckStringArrayBounds
+                0x8003c64e                CheckDenominator
+                0x8003dafa                hextoi
+                0x8003b242                WriteStringArray
+                0x8003c110                SetByte
+                0x8003d99c                InitializeRampInfo
+                0x8003d060                WriteSignedLongInteger
+                0x8003ba10                InitNvramStringStruct
+ *fill*         0x8003deea        0x6
+                0x8003def0                .=ALIGN(0x10)
+ *(.eh_frame)
+                0x8003def0                .=ALIGN(0x10)
+ *(.gnu.linkonce.t.*)
+                0x8003def0                .=ALIGN(0x4)
+                0x8003def0                __CTOR_LIST__=.
+                0x8003def0                ___CTOR_LIST__=.
+                0x8003def0        0x4 LONG 0x0 (((__CTOR_END__-__CTOR_LIST__)/0x4)-0x2)
+ *(.ctors)
+                0x8003def4        0x4 LONG 0x0
+                0x8003def8                __CTOR_END__=.
+                0x8003def8                __DTOR_LIST__=.
+                0x8003def8                ___DTOR_LIST__=.
+                0x8003def8        0x4 LONG 0x0 (((__DTOR_END__-__DTOR_LIST__)/0x4)-0x2)
+ *(.dtors)
+                0x8003defc        0x4 LONG 0x0
+                0x8003df00                __DTOR_END__=.
+ *(.rodata)
+ .rodata        0x8003df00     0x176f S2_ConferenceHub.o
+ .rodata        0x8003f66f      0x2a7 S2_CMIS_Hub_Library.o
+ .rodata        0x8003f916      0x2fd S2_Initialization_Manager.o
+ .rodata        0x8003fc13      0xa6c S2_EndpointComm.o
+ .rodata        0x8004067f      0x32b S2_SDKEndpoint.o
+ .rodata        0x800409aa      0x3de S2_Conference___RoomControl.o
+ .rodata        0x80040d88     0x1484 S2_Rivulet.o
+ .rodata        0x8004220c      0x90f S2_CMIS_Hub_XML.o
+ .rodata        0x80042b1b      0xc54 library.o
+ *(.gcc_except_table)
+ *fill*         0x8004376f        0x1
+                0x80043770                .=ALIGN(0x2)
+                0x80043770                __INIT_SECTION__=.
+                0x80043770        0x4 LONG 0x4e560000
+ *(.init)
+                0x80043774        0x2 SHORT 0x4e5e
+                0x80043776        0x2 SHORT 0x4e75
+                0x80043778                __FINI_SECTION__=.
+                0x80043778        0x4 LONG 0x4e560000
+ *(.fini)
+                0x8004377c        0x2 SHORT 0x4e5e
+                0x8004377e        0x2 SHORT 0x4e75
+ *(.lit)
+                0x80043780                .=ALIGN(0x10)
+                0x80043780                _etext=.
+                0x80043780                etext=.
+
+.data           0x80043780        0x0
+                0x80043780                copy_start=.
+ *(.shdata)
+ *(.data)
+ *(.gnu.linkonce.d.*)
+                0x80043780                .=ALIGN(0x10)
+                0x80043780                _edata=.
+                0x80043780                copy_end=.
+
+.got
+ *(.got.plt)
+ *(.got)
+
+EntryList       0x80043780      0x880
+ *(EntryList)
+ EntryList      0x80043780      0x110 S2_ConferenceHub.o
+                0x80043780                S2_ConferenceHub_Entry
+ EntryList      0x80043890      0x110 S2_CMIS_Hub_Library.o
+                0x80043890                S2_CMIS_Hub_Library_Entry
+ EntryList      0x800439a0      0x110 S2_Initialization_Manager.o
+                0x800439a0                S2_Initialization_Manager_Entry
+ EntryList      0x80043ab0      0x110 S2_EndpointComm.o
+                0x80043ab0                S2_EndpointComm_Entry
+ EntryList      0x80043bc0      0x110 S2_SDKEndpoint.o
+                0x80043bc0                S2_SDKEndpoint_Entry
+ EntryList      0x80043cd0      0x110 S2_Conference___RoomControl.o
+                0x80043cd0                S2_Conference___RoomControl_Entry
+ EntryList      0x80043de0      0x110 S2_Rivulet.o
+                0x80043de0                S2_Rivulet_Entry
+ EntryList      0x80043ef0      0x110 S2_CMIS_Hub_XML.o
+                0x80043ef0                S2_CMIS_Hub_XML_Entry
+                0x80044000                .=ALIGN(0x4)
+
+FunctionList    0x80044000        0x4
+ *(FunctionList)
+ FunctionList   0x80044000        0x4 globals.o
+                0x80044000                g_pFunctions
+                0x80044004                .=ALIGN(0x4)
+
+.bss            0x80044004        0x0
+                0x80044004                .=ALIGN(0x4)
+                0x80044004                __bss_start=.
+ *(.shbss)
+ *(.bss)
+ *(COMMON)
+                0x80044008                _end=ALIGN(0x8)
+                0x80044008                __end=_end
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+LOAD S2_ConferenceHub.o
+LOAD S2_CMIS_Hub_Library.o
+LOAD S2_Initializa
