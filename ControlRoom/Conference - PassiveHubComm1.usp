@@ -1,0 +1,1216 @@
+/******************************************************************************
+//  ConMed Integrated Systems
+//  Conference Room - Passive
+//
+//  $Id: Conference\040-\040PassiveHubComm.usp,v 1.11 2009/01/23 00:55:53 jjohns Exp $
+//
+******************************************************************************/
+//  PURPOSE
+//	-------------
+//  This module supports the communications to a passive endpoint.
+//  There is no GUI for this passive endpoint, yet only one room at a time can
+//	access the room.  Therefore, this room will auto-answer all rooms that
+//  attempt to communicate with it. 
+//  Also, passive rooms do not actively support VTC functionality.
+//
+/*********************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*********************************************************************************/
+// #SYMBOL_NAME "Conference - PassiveHubComm1"
+// #HINT ""
+// #DEFINE_CONSTANT
+
+#DEFINE_CONSTANT	MODULE_NAME		"PassiveHubComm"
+
+#DEFINE_CONSTANT	MAX_ROOMS		16   
+  
+#DEFINE_CONSTANT	CALL_TIMEOUT		3	/* Call Timer - # of minutes wait for user action */ 
+#DEFINE_CONSTANT	VTC_REQUEST_TIMEOUT	2	/* Call Timer for VTC Call (with no answer) */
+#DEFINE_CONSTANT	MSG_DISPLAY_BRIEF	500 /* Display info message for 5 seconds. 			  */
+
+#DEFINE_CONSTANT	CHAR_STX		"02"
+#DEFINE_CONSTANT	CHAR_ETX		"03"
+
+#DEFINE_CONSTANT	HUB_DA			"99" 
+
+#DEFINE_CONSTANT	MAX_RMNAME_LENGTH	20
+
+#DEFINE_CONSTANT	PROTOCOL_VERSION	"003"
+
+/* System Communication Message Types */
+#DEFINE_CONSTANT	IMSG_KEEPALIVE		10
+#DEFINE_CONSTANT	IMSG_SYSTEMSTATUS	11 
+#DEFINE_CONSTANT	IMSG_REMOVEME		12
+
+#DEFINE_CONSTANT	IMSG_CALL_REQUEST	20
+#DEFINE_CONSTANT	IMSG_CALL_ANSWER	21
+#DEFINE_CONSTANT	IMSG_CALL_END		22
+#DEFINE_CONSTANT	IMSG_CALL_DENY		23
+#DEFINE_CONSTANT	IMSG_CALL_BUSY		24 
+#DEFINE_CONSTANT	IMSG_CALL_STATUS	25
+#DEFINE_CONSTANT	IMSG_CALL_LAST		26  //Not used...
+
+#DEFINE_CONSTANT	IMSG_VTC_REQUEST	30	// request connection to tandberg
+#DEFINE_CONSTANT	IMSG_VTC_ACCEPT		31	// connection established to tandberg
+#DEFINE_CONSTANT	IMSG_VTC_END		32	// release the tandberg
+#DEFINE_CONSTANT	IMSG_VTC_DENY		33
+#DEFINE_CONSTANT	IMSG_VTC_BUSY		34
+#DEFINE_CONSTANT	IMSG_VTC_DATA		35 
+#DEFINE_CONSTANT	IMSG_VTC_STATUS		36	// unused
+#DEFINE_CONSTANT 	IMSG_VTC_CALL		37	// Make a call
+#DEFINE_CONSTANT 	IMSG_VTC_INCOMING  	38	// Incoming call
+#DEFINE_CONSTANT 	IMSG_VTC_LIVE		39	// Call active
+#DEFINE_CONSTANT 	IMSG_VTC_DISCON		40	// No call active
+
+#DEFINE_CONSTANT	IMSG_CUSTOM_ROUTE	41
+
+/* Conference Call States */
+#DEFINE_CONSTANT	CALL_IDLE		0
+#DEFINE_CONSTANT	CALL_CONNECTING	1
+#DEFINE_CONSTANT	CALL_ACTIVE		2	/* Similar to Call active */
+#DEFINE_CONSTANT	CALL_END		3	// notused
+#DEFINE_CONSTANT	CALL_RINGING	4
+#DEFINE_CONSTANT	CALL_ANSWER		5	// notused
+#DEFINE_CONSTANT	CALL_NOTREADY	6 	// disable call buttons 
+#DEFINE_CONSTANT	CALL_STBY		7
+#DEFINE_CONSTANT    CALL_RESERVED   8	// holding resource
+
+/* Call Types */
+/* These need to match STATE_C0 through STATE_C3 in the Conference Hub */
+#DEFINE_CONSTANT	CTYPE_NOCONNECT		0 	// used by Hub only
+#DEFINE_CONSTANT	CTYPE_NONE			1
+#DEFINE_CONSTANT	CTYPE_ROOMCALL		2
+#DEFINE_CONSTANT	CTYPE_VTCCALL		3 
+#DEFINE_CONSTANT	CTYPE_AUDIOCALL		4	/* Not supported at this time */
+
+// Conferencing States
+//-----------------------------------------------------------
+#DEFINE_CONSTANT	CONFERENCE_READY	0
+#DEFINE_CONSTANT	CONFERENCE_RQST		1
+#DEFINE_CONSTANT	CONFERENCE_LIVE		2
+#DEFINE_CONSTANT	CONFERENCE_STBY		3
+#DEFINE_CONSTANT	CONFERENCE_RSVD		4
+
+/* Display message for GUI */
+#DEFINE_CONSTANT	CONF_NAME_UNKNOWN	"Unknown"
+
+//Device Type - O for Operating Room, C for Conference Room, E for "Endpoint", F for Family Consultation
+#DEFINE_CONSTANT	DEVICE_TYPE			"E"
+
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+/*********************************************************************************
+  Include Libraries
+  (Uncomment and include additional librarys as needed)
+*********************************************************************************/
+// #CRESTRON_LIBRARY ""
+
+#USER_LIBRARY "CMIS_Hub_Library"
+
+/********************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+********************************************************************************/
+// Input Signals
+// DIGITAL_INPUT 
+// Inititialization Stage Triggers
+DIGITAL_INPUT	diAssertStage1,
+				diAssertStage2,
+				diAssertStage3,
+				diInitStagesComplete;
+
+DIGITAL_INPUT 	sigRmAttrConference;			/* Conferencing Mode Enable */
+DIGITAL_INPUT	sigRmAttrPermission;
+DIGITAL_INPUT	sigHubConnected;		/* Verify ethernet connectivity */ 
+
+DIGITAL_INPUT	sigSendCallStatus;	/* Signal is active when a conference target has changed sources */
+DIGITAL_INPUT	sigRoomActive;
+DIGITAL_INPUT	sigConfRoute_Trig;
+DIGITAL_INPUT	sigRoomShutdown;
+
+// ANALOG_INPUT  
+ANALOG_INPUT	aiRmAttrSVidCountIn;
+ANALOG_INPUT	aiRmAttrRGBCountIn;
+ANALOG_INPUT	aiRmAttrHDCountIn;
+ANALOG_INPUT	aiRmAttrSVidCountOut;
+ANALOG_INPUT	aiRmAttrRGBCountOut;
+ANALOG_INPUT	aiRmAttrHDCountOut;
+ANALOG_INPUT	aiTarget1Source;
+
+// STRING_INPUT
+STRING_INPUT 	siRoomName[MAX_RMNAME_LENGTH];
+STRING_INPUT 	Rx_FmHub[255];
+STRING_INPUT	siConferenceOutSource[MAX_RMCONF][30];
+
+// BUFFER_INPUT 
+
+// Output Signals
+//DIGITAL_OUTPUT
+// Inititialization Stage Triggers
+DIGITAL_OUTPUT	doStage0Complete,
+				doStage1Complete,
+				doStage2Complete,
+				doStage3Complete;
+
+DIGITAL_OUTPUT 	sigHubCommEnable;
+DIGITAL_OUTPUT	sigConferenceActive;
+DIGITAL_OUTPUT	sigPrivacyMode;
+// ANALOG_OUTPUT 
+ANALOG_OUTPUT	aoConferenceState;
+
+// STRING_OUTPUT
+STRING_OUTPUT	Tx_ToHub;
+
+INTEGER giConferencing;
+INTEGER giPermission;
+INTEGER	giRmAttrSVidCountIn;	// number of Svideo lines into local room
+INTEGER giRmAttrRGBCountIn;		// number of RGB lines into local room
+INTEGER giRmAttrDVICountIn;		// number of HD lines into local room
+INTEGER	giRmAttrAllCountIn;		// number of lines into local room, combined
+INTEGER	giRmAttrSVidCountOut;	// number of Svideo lines out of local room
+INTEGER giRmAttrRGBCountOut;	// number of RGB lines out of local room
+INTEGER giRmAttrDVICountOut;		// number of HD lines out of local room
+INTEGER	giRmAttrAllCountOut;	// number of lines out of local room, combined
+INTEGER giRoomConferenceInProgress;	// On when conference active
+
+STRING  gModInstance[30];	// Module Instance
+
+/*******************************************************************************************
+  Structure Definitions
+  (Uncomment and define structure definitions as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: struct.myString = "";
+*******************************************************************************************/
+STRUCTURE SYSTEMSTATUS
+{
+	integer iID;
+	string	sCurName[20];
+	string	sNewName[20];
+};
+
+STRUCTURE HUBSTATUS
+{
+	integer iConnectedToHub;
+	integer iSysRoomCount;
+	integer iVTC_Available;
+	integer iVTC_Controller;
+};
+
+STRUCTURE ROOMSTATUS
+{
+	integer iAddress;
+	integer iPrivacy;
+	string	sAddress[2];
+};
+
+STRUCTURE CALLSTATUS
+{
+	integer iState;
+	integer iType;
+	integer iRemotePrivacy;
+	integer iTimer;
+	integer iRemoteA;
+	string	sRemoteA[2];
+	string	sRemoteN[20];
+};
+
+
+HUBSTATUS		Hub;
+CALLSTATUS		MyCall;
+ROOMSTATUS		MyRoom;
+SYSTEMSTATUS 	Room[MAX_ROOMS];
+
+/*******************************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+*******************************************************************************************/
+// INTEGER
+INTEGER		gHubReady;		// Set 1 when Hub is ready
+
+// STRING  
+STRING		sHubDA[2];		// Hub Destination Address (address "99")
+string		gsRmAttrName[MAX_RMNAME_LENGTH];
+
+/*******************************************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+*******************************************************************************************/     
+Integer_Function strcmp(string a, string b)
+{
+    integer i, j, k, l;
+    
+    i = len(a);
+    j = len(b);
+    
+    if (i <> j)
+    	return (1);
+    	
+    for (i=1 to j step 1) 
+    {
+    	k = byte(a, i);
+    	l = byte(b, i);
+    	if (k <> l)
+    	{
+    		//*DEBUG*/print("String Compare Mismatch found, %s <> %s\n", a, b);
+    		return (1);
+    	}
+    		
+    }
+	return (0);
+}
+
+String_function ParseRoomName(string sname)
+{
+	integer length;
+	string stemp[MAX_RMNAME_LENGTH];
+	string stoken[MAX_RMNAME_LENGTH];
+        	
+    stoken = remove(" ", sname);
+    length = len(stoken);
+
+	//*DEBUG*/ print("sname:%s, stoken:%s, length:%i\n", sname, stoken, length);
+                                                                                        
+    if (length = 0)
+    {
+    	/* Space not found  */
+    	/* so use as-is		*/
+    	stemp = stoken + sname;
+		//*DEBUG*/ print("No space found, %s\n", stemp);
+    }
+    else
+    {
+    	length = length - 1;
+		stemp = left(stoken, length);
+    	stemp = stemp + chr(13) + sname;
+    	//*DEBUG*/ print("Space found at position %i, %s\n", length, stemp);
+    }
+    
+    return(stemp);
+}
+
+// Sets all appropriate parameters for the current call state
+Function SetCallState(integer calltype, integer callstate, string remote_name)
+{
+
+	cswitch (callstate)
+	{
+		case (CALL_ACTIVE):
+		{
+			if (calltype = CTYPE_ROOMCALL)
+			{
+				aoConferenceState = CONFERENCE_LIVE;
+				sigConferenceActive = ON;
+				giRoomConferenceInProgress = ON;
+
+            }
+            break;
+        }
+		case (CALL_RINGING):
+		{
+			if (calltype = CTYPE_NONE)
+			{
+				aoConferenceState = CONFERENCE_RQST;
+				sigConferenceActive = OFF;
+				giRoomConferenceInProgress = OFF;
+        	}
+        	break;
+        }
+		case (CALL_IDLE):
+		{
+			aoConferenceState = CONFERENCE_READY;
+			sigConferenceActive = OFF;
+			giRoomConferenceInProgress = OFF;
+			break;
+		}
+		case (CALL_CONNECTING):
+		{
+			if (calltype = CTYPE_NONE)
+			{
+				aoConferenceState = CONFERENCE_RQST;
+				sigConferenceActive = OFF;
+				giRoomConferenceInProgress = OFF;
+			}
+			break;
+		}
+        case (CALL_NOTREADY):
+		{
+			// Similar to CALL_IDLE, but Start button is disabled
+
+//			aoConferenceState = CONFERENCE_READY;
+			sigConferenceActive = OFF;
+			giRoomConferenceInProgress = OFF;
+
+         	break;
+		}
+		case (CALL_STBY):
+		{
+			if (calltype = CTYPE_ROOMCALL)
+			{
+				aoConferenceState = CONFERENCE_STBY;
+			}
+			break;
+		}
+        default:
+        {
+        	print ("%s: SetCallState() - Invalid Call State \n", gModInstance);
+        	break;
+        }
+	}
+}
+
+
+// This function will generate a PROTOCOL 003 form message.
+Function SendKeepAliveMessage()
+{
+	string sXmtMessage[50];
+	string sHeaderBlk[10];		// 7 bytes
+	string sMsgBlk[40];			// 36 bytes
+	string sEndBlk[5];			// 3 bytes
+    string sCallState[5];		// 3 bytes
+              
+	sCallState	= "";
+
+	// This data was added in protocol 002
+	MakeString(sCallState,"%d%02d", MyCall.iType, MyCall.iRemoteA);
+
+	sHeaderBlk 	= CHAR_STX + MyRoom.sAddress + HUB_DA + ":";
+	sMsgBlk		= ItoA(IMSG_KEEPALIVE) + ":" + gsRmAttrName + ":"
+										 + DEVICE_TYPE
+										 + PROTOCOL_VERSION
+										 + ItoA(giPermission)
+										 + ItoA(giRmAttrSVidCountIn)
+										 + ItoA(giRmAttrRGBCountIn)
+										 + ItoA(giRmAttrDVICountIn)		// HDCountIn in protocol 003
+										 + ItoA(giRmAttrSVidCountOut)	// SvidCountOut in protocol 003
+										 + ItoA(giRmAttrRGBCountOut)	// RGBCountOut in protocol 003
+										 + ItoA(giRmAttrDVICountOut)		// HDCountOut in protocol 003
+										 + sCallState + ":";		// sCallState in protocol 002
+
+	sEndBlk		= CHAR_ETX;
+
+	sXmtMessage = sHeaderBlk + sMsgBlk + sEndBlk;
+	//*DEBUG*/ print("%s: Local: %s\n", gModInstance, sXmtMessage);
+
+	Tx_ToHub = sXmtMessage;
+
+	//*DEBUG*/ print("%s: Sent KeepAlive message\n", gModInstance);
+}
+
+Function SendHubMessage(integer msg)
+{
+	string sXmtMessage[200];
+	string sHeaderBlk[10];
+	string sMsgBlk[150];
+	string sEndBlk[5];
+	string sRemoteDA[2];
+    
+    sRemoteDA = "99";
+			
+	sHeaderBlk 	= CHAR_STX + MyRoom.sAddress + sRemoteDA + ":";
+
+	if (msg = IMSG_CUSTOM_ROUTE)
+	{
+		sMsgBlk = ItoA(msg) + ":1"		//"2" is the target cnt for this endpoint.
+				+ ItoA(aiTarget1Source) + "0" + ":";
+	}
+
+	sEndBlk	= CHAR_ETX;
+
+	sXmtMessage = sHeaderBlk + sMsgBlk + sEndBlk;
+	Tx_ToHub = sXmtMessage;
+   
+    //*DEBUG*/ print("%s: Local: %s\n", gModInstance, sXmtMessage);
+}
+
+
+// This function will generate PROTOCOL 003 form messages
+Function SendCallMessage(integer msg, integer da)
+{
+	string sXmtMessage[200];
+	string sHeaderBlk[10];
+	string sMsgBlk[150];
+	string sEndBlk[5];
+	string sRemoteDA[2];
+
+    if (da > 9)
+		sRemoteDA = ItoA(da);
+	else    
+		sRemoteDA = "0" + ItoA(da);
+			
+	sHeaderBlk 	= CHAR_STX + MyRoom.sAddress + sRemoteDA + ":";
+	if (msg = IMSG_CALL_STATUS)
+	{
+		sMsgBlk = ItoA(msg) + ":" + ItoA(MyRoom.iPrivacy) 
+				+ "+1," + siConferenceOutSource[1]
+				+ "+2," + siConferenceOutSource[2]
+				+ "+3," + siConferenceOutSource[3]
+				+ "+4," + siConferenceOutSource[4] + "+:";
+	}
+	else if (msg = IMSG_CUSTOM_ROUTE)
+	{
+		sMsgBlk = ItoA(msg) + ":1"
+				+ ItoA(aiTarget1Source) + "0" + "+";
+	}
+	else
+	{
+		sMsgBlk	= ItoA(msg) + ":" + gsRmAttrName + "+" 
+								  + ItoA(giPermission)
+								  + ItoA(giRmAttrSVidCountIn)
+								  + ItoA(giRmAttrRGBCountIn) 
+								  + ItoA(giRmAttrDVICountIn)		// HDCountIn in protocol 003
+								  + ItoA(giRmAttrSVidCountOut)	// SvidCountOut in protocol 003
+								  + ItoA(giRmAttrRGBCountOut)	// RGBCountOut in protocol 003
+								  + ItoA(giRmAttrDVICountOut)	// RGBCountOut in protocol 003
+								  + ":";
+	}
+	sEndBlk	= CHAR_ETX;
+
+	sXmtMessage = sHeaderBlk + sMsgBlk + sEndBlk;
+	Tx_ToHub = sXmtMessage;
+   
+    //*DEBUG*/ print("%s: Local: %s\n", gModInstance, sXmtMessage);
+}
+
+
+Function ProcessSystemStatus(integer iCmd, integer iSA, integer iDA, string sData)
+{
+	integer i, iRmCnt, iRmID, length, iVTC;
+	string stoken[20];
+	string sfield[20];
+	string stype[2];
+	string sversion[3];
+	string sRmCnt[2];
+	string sVTCavail[2];
+	string sVTCctl[2];
+	string sVTCtype[2];
+	string sRmID[2];
+	string s1Name[20];
+	string s2Name[20];
+
+	//*DEBUG*/ print("%s: HubMsg: System Status\n", gModInstance);
+	MyRoom.iAddress = iDA;
+	iRmID = iDA;
+	
+	if (iRmID > 9)
+		MyRoom.sAddress = ItoA(iDA);
+	else
+		MyRoom.sAddress = "0" + ItoA(iDA);
+	if (iSA <> 99)
+		print("%s: Error in System Status Hub Address\n", gModInstance);
+
+	sHubDA  = ItoA(iSA);
+	//*DEBUG*/print("%s: iMyRoomSA: %i\n", gModInstance, iMyRoomSA);
+
+	/* First field includes the following:				**
+	**		Device Type - 1 character "H" for the Hub	**
+	**		Protocol Version - 3 characters				**
+	**		System Room Count - 2 characters			**
+	**		VTC Resource availability - 1 char			**
+	**		VTC Controlling Room - 2 char				**
+	**		VTC Type - 2 char							*/ 
+	if (find("+", sdata))
+	{
+		stoken = remove("+", sdata);
+		length = len(stoken) - 1;
+		sfield = left(stoken, length);
+
+		stype 		= left(stoken, 1);		//device type
+		sversion	= mid (stoken, 2, 3);	//version #
+		sRmCnt	 	= mid (stoken, 5, 2);	//Room Count
+		sVTCavail 	= mid (stoken, 7, 1);	//VTC device available
+		sVTCctl 	= mid (stoken, 8, 2);	//VTC in use
+		sVTCtype	= mid (stoken, 10, 2);	//VTC type
+
+        //*DEBUG*/print("%s: Protocol Version: %s\n", gModInstance, sversion);
+		// Note: Protocol from Hub to Room should always match room
+		if (sversion <> PROTOCOL_VERSION)
+		{
+           	print ("%s: Error: Hub is speaking protocol %s, Room %02d expects %s\n", gModInstance, sversion, iRmID, PROTOCOL_VERSION);
+		}
+
+		iRmCnt = Atoi(sRmCnt);
+		//*DEBUG*/print("%s: iRmCnt-%i\n", gModInstance, iRmCnt);
+	}
+	
+	/* Find out which ones are active */
+	/* Process all room data from the message */
+
+	if (iRmCnt > MAX_ROOMS)
+		iRmCnt = MAX_ROOMS;
+
+	for (i = 1 to iRmCnt step 1)
+	{
+		if (find("+", sdata))
+		{
+			stoken = remove("+", sdata);
+			length = len(stoken) - 1;
+			sfield = left(stoken, length);
+			//*DEBUG*/ print("%s: Field %s\n", gModInstance, sfield);
+			if (find(",", sfield))
+			{
+				stoken = remove(",", sfield);
+				length = len(stoken) - 1;
+				sRmID = left(stoken, length);
+				iRmID = Atoi(sRmID);
+				length = len(sfield);
+				if (length > 1)
+					s1Name = sfield;
+				else
+					s1Name = "Offline";
+			}
+			Room[i].iID = iRmID;
+			Room[i].sNewName = s1Name;
+			//*DEBUG*/ print("%s: Room: %i %s\n", gModInstance, iRmID, s1Name);	
+		}
+	}
+		
+
+
+	
+	/* Finally, update the RoomCount output */
+	Hub.iSysRoomCount = iRmCnt;
+
+	// If we've been waiting for Hub to talk, enable room conferencing
+	if ( gHubReady = OFF ) {
+		MyCall.iState = CALL_IDLE;
+		SetCallState(CTYPE_NONE, CALL_IDLE, MyCall.sRemoteN);
+		gHubReady = ON;
+	}
+	//*DEBUG*/ print("%s: Received and processed System Status\n", gModInstance);
+}
+
+
+// Requires a PROTOCOL 003 formatted call message
+Function ProcessCallMessage(integer iCallMsg, integer iSA, integer iDA, string sData)
+{
+	integer iPermission, iPrivacy;
+	integer iSVidCntIn, iRGBCntIn, iDVICntIn;
+	integer iSVidCntOut, iRGBCntOut, iDVICntOut;
+	integer i, length;
+	long_integer data;
+	integer iNewCallState;
+	integer iNewCallType;
+	string stoken[20];
+	string slabel[20];
+	string sName[30];
+
+	//*DEBUG*/ print("%s: Call Message Data: [%s]\n", gModInstance, sData);
+	iDVICntIn = 0;
+	iSVidCntOut = 0;
+	iRGBCntOut = 0;
+	iSvidCntOut = 0;
+	sName = Room[iSA].sCurName;
+
+    if (iCallMsg = IMSG_CALL_STATUS)
+    {
+	    if (find("+", sData))
+		{
+			stoken = remove("+", sdata);
+	    	iPrivacy = Atoi(stoken);	//AtoI(sData);
+	    	if (iPrivacy = 0) 
+	    	{
+	    		MyCall.iRemotePrivacy = OFF;
+	    		//*DEBUG*/print("%s: Remote Privacy is OFF\n", gModInstance);
+	    	}
+	    	else
+	    	{
+	    		//*DEBUG*/print("%s: Remote Privacy is ON\n", gModInstance);
+	    		MyCall.iRemotePrivacy = ON;
+	    	}
+		}
+
+    }
+	else	// Not a call status message; call request, answer, end, deny, busy...
+	{
+	    if (find("+", sData))
+		{
+			/* First field includes the Room Name attribute. */   
+			stoken = remove("+", sdata);
+			length = len(stoken) - 1;
+			sName = left(stoken, length);
+		}
+	    data = AtoL(sData);
+		// Call messages don't include protocol
+		// Assume that Hub will speak the Room's protocol
+		// Protocol 003+
+		//*DEBUG*/ print ("sData: %s\n", sData);
+
+		iDVICntOut = (data % 10);
+		data = (data / 10);
+		iRGBCntOut = (data % 10);
+		data = (data / 10);
+		iSVidCntOut = (data % 10);
+		data = (data / 10);
+
+		iDVICntIn = (data % 10);
+		data = (data / 10);
+		iRGBCntIn = (data % 10);
+		data = (data / 10);
+		iSVidCntIn = (data % 10);
+		data = (data / 10);
+
+		iPermission = (data % 10);
+
+		//*DEBUG*/ print("%s: Remote Room (%s) Attributes:\n", gModInstance, sName);
+		//*DEBUG*/ print("       Permission: %i\n", iPermission);	
+		//*DEBUG*/ print("       SVideo Line In Count: %i\n", iSVidCntIn);	
+		//*DEBUG*/ print("       RGB Line In Count: %i\n", iRGBCntIn);
+		//*DEBUG*/ print("       DVI Line In Count: %i\n", iDVICntIn);
+		//*DEBUG*/ print("       SVideo Line Out Count: %i\n", iSVidCntOut);	
+		//*DEBUG*/ print("       RGB Line Out Count: %i\n", iRGBCntOut);
+		//*DEBUG*/ print("       DVI Line Out Count: %i\n", iDVICntOut);
+	}
+	
+	iNewCallState = MyCall.iState;
+	iNewCallType  = MyCall.iType;
+	
+	cswitch (iCallMsg)
+	{
+		case (IMSG_CALL_REQUEST):
+		{
+    		//*DEBUG*/print("%s: RcvMsg: Room Call Activate\n", gModInstance);
+    		
+			/* Don't accept or use a call message unless idle **
+			** AND privacy is disabled.                       */ 
+			if (MyCall.iState = CALL_IDLE)	
+			{
+				if (MyRoom.iPrivacy <> ON)
+				{
+					MyCall.sRemoteN = sName;
+					MyCall.iRemoteA = iSA;
+					//*DEBUG*/print("%s: Processing Room Call Request from a remote room\n", gModInstance);
+				
+					//Don't need to check permission.  Will always auto answer incoming calls
+					//*DEBUG*/print("%s: Allow Autoanswer, going Live\n", gModInstance);
+					iNewCallState = CALL_ACTIVE;
+					iNewCallType  = CTYPE_ROOMCALL;
+					SendCallMessage(IMSG_CALL_ANSWER, iSA);
+					SetCallState(CTYPE_ROOMCALL, CALL_ACTIVE, MyCall.sRemoteN);
+					delay(100);
+					SendCallMessage(IMSG_CALL_STATUS, iSA);
+				}
+			}
+			else
+			{
+				//if (iSA <> MyCall.iRemoteA)
+				SendCallMessage(IMSG_CALL_BUSY, iSA);
+				//*DEBUG*/print("%s: SendMsg: Room Call Busy - because not idle, Call State %d\n", gModInstance, MyCall.iState);
+			}
+			break;
+		}
+		case (IMSG_CALL_ANSWER):	// answer a call request
+        {
+    		//*DEBUG*/print("%s: RcvMsg: Call Answer\n", gModInstance);
+        	if (MyCall.iState = CALL_CONNECTING)
+        	{
+        		iNewCallState = CALL_ACTIVE;
+        		iNewCallType  = CTYPE_ROOMCALL;
+				SetCallState(CTYPE_ROOMCALL, CALL_ACTIVE, MyCall.sRemoteN);
+				//Don't send Call Status initially.  Wait until Video Out updated. 
+				SendCallMessage(IMSG_CALL_STATUS, MyCall.iRemoteA);
+				//*DEBUG*/print("%s: SendMsg: Room Call Status\n", gModInstance);
+                                                   
+			}
+			break;
+		}
+		case (IMSG_CALL_END):	// terminate a call
+		{
+    		//*DEBUG*/print("%s: RcvMsg: Room Call End\n", gModInstance);
+			/* Only accept a Call end from my remote room */
+			if (iSA = MyCall.iRemoteA)
+			{
+				//*DEBUG*/ print("%s: Matching addresses, so My Call Terminated\n", gModInstance);
+				iNewCallState = CALL_IDLE;
+				iNewCallType  = CTYPE_NONE;
+				SetCallState(CTYPE_ROOMCALL, CALL_IDLE, MyCall.sRemoteN);
+				MyCall.iRemoteA = 0;
+			}
+			break;
+		}
+		case (IMSG_CALL_BUSY): 
+		{
+    		//*DEBUG*/print("%s: RcvMsg: Room, Call Busy\n", gModInstance);
+			iNewCallState = CALL_NOTREADY;
+			iNewCallType  = CTYPE_NONE;
+			SetCallState(CTYPE_ROOMCALL, CALL_NOTREADY, MyCall.sRemoteN);
+			delay(MSG_DISPLAY_BRIEF);
+			iNewCallState = CALL_IDLE;
+			SetCallState(CTYPE_NONE, CALL_IDLE, MyCall.sRemoteN);
+			break;		
+		}
+		case (IMSG_CALL_DENY):
+		{
+    		//*DEBUG*/print("%s: RcvMsg: Room, Call Deny\n", gModInstance);
+			iNewCallState = CALL_NOTREADY;
+			iNewCallType  = CTYPE_NONE;
+			SetCallState(CTYPE_ROOMCALL, CALL_NOTREADY, MyCall.sRemoteN);
+			delay(MSG_DISPLAY_BRIEF);
+			iNewCallState = CALL_IDLE;
+			SetCallState(CTYPE_NONE, CALL_IDLE, MyCall.sRemoteN);
+			break;
+		}
+		case (IMSG_CALL_STATUS):
+		{
+    		//*DEBUG*/print("%s: RcvMsg: Room, Call Status\n", gModInstance);
+			if (MyCall.iState = CALL_ACTIVE)
+			{
+				if (iPrivacy > 0)
+				{
+					SetCallState(CTYPE_ROOMCALL, CALL_STBY, MyCall.sRemoteN);
+				}
+				// Only set to active if we're in standby (don't repeat active calls)
+				else if (aoConferenceState = CONFERENCE_STBY)
+				{
+					SetCallState(CTYPE_ROOMCALL, CALL_ACTIVE, MyCall.sRemoteN);
+				}
+			}
+			break;
+		}
+		default:
+		{
+			//*DEBUG*/print("%s: RcvMsg: Other call action\n", gModInstance);
+			break;
+		}
+	}		
+	
+	MyCall.iState = iNewCallState;
+	MyCall.iType  = iNewCallType;
+}
+
+
+Function ProcessHubMsg(string smsg)
+{
+	integer length, iSA, iDA;
+	integer iMsgCmd;
+	string 	slocal[255];
+	string sToken[255];		// length must match slocal length
+	string sHeader[8];
+	string sCmd[2];
+	string sData[255];		// length must match slocal length
+	string spSA[2];
+	string spDA[2];
+                    
+	slocal = smsg;
+	//*DEBUG*/ if (11 != atoi(mid(slocal,8,2))) print("%s: Msg from Hub: [%s]\n", gModInstance, slocal);
+ 
+	/* Verify STX, DA, and SA first...ETX is last*/
+
+	//Need better error check on length parameters... 
+
+	/* Extract and Process the Header */
+	if (find(":", slocal))
+	{
+		/* Assume this is the header */
+		stoken = remove(":", slocal);
+		length = len(stoken) - 1;
+		sHeader = left(stoken, length);
+		//*DEBUG*/print("sHeader-%s  ", sHeader);
+		//VerifyHeader(sHeader);
+		if (length > 5) 
+		{
+			/* Header length is legitimate */
+			/* At this time, assume SA and DA are also legitimate */
+			spSA = mid(sHeader, 3, 2);
+			spDA = mid(sHeader, 5, 2);
+			iSA = AtoI(spSA);
+			iDA = AtoI(spDA);
+		}		  
+	}
+
+	/* Extract the Command field */	
+	if (find(":", slocal))
+	{
+		stoken = remove(":", slocal);
+		length = len(stoken) - 1;
+		sCmd = left(stoken, length);
+		iMsgCmd = Atoi(sCmd);
+		//*DEBUG*/print("iCmd-%i  ", iMsgCmd);
+	}
+	
+	if (find(":", slocal))  
+	{
+		stoken = remove(":", slocal);
+		length = len(stoken) - 1;
+		sData = left(stoken, length);
+		//*DEBUG*/print("sData-%s\n", sData);
+	}
+
+	/* Do not process messages with SA or DA address of zero.
+	** Only the hub may do that, and only for Keep-Alive messages.
+	*/
+	if ((iSA = 0) | (iDA = 0))
+		return;
+
+	/* Also true for messages with a command identifier of zero. */
+	if (iMsgCmd = 0)
+		return;
+	
+	cswitch (iMsgCmd)
+	{
+		case (IMSG_KEEPALIVE):
+		{
+			print("%s: System Error - Endpoint shouldn't receive KA message\n", gModInstance);
+			break;
+		}
+		case (IMSG_SYSTEMSTATUS):
+		{		
+			//*DEBUG*/ print("%s: System Status message received\n", gModInstance);
+			ProcessSystemStatus(iMsgCmd, iSA, iDA, sData);
+			break;
+		}
+		// case (IMSG_VTC_REQUEST):	Should not see this one.
+		// case (IMSG_VTC_END):	 	Also shouldn't see this one.
+		// case (IMSG_VTC_DATA): 	Shouldn't see this one...
+		case (IMSG_VTC_ACCEPT):
+		case (IMSG_VTC_DENY):		/* Not sure if this one will be used */
+		case (IMSG_VTC_BUSY):
+		case (IMSG_VTC_CALL):
+		case (IMSG_VTC_INCOMING):
+		case (IMSG_VTC_LIVE):
+		case (IMSG_VTC_DISCON):
+		{
+			break;
+		}
+		case (IMSG_CALL_REQUEST):
+		case (IMSG_CALL_ANSWER):
+		case (IMSG_CALL_END):
+		case (IMSG_CALL_DENY):
+		case (IMSG_CALL_BUSY):
+		case (IMSG_CALL_LAST): 
+		case (IMSG_CALL_STATUS):
+		{
+			//*DEBUG*/ print("%s: Room Call message\n", gModInstance);
+			ProcessCallMessage(iMsgCmd, iSA, iDA, sData);	//need work on message formatting...
+			break;
+		}
+		default:
+		{
+			print("%s: Message Type Error: Unrecognized command [%i]\n", gModInstance, iMsgCmd);
+			break;
+		}
+	}		
+}
+    
+
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+
+
+PUSH sigHubConnected
+{
+	//*DEBUG*/print("%s: %s connected to Hub\n", gModInstance, gsRmAttrName);
+
+	Hub.iConnectedToHub = ON;
+
+	//*DEBUG*/print ("%s: sigHubConnected went live; sending Keep Alive message\n", gModInstance);
+	SendKeepAliveMessage();
+
+	// See ProcessSystemStatus() for handling of enabling conferencing after hub connection
+}
+                                 
+
+RELEASE sigHubConnected
+{
+
+	delay(10);	// Tolerate short interruptions
+	
+	if (sigHubConnected = OFF)	// Tolerate short interruptions
+	{
+
+		Hub.iConnectedToHub = OFF;
+		//*DEBUG*/print ("%s: Hub Disconnected\n", gModInstance);
+
+		// Cancel any active call, show system disconnected
+		MyCall.iType  = CTYPE_NONE;
+		MyCall.iState = CALL_NOTREADY;
+		MyCall.iRemoteA = 0;	// Clear connected room ID
+		SetCallState(CTYPE_NONE, CALL_NOTREADY, MyCall.sRemoteN);
+
+		gHubReady = OFF;	// Indicate Hub connection is down
+
+	}
+}
+
+
+
+
+
+
+
+PUSH sigSendCallStatus
+{
+	if (MyCall.iType = CTYPE_ROOMCALL)
+	{
+		SendCallMessage(IMSG_CALL_STATUS, MyCall.iRemoteA);
+	}
+}
+
+PUSH sigConfRoute_Trig
+{
+	if (MyCall.iType = CTYPE_ROOMCALL)
+	{
+		SendHubMessage(IMSG_CUSTOM_ROUTE);
+	}
+
+}
+
+
+PUSH sigRoomActive
+{
+	delay(500);
+
+	SendKeepAliveMessage();
+
+}
+
+
+PUSH sigRoomShutdown
+{
+	//*DEBUG*/print("%s: Room Shutdown: ", gModInstance);
+	if (MyCall.iState <> CALL_IDLE)
+	{
+		if (MyCall.iType = CTYPE_ROOMCALL)
+	    {
+			//*DEBUG*/print("%s: Clear Room Call\n", gModInstance);
+	    	SendCallMessage(IMSG_CALL_END, MyCall.iRemoteA);
+
+	   		MyCall.iState = CALL_IDLE;
+	   		MyCall.iType  = CTYPE_NONE;
+
+			SetCallState(CTYPE_NONE, CALL_IDLE, MyCall.sRemoteN);
+	    }
+	}
+	else
+	{
+		//*DEBUG*/print("%s: Idle\n", gModInstance);
+	}
+	
+}
+
+
+CHANGE Rx_FmHub
+{
+	string sFmHub[255];
+
+	sFmHub = Rx_FmHub;
+	ProcessHubMsg(sFmHub);
+}
+
+CHANGE siRoomName
+{
+	string sLocal[30];
+	
+	sLocal = siRoomName;
+
+	if (len(sLocal) > 13)
+		gsRmAttrName = ParseRoomName(sLocal);
+	else
+		gsRmAttrName = sLocal;
+}
+
+
+function Stage0()
+{
+	integer i;
+	// Stage 0
+
+    // Initialize declared global and local variables/arrays as needed. 
+	giConferencing = GUI_DISABLED;
+	giPermission = 0;
+
+	giRmAttrRGBCountIn = 0;
+	giRmAttrSVidCountIn = 0;
+	giRmAttrDVICountIn = 0;
+	giRmAttrAllCountIn = 0;
+	giRmAttrAllCountOut = 0;
+
+    gModInstance = MODULE_NAME + "-" + GetSymbolReferenceName();
+
+    /* Initial knowledge of Hub Status */
+    Hub.iConnectedToHub = 0;		/* Not Connected */
+    Hub.iSysRoomCount	= 0;		/* System Room Count is zero */
+    Hub.iVTC_Available 	= 0;		/* VTC resource not available and not controlled */
+    Hub.iVTC_Controller = 0;
+
+    sHubDA = "99";			//Always "99" for the Hub   
+
+
+	gHubReady = OFF;
+
+   	MyRoom.iAddress = 0;
+   	MyRoom.iPrivacy = OFF;
+	MyRoom.sAddress = "00";		/* When the Source address has not been assigned yet.... */
+
+
+	// Alert system that stage 0 initialization is on
+	doStage0Complete = ON;
+}
+
+PUSH diAssertStage1
+{
+//	Purpose:
+//	When the "diAssertStage1" variable goes high, all Stage 1 initialization 
+//	activities should be performed.  Stage 1 initialization activities include:
+//		1. Assertion of configurable variables.
+//
+//	After completion of all STAGE 1 initialization activities the output variable
+//	"doStage1Complete" variable should be driven HIGH or ON.
+//
+//	NOTE: ALL STAGE 0 INITIALIZATION ACTIVITIES SHOULD BE COMPLETE FOR THIS MODULE
+//	PRIOR TO THIS FUNCTION CALL.  STAGE 0 activities include:
+//		1. Variable initialization
+//		2. Profile Initialization (Rack Specific Parameters)
+//		3. Configuration Variable file read and join assetion (THIS MODULE ONLY)
+//
+//	All STAGE 0 Initialization activities should be performed my function MAIN().  At
+//	the end of function MAIN(), the "doStage0Complete" output variable should be driven 
+//	HIGH or ON.
+//
+	integer i;
+	
+	giConferencing = sigRmAttrConference;
+	giPermission = sigRmAttrPermission;
+
+	giRmAttrDVICountIn = aiRmAttrHDCountIn;
+	giRmAttrRGBCountIn = aiRmAttrRGBCountIn;
+	giRmAttrSVidCountIn = aiRmAttrSVidCountIn;
+	giRmAttrDVICountOut = aiRmAttrHDCountOut;
+	giRmAttrRGBCountOut = aiRmAttrRGBCountOut;
+	giRmAttrSVidCountOut = aiRmAttrSVidCountOut;
+		//*DEBUG*/ print("%s: Local Room Attributes:\n", gModInstance);
+		//*DEBUG*/ print("       SVideo Line In Count: %i\n", giRmAttrSVidCountIn);
+		//*DEBUG*/ print("       RGB Line In Count: %i\n", giRmAttrRGBCountIn);
+		//*DEBUG*/ print("       HD Line In Count: %i\n", giRmAttrDVICountIn);
+		//*DEBUG*/ print("       SVideo Line Out Count: %i\n", giRmAttrSVidCountOut);
+		//*DEBUG*/ print("       RGB Line Out Count: %i\n", giRmAttrRGBCountOut);
+		//*DEBUG*/ print("       HD Line Out Count: %i\n", giRmAttrDVICountOut);
+
+	giRmAttrAllCountIn = giRmAttrSVidCountIn + giRmAttrRGBCountIn + giRmAttrDVICountIn;
+	if(giRmAttrAllCountIn > MAX_RMCONF)
+		giRmAttrAllCountIn = MAX_RMCONF;
+
+	giRmAttrAllCountOut = giRmAttrSVidCountOut + giRmAttrRGBCountOut + giRmAttrDVICountOut;
+	if(giRmAttrAllCountOut > MAX_RMCONF)
+		giRmAttrAllCountOut = MAX_RMCONF;
+	// Enable TCP/IP if Conferencing enabled
+	if (giConferencing)
+	{
+		//*DEBUG*/print("%s: CMIS Conferencing Enabled, opening Hub TCP/IP Communications\n", gModInstance);
+		sigHubCommEnable = ON;
+	}
+	else
+    	sigHubCommEnable = OFF;
+
+    for (i = 1 to MAX_ROOMS step 1)
+    {
+    	Room[i].iID = 0;
+    	Room[i].sCurName = CONF_NAME_UNKNOWN;
+    	Room[i].sNewName = CONF_NAME_UNKNOWN;
+    }
+
+	/* Initialize to no active calls */
+	MyCall.iState	= CALL_NOTREADY;
+	MyCall.iType	= CTYPE_NONE;
+	MyCall.iRemotePrivacy = OFF;
+	MyCall.iRemoteA	= 0;
+	MyCall.sRemoteA = "00";
+	MyCall.sRemoteN = CONF_NAME_UNKNOWN;
+	doStage1Complete = ON;
+}
+
+PUSH diAssertStage2
+{
+//	Purpose:
+//	When the "diAssertStage2" variable goes high, all Stage 2 initialization 
+//	activities should be performed.  Stage 2 initialization activities include:
+//		1. Enable I/0.
+//		2. Initialize Rack Components such as routers and power relays.
+//
+//	After completion of all STAGE 2 initialization activities the output variable
+//	"doStage2Complete" variable should be driven HIGH or ON.
+//
+	doStage2Complete = ON;
+}
+
+PUSH diAssertStage3
+{
+//	Purpose:
+//	When the "diAssertStage3" variable goes high, all Stage 3 initialization 
+//	activities should be performed.  Stage 3 initialization activities include:
+//		1. Activate the Touch Panel.
+//		2. Initialize Devices.
+//
+//	After completion of all STAGE 3 initialization activities the output variable
+//	"doStage3Complete" variable should be driven HIGH or ON.
+//
+
+	// Privacy
+	sigPrivacyMode		= OFF;
+
+	// The next two signals are sort of reversed in meaning.
+	sigConferenceActive = OFF;			// Room Conference status
+	giRoomConferenceInProgress = OFF;	// System busy; includes conference, calling out, incoming call
+
+    aoConferenceState = CONFERENCE_READY;
+	doStage3Complete = ON;
+}
+
+PUSH diInitStagesComplete
+{
+	integer i;
+	
+	// Now begin normal processing
+	while (giConferencing = ON)
+	{
+    	if (Hub.iConnectedToHub = ON)
+		{
+			SendKeepAliveMessage();
+
+//			//*DEBUG*/ print("%s: Connected\n", gModInstance);
+//			if (sigRoomActive = ON)
+//			{
+//				//*DEBUG*/print ("%s: sigRoomActive, sending KeepAlive Message\n", gModInstance);
+//				SendKeepAliveMessage();
+//			}
+
+			// wait 1 minute between passes...
+			// Every 5 seconds check for bouncing
+			delay(6000);
+		}
+		else
+		{
+			//*DEBUG*/print("%s: Not Connected\n", gModInstance);
+			delay(500);		//wait 5 seconds and check for hub again...
+		}
+
+	}
+
+	// Will never exit unless there is no conferencing functionality.
+}
+
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+
+Function Main()
+{
+	//WaitForInitializationComplete();
+
+	Stage0();
+}
+
+
+

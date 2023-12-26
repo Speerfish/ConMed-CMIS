@@ -1,0 +1,2616 @@
+/*******************************************************************************************
+  ConferenceHub.usp
+
+	Main Conference Hub controller source code.
+*******************************************************************************************/
+// $Id: ConferenceHub.usp,v 1.46 2008/10/16 18:56:25 jjohns Exp $
+// $Log: ConferenceHub.usp,v $
+// Revision 1.50  2008/12/06 02:01:50  jjohns
+// Fixes for prior checkin
+//
+// Revision 1.49  2008/12/05 22:43:17  jjohns
+// Add ClearOne Converge Pro 880, Extron SMP support
+//
+// Revision 1.48  2008/12/05 01:03:47  jjohns
+// Add ConferenceHub Rivulet.
+//
+// Revision 1.47  2008/11/19 22:30:46  jjohns
+// Correct "index" vs "i" bug
+// Rename signals
+//
+// Revision 1.46  2008/10/16 18:56:25  jjohns
+// Re-order inputs in conference hub (put analog array before string array)
+//
+// Revision 1.45  2008/10/16 00:39:08  jjohns
+// * Update all Hub SMW projects to 1.3A02 (split Audio/Video control into modules)
+// * Put logic version and P/N into CMIS_Hub_Library.usl, should be set before compiling
+// * Put technical support # into CMIS_Hub_Library.usl
+// * Add missing Front Desk VTP GUI file
+// * Update VTP files to incorporate CMIS logo where previously missing
+// * Update VTP files to include Logic as well as GUI part numbers
+// * Update VTP files to display technical support # from compiled logic
+// * Update VTP files to include website and copyright where previously missing
+//
+// Revision 1.44  2008/10/15 22:16:03  jjohns
+// Correct missing terminators on command strings to Audio and Video modules
+//
+// Revision 1.43  2008/10/14 00:47:28  jjohns
+// Split the audio and video routing control out of ConferenceHub
+//
+// Revision 1.42  2008/08/01 23:30:41  jjohns
+// Two changes:
+//
+// 1. Back out one change from 1.41:
+// "Default local endpoints to speak Protocol 003"
+// This isn't necessary; the local endpoints send keepalives that register themselves with their protocols.
+// Defaulting to 003 causes problems for 001 endpoints; if they're in an abandoned conference call, the call doesn't get reset.
+//
+// 2. Translate IMG_CALL_STATUS when the destination speaks protocol 001 and the source is 002 or 003.
+// 1.8A systems do not specify the text "No Signal" or "No Source" when a conferencing output's label is undefined.  1.7C systems expect a label and will display <> as the input string if no label is present.
+// The fix identifies empty labels and sets them to "No Signal".
+// This is not an issue when 1.8A conferences with 1.8A; in that case, the blank label is set to "No Source" by the receiving Nurse's Assistant.
+//
+// Revision 1.41  2008/07/21 19:03:02  jjohns
+// Hub Update for Emory, 1.3A01
+//
+// CMIS_Hub_Library.usl
+// - Pull FCRM_ID out; moved to Configure.usp
+//
+// Conference - HubComm.usp
+// - Added Module Instance to debug strings
+// - Set unused conference strings to <No Signal> instead of empty
+// - Count # of inputs up to MAX_RMCONF, not aiRmAttrSVidCountIn (A DRm can pick any of 4 lines to import on its single input line)
+// - During startup, initialize conference strings to <No Signal> instead of empty
+// - During startup, ensure gsConferenceInSource is initialized to a special value so that garbage memory may not cause a false positive in UpdateConfString().
+//
+// Conference - PassiveHubComm.usp
+// - In ProcessSystemStatus(), if Hub was disabled and a message is received, set room state to Idle
+//
+// Conference - RoomControl.usp
+// - Added Module Instance to debug strings
+//
+// ConferenceHub*.smw
+// - Emory: Stage initialization signals were not correct
+// - Emory: Don't activate PassiveHubComm until Stage 3 Complete
+// - Nebraska: Added SMW for Nebraska
+// - Other: Remove Configure/Initialization when unneeded
+// - ConferenceHub.smw should work with an appropriate Configure.usp (FCRm ID must be set to 7), but is now obsolete
+//
+// ConferenceHub.usp
+// - Read local room configuration from Hubconfigure.txt (lrattr parameter)
+// - Implement quote-deliniated string support in Hubconfigure.txt
+// - Default local endpoints to speak Protocol 003
+// - Signal when initialization complete (needed for correct startup of local rooms)
+//
+// Configure.usp
+// - Added FCRM ID
+// - Removed local room configuration data
+//
+// Revision 1.40  2008/06/04 21:50:41  jjohns
+// 1.3A01 Hub: Only permit input 32 to be routed to a single selected output at a time
+//
+// Revision 1.39  2008/06/04 20:26:51  jjohns
+// 1.3A01 Hub with Hub Status module, split SMWs for different sites
+//
+// Revision 1.38  2008/06/03 00:33:43  jjohns
+// Fix message translation bug (messages were not being translated)
+//
+// Revision 1.37  2008/03/04 22:50:27  jjohns
+// Disable some stray debug statements
+// Merge in minor changes to endpoint hubcomm code
+//
+// Revision 1.36  2008/03/04 03:04:11  jjohns
+// More Protocol 003 changes (needed to add lines out in each format)
+//
+// Revision 1.35  2008/02/21 01:36:35  jjohns
+// SCR 348 - DVI Conferencing
+//
+// Revision 1.34  2007/11/01 23:41:50  jjohns
+// Fix VTC disconnect behavior
+//
+// Revision 1.33  2007/10/13 01:37:49  jjohns
+// VTC call state fixes
+//
+// Revision 1.32  2007/10/11 16:58:55  jjohns
+// Route RGB for Hub
+//
+// Revision 1.31  2007/08/09 22:34:34  jjohns
+// #264 - Improve the conference protocol
+// #272 - Clear room call state if hub disconnects
+// #319 - Support Tandberg 3000 MXP
+//
+// Revision 1.30  2007/07/25 23:34:15  jjohns
+// Add Tandberg 3000 MXP
+//
+// Revision 1.29  2007/02/24 00:41:11  tbaker
+// Fixed bug with disconnect changing the state of the wrong array index.
+//
+// Revision 1.28  2007/02/23 19:14:55  tbaker
+// Fixed problem when 'view' tag not present in endpoint definition.  In this case all conference endpoints are enabled.
+//
+// Revision 1.27  2006/12/13 21:43:11  jjohns
+// #261 - improved VTC
+//
+// Revision 1.26  2006/10/30 16:47:13  kflesk
+// Ethernet communications change.  ConferenceHub module will now check
+// status of the TCP/IP symbol, and use data to determine when a connect retry
+// should be attempted.
+//
+// Revision 1.25  2006/10/23 21:32:40  kflesk
+// Nebraska specific changes added to the baseline
+// 1) Viewing Room video route change when Privacy established at remote end now working.
+// 2) Default video routes for viewing room now changed.
+// 3) Cancel button not immediately asserted until after message display of "No Answer",
+// "Busy", or "Declined" is made.
+//
+// Revision 1.24  2006/10/20 23:47:27  kflesk
+// Major update to provide intelligent local endpoints capable of participating
+// in call control protocol.
+//
+// 1) Implemented with two Dictation Rooms and Family Consultation Room (Emory)
+// 2) Co-exists with Nebraska software
+// 3) Modifies HubConfigure.txt use to allow explicit control of what enpoint
+//     can see another endpoint
+// 4) Added configure.usp module.  SW does not completely self configure between
+//    Emory and Nebraska.  Configuration mods may be made to this file.
+// 5) Added Dictation Room endpoint module that is replicated for the two Dictation
+//   Rooms.
+// 6) Added the Family Consultation endpoint as a passive endpoint.  It will accept
+//    calls from any room that is allowed to access it.
+//
+// Revision 1.23  2006/09/29 17:17:51  kflesk
+// Fixed Local Endpoint problem in ConferenceSendUpdate()
+//
+// Revision 1.22  2006/09/21 00:13:59  tbaker
+// Added Hub Status user interface and logic.  Enables testing of video inputs.
+//
+// Revision 1.21  2006/09/20 18:30:52  tbaker
+// 1. Renamed logic module Nebraska Front Desk to Fixed Endpoint
+// 2. Added second Fixed Enpoint "OR Core" to project.
+// 3. Changed Nebraska Front Desk vtp to Nebraska Fixed Endpoint and converted back to TPS3000 type.
+// 4. Added logic to enable fixed endpoint routing.
+//
+// Revision 1.20  2006/09/19 23:30:37  tbaker
+// 1. Cleaned up ConferenceHub and created ConferenceEndpoint.
+// 2. Created fixed endpoint type.
+//
+// Revision 1.19  2006/09/19 22:24:20  kflesk
+// Finished checkout of video routing capability.  Also resolved bug whereby
+// custom video routes were not being properly restored after remote end
+// deactivates privacy mode.
+//
+// Revision 1.18  2006/09/19 16:32:52  kflesk
+// Added modifications to audio routing so that a second XAP is supported.
+// This is needed for the larger room count of Nebraska.  Now if audio routing
+// is to be established between two rooms that are not on the same XAP,
+// the software will recognize the different Device IDs and use the expansion bus
+// for the source room on the audio matrix command.
+//
+// Revision 1.17  2006/09/08 17:38:33  kflesk
+// Conference Hub is now accepting and processing Custom Video Routing
+// message from the HubComm module.  Still needs troubleshooting.
+//
+// Revision 1.16  2006/09/01 23:12:40  kflesk
+// Refined endpoint behavior for Viewing Room.  Page transitions working, GUI enhanced,
+// although not checked in, and still investigating whether call control working completely.
+// Issue still exists with Viewing Room Privacy.  Does not let remote end know that
+// privacy is active.
+//
+// Revision 1.15  2006/09/01 16:51:51  kflesk
+// Call Control for a single endpoint is now working.  Endpoint1.usp still needs
+// modifications for Viewing Room control, but should be checked in anyway,
+// so that the smw will remain happy.
+//
+// Revision 1.14  2006/08/30 23:50:05  kflesk
+// 1st pass to add Room Conferencing support for Hub connected rooms.  Although Conference Hub
+// module now recognizes that a local endpoint is present, and the endpoint is sending a Keep
+// Alive Message, two way communications are not yet supported.
+//
+// Revision 1.13  2006/07/19 21:02:44  tbaker
+// 1. Added speaker mute button.
+// 2. Added DictationRoomJoinRemapping.smw to remap touch panel audio on/off functions.
+// 3. Fixed microphone mute behavior.
+//
+// Revision 1.12  2006/07/17 18:17:40  tbaker
+// These changes were to fix problems with the simulator code being out of date with the previous software changes.
+// 1. Created MAX_ENDPOINTS and seperated dependecy between room count, ethernet count, and the size of the endpoint array.
+// 2. Made sure that the creation of simulators were stopped at MAX_ROOMS.
+//
+// Revision 1.11  2006/07/13 00:38:33  tbaker
+// Fixed bug with Privacy_On
+// Changed RemoveMe to offline and updated status message to include names of offline endpoints.
+//
+// Revision 1.10  2006/07/11 23:07:22  tbaker
+// Fixed problem with VTC not sending busy message to correct endpoint.
+//
+// Revision 1.9  2006/06/30 20:07:48  tbaker
+// Various maintenance changes.
+// 1. Cleaned up mapping from port or room # to endpoint #.
+// 2. Cleaned up VTC code.
+//
+// Revision 1.8  2006/06/29 23:05:55  tbaker
+// Debugged Conference Hub with CMIS configuration.
+// 1. Fixed several bugs related to using the ethernet port number as the endpoint index.
+// 2. Fixed audio routing.
+//
+// Revision 1.7  2006/06/15 22:55:11  tbaker
+// Added Emory Surgeion Dictation Room logic to project but did not connect.  The EMORY branch will integrate these modules.
+//
+// Revision 1.5  2006/06/15 17:29:51  tbaker
+// Added keyword substitution strings for cvs.
+//
+/*********************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*********************************************************************************/
+// #SYMBOL_NAME ""
+// #HINT ""
+// #DEFINE_CONSTANT 
+
+// Configuration definitions
+#DEFINE_CONSTANT MAX_ROOMS 				16
+#DEFINE_CONSTANT MAX_ETHERNET_ROOMS 	16
+#DEFINE_CONSTANT MAX_SERIAL_ROOMS 		4
+             
+              
+#DEFINE_CONSTANT OFFLINE_TIMEOUT    5
+
+#DEFINE_CONSTANT VTC_AVAILABLE	 	1
+#DEFINE_CONSTANT VTC_NOT_AVAILABLE	0 
+
+#DEFINE_CONSTANT CONFIG_TYPE_IHNH	1
+
+#DEFINE_CONSTANT CONFIG_NONE        0
+#DEFINE_CONSTANT CONFIG_OR			1
+#DEFINE_CONSTANT CONFIG_CR			2
+#DEFINE_CONSTANT CONFIG_VTC			3
+#DEFINE_CONSTANT CONFIG_TV			4 
+#DEFINE_CONSTANT CONFIG_LR			7	//"Local Room" Configuration
+#DEFINE_CONSTANT CONFIG_SIM			5
+#DEFINE_CONSTANT CONFIG_FIXED		6
+
+#DEFINE_CONSTANT CONFIG_ETH			1
+#DEFINE_CONSTANT CONFIG_LOCAL		2
+#DEFINE_CONSTANT CONFIG_SERIAL		3
+
+#DEFINE_CONSTANT STATE_S0         0
+#DEFINE_CONSTANT STATE_S1         1
+#DEFINE_CONSTANT STATE_S2         2
+#DEFINE_CONSTANT STATE_C0         0        // Room not connected
+#DEFINE_CONSTANT STATE_C1         1        // Room idle
+#DEFINE_CONSTANT STATE_C2         2        // Room to Room conference active
+#DEFINE_CONSTANT STATE_C3         3        // Room to VTC conference active
+
+// Communication protocol definitions
+#DEFINE_CONSTANT	CHAR_STX		"02"
+#DEFINE_CONSTANT	CHAR_ETX		"03" 
+#DEFINE_CONSTANT	DEVICE_TYPE		 "H"
+#DEFINE_CONSTANT	PROTOCOL_VERSION "003"	// not used
+
+#DEFINE_CONSTANT IMSG_KEEPALIVE		10
+#DEFINE_CONSTANT IMSG_SYSTEMSTATUS	11
+#DEFINE_CONSTANT IMSG_OFFLINE		12
+
+#DEFINE_CONSTANT IMSG_CALL_REQUEST	20
+#DEFINE_CONSTANT IMSG_CALL_ACCEPT	21
+#DEFINE_CONSTANT IMSG_CALL_END		22
+#DEFINE_CONSTANT IMSG_CALL_DENY		23
+#DEFINE_CONSTANT IMSG_CALL_BUSY		24
+#DEFINE_CONSTANT IMSG_CALL_STATUS	25
+
+#DEFINE_CONSTANT IMSG_VTC_REQUEST	30
+#DEFINE_CONSTANT IMSG_VTC_ACCEPT	31
+#DEFINE_CONSTANT IMSG_VTC_END		32
+#DEFINE_CONSTANT IMSG_VTC_DENY		33
+#DEFINE_CONSTANT IMSG_VTC_BUSY		34	
+#DEFINE_CONSTANT IMSG_VTC_DATA		35
+#DEFINE_CONSTANT IMSG_VTC_CALL		37	// Making a call		<-- look at old protocol regarding these
+#DEFINE_CONSTANT IMSG_VTC_INCOMING  38	// Incoming call
+#DEFINE_CONSTANT IMSG_VTC_LIVE		39	// Call active
+#DEFINE_CONSTANT IMSG_VTC_DISCON	40	// No call active
+
+#DEFINE_CONSTANT IMSG_CUSTOM_ROUTE	41
+#DEFINE_CONSTANT IMSG_FIXED_ENABLE	51	// Route any source to a specified target
+#DEFINE_CONSTANT IMSG_FIXED_IN_DIS	52	// Disconnect any target
+#DEFINE_CONSTANT IMSG_FIXED_IN		53	// Route a specified source to any target
+                 
+#DEFINE_CONSTANT SMSG_KEEPALIVE		"10"	// Hub does not send Keep alives
+#DEFINE_CONSTANT SMSG_SYSTEMSTATUS	"11"
+#DEFINE_CONSTANT HUB_RMID			"99"
+
+//-----------------------------------------------------------------------------
+
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+/*********************************************************************************
+  Include Libraries
+  (Uncomment and include additional librarys as needed)
+*********************************************************************************/
+// #CRESTRON_LIBRARY ""
+
+#USER_LIBRARY "CMIS_Hub_Library"
+
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+
+// Inputs
+DIGITAL_INPUT   diDebug;
+DIGITAL_INPUT	diVTC_Connected;
+DIGITAL_INPUT	diConnectRoomEthernet[MAX_ETHERNET_ROOMS];
+DIGITAL_INPUT	diConnectRoomLocal[MAX_LOCAL_ROOMS];
+DIGITAL_INPUT	diConnectRoomSerial[MAX_SERIAL_ROOMS];
+DIGITAL_INPUT	diMuteMicLocal[MAX_LOCAL_ROOMS];
+
+STRING_INPUT 	RxTB_Channel1_Status[255];	// Changes when tandberg status changes
+
+ANALOG_INPUT	aiConnectStatusEthernet[MAX_ETHERNET_ROOMS];
+ANALOG_INPUT    RivuletStatus[8];
+
+STRING_INPUT 	RxRoomMessageEthernet[MAX_ETHERNET_ROOMS][255];
+STRING_INPUT 	RxRoomMessageLocal[MAX_LOCAL_ROOMS][255];
+STRING_INPUT 	RxRoomMessageSerial[MAX_SERIAL_ROOMS][255];
+  
+// Outputs
+//DIGITAL_OUTPUT	VTCMsgPulse;
+DIGITAL_OUTPUT	doVTCWakeup;
+DIGITAL_OUTPUT  doInitAllStagesComplete;
+DIGITAL_OUTPUT	doRoomEnableEthernet[MAX_ETHERNET_ROOMS];
+DIGITAL_OUTPUT	doRoomEnableLocal[MAX_LOCAL_ROOMS];
+DIGITAL_OUTPUT	doRoomEnableSerial[MAX_SERIAL_ROOMS];
+
+DIGITAL_OUTPUT	aoRmAttrConferenceFlag[MAX_LOCAL_ROOMS];
+DIGITAL_OUTPUT	aoRmAttrPermissionFlag[MAX_LOCAL_ROOMS];
+
+ANALOG_OUTPUT	aoVTCMsgValue;
+
+STRING_OUTPUT	soName;
+
+STRING_OUTPUT	soAudInfo;
+STRING_OUTPUT	soVidInfo;
+STRING_OUTPUT   soRivInfo2;
+STRING_OUTPUT	soRoute;
+
+STRING_OUTPUT	soVersion;
+STRING_OUTPUT	soLogic;
+STRING_OUTPUT	soPhoneNumber;
+
+ANALOG_OUTPUT	aoRmAttrSVidCountIn[MAX_LOCAL_ROOMS];
+ANALOG_OUTPUT	aoRmAttrRGBCountIn[MAX_LOCAL_ROOMS];
+ANALOG_OUTPUT	aoRmAttrHDCountIn[MAX_LOCAL_ROOMS];
+
+ANALOG_OUTPUT	aoRmAttrSVidCountOut[MAX_LOCAL_ROOMS];
+ANALOG_OUTPUT	aoRmAttrRGBCountOut[MAX_LOCAL_ROOMS];
+ANALOG_OUTPUT	aoRmAttrHDCountOut[MAX_LOCAL_ROOMS];
+
+STRING_OUTPUT 	TxRoomMessageEthernet[MAX_ETHERNET_ROOMS];
+STRING_OUTPUT 	TxRoomMessageLocal[MAX_LOCAL_ROOMS];
+STRING_OUTPUT 	TxRoomMessageSerial[MAX_SERIAL_ROOMS];
+
+STRING_OUTPUT 	TxRmTxtName[MAX_LOCAL_ROOMS];
+STRING_OUTPUT	TxRmBtnName[MAX_LOCAL_ROOMS];
+
+/*******************************************************************************************
+  Structure Definitions
+  (Uncomment and define structure definitions as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: struct.myString = "";
+*******************************************************************************************/
+STRUCTURE Endpoint
+{
+	// Endpoint info
+	INTEGER Type;
+	INTEGER RoomIndex;
+	INTEGER ConnectionType;
+	INTEGER ConnectionIndex;
+    INTEGER ConferenceEndpoint;  // Participates in Endpoint conferencing
+    INTEGER Rivulet;
+	INTEGER CustomEndpointID;	// 0 if not a custom endpoint, value 1-4 otherwise.
+	INTEGER FixedEndpointID;	// 0 if not a fixed endpoint, value 1-MAX_FIXED_ENDPOINTS otherwise. 
+	INTEGER EndpointList[MAX_ENDPOINTS];
+	STRING Name[255];
+	INTEGER Protocol;
+	
+	// Routing data
+	
+	// These are used only for Config_Sim
+	INTEGER SVideoInStart;
+	INTEGER SVideoInCount;
+	INTEGER SVideoOutStart;
+	INTEGER SVideoOutCount;
+	INTEGER RGBInStart;
+	INTEGER RGBInCount;
+	INTEGER RGBOutStart;
+	INTEGER RGBOutCount;
+ 	INTEGER HDInStart;
+	INTEGER HDInCount;
+	INTEGER HDOutStart;
+	INTEGER HDOutCount;
+
+    STRING  RivuletVECIP[20];	
+	INTEGER RivAudioInCnt;
+	INTEGER RivAudioOutCnt;
+	INTEGER RivDVIInCnt;
+	INTEGER RivDVIOutCnt;
+	INTEGER RivSVideoInCnt;
+	INTEGER RivSVideoOutCnt;
+	
+	// State data
+	INTEGER State;
+	INTEGER Online;
+	INTEGER StatusCount;
+    INTEGER TimeoutCount;
+	INTEGER Busy;
+    INTEGER RemoteIndex;
+    INTEGER Privacy;
+    INTEGER ConnectionInit;
+
+	// Local Endpoint Data
+	INTEGER LRmConfAttrFlag;
+	INTEGER LRmConfPermission;
+	STRING  LRmConfName[30];
+	STRING  LRmConfButton[30];
+};
+
+Endpoint gEndpoints[MAX_ENDPOINTS];
+
+
+STRUCTURE VTC_RESOURCE
+{
+	INTEGER	iEnabled;
+	INTEGER iAvailable;
+	INTEGER iController;
+	INTEGER iIndex;
+	INTEGER iState;
+};
+
+VTC_RESOURCE gHubVTC;
+
+// These mapping arrays are a reverse mapping from a context index (i.e. ethernet port or
+// room number) gEndpoints[] array index.  The arrays are initialized during initialization. 
+integer giMapEthernet[MAX_ETHERNET_ROOMS];
+integer giMapLocal[MAX_LOCAL_ROOMS];
+integer giMapSerial[MAX_SERIAL_ROOMS];
+integer giMapRoom[MAX_ENDPOINTS];
+
+/*******************************************************************************************
+  Global Variables
+*******************************************************************************************/
+
+integer giRoomCount;
+integer gbConfRoom;
+integer gbSimulateORs;
+integer giSVideo;
+integer giRGB;
+integer giHD;
+integer giAudio;
+integer gbVTC;
+integer giVTCIndex;
+integer giGlobalState;
+integer giTimeoutCount;
+integer giNoUpdateDelay;
+integer giFixedEndpointCount;
+integer giCustomEndpointCount;
+
+string gsName[255];
+string gsVersion[16];
+string gsType[16];
+
+integer giRoomConnectCount[MAX_ETHERNET_ROOMS];
+integer giRoomStatusDisable[MAX_ETHERNET_ROOMS];
+
+/***
+ Encode/Decode
+ ***/
+Integer_function EncodeEndpoints(integer iRm1, Integer iRm2, integer iAction)
+{
+	integer iEncoding;
+
+	iEncoding = (iRm1-1) + ((iRm2-1) << 4) + (iAction << 8);
+
+}
+
+function DecodeEndpoints(integer iEncoding)
+{
+
+	integer iRm1;
+	integer iRm2;
+	integer iAction;
+
+	iAction = (iEncoding >> 8);
+	iRm2 = ((iEncoding & 240) >> 4) + 1;
+	iRm1 = (iEncoding & 15) + 1;
+
+}
+
+
+/*******************************************************************************************
+  Configuration Functions
+*******************************************************************************************/
+function EatWhiteSpace(string line, ByRef integer linePointer)
+{
+    integer length;
+    length = len(line);
+    while (linePointer < length)
+    {
+        if (mid(line,linePointer,1) = " ")
+            linePointer = linePointer + 1;
+        else
+            return;
+    }
+}
+
+String_function ParseRoomName(string sname)
+{
+	integer length;
+	string stemp[MAX_RMNAME_LENGTH];
+	string stoken[MAX_RMNAME_LENGTH];
+        	
+    stoken = remove(" ", sname);
+    length = len(stoken);  
+
+	//*DEBUG*/ print("sname:%s, stoken:%s, length:%i\n", sname, stoken, length);
+                                                                                        
+    if (length = 0)
+    {
+    	/* Space not found  */
+    	/* so use as-is		*/
+    	stemp = stoken + sname;
+		//*DEBUG*/ print("No space found, %s\n", stemp);
+    }
+    else
+    {
+    	length = length - 1;  
+		stemp = left(stoken, length);
+    	stemp = stemp + chr(13) + sname;
+    	//*DEBUG*/ print("Space found at position %i, %s\n", length, stemp);
+    }
+    
+    return(stemp);
+}	
+
+
+//-----------------------------------------------------------------------------
+
+String_Function ParseToken(string line, ByRef integer linePointer)
+{
+    string token[255];
+    integer start,end;
+    token = "";
+    start = find("<",line,linePointer);
+    if (start < 1)
+        return (token);
+    end = find(">",line,start+1);
+    if (start >= end)
+        return (token);
+    token = lower(mid(line,start+1,end-start-1));
+    linePointer = end + 1;
+    Return (token);
+}
+
+//-----------------------------------------------------------------------------
+
+String_Function ReadStringEOL(string line, ByRef integer linePointer)
+{
+    string param[255];
+    EatWhiteSpace(line,linePointer);
+    param = mid(line,linePointer,len(line)-linePointer+1);
+    //print("\tline [%s], linePointer %d, startString %d, param [%s]\n",line,linePointer,startString,param);
+    Return (param);
+}
+
+//-----------------------------------------------------------------------------
+
+String_Function ReadStringValue(string line, ByRef integer linePointer)
+{
+    integer foundSeparator;
+    string param[255];
+	string sSeparator[1];
+
+    EatWhiteSpace(line,linePointer);
+	if (mid(line,linePointer,1) = Chr(34))	// quote mark
+	{
+		sSeparator = Chr(34);
+		linePointer = linePointer + 1;
+	}
+	else
+		sSeparator = " ";
+
+    foundSeparator = find(sSeparator,line,linePointer);
+    if (foundSeparator = 0)
+    {
+        param = mid(line,linePointer,len(line)-linePointer+1);
+        linePointer = len(line);
+    }
+    else
+    {
+        param = mid(line,linePointer,foundSeparator-linePointer);
+        linePointer = foundSeparator + 1;
+    }
+    
+    //print("\tReadStringValue line [%s], linePointer %d, spaceSeparator %d, param [%s]\n",line,linePointer,spaceSeparator,param);
+    Return (param);
+}
+
+//-----------------------------------------------------------------------------
+
+Integer_Function ReadIntValue(string line, ByRef integer linePointer)
+{
+    integer v;
+    integer nextSpace;
+    string endLine[255];
+    v = 0;
+    
+    //print("ReadIntValue, line [%s], linePointer %d,",line,linePointer);
+    EatWhiteSpace(line,linePointer);
+    endLine = mid(line,linePointer,len(line)-linePointer+1);
+    v = atoi(endLine);
+    nextSpace = find(" ",line,linePointer);
+    //print("ReadIntValue, [%s] [%s] %d %d\n",line,endLine,nextSpace,v);
+    if (nextSpace = 0)
+    {
+        linePointer = len(line);
+    }
+    else
+    {
+        linePointer = nextSpace + 1;
+    }
+    //print("nextSpace %d, linePointer %d, value %d\n",nextSpace,linePointer,v);
+    Return (v);
+}
+
+//-----------------------------------------------------------------------------
+
+function ReadEndpoint(ByRef string fileData, ByRef integer filePointer, ByRef integer fileSize,  integer index)
+{
+    string line[255];
+    string token[255];
+    string sTemp[255];
+    string sTempChar[1];
+    integer linePointer;
+    integer iTemp;
+    integer count;
+    integer i,j;
+    integer start;
+
+    print("\tEndpoint %d\n",index);
+    while (filePointer < fileSize)
+    {
+        line = mid(fileData,filePointer,find(chr(0x0D),fileData,filePointer)-filePointer);
+        filePointer = filePointer + len(line) + 2;
+        
+        linePointer = 1;
+        token = ParseToken(line,linePointer);
+        //*DEBUG*/print("\t Reading Endpoint, [%s]\n",line);
+        if (len(token) > 0)
+        {
+            if (token = "/ep")
+            {
+                print("\t\tEndpoint complete\n");
+                break;
+            }
+            else if (token = "type")
+            {
+                sTemp = lower(ReadStringValue(line,linePointer));
+                if (sTemp = "or")
+                {
+                    gEndpoints[index].Type = CONFIG_OR;
+                    gEndpoints[index].ConferenceEndpoint = 1;
+                }
+                else if (sTemp = "cr")
+                {
+                    gEndpoints[index].Type = CONFIG_CR;
+                    gEndpoints[index].ConferenceEndpoint = 1;
+                }
+                else if (sTemp = "tandberg")
+                {
+                    gEndpoints[index].Type = CONFIG_VTC;
+                }
+                else if (sTemp = "tv")
+                {
+                    gEndpoints[index].Type = CONFIG_TV;
+                    if (giFixedEndpointCount <= MAX_FIXED_ENDPOINTS) 
+                    {
+	                    giFixedEndpointCount = giFixedEndpointCount + 1;
+	                    gEndpoints[index].FixedEndpointID = giFixedEndpointCount;
+
+						MakeString(sTemp, "fixed:%d:%d:", index, giFixedEndpointCount);
+
+						soVidInfo = sTemp;	// Send information to video module
+					}
+					else
+						print("Error: Too many fixed endpoints\n");					
+                }
+                else if (sTemp = "lr")
+                {
+                	gEndpoints[index].Type = CONFIG_LR;
+                    gEndpoints[index].ConferenceEndpoint = 1;
+                    
+                    if (giCustomEndpointCount < MAX_CUSTOM_ENDPOINTS)
+                    { 
+                    	giCustomEndpointCount = giCustomEndpointCount + 1;
+                    	gEndpoints[index].CustomEndpointID = giCustomEndpointCount;
+                    	
+						MakeString(sTemp, "custom:%d:%d:", index, giCustomEndpointCount);
+                
+						soVidInfo = sTemp;	// Send information to video module
+						soAudInfo = sTemp;	// Send information to audio module
+                    }
+					else
+						print("Error: Too many custom endpoints\n");
+                }
+                else if (sTemp = "sim")
+                {
+                    gEndpoints[index].Type = CONFIG_SIM;
+                }
+                else if (sTemp = "fixed")
+                {
+                    gEndpoints[index].Type = CONFIG_FIXED;
+					if (giFixedEndpointCount < MAX_FIXED_ENDPOINTS) 
+                    {
+                    	giFixedEndpointCount = giFixedEndpointCount + 1;
+	                    gEndpoints[index].FixedEndpointID = giFixedEndpointCount;
+						//print("Fixed Endpoint %d\n",giFixedEndpointCount);
+
+						MakeString(sTemp, "fixed:%d:%d:", index, giFixedEndpointCount);
+
+						soVidInfo = sTemp;	// Send information to video module
+					}
+					else
+						print("Error: Too many fixed endpoints\n");
+                }
+                print("\t\ttype  %d\n",gEndpoints[index].Type);
+            }  
+            else if (token = "view")
+            {
+            	count = ReadIntValue(line, linePointer);
+				print("\t\tview[%d]: ", index);
+            	for (j=1 to count)
+            	{
+            		iTemp = ReadIntValue(line,linePointer);
+            		gEndpoints[index].EndpointList[iTemp] = ON;
+					print ("%d ", iTemp);
+            	}
+    			gEndpoints[index].ConnectionInit = 1;
+				print ("\n");
+            }
+            else if (token = "connection")
+            {
+                sTemp = ReadStringValue(line,linePointer);
+                iTemp = ReadIntValue(line,linePointer);
+                if (sTemp = "eth")
+                {
+                    gEndpoints[index].ConnectionType = CONFIG_ETH;
+                }
+                else if (sTemp = "local")
+                {
+                    gEndpoints[index].ConnectionType = CONFIG_LOCAL;
+                }
+                else if (sTemp = "serial")
+                {
+                    gEndpoints[index].ConnectionType = CONFIG_SERIAL;
+                }
+                gEndpoints[index].ConnectionIndex = iTemp;
+                print("\t\tconnection, type %d, index %d\n",gEndpoints[index].ConnectionType,gEndpoints[index].ConnectionIndex);
+            }
+            else if (token = "svideo")
+            {
+                iTemp = ReadIntValue(line,linePointer);
+                gEndpoints[index].SVideoInStart = iTemp;
+				MakeString(sTemp, "svideo:%d:%d:", index, iTemp);
+                iTemp = ReadIntValue(line,linePointer);
+                gEndpoints[index].SVideoInCount = iTemp;
+                MakeString(sTemp, "%s%d:", sTemp, iTemp);
+                iTemp = ReadIntValue(line,linePointer);
+                gEndpoints[index].SVideoOutStart = iTemp;
+                MakeString(sTemp, "%s%d:", sTemp, iTemp);
+                iTemp = ReadIntValue(line,linePointer);
+                gEndpoints[index].SVideoOutCount = iTemp;
+                MakeString(sTemp, "%s%d:", sTemp, iTemp);                
+
+                soVidInfo = sTemp;	// Send information to video module               
+            }
+            else if (token = "rivulet")
+            {
+                gEndpoints[index].Rivulet = ON;
+                MakeString(sTemp, "rivulet:%d:", index);
+                
+                // Rivulet endpoint name
+                MakeString(sTemp, "%s%s:", sTemp,ReadStringValue(line,linePointer)); 
+                
+                // Rivulet endpoint type
+                MakeString(sTemp, "%s%s:", sTemp,ReadStringValue(line,linePointer)); 
+
+                // Bidirectional, In, Out
+                MakeString(sTemp, "%s%s:", sTemp,ReadStringValue(line,linePointer)); 
+
+                soRivInfo2 = sTemp;	// Send information to Rivulet module               
+            }  
+            
+            else if (token = "vecip")
+            {
+                sTemp = ReadStringValue(line,linePointer);
+                gEndpoints[index].RivuletVECIP = sTemp;
+                MakeString(sTemp,"RivVEC:%d:%s:",index, sTemp);
+                
+                soRivInfo2 = sTemp; // Send Rivulet VEC Endpoint IP Address.            }
+            }
+            
+            else if (token = "rgb")
+            {
+          
+                iTemp = ReadIntValue(line,linePointer);
+                gEndpoints[index].RGBInStart = iTemp;
+                MakeString(sTemp, "rgb:%d:%d:", index, iTemp);             
+                iTemp = ReadIntValue(line,linePointer);
+                gEndpoints[index].RGBInCount = iTemp;
+                MakeString(sTemp, "%s%d:", sTemp, iTemp);
+                iTemp = ReadIntValue(line,linePointer);
+                gEndpoints[index].RGBOutStart = iTemp;
+                MakeString(sTemp, "%s%d:", sTemp, iTemp);                
+                iTemp = ReadIntValue(line,linePointer);
+                gEndpoints[index].RGBOutCount = iTemp;
+                MakeString(sTemp, "%s%d:", sTemp, iTemp);                
+  
+				soVidInfo = sTemp;	// Send information to video module               
+                        
+            }
+            else if (token = "hd")
+            {
+
+                iTemp = ReadIntValue(line,linePointer);
+                gEndpoints[index].HDInStart = iTemp;
+                MakeString(sTemp, "hd:%d:%d:", index, iTemp);
+                iTemp = ReadIntValue(line,linePointer);
+                gEndpoints[index].HDInCount = iTemp;
+                MakeString(sTemp, "%s%d:", sTemp, iTemp);
+                iTemp = ReadIntValue(line,linePointer);
+                gEndpoints[index].HDOutStart = iTemp;
+                MakeString(sTemp, "%s%d:", sTemp, iTemp);
+				iTemp = ReadIntValue(line,linePointer);
+				gEndpoints[index].HDOutCount = iTemp;
+                MakeString(sTemp, "%s%d:", sTemp, iTemp);
+
+				soVidInfo = sTemp;	// Send information to video module               
+                        
+            }
+            else if (token = "audio")
+            { 
+            
+                iTemp = ReadIntValue(line,linePointer);
+                MakeString(sTemp, "audio:%d:%d:", index, iTemp);
+                iTemp = ReadIntValue(line,linePointer);
+                MakeString(sTemp, "%s%d:", sTemp, iTemp);
+                iTemp = ReadIntValue(line,linePointer);
+                MakeString(sTemp, "%s%d:", sTemp, iTemp);
+                iTemp = ReadIntValue(line,linePointer);
+                MakeString(sTemp, "%s%d:", sTemp, iTemp);
+             
+				soAudInfo = sTemp;	// Send information to audio module  		
+			}
+			else if (token = "audio-ex")
+			{               
+                //Added additional audio data for multiple XAP units.
+                //needed when more than 8 rooms are managed by the hub.
+                // Version 1.0 file format:  str(devtype) int(devid) str(expnport)
+                // Version 1.1 file format:  int(devid) str(expnport)
+                if (gsVersion = "1.0")
+                {
+					sTemp = lower(ReadStringValue(line,linePointer));	// type
+					iTemp = ReadIntValue(line,linePointer);				// devid
+	           	    MakeString(sTemp,"type:0:%s:%d:",sTemp, iTemp);
+	           	    soAudInfo = sTemp;
+				}
+				else	// any other version
+				{
+					iTemp = ReadIntValue(line,linePointer);				// devid
+				}
+                MakeString(sTemp, "audio-ex:%d:%d:", index, iTemp);
+                
+                sTempChar = ReadStringValue(line,linePointer);
+                MakeString(sTemp, "%s%s:", sTemp, sTempChar);
+
+				soAudInfo = sTemp;	// Send information to audio module  		
+
+            }
+			else if (token = "fixed-svideo")
+			{
+                count = ReadIntValue(line,linePointer);
+                MakeString(sTemp, "fixed-svideo:%d:%d:", index, count);
+                for (i = 1 to count)
+                { 
+					iTemp = ReadIntValue(line,linePointer);
+                	MakeString(sTemp, "%s%d:", sTemp, iTemp);
+                }                                                      
+
+                soVidInfo = sTemp;	// Send information to video module
+
+            }
+			else if (token = "lrattr")	// Local room attribute data, only applicable for type LR
+			{
+                gEndpoints[index].LRmConfAttrFlag = ReadIntValue(line,linePointer);
+                gEndpoints[index].LRmConfPermission = ReadIntValue(line,linePointer);
+                gEndpoints[index].LRmConfName = ReadStringValue(line,linePointer);
+                gEndpoints[index].LRmConfButton = ReadStringValue(line,linePointer);
+				print("\t\tLocal Room attributes:\n");
+				print ("\t\t\tConferencing %d, ", gEndpoints[index].LRmConfAttrFlag);
+				print ("Permission %d, ", gEndpoints[index].LRmConfPermission);
+				print ("Name [%s], ", gEndpoints[index].LRmConfName);
+				print ("Button [%s]\n", gEndpoints[index].LRmConfButton);
+            }
+            else
+            {
+                print("\t\tEndpoint, token [%s] undefined\n",token);
+            }
+        }
+    }
+    
+
+}
+
+//-----------------------------------------------------------------------------
+
+Function ReadConfigFile()
+{
+	signed_integer 	fileHandle, fileReadErr;
+    signed_integer count;
+    string filePath[30];
+    string line[255];
+    string token[255];
+    string fileData[4096];
+    string sTemp[255];
+    integer iTemp;
+    integer filePointer;
+    integer fileSize;
+    integer linePointer;
+    integer epIndex;
+
+	filePath = "\\user\\Hubconfigure.txt";
+
+	StartFileOperations();
+	fileHandle = FileOpen ( filePath, _O_RDONLY );
+
+   	if ( fileHandle < 0 )
+   	{
+   		print("Hub: Error Opening File \n");
+   		print("Hub: Error Code = %d\n", fileHandle);
+   	}
+   	else
+   	{
+   		print("Hub: File Opened\n");
+   	}
+    fileReadErr = FileRead(fileHandle,fileData,4096);   
+   	if ( fileHandle < 0 )
+   	{
+   		print("Error Reading File \n");
+   		print("Error Code = %d\n", fileReadErr);
+        return;
+   	}
+    fileSize = fileReadErr;
+    print("Read %d bytes\n",fileSize);
+    count = 0;
+    filePointer = 1;
+
+    //fileReadErr = ReadLine(fileHandle,line);
+    while (filePointer < fileSize)
+    {
+        count = count + 1;
+        line = mid(fileData,filePointer,find(chr(0x0D),fileData,filePointer)-filePointer);
+        filePointer = filePointer + len(line) + 2;
+        
+        linePointer = 1;
+        token = ParseToken(line,linePointer);
+        //print("Line %d, [%s]\n",count,line);
+        if (len(token) > 0)
+        {
+            // Parse the tokens
+            if (token = "version")
+            {
+                gsVersion = ReadStringEOL(line,linePointer);
+                print("\tVersion [%s]\n",gsVersion);
+            }
+            else if (token = "type")
+            {
+                //print("\ttype found\n");
+                gsType = ReadStringEOL(line,linePointer);
+                print("\tType [%s]\n",gsType);
+            }
+            else if (token = "name")
+            {
+                gsName = ReadStringEOL(line,linePointer);
+				soName = gsName;
+                print("\tName [%s]\n",gsName);
+            }
+            else if (token = "svideo")
+            {
+                giSVideo = ReadIntValue(line,linePointer);
+                print("\tgiSVideo %d\n",giSVideo);
+            }
+            else if (token = "rgb")
+            {
+                giRGB = ReadIntValue(line,linePointer);
+                print("\tgiRGB %d\n",giRGB);
+            }
+            else if (token = "hd")
+            {
+                giHD = ReadIntValue(line,linePointer);
+                print("\tgiHD %d\n",giHD);
+            }
+            else if (token = "audio")
+            {
+                giAudio = ReadIntValue(line,linePointer);
+                print("\tgiAudio %d\n",giAudio);
+            }
+            else if (token = "vtc")
+            {
+                gbVTC = ReadIntValue(line,linePointer);
+                print("\tgbVTC %d\n",gbVTC);
+            }
+            else if (token = "simulate")
+            {
+                gbSimulateORs = ReadIntValue(line,linePointer);
+                print("\tgbSimulateORs %d\n",gbSimulateORs);
+            }
+            else if (token = "vswitchtype")
+			{
+            	sTemp = ReadStringEOL(line,linePointer);
+           	    MakeString(sTemp,"type:0:%s:",sTemp);		// device type
+           	    soVidInfo = sTemp;
+			}
+            else if (token = "aswitchtype")		// This item can appear multiple times
+			{
+            	sTemp = ReadStringValue(line,linePointer);	// device type		
+				iTemp = ReadIntValue(line,linePointer);		// device ID
+           	    MakeString(sTemp,"type:0:%s:%d:",sTemp, iTemp);
+           	    soAudInfo = sTemp;
+			}
+			
+            else if (token = "ep")
+            {
+                epIndex  = ReadIntValue(line,linePointer);
+                ReadEndpoint(fileData,filePointer,fileSize,epIndex);
+            }
+            else
+            {
+                print("\tundefined token\n");
+            }
+        }
+    }
+
+    print("Hub: File parse done\n");
+    EndFileOperations();
+
+}
+
+
+/*******************************************************************************************
+  Conference State Functions
+*******************************************************************************************/
+
+function ConferenceSendMessage(integer dstIndex, string msg)
+{
+    integer portIndex;
+    //*DEBUG*/print("ConferenceSendMessage [%s] to %d, %d, %d\n",msg,dstIndex,gEndpoints[dstIndex].RoomIndex,giRoomCount);
+    if (gEndpoints[dstIndex].RoomIndex <= giRoomCount)
+    {
+	    portIndex = gEndpoints[dstIndex].ConnectionIndex;
+        cswitch (gEndpoints[dstIndex].ConnectionType) 
+        {
+	        case (CONFIG_ETH):
+	        {
+	 		    TxRoomMessageEthernet[portIndex] = msg;
+                 //print("ConferenceSendMessage send ethernet message to dst %d, port %d\n",dstIndex,portIndex);
+                 break;
+	        }  
+	        case (CONFIG_LOCAL):
+	        {
+	 		    TxRoomMessageLocal[portIndex] = msg;
+                 //print("ConferenceSendMessage send local message to dst %d, port %d, not implemented\n",dstIndex,portIndex);
+                 break;
+	        } 
+	    }
+    }
+}
+
+
+//-----------------------------------------------------------------------------
+
+String_Function ConferenceCreateUpdateMessage(integer index)
+{
+	integer i;
+    integer roomIndex;
+	integer endpointCount;
+	string roomString[255];
+	string sTemp[255];
+    
+    makestring(roomString,":%s:%s%03d%02d",
+                SMSG_SYSTEMSTATUS,DEVICE_TYPE,gEndpoints[index].Protocol,giRoomCount);
+    if (gbVTC)
+    {
+        if (gHubVTC.iAvailable)
+        {
+            roomString = roomString + "100";	// VTC available - room 00 (meaningless)
+        }
+        else
+        {
+            makestring(sTemp,"0%02d",gHubVTC.iController);	// VTC in use - room iController
+            roomString = roomString + sTemp;
+        }
+		// Protocol 002 and later only
+		if (gEndpoints[index].Protocol > 1)
+		{
+			if (VTC_MODEL = TANDBERG_3000_MXP)
+				roomString = roomString + "30";
+			else	// TANDBERG_2500
+				roomString = roomString + "25";
+		}
+    }
+    else
+    {
+        roomString = roomString + "00025";	// No VTC, no room, type 2500
+    }
+    roomString = roomString + "+";
+
+    for (i = 1 to MAX_ENDPOINTS)
+    {
+        roomIndex = gEndpoints[i].RoomIndex;
+        if (gEndpoints[i].ConferenceEndpoint)		
+        {
+             if (gEndpoints[index].EndpointList[i] = ON)
+             {
+	         	if (gEndpoints[i].State = STATE_C1)
+	         	{
+	         	    makestring(sTemp,"%d,%s",gEndpoints[i].RoomIndex,gEndpoints[i].Name);
+	         	}
+	         	else 
+	         	{
+	         	    //makestring(sTemp,"0,");
+	         	    makestring(sTemp,"0,%s",gEndpoints[i].Name);	//exclusion for rooms that are "busy"
+	         	}
+	         }
+	         else
+	         {
+	         	makestring(sTemp,"0,%s",gEndpoints[i].Name); 	//exclusion for rooms not in the viewing list
+	         }
+	         roomString = roomString + sTemp + "+";	         
+        }
+        else if (gEndpoints[i].Type  = CONFIG_SIM)
+        {
+            makestring(sTemp,"%d,%s",roomIndex,gEndpoints[i].Name);
+	        roomString = roomString + sTemp + "+";
+        }
+        //*DEBUG*/ print("Build string %d, %d [%s]\n",i,gEndpoints[i].Type,roomString);
+    }
+    roomString = roomString + ":" + CHAR_ETX;
+    //*DEBUG*/ print("Status string %d [%s]\n",index,roomString);
+
+
+	return (roomString);
+}
+
+//-----------------------------------------------------------------------------
+
+function ConferenceSendCallEnd(integer src, integer dst)
+{
+    integer srcRoom,dstRoom;
+	string msg[255];
+
+    srcRoom = gEndpoints[src].RoomIndex;
+    dstRoom = gEndpoints[dst].RoomIndex;
+    makestring(msg,"02%02d%02d:22:%s+100:03",srcRoom,dstRoom,gEndpoints[src].Name);
+    ConferenceSendMessage(dst,msg);
+    //print("Send Call End from %d to %d [%s]\n",src,dst,msg);
+}
+
+//-----------------------------------------------------------------------------
+
+function ConferenceSendCallEndFromAll(integer dst)
+{
+    integer i;
+    integer srcRoom,dstRoom;
+	string msg[255];
+    
+    //print("ConferenceSendCallEndFromAll endpoint %d, dstRoom %d, online %d\n",dst,gEndpoints[dst].RoomIndex,gEndpoints[dst].Online);
+    if (!gEndpoints[dst].Online)
+    {
+        print("Hub: ConferenceSendCallEndFromAll endpoint %2d offline, not sending messages\n",dst);
+        return;
+    }
+    dstRoom = gEndpoints[dst].RoomIndex;
+    for (i = 1 to MAX_ENDPOINTS)
+    {
+        if ((i != dst) && gEndpoints[i].ConferenceEndpoint)
+        {
+            ConferenceSendCallEnd(i,dst);
+            delay(5); 
+            //ProcessLogic();
+        }
+    }
+
+}
+
+//-----------------------------------------------------------------------------
+
+function ConferenceEnableRoom(integer index)
+{
+  
+    print("Hub: ConferenceEnableRoom %2d\n",index); 
+    gEndpoints[index].Online = 1;
+  
+    // Shut down room if it thinks a conference is active
+    // this should be done before the state is changed
+    if ((gEndpoints[index].ConferenceEndpoint) && (gEndpoints[index].Protocol < 2))
+    {
+        ConferenceSendCallEndFromAll(index);
+    }
+        
+    // Set state now
+    if (gEndpoints[index].State = STATE_C0)
+    {
+        gEndpoints[index].State = STATE_C1;
+    }
+}
+
+//-----------------------------------------------------------------------------
+
+function ConferenceDisableRoom(integer index)
+{
+    integer dstIndex;
+    string sTemp[255];
+    
+    //gEndpoints[index].Online = 0;
+    print("Hub: ConferenceDisableRoom %2d\n",index); 
+    // Shut down conference if it exists
+    if (gEndpoints[index].State = STATE_C2)
+    {
+	    dstIndex = gEndpoints[index].RemoteIndex;
+	    MakeString(sTemp, "disable:%d:%d:", index, dstIndex);
+	    soRoute = sTemp;
+	    
+        ConferenceSendCallEnd(index,dstIndex);
+        gEndpoints[dstIndex].State = STATE_C1;
+    } 
+	    
+   // Make room offline
+    if (gEndpoints[index].State != STATE_C0)
+    {
+        gEndpoints[index].State = STATE_C0;
+    }
+
+}
+
+//-----------------------------------------------------------------------------
+
+function ConferenceCheckActiveEndpoints()
+{
+    integer i;
+    
+    print("Checking Active Endpoints online: ");
+    for (i = 1 to MAX_ENDPOINTS)
+    {
+        if ((gEndpoints[i].State != STATE_C0) &&
+            (gEndpoints[i].ConferenceEndpoint) &&
+            (gEndpoints[i].Type != CONFIG_SIM))
+        {
+            gEndpoints[i].TimeoutCount = gEndpoints[i].TimeoutCount + 1;
+            if (gEndpoints[i].TimeoutCount > 5)
+            {
+                ConferenceDisableRoom(i);
+                    print("Hub: Endpoint %2d timed out, set to offline\n",i);
+            } 
+            else 
+                print("%i ,", i);
+        }
+    }
+    print ("\n");
+}
+
+//-----------------------------------------------------------------------------
+
+function ConferenceSendUpdate()
+{
+    integer i,id;
+    integer index;
+    string msg[255];
+    string sId[255]; 
+    
+    for (i = 1 to MAX_ENDPOINTS)
+    {
+        index = gEndpoints[i].ConnectionIndex;
+        id = gEndpoints[i].RoomIndex;
+        makestring(sId,"%02d",id);
+
+        msg = ConferenceCreateUpdateMessage(i);		//create unique system status message for the endpoint.
+
+        if ( i <9 )  
+
+        //if (gEndpoints[i].ConferenceEndpoint)  
+        {
+            print("Sending update for endpoint %i\n", i);
+        	if (gEndpoints[i].Type = CONFIG_LR)
+        	{
+            	TxRoomMessageLocal[index] = CHAR_STX + HUB_RMID + sId + msg;        
+            }
+            else
+            { 
+            	TxRoomMessageEthernet[index] = CHAR_STX + HUB_RMID + sId + msg;
+            }
+        } 
+        else
+            print("Not sending update for endpoint %i\n", i);
+    }
+    if (didebug) print("Hub: Send Update (System Status Messages)\n");
+}
+
+//-----------------------------------------------------------------------------
+
+function ConferenceProcessSimMessage(integer srcIndex, integer srcId, integer dstIndex, integer dstId, integer cmd, string msg, string msgData)
+{
+    string sTemp[255];
+    string linecounts[7];
+
+	if (gEndpoints[dstIndex].Protocol > 2)	// protocol 003 and up
+		makestring(linecounts, "%d%d%d%d%d%d", gEndpoints[dstIndex].SVideoInCount,gEndpoints[dstIndex].RGBInCount, 
+			gEndpoints[dstIndex].HDInCount, gEndpoints[dstIndex].SVideoOutCount,gEndpoints[dstIndex].RGBOutCount, 
+			gEndpoints[dstIndex].HDOutCount);
+	else
+		makestring(linecounts, "%d%d", gEndpoints[dstIndex].SVideoInCount,gEndpoints[dstIndex].RGBInCount);
+
+    print("Hub: ConferenceProcessSimMessage, cmd %d\n",cmd);
+    // Process the command
+	cswitch(cmd)
+	{
+		case (IMSG_CALL_REQUEST):
+		{
+			makestring(sTemp,"02%02d%02d:21:%s:1%s:03",
+						dstIndex,srcIndex,gEndpoints[dstIndex].Name,linecounts);
+			ConferenceSendMessage(srcIndex,sTemp);
+            gEndpoints[srcIndex].State = STATE_C2;
+            gEndpoints[dstIndex].State = STATE_C2;
+            gEndpoints[srcIndex].RemoteIndex = dstIndex;
+            gEndpoints[dstIndex].RemoteIndex = srcIndex;
+			print("Hub: Simulated OR #%2d, Request from %d,<%s>\n",dstIndex,srcIndex,sTemp);
+		    break;
+		} 
+		case (IMSG_CALL_ACCEPT):
+		{
+			print("Hub: ConferenceProcessSimMessage received IMSG_CALL_ACCEPT should not have received this message from %d\n",srcIndex);
+			break;
+		} 
+		case (IMSG_CALL_END):
+		{
+            gEndpoints[srcIndex].State = STATE_C1;
+            gEndpoints[dstIndex].State = STATE_C1;
+            gEndpoints[srcIndex].RemoteIndex = 0;
+            gEndpoints[dstIndex].RemoteIndex = 0;
+			break;
+		} 
+	}
+}
+
+//-----------------------------------------------------------------------------
+function ConferenceEndDeadCall(integer dstIndex, integer srcId, integer iCallType)
+{
+
+	string msg[200];
+	string sHeaderBlk[10];
+	string sMsgBlk[150];
+	string sEndBlk[5]; 
+	string sRemoteDA[2];
+ 	string sRemoteSA[2];
+ 	string sTemp[255];
+
+	print ("Hub: ConferenceEndDeadCall invoked\n");
+
+	if (iCallType = STATE_C2)	// Endpoint believes a conference call was active
+	{
+
+		print ("Hub: ConferenceEndDeadCall: Room Conference\n");
+ 
+		// Construct message here to terminate the endpoint's conference call
+  		// First create the strings for our source and destination addresses
+		makestring(sRemoteSA,"%02d",srcId);
+		makestring(sRemoteDA,"%02d",gEndpoints[dstIndex].RoomIndex);
+
+		// Create header block.  Note that we are sending this message as though it originated
+		// from srcId although the Hub really creates the message.
+		sHeaderBlk 	= CHAR_STX + sRemoteSA + sRemoteDA + ":"; 
+
+		// The message block only needs the instruction to end the call.  The remaining information
+		// should not need to be accurate, though it should be sized appropriate for the protocol version.
+                                             
+
+		if (gEndpoints[dstIndex].Protocol > 2)
+			// : RoomName(<=20) + Permission(1) SvideoIn(1) RGBIn(1) HDIn(1) SvideoOut(1) RGBOut(1) HDOut(1):
+			sMsgBlk	= ItoA(IMSG_CALL_END) + ":Hub+0000000:";
+		else
+			// : RoomName(<=20) + Permission(1) SvideoIn(1) RGBIn(1) :
+			sMsgBlk	= ItoA(IMSG_CALL_END) + ":Hub+000:";
+			
+		// Message end
+		sEndBlk	= CHAR_ETX;
+        
+		// Build the message
+		msg = sHeaderBlk + sMsgBlk + sEndBlk;
+
+		// Send the message
+		ConferenceSendMessage(dstIndex, msg);
+	}
+	else if (iCallType = STATE_C3)	// Endpoint believes it holds the VTC
+	{
+
+		print ("Hub: ConferenceEndDeadCall: Video Conference\n");
+
+		// If endpoint was holding a VTC connection, re-establish reservation
+		// We do not want to send any message to the endpoint
+		gHubVTC.iController 	= gEndpoints[dstIndex].RoomIndex;
+		gHubVTC.iIndex = dstIndex;
+		gHubVTC.iAvailable 	= VTC_NOT_AVAILABLE; 
+	    MakeString(sTemp, "enable:%d:%d:", dstIndex, giVTCIndex);
+	    soRoute = sTemp;
+
+        gEndpoints[dstIndex].State = STATE_C3;
+	}
+	else
+		print ("Hub: ConferenceEndDeadCall: No change\n");
+
+
+}
+
+//-----------------------------------------------------------------------------
+
+function ConferenceProcessRoomMessage(integer srcIndex, integer srcId, integer dstId, integer cmd, string msg, string msgData)
+{
+    integer i;
+    integer dstIndex;
+	integer length, iMsgCmd;									// decoding
+	long_integer data;											// decoding
+	integer iPermission, iPrivacy;								// decoding
+	integer iSvidCntIn, iRGBCntIn, iHDCntIn;					// decoding
+	integer iSvidCntOut, iRGBCntOut, iHDCntOut;					// decoding
+    string outmsg[255];
+    string sTemp[255];
+	string sToken[255], sCmd[2], sName[30];						// decoding
+    string ssrcRoom[2], sdstRoom[2], sHDCountIn[2];				// encoding
+	string sSvidCountOut[2], sRGBCountOut[2], sHDCountOut[2];	// encoding
+	string sHeaderBlk[10], sMsgBlk[150], sEndBlk[5];			// encoding
+
+    //*DEBUG*/ print("Hub: ConferenceProcessRoomMessage src %d, dst %d, cmd %d, msg [%s]\n",srcId,dstId,cmd, msgData);
+    
+    // Find the index     
+    dstIndex = giMapRoom[dstId];   
+
+	// decoding if necessary
+	if (gEndpoints[srcIndex].Protocol = gEndpoints[dstIndex].Protocol)
+	{
+        outmsg = msg;
+	}
+    else	// Protocol mismatch; reformat message
+	{
+		/* Look at Command field */	
+		if (cmd = IMSG_CUSTOM_ROUTE)
+		{
+			//*DEBUG*/print ("Protocol mismatch but passthru compatible message\n");
+         	outmsg = msg;		// Passthrough - do not modify these messages
+		}
+		else if (cmd = IMSG_CALL_STATUS)
+		{
+			// Fix for 1.8A outputting no names when no signal is exported
+			// (problem only visible on 1.7C systems)
+			if (gEndpoints[dstIndex].Protocol = 1)
+			{
+				outmsg = "";
+				while (find(",+", msg))
+				{
+					sToken = remove(",+", msg);
+					sToken = left(sToken, len(sToken) - 1);
+					outmsg = outmsg + sToken + "No Signal+";
+				}
+				outmsg = outmsg + msg;
+			}
+			else
+				outmsg = msg;
+		}
+		else
+		{
+			//*DEBUG*/print ("Reformatting message, src Protocol %d, dst Protocol %d\n", gEndpoints[srcIndex].Protocol, gEndpoints[dstIndex].Protocol);
+			// Decode and reassemble message
+			// IMSG_CALL_REQUEST
+			// IMSG_CALL_ACCEPT
+			// IMSG_CALL_END
+			// IMSG_CALL_DENY
+			// IMSG_CALL_BUSY
+                          
+			// Decode Message
+
+		    if (find("+", msgData))
+			{
+				/* First field includes the Room Name attribute. */   
+				stoken = remove("+", msgData);
+				length = len(stoken) - 1;
+				sName = left(stoken, length);
+			}
+		    data = AtoL(msgData);
+
+			if (gEndpoints[srcIndex].Protocol > 2 )	// Check SOURCE protocol
+			{
+				// Protocol 003+
+				iHDCntOut = (data % 10);
+				data = (data / 10);
+
+				iRGBCntOut = (data % 10);
+				data = (data / 10);
+
+				iSvidCntOut = (data % 10);
+				data = (data / 10);
+
+				iHDCntIn = (data % 10);
+				data = (data / 10);
+			} 
+			else
+			{
+				// No HD Count in Protocols 001 or 002
+				iHDCntOut = 0;
+				iRGBCntOut = 0;
+				iSVidCntOut = 4;	// Assume 4
+				iHDCntIn = 0;
+			}
+
+			iRGBCntIn = (data % 10);
+			data = (data / 10);
+			iSvidCntIn = (data % 10);
+			data = (data / 10);
+			iPermission = (data % 10);
+
+			// Assemble New Message
+
+			MakeString(ssrcRoom, "%02d", srcId);
+			MakeString(sdstRoom, "%02d", dstId);
+ 
+			sHeaderBlk 	= CHAR_STX + ssrcRoom + sdstRoom + ":";
+
+			if ( gEndpoints[dstIndex].Protocol > 2 )		// Check DESTINATION protocol
+			{
+				sHDCountOut = ItoA(iHDCntOut); 		// HDCountOut in protocol 003+
+				sRGBCountOut = ItoA(iRGBCntOut); 	// RGBCountOut in protocol 003+
+				sSvidCountOut = ItoA(iSvidCntOut); 	// SvidCountOut in protocol 003+
+
+				sHDCountIn = ItoA(iHDCntIn); 			// HDCountIn in protocol 003+
+			}
+			else
+			{
+				sHDCountOut = "";	// HDCountOut not in protocols 001 or 002
+				sRGBCountOut = "";	// RGBCountOut not in protocols 001 or 002
+				sSvidCountOut = "";	// SvidCountOut not in protocols 001 or 002
+				sHDCountIn = "";	// HDCountIn not in protocols 001 or 002
+            }
+
+			sMsgBlk	= ItoA(cmd) + ":" + sName + "+" 
+									  + ItoA(iPermission)
+									  + ItoA(iSvidCntIn)
+									  + ItoA(iRGBCntIn)
+									  + sHDCountIn 
+									  + sSvidCountOut 
+									  + sRGBCountOut 
+									  + sHDCountOut + ":";
+
+			sEndBlk	= CHAR_ETX;
+
+			outmsg = sHeaderBlk + sMsgBlk + sEndBlk;
+
+		}
+	}
+
+    
+    // If the destination is a simulator then call the sim function
+    if (gEndpoints[dstIndex].Type = CONFIG_SIM)
+    {
+       ConferenceProcessSimMessage(srcIndex,srcId,dstIndex,dstId,cmd,outmsg,msgData); 
+       return;
+    }
+
+    // Pass the message on to the destination
+    ConferenceSendMessage(dstIndex,outmsg);
+            
+    // Process the command
+	cswitch(cmd)
+	{
+		case (IMSG_CALL_STATUS):
+		{
+            //print("Call Status, from %d, to %d, privacy %s\n",srcIndex,dstIndex,msgData);
+            if ((gEndpoints[srcIndex].State = STATE_C2) || 
+                (gEndpoints[srcIndex].State = STATE_C3))
+            {
+                if (left(msgData,1) = "1")
+                {
+                    if (!gEndpoints[srcIndex].Privacy)
+                    {
+                        gEndpoints[srcIndex].Privacy = 1;
+                   	    MakeString(sTemp, "privacy:%d:%d:%d:", srcIndex, dstIndex, gEndpoints[srcIndex].Privacy);
+						soRoute = sTemp;
+
+                        print("Hub: Conference privacy on, mute video and audio signals\n");
+                    }
+                }
+                else
+                {
+                    if (gEndpoints[srcIndex].Privacy)
+                    {
+                        gEndpoints[srcIndex].Privacy = 0;
+                   	    MakeString(sTemp, "privacy:%d:%d:%d:", srcIndex, dstIndex, gEndpoints[srcIndex].Privacy);
+						soRoute = sTemp;
+                        	
+                        print("Hub: Conference privacy off, unmute video and audio signals\n");
+                    }
+                }
+            }
+			break;
+		}
+		case (IMSG_CALL_ACCEPT):
+		{
+            gEndpoints[srcIndex].State = STATE_C2;
+            gEndpoints[dstIndex].State = STATE_C2;
+            gEndpoints[srcIndex].RemoteIndex = dstIndex;
+            gEndpoints[dstIndex].RemoteIndex = srcIndex;
+            gEndpoints[dstIndex].Privacy = 0;
+			MakeString(sTemp, "enable:%d:%d:", srcIndex, dstIndex);
+			soRoute = sTemp;
+
+			break;
+		} 
+		case (IMSG_CALL_END):
+		{
+            gEndpoints[srcIndex].State = STATE_C1;
+            gEndpoints[dstIndex].State = STATE_C1;
+            gEndpoints[srcIndex].RemoteIndex = 0;
+            gEndpoints[dstIndex].RemoteIndex = 0;
+            gEndpoints[dstIndex].Privacy = 0;
+			MakeString(sTemp, "disable:%d:%d:", srcIndex, dstIndex);
+			soRoute = sTemp;			
+            break;
+		} 
+	}
+    print("\n");  // add a space seperator so it is easy to read the debug output
+}
+
+//-----------------------------------------------------------------------------
+
+Integer_function ConferenceVerifyHeader(string slocal)
+{ 
+integer error;
+integer length;
+integer dstAddress;
+string header[7];
+string stx[2];
+string sa[2];
+string da[2];
+
+error = 0; 
+length = len(slocal);
+
+if (length <> 6)
+	{
+	print("Hub: Header Length <> 6\n");
+	error = -1;
+	return(error);
+	}
+	
+stx = left(slocal, 2);
+if (Atoi(stx) <> 2)
+	{
+	print("Hub: Couldn't find STX\n"); 
+	error = -1;
+	return (error);
+	}
+	
+sa = mid (slocal, 3, 2);	/* Source Address always good for now */
+da = mid (slocal, 5, 2);
+dstAddress = AtoI(da);
+
+if (dstAddress <> 99)
+	{
+	//print("Send Message to another Room\n");
+	return(dstAddress);
+	}
+	
+return (dstAddress);
+}
+
+//-----------------------------------------------------------------------------
+
+
+Function ConferenceSendVTCMessage(integer msg, integer da)
+{
+	string sXmtMessage[20];
+    integer roomNumber;
+
+    roomNumber  = gEndpoints[da].RoomIndex;
+    makestring(sXmtMessage,"%s99%02d:%02d::%s",
+                CHAR_STX,roomNumber,msg,CHAR_ETX);
+	//txRmStrings[da] = sXmtMessage;
+    ConferenceSendMessage(da,sXmtMessage);
+
+    print("Hub: Local: to %d %d [%s]\n", da, roomNumber,sXmtMessage); 
+}
+
+//-----------------------------------------------------------------------------
+
+// ProtocolByRoom
+
+Function ConferenceProcessMessage(integer srcIndex, string msg)
+{
+integer length, index, itargetcnt, i;
+integer iCmd; 
+integer dstIndex; 
+integer srcoffset, dstoffset;
+integer dstAddress, msgSrcAddress, msgDstAddress;
+integer initialState;
+string slocal[255];
+string sremote[255];
+string sToken[100];   
+string sHeader[8];
+string sCmd[2]; 
+string sData[100];
+string sCallState[2], sSrcID[3];
+string sTemp[255];
+
+slocal = msg; 
+sremote = slocal;
+initialState = gEndpoints[srcIndex].State;
+if (didebug) print("Hub: Rcvd: Message from %02i [%s], state %d\n", srcIndex, slocal,gEndpoints[srcIndex].State);
+ 
+/* Verify STX, DA, and SA first...ETX is last*/
+
+//Need better error check on length parameters... 
+
+if (find(":", slocal))
+	{
+	stoken = remove(":", slocal);
+	length = len(stoken) - 1;
+	sHeader = left(stoken, length);
+	//*DEBUG*/ print("sHeader:%s,  ", sHeader); 
+	msgSrcAddress = AtoI(mid (sHeader, 3, 2));	/* Source Address always good for now */
+	msgDstAddress = AtoI(mid (sHeader, 5, 2));
+
+	}
+	
+if (find(":", slocal))
+	{
+	stoken = remove(":", slocal);
+	length = len(stoken) - 1;
+	sCmd = left(stoken, length); 
+	iCmd = Atoi(sCmd);
+	//*DEBUG*/ print("iCmd:%i,  ", iCmd);
+	}
+	
+if (find(":", slocal))  
+	{
+	stoken = remove(":", slocal);
+	length = len(stoken) - 1;
+	sData = left(stoken, length);
+	//*DEBUG*/print("sData:%s\n", sData);
+	}
+
+dstAddress = ConferenceVerifyHeader(sHeader); 
+//*DEBUG*/ print("Destination Address: %i\n", dstAddress);
+
+if (dstAddress = -1)	//exit if invalid msg...
+	return;                                             
+
+// If this is the first message, and it is not IMSG_OFFLINE, 
+// then enable the endpoint
+// If first message is keepalive, handle separately in keepalive message
+if ((gEndpoints[srcIndex].State = STATE_C0) && (iCmd <> IMSG_OFFLINE) && (iCmd <> IMSG_KEEPALIVE))
+{
+    ConferenceEnableRoom(srcIndex);
+}
+
+cswitch (iCmd)
+	{
+	case (IMSG_KEEPALIVE):
+		{
+		//*DEBUG*/ print("Keep-Alive message from endpoint index %i\n", srcIndex);
+        gEndpoints[srcIndex].Name = sData;
+        gEndpoints[srcIndex].TimeoutCount = 0;
+        //gEndpoints[srcIndex].StatusCount = gEndpoints[srcIndex].StatusCount + 1;
+        //gEndpoints[srcIndex].Online = 1;
+		// extract this room's protocol Type
+		if (find(":", slocal))  
+		{
+			stoken = remove(":", slocal);
+			length = len(stoken) - 1;
+			sData = left(stoken, length);
+			//*DEBUG*/print("sData:%s\n", sData);
+		}
+		gEndpoints[srcIndex].Protocol = atoi(mid(sData,2,3));
+        
+		if (gEndpoints[srcIndex].State = STATE_C0)
+		{
+		    ConferenceEnableRoom(srcIndex);
+		}
+
+		// If protocol <> 001, determine if room state is out of sync
+		if (gEndpoints[srcIndex].Protocol > 1)
+		{
+			if (gEndpoints[srcIndex].Protocol > 2)
+			{
+				sCallState = mid(sData,12,1);
+				sSrcID = mid(sData,13,2);
+			}
+			else
+			{
+				sCallState = mid(sData,8,1);
+				sSrcID = mid(sData,9,2);
+            }
+			if (gEndpoints[srcIndex].State <> AtoI(sCallState))	// Check the call state
+			{
+				//*DEBUG*/ print ("Expected state: %d; Reported state: %s\n", gEndpoints[srcIndex].State, sCallState);
+				ConferenceEndDeadCall(srcIndex, AtoI(sSrcID), AtoI(sCallState));
+				// pass the destination index, "source ID" (the remote room to mimick), and call state
+			}
+		}
+        break;
+		}
+	case (IMSG_OFFLINE):
+		{
+		//*DEBUG*/print("Offline message %d, online %d, state %d, roomIndex %d\n",
+        //*DEBUG*/    srcIndex,gEndpoints[srcIndex].Online,gEndpoints[srcIndex].State,gEndpoints[srcIndex].RoomIndex);
+        gEndpoints[srcIndex].Name = sData;
+        if (gEndpoints[srcIndex].State != STATE_C0)
+        {
+            ConferenceDisableRoom(srcIndex);
+        }
+        //gEndpoints[srcIndex].Online = 0;
+		break;
+		}
+	case (IMSG_SYSTEMSTATUS):
+		{
+		print("Hub: Shouldn't Get System Status message\n");
+		break;
+		}
+	case (IMSG_CUSTOM_ROUTE):
+		{
+			//get the ID of the remote endpoint...
+			dstIndex = gEndpoints[srcIndex].RemoteIndex;
+
+			//get the custom route data...
+			//first the number of endpoint targets (that need a route change)...
+			index = 1;
+			itargetcnt = atoi(mid(sData,index,1));
+			index = index + 1;
+
+			//*DEBUG*/ print("Custom Route Message - ConferenceHub processing for %i targets\n", itargetcnt); 
+			
+			//get each source/destination offset pair for the endpoint routes.
+			for (i = 1 to itargetcnt)
+			{
+				srcoffset = atoi(mid(sData,index,1));
+				index = index + 1;
+				dstoffset = atoi(mid(sData,index,1));
+				index = index + 1;
+				//Custom Route request that must be processed by the Hub.
+				print("Hub: CustomRoutingEnable() - srcIndex=%i, srcoffset=%i, dstIndex=%i, dstoffset=%i\n",
+						srcIndex,srcoffset, dstIndex, dstoffset);
+				MakeString(sTemp, "customenable:%d:%d:%d:%d:", srcIndex, dstIndex, srcoffset, dstoffset);
+				soRoute = sTemp;
+            }
+			break;
+		}
+	case (IMSG_FIXED_ENABLE):
+		{
+            // The source and destination are the same
+            dstIndex = srcIndex;
+			srcoffset = atoi(mid(sData,1,2));
+			dstoffset = atoi(mid(sData,3,2));
+            
+			//Custom Route request that must be processed by the Hub.
+			//print("FixedRoutingEnable() - srcIndex=%i, srcoffset=%i, dstIndex=%i, dstoffset=%i\n",
+			//		srcIndex,srcoffset, dstIndex, dstoffset);
+			MakeString(sTemp, "fixedenable:%d:%d:%d:", srcIndex, srcoffset, dstoffset);
+			soRoute = sTemp;			
+            break;
+       }
+	case (IMSG_FIXED_IN):
+		{
+            // The source and destination are the same
+            dstIndex = srcIndex;
+			srcoffset = atoi(mid(sData,1,2));
+			dstoffset = atoi(mid(sData,3,2));
+            
+			//Custom Route request that must be processed by the Hub.
+			//print("FixedRoutingEnableByTarget() - srcIndex=%i, srcoffset=%i, dstIndex=%i, dstoffset=%i\n",
+			//		srcIndex,srcoffset, dstIndex, dstoffset);
+			MakeString(sTemp, "fixedenablebytarget:%d:%d:%d:", srcIndex, srcoffset, dstoffset);
+			soRoute = sTemp;			
+            break;
+       }
+
+	case (IMSG_FIXED_IN_DIS):
+		{
+            // The source and destination are the same
+            dstIndex = srcIndex;
+			dstoffset = atoi(mid(sData,1,2));
+            
+			//Custom Route request that must be processed by the Hub.
+			//*DEBUG*/print("FixedRoutingDisable() - dstIndex=%i, dstoffset=%i\n",
+			//*DEBUG*/		dstIndex, dstoffset);
+			MakeString(sTemp, "fixeddisable:%d:%d:", dstIndex, dstoffset);
+			soRoute = sTemp;			
+            break;
+        }
+	case (IMSG_VTC_DATA):
+		{
+		aoVTCMsgValue = atoi(sData);
+		break;
+		} 
+	case (IMSG_VTC_REQUEST):
+		{
+        
+		//*DEBUG*/print("VTC Resource Request message rcv'd, src %d, available %d, state %d\n",
+        //*DEBUG*/        srcIndex,gHubVTC.iAvailable,gEndpoints[srcIndex].State);
+		if (gHubVTC.iEnabled = ON)                 
+		{
+			if (gHubVTC.iAvailable = VTC_AVAILABLE)
+			{
+				gHubVTC.iController 	= gEndpoints[srcIndex].RoomIndex;
+				gHubVTC.iIndex = srcIndex;
+				gHubVTC.iAvailable 	= VTC_NOT_AVAILABLE;
+                //*DEBUG*/print("Hub: VTC_ACCEPT to %d\n",srcIndex);
+				ConferenceSendVTCMessage(IMSG_VTC_ACCEPT, srcIndex);
+				MakeString(sTemp, "enable:%d:%d:", srcIndex, giVTCIndex);
+				soRoute = sTemp;				
+                gEndpoints[srcIndex].State = STATE_C3;
+				// If call is already incoming, also pass that message along - for protocols 002 and later
+				if ((gHubVTC.iState = IMSG_VTC_INCOMING) && (gEndpoints[gHubVTC.iIndex].Protocol > 1))
+				{
+	                //*DEBUG*/print("Hub: VTC_INCOMING to %d\n",srcIndex);
+                	ConferenceSendVTCMessage(IMSG_VTC_INCOMING, srcIndex);
+				}
+				pulse(1,doVTCWakeup);
+			}
+			else
+			{
+                //*DEBUG*/print("Hub: IMSG_VTC_BUSY to %d\n",srcIndex);
+				ConferenceSendVTCMessage(IMSG_VTC_BUSY, srcIndex); 
+			}		
+		}
+        		break;
+		}
+	case (IMSG_VTC_END):
+		{
+ 		print("Hub: VTC Resource Release message rcv'd\n");
+		gHubVTC.iController = 0;
+		gHubVTC.iIndex = 0;
+		gHubVTC.iAvailable = VTC_AVAILABLE;
+		MakeString(sTemp, "disable:%d:%d:", srcIndex, giVTCIndex);
+		soRoute = sTemp;		
+        gEndpoints[srcIndex].State = STATE_C1;
+
+		break;
+		}
+	default:
+		{
+		//print("All other messages sent to remote room\n"); 
+		//print("DA=%i , RmCnt=%i, Msg=%s\n", dstAddress, giRoomCount, sremote);
+		ConferenceProcessRoomMessage(srcIndex,msgSrcAddress, msgDstAddress, iCmd, msg, sData);
+        // Find room id
+
+		break;
+		}                  
+	}
+    
+    if ((initialState != gEndpoints[srcIndex].State) &&
+        (!giNoUpdateDelay))                            // Don't update during first minute
+    {
+        ConferenceSendUpdate();
+    }
+}
+
+/*******************************************************************************************
+  System Functions
+*******************************************************************************************/
+
+function InitializeData()
+{
+    integer i,j;
+    integer length;
+    integer simCount;
+    
+    simCount = 0;               
+    
+    // Initialize all rooms
+    for (i = 1 to MAX_ENDPOINTS)
+    {
+        // If not assigned, then make it a simulation
+        if (gbSimulateORs && gEndpoints[i].Type = CONFIG_NONE &&
+            giRoomCount < MAX_ROOMS)
+        {
+            simCount = simCount + 1;
+            gEndpoints[i].Type = CONFIG_SIM;
+            gEndpoints[i].Name = "Sim " + itoa(simCount);
+            //print("Endpoint %d Type %d, index = %d, giRoomCount %d\n",
+            //        i,gEndpoints[i].Type,gEndpoints[i].RoomIndex,giRoomCount);
+        }
+        
+        // Endpoint specific
+        if (gEndpoints[i].Type = CONFIG_VTC)
+        {
+            giVTCIndex = i;
+            print("VTC index %d\n",giVTCIndex);
+        }
+        
+        if (gEndpoints[i].ConferenceEndpoint ||	
+            (gEndpoints[i].Type = CONFIG_SIM))
+        {
+            giRoomCount = giRoomCount + 1;
+            gEndpoints[i].RoomIndex = giRoomCount;
+            giMapRoom[giRoomCount] = i;
+            print("Hub: Endpoint %2d Type %d, index = %2d, giRoomCount %d\n",
+                    i,gEndpoints[i].Type,gEndpoints[i].RoomIndex,giRoomCount);
+                    
+		    // If it is a conferencing endpoint and the 'view' tag was not defined
+		    // then enable connection with all endpoints
+		    if (!gEndpoints[i].ConnectionInit && (gEndpoints[i].ConferenceEndpoint = 1))
+		    {
+			   	for (j=1 to MAX_ENDPOINTS)
+			   	{
+		            if ((j != i) && gEndpoints[j].ConferenceEndpoint)
+		            {
+			   			gEndpoints[i].EndpointList[j] = ON;
+			   		}
+			   	}
+			}
+		}
+                
+        // Set inverse maps
+        cswitch (gEndpoints[i].ConnectionType)
+        {
+            case (CONFIG_ETH):
+            {
+                giMapEthernet[gEndpoints[i].ConnectionIndex] = i;
+                break;
+            }
+            case (CONFIG_LOCAL):
+            {   
+                giMapLocal[gEndpoints[i].ConnectionIndex] = i;
+                 
+				// These steps must occur before the local endpoints enter stage 1 initialization
+				aoRmAttrConferenceFlag[gEndpoints[i].ConnectionIndex] = gEndpoints[i].LRmConfAttrFlag;
+                aoRmAttrPermissionFlag[gEndpoints[i].ConnectionIndex] = gEndpoints[i].LRmConfPermission;
+				TxRmTxtName[gEndpoints[i].ConnectionIndex] = ParseRoomName(gEndpoints[i].LRmConfName);
+				TxRmBtnName[gEndpoints[i].ConnectionIndex] = gEndpoints[i].LRmConfButton;
+
+				// Note that In is mapped to Out, Out is mapped to In; variables on left
+				// are from perspective of room, variables on right are from perspective of hub
+
+				aoRmAttrSVidCountIn[gEndpoints[i].ConnectionIndex] = gEndpoints[i].SVideoOutCount;
+				aoRmAttrSVidCountOut[gEndpoints[i].ConnectionIndex] = gEndpoints[i].SVideoInCount;
+				aoRmAttrRGBCountIn[gEndpoints[i].ConnectionIndex] = gEndpoints[i].RGBOutCount;
+				aoRmAttrRGBCountOut[gEndpoints[i].ConnectionIndex] = gEndpoints[i].RGBInCount;
+				aoRmAttrHDCountIn[gEndpoints[i].ConnectionIndex] = gEndpoints[i].HDOutCount;
+				aoRmAttrHDCountOut[gEndpoints[i].ConnectionIndex] = gEndpoints[i].HDInCount;
+
+/*				print("Endpoint %d: In: S[%d] R[%d] H[%d].  Out: S[%d] R[%d] H[%d]\n",
+					i, 
+					aoRmAttrSVidCountIn[gEndpoints[i].ConnectionIndex],
+					aoRmAttrRGBCountIn[gEndpoints[i].ConnectionIndex],
+					aoRmAttrHDCountIn[gEndpoints[i].ConnectionIndex],
+					aoRmAttrSVidCountOut[gEndpoints[i].ConnectionIndex],
+					aoRmAttrRGBCountOut[gEndpoints[i].ConnectionIndex],
+					aoRmAttrHDCountOut[gEndpoints[i].ConnectionIndex]);
+*/
+                break;
+            }
+            case (CONFIG_SERIAL):
+            {
+                giMapSerial[gEndpoints[i].ConnectionIndex] = i;
+                break;
+            }
+        }
+    
+    }
+    
+    // Initialize VTC data structure
+    gHubVTC.iController = 0;		//No NA has control of the VTC.
+	gHubVTC.iIndex = 0;
+    gHubVTC.iEnabled	= gbVTC;
+	if (gHubVTC.iEnabled = ON)
+		gHubVTC.iAvailable = VTC_AVAILABLE;	//Assume not available unless determine otherwise.
+	else
+		gHubVTC.iAvailable = VTC_NOT_AVAILABLE;	//Assume not available unless determine otherwise.
+    
+    print("Inverse maps:\n\tEthernet ");
+    for (i = 1 to MAX_ETHERNET_ROOMS)
+    {
+        print("%d ",giMapEthernet[i]);
+    }    
+    print("\n\tLocal ");
+    for (i = 1 to MAX_LOCAL_ROOMS)
+    {
+        print("%d ",giMapLocal[i]);
+    }    
+    print("\n\tRooms ");
+    for (i = 1 to MAX_ENDPOINTS)
+    {
+        print("%d ",giMapRoom[i]);
+    }    
+    print("\n");
+    print("Hub: Initialization complete\n");
+}
+
+//-----------------------------------------------------------------------------
+
+function InitializeIO()
+{
+    integer i;
+    integer index;
+    
+    // Enable communication connections
+    for (i = 1 to MAX_ENDPOINTS)
+    {
+        // Initialize Room Routing
+        index = gEndpoints[i].ConnectionIndex;  // Only valid if ConnectionType non-zero
+        if (gEndpoints[i].ConnectionType = CONFIG_ETH)
+        {
+            doRoomEnableEthernet[index] = 1;
+        }
+        else if (gEndpoints[i].ConnectionType = CONFIG_LOCAL)
+        {
+            doRoomEnableLocal[index] = 1;
+        }
+        else if (gEndpoints[i].ConnectionType = CONFIG_SERIAL)
+        {
+            doRoomEnableSerial[index] = 1;
+        }
+    }
+    
+    print("Hub: Endpoint Initialization complete\n");
+}
+
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+
+// A change in the status for the VTC will trigger a change in this string.
+CHANGE RxTB_Channel1_Status
+{
+   	string sVTCStatus[255];
+ 
+	//print("Processing Tandberg Status text change...\n");
+	sVTCStatus = RxTB_Channel1_Status;	// save the call status in a local variable so it doesn't change
+	// TB_Channel1_Status should be attached to the primary channel status
+	// Do not attach it to Call_Status; that updates repeatedly for all channels
+
+	// If status is "calling", the call has just been initiated from the local system.
+	// If status is "ringing", the remote system is being rung.
+	// If status is "incoming", the local system is being rung.
+	// Either way, this is a "Requesting" state.
+
+	// Note that only a check for gHubVTC.iState = IMSG_VTC_INCOMING is used elsewhere.
+
+    if ((find("incoming", sVTCStatus)) && (gHubVTC.iState <> IMSG_VTC_INCOMING))
+    {
+		gHubVTC.iState = IMSG_VTC_INCOMING;
+    } 
+	else if (((find("calling", sVTCStatus)) || (find("ringing", sVTCStatus))) && (gHubVTC.iState <> IMSG_VTC_CALL))
+	{
+		gHubVTC.iState = IMSG_VTC_CALL;
+	} 
+	else if (((find("idle", sVTCStatus)) || (find("disconnected", sVTCStatus))) && (gHubVTC.iState <> IMSG_VTC_DISCON))
+	{
+		// If the status is "Idle", there is no active call.
+		// If this status changes while sigConferenceActive is ON, ignore it.
+		gHubVTC.iState = IMSG_VTC_DISCON;
+	} 
+	else if ((!find("disconnected", sVTCStatus)) && (find("connected", sVTCStatus)) && (gHubVTC.iState <> IMSG_VTC_LIVE))
+	{
+		// If status is "Connected", VTC is Live.  Note this is a substring of "disconnected", above
+		gHubVTC.iState = IMSG_VTC_LIVE;
+	} else	
+	{
+		// For all other statuses, return immediately (don't do anything else)
+		//print ("Unhandled VTC State change\n");
+		return;
+    }
+
+	// If protocol Version is 001, do not send a message to the connected Endpoint
+	// Otherwise, update the endpoint with the new VTC State
+	if ((gbVTC) && (gHubVTC.iAvailable = VTC_NOT_AVAILABLE) && (gEndpoints[gHubVTC.iIndex].Protocol > 1))
+	{
+		//*DEBUG*/print("RxTB_Channel1_Status: Hub VTC State updated\n");
+		ConferenceSendVTCMessage(gHubVTC.iState, gHubVTC.iIndex);
+	}
+}
+
+
+PUSH diConnectRoomEthernet
+{
+	integer port,epindex, index, id;
+    string msg[255];
+    string sId[255];
+
+	port = getlastmodifiedarrayindex();
+    giRoomConnectCount[port] = giRoomConnectCount[port] + 1;
+    print("Hub: diConnectRoomEthernet %2d\n",port);
+    // Get the port index
+    epindex = giMapEthernet[port];
+    
+    // Make room online
+    gEndpoints[epindex].Online = 1;
+    //ConferenceEnableRoom(i);
+    //TxRoomMessageEthernet[1] = "Booyah!";
+
+    print("Hub: Connected to ethernet endpoint %2d, index %2d, room %2d\n",
+            port,epindex,gEndpoints[epindex].RoomIndex);
+
+	// Force a refresh of system status to the endpoint
+	index = gEndpoints[epindex].ConnectionIndex;
+	id = gEndpoints[epindex].RoomIndex;
+	makestring(sId,"%02d",id);
+
+    msg = ConferenceCreateUpdateMessage(epindex);		//create unique system status message for the endpoint.
+
+    if (gEndpoints[epindex].ConferenceEndpoint)  
+    {
+    	if (gEndpoints[epindex].Type = CONFIG_LR)
+        {
+           	TxRoomMessageLocal[index] = CHAR_STX + HUB_RMID + sId + msg;        
+        }
+        else
+        { 
+          	TxRoomMessageEthernet[index] = CHAR_STX + HUB_RMID + sId + msg;
+        }
+    }
+	print ("Hub: Sent System Status message to endpoint index %2i\n", epindex);
+}                                                 
+
+//-----------------------------------------------------------------------------
+
+RELEASE diConnectRoomEthernet
+{
+	integer port,index;
+	port = getlastmodifiedarrayindex();
+    
+    // Get the port index
+    index = giMapEthernet[port];
+    
+     // Take room offline
+    print("Hub: Disconnect from ethernet endpoint %2d, index %2d, room %2d\n",
+            port,index,gEndpoints[index].RoomIndex);
+     gEndpoints[index].Online = 0;
+     ConferenceDisableRoom(index);
+
+}
+
+CHANGE aiConnectStatusEthernet
+{                           
+	integer port, estatus, index;
+	port = getlastmodifiedarrayindex();
+
+	estatus = aiConnectStatusEthernet[port];
+	
+	print("Hub: ENET: Connection status %d on port %2d\n",estatus, port);
+	if (estatus = 4)
+	{
+		index = giMapEthernet[port];
+		doRoomEnableEthernet[index] = 0;
+		print("Hub: ENET: disabling ethernet to room %2i\n", port);
+		giRoomStatusDisable[index] = 1;
+		//delay(600);
+		//doRoomEnableEthernet[1] = 1;
+	}
+}
+
+CHANGE RivuletStatus
+{                           
+	integer port, rstatus, index;
+
+	port = getlastmodifiedarrayindex();   // right now, this is also the port index...
+
+	rstatus = RivuletStatus[port]; 
+	
+	index = port;
+	
+	print("Hub: ENET: Rivulet status %d on endpoint %i\n",rstatus, index);
+	if (rstatus = CMIS_ERROR)
+	{
+		//index = MapEthernet[port];
+		print("Hub: RIVULET: Connection not available, %i\n", index); 
+		gEndpoints[index].Online = OFF;
+        ConferenceDisableRoom(index);
+	} 
+	//else if (rstatus = CMIS_OFFLINE)
+	//{
+	//    print("Hub: ENET: Rivulet endpoint %i, offline\n", index);
+	//    gEndpoints[index].Online = OFF;
+	//} 
+	
+	else if (rstatus = CMIS_IDLE)
+	{
+	    //print("Hub: ENET: Rivulet endpoint %i, online\n", index);
+	    gEndpoints[index].Online = ON;  
+    }
+}
+
+//-----------------------------------------------------------------------------
+
+PUSH diConnectRoomLocal
+{
+	integer port,index;
+	port = getlastmodifiedarrayindex();
+    
+    // Get the port index
+    index = giMapLocal[port];
+       
+    // Make room online
+    if (gEndpoints[index].State != STATE_C0)
+    {
+        gEndpoints[index].State = STATE_C0;
+    }
+    gEndpoints[index].Online = 1;
+    print("Hub: Connected to local endpoint %2d\n",index);
+}
+
+//-----------------------------------------------------------------------------
+
+PUSH diConnectRoomSerial
+{
+	integer port,index;
+	port = getlastmodifiedarrayindex();
+    
+    // Get the port index
+    index = giMapSerial[port];
+       
+    // Make room online
+    if (gEndpoints[index].State != STATE_C0)
+    {
+        gEndpoints[index].State = STATE_C0;
+    }
+    gEndpoints[index].Online = 1;
+    print("Hub: Connected to serial endpoint %2d\n",index);
+}
+
+
+PUSH diMuteMicLocal
+{
+	integer port,index;
+    string sTemp[255];
+    
+	port = getlastmodifiedarrayindex();
+    
+    // Get the port index
+    index = giMapLocal[port];
+
+	// index aquired
+	MakeString(sTemp, "mutelocal:%d:1:", index);
+	soRoute = sTemp;
+
+	print("Hub: Endpoint %2i Muted, port %2i\n", index, port);
+}
+
+RELEASE diMuteMicLocal
+{
+	integer port,index;
+    string sTemp[255];
+    
+	port = getlastmodifiedarrayindex();
+    
+    // Get the port index
+    index = giMapLocal[port];
+
+	MakeString(sTemp, "mutelocal:%d:0:", index);
+	soRoute = sTemp;
+	                          
+	print("Hub: Endpoint %2i unMuted, port %2i\n", index, port);
+       
+}
+
+//-----------------------------------------------------------------------------
+
+CHANGE RxRoomMessageEthernet
+{
+	integer index,port;
+    string msg[255];
+	port = getlastmodifiedarrayindex();
+	msg = RxRoomMessageEthernet[port];
+    
+    // Get the port index
+    index = giMapEthernet[port];
+
+	//*DEBUG*/ print("Hub: Msg from eth endpoint %2d: [E%2d]\n",index,port); 
+    ConferenceProcessMessage(index, msg);
+}
+
+//-----------------------------------------------------------------------------
+
+CHANGE RxRoomMessageLocal
+{
+	//print("Local room messages not implemented\n"); 
+
+	integer index,port;
+    string msg[255];
+	port = getlastmodifiedarrayindex();
+	msg = RxRoomMessageLocal[port];
+    
+    // Get the port index
+    index = giMapLocal[port];
+
+	//*DEBUG*/ print("Hub: Msg from local endpoint %2d: [L%2d]\n",index,port); 
+    ConferenceProcessMessage(index, msg);
+
+}
+
+//-----------------------------------------------------------------------------
+
+CHANGE RxRoomMessageSerial
+{
+    print("Hub: Serial room messages not implemented\n");
+}
+
+
+
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+
+Function Main()
+{
+    integer i,j;
+    
+	// Initialize global variables
+    giGlobalState = STATE_S0;
+    giRoomCount = 0;
+	gbConfRoom = 0;
+	gbSimulateORs = 0;
+  	gsName = "Unnamed";
+  	giSVideo = 0;
+  	giRGB = 0;
+	giHD = 0;
+  	giAudio = 0;
+  	gbVTC = 0;
+    giVTCIndex = 0;
+    giTimeoutCount = 0;
+    giNoUpdateDelay = 1;
+    giFixedEndpointCount = 0;
+    giCustomEndpointCount = 0;
+    
+	// Initialize Endpoint array
+    for (i = 1 to MAX_ENDPOINTS)
+    {
+        gEndpoints[i].Type = 0;
+        gEndpoints[i].RoomIndex = 0;
+        gEndpoints[i].ConnectionType = 0;
+        gEndpoints[i].ConnectionIndex = 0;
+        gEndpoints[i].CustomEndpointID = 0; 
+        gEndpoints[i].FixedEndpointID = 0;
+		gEndpoints[i].Protocol = 001;	// Default to protocol 001
+
+        gEndpoints[i].SVideoInStart = 0;
+        gEndpoints[i].SVideoInCount = 0;
+        gEndpoints[i].SVideoOutStart = 0;
+        gEndpoints[i].SVideoOutCount = 0;
+        gEndpoints[i].RGBInStart = 0;
+        gEndpoints[i].RGBInCount = 0;
+        gEndpoints[i].RGBOutStart = 0;
+        gEndpoints[i].RGBOutCount = 0;
+        gEndpoints[i].HDInStart = 0;
+        gEndpoints[i].HDInCount = 0;
+        gEndpoints[i].HDOutStart = 0;
+        gEndpoints[i].HDOutCount = 0;
+
+        gEndpoints[i].State = STATE_C0;
+        gEndpoints[i].Online = 0;
+        gEndpoints[i].StatusCount = 0;
+        gEndpoints[i].TimeoutCount = 0;
+        gEndpoints[i].Busy = 0;
+        gEndpoints[i].RemoteIndex = 0;
+        gEndpoints[i].Privacy = 0;
+        gEndpoints[i].Name = "";
+        gEndpoints[i].ConferenceEndpoint = 0;
+        gEndpoints[i].ConnectionInit = 0;
+        
+		gEndpoints[i].LRmConfAttrFlag = 0;
+		gEndpoints[i].LRmConfPermission = 0;
+		gEndpoints[i].LRmConfName = "Offline";
+		gEndpoints[i].LRmConfButton = "Offline";
+
+        giMapRoom[i] = 0; 
+        
+        for (j = 1 to MAX_ENDPOINTS)
+        	gEndpoints[i].EndpointList[j] = OFF;
+    }
+    
+    for (i = 1 to MAX_ETHERNET_ROOMS)
+    {
+        doRoomEnableEthernet[i] = 0;
+        giMapEthernet[i] = 0;
+	    giRoomConnectCount[i] = 0;
+    	giRoomStatusDisable[i] = 0;
+    }
+    
+    for (i = 1 to MAX_LOCAL_ROOMS)
+    {
+        doRoomEnableLocal[i] = 0;
+        giMapLocal[i] = 0;
+    }
+    
+    for (i = 1 to MAX_SERIAL_ROOMS)
+    {
+        doRoomEnableSerial[i] = 0;
+        giMapSerial[i] = 0;
+    } 
+    
+    // Enable I/O   
+    WaitForInitializationComplete();
+        
+  	// Write version string      
+    soVersion = "S/W Version: " + CONFERENCE_HUB_VERSION;
+    soLogic = "Logic: " + LOGIC_VERSION;
+    soPhoneNumber = "Technical Support: " + TECH_SUPPORT_NUMBER;
+    
+    // Get the configuration first
+    ReadConfigFile();
+
+	/* DEBUG - START */    
+    For (i=1 to MAX_ENDPOINTS)
+    {
+    	print("Hub: Endpoint %2i (RoomIndex %2i): ", i,gEndpoints[i].RoomIndex);
+        for (j = 1 to MAX_ENDPOINTS)
+            print(" %i",gEndpoints[i].EndpointList[j]);
+        print("  \n");
+    }                  
+    /* DEBUG END */
+
+    // Initialize conference state before I/O
+    InitializeData();
+
+	// Initialze Endpoint array
+    giGlobalState = STATE_S1; 
+
+	// Notify audio and video modules that configuration activities are complete
+	soAudInfo = "end:0:";
+    soVidInfo = "end:0:";
+    
+    // Initialize all routes 
+    InitializeIO();
+    
+	doInitAllStagesComplete = ON;
+
+    // Delay to give endpoints a chance to register
+    delay(100);
+
+    giGlobalState = STATE_S2;
+    print("Hub: Conference start update loop\n");
+ 
+    while (1)
+    {
+        ConferenceCheckActiveEndpoints();
+        ConferenceSendUpdate();
+        delay(6000);  // Wait a minute and check again
+        giNoUpdateDelay = 0; // Start updates on endpoint state changes 
+        
+		for(i = 1 to MAX_ETHERNET_ROOMS)
+		{
+			if ((gEndpoints[i].ConferenceEndpoint = ON) && (gEndpoints[i].ConnectionType = CONFIG_ETH))
+			{        
+        		if (giRoomStatusDisable[i])
+        		{
+            		print("Hub: ENET:  Enable ethernet to room %2i (RoomIndex %2i)\n", i, gEndpoints[i].RoomIndex);
+		            giRoomStatusDisable[i] = 0;
+		            doRoomEnableEthernet[i] = 1;
+        		}
+        	}
+        }
+    }
+}
+
+

@@ -1,0 +1,1616 @@
+/*********************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*********************************************************************************/
+// #SYMBOL_NAME ""
+// #HINT ""
+// #DEFINE_CONSTANT
+
+
+#DEFINE_CONSTANT MAX_ID_LENGTH  30
+
+//CurRqst values
+#DEFINE_CONSTANT RQST_IDLE              0
+#DEFINE_CONSTANT RQST_CONNECT           1
+#DEFINE_CONSTANT RQST_DISCONNECT        2
+
+#DEFINE_CONSTANT CMIS_NORIVULET         0
+#DEFINE_CONSTANT CMIS_YESRIVULET        1  
+
+#DEFINE_CONSTANT RIVULET_EP_OFFLINE     0
+#DEFINE_CONSTANT RIVULET_EP_AVAILABLE   1
+#DEFINE_CONSTANT RIVULET_EP_NOTAVAIL    2  
+
+//CMIS CurStatus values
+// Found in CMIS_Hub_Library
+
+//Rivulet CurStatus values
+#DEFINE_CONSTANT RIVULET_IDLE           0
+#DEFINE_CONSTANT RIVULET_OFFLINE        1
+#DEFINE_CONSTANT RIVULET_CONNECTING     2
+#DEFINE_CONSTANT RIVULET_CONNECTED      3
+#DEFINE_CONSTANT RIVULET_DISCONNECTING  4
+#DEFINE_CONSTANT RIVULET_DISCONNECTED   5
+#DEFINE_CONSTANT RIVULET_ERROR          6
+#DEFINE_CONSTANT RIVULET_NOTAVAIL       7 
+
+//gsRivuletTimer
+#DEFINE_CONSTANT RIVULET_TIMEOUT       75     //15 seconds for connect/disconnect - delay(20) is 200ms, 5*15 = 75
+#DEFINE_CONSTANT CMIS_TIMEOUT         100     //20 seconds for connect/disconnect - 200ms, 5*20 = 100
+
+//Connection Type  
+#DEFINE_CONSTANT CALL_NONE              0
+#DEFINE_CONSTANT CALL_HVPTOHVP          1
+#DEFINE_CONSTANT CALL_HVPTOVEC          2 
+#DEFINE_CONSTANT CALL_DVPTODVP          3
+#DEFINE_CONSTANT CALL_XVPTOXVP          4
+
+//Endpoint Type
+#DEFINE_CONSTANT ENDPOINT_NOT_CONFIGURED    0
+#DEFINE_CONSTANT ENDPOINT_VEC_IN            1
+#DEFINE_CONSTANT ENDPOINT_HVP_IN            2
+#DEFINE_CONSTANT ENDPOINT_HVP_OUT           3
+#DEFINE_CONSTANT ENDPOINT_HVP_BI            4
+#DEFINE_CONSTANT ENDPOINT_DVP_IN		    5
+#DEFINE_CONSTANT ENDPOINT_DVP_OUT           6
+#DEFINE_CONSTANT ENDPOINT_DVP_BI            7
+
+//XML Receive
+#DEFINE_CONSTANT MAX_RESPONSES             20  
+
+#DEFINE_CONSTANT RIVULET_LOGIN_SUCCESS_MSG              "login-success" 
+#DEFINE_CONSTANT RIVULET_GET_PORT_STATUS_MSG            "get-ep-port-alias-status" 
+#DEFINE_CONSTANT RIVULET_GET_SERVICE_STATUS_MSG         "get-service-status"
+#DEFINE_CONSTANT RIVULET_CONNECT_SERVICE_FAILURE_MSG    "connect-service-failure"  
+#DEFINE_CONSTANT RIVULET_CONNECT_SERVICE_SUCCESS_MSG    "connect-service-success"
+#DEFINE_CONSTANT RIVULET_DISCONNECT_SERVICE_FAILURE_MSG "disconnect-service-failure"
+#DEFINE_CONSTANT RIVULET_DISCONNECT_SERVICE_SUCCESS_MSG "disconnect-service-success"
+//BOOLEAN
+#DEFINE_CONSTANT TRUE	1
+#DEFINE_CONSTANT FALSE  0
+
+/*********************************************************************************
+  Include Libraries
+  (Uncomment and include additional librarys as needed)
+*********************************************************************************/
+// #CRESTRON_LIBRARY ""
+
+#USER_LIBRARY "CMIS_Hub_Library"
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+
+// Inputs
+// DIGITAL_INPUT 
+
+DIGITAL_INPUT   sigStartupComplete;  //Startup completed event
+DIGITAL_INPUT	sigRivuletConnected; //Rivulet TCP/IP connection is live event.
+DIGITAL_INPUT   diDebug;             //debug input, activated via console command.
+
+// ANALOG_INPUT  
+ANALOG_INPUT    aiRivLinkStatus;     //Rivulet TCP/IP connection status 
+
+// STRING_INPUT	
+STRING_INPUT 	RxRivulet[255];      //Rivulet Rx Data stream
+STRING_INPUT	siRivConfig[255];    //Rivulet Configuration data 
+STRING_INPUT	siVidRoute[255];     //CMIS call connection data.
+
+// Outputs
+// DIGITAL_OUTPUT 
+DIGITAL_OUTPUT  doRivLinkEnable;     //Rivulet TCP/IP enable, set high after startup
+
+// ANALOG_OUTPUT 
+
+// STRING_OUTPUT
+STRING_OUTPUT	TxRivulet;           //Rivulet Tx Data stream
+
+ANALOG_OUTPUT   aocmis_epstatus[MAX_ENDPOINTS]; //CMIS endpoint status.  Indicates status of an endpoint in a call.
+
+/*******************************************************************************************
+  Structure Definitions
+  (Uncomment and define structure definitions as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: struct.myString = "";
+*******************************************************************************************/
+
+STRUCTURE CMIS_ENDPOINT
+{
+    INTEGER CurRqst;
+    INTEGER CurStatus;
+    INTEGER CallActive;
+    INTEGER LineCnt;  
+    INTEGER CfgType;
+    INTEGER Rivulet_epid[4];
+}; 
+
+STRUCTURE RIVULET_ENDPOINT
+{
+    STRING  epname[MAX_ID_LENGTH];
+    INTEGER eptype;       
+    INTEGER cmis_epid;
+    INTEGER CurStatus;
+    INTEGER CallActive;
+	STRING  VEC_IP[MAX_ID_LENGTH];      //If VEC, this is the IP Address	
+};
+
+STRUCTURE RIVULET_CONNECTION
+{
+    INTEGER endpoint1;    //Multiple Rivulet Connections may support a CMIS Call.
+    INTEGER endpoint2; 
+    integer CallType;
+    INTEGER CurRqst;      //
+    INTEGER CurStatus;    //
+    INTEGER CurTimer; 
+    INTEGER cmis_cid;
+    STRING  ErrorString[200];
+    STRING  CorrelationID[MAX_ID_LENGTH];
+    STRING  ServiceID[MAX_ID_LENGTH]; 
+    STRING  ServiceCode[MAX_ID_LENGTH]; 
+}; 
+ 
+STRUCTURE CMIS_CONNECTION
+{
+    INTEGER Room1;    //Endpoint 1
+    INTEGER Room2;    //Endpoint 2
+    INTEGER CurRqst;      //Connection
+    INTEGER CurStatus;    //Rivulet p, RIVUL
+    INTEGER CurTimer;  
+    INTEGER rivulet_cid[4];
+    STRING  ErrorString[200];
+}; 
+
+STRUCTURE ResponseData
+{
+    STRING COORELATIONID[MAX_ID_LENGTH];
+    STRING SERVICEID[MAX_ID_LENGTH];   
+    STRING SERVICECODE[MAX_ID_LENGTH];
+    STRING API_CMD_RESP[50];
+    STRING API_CMD_ERROR[100];
+    STRING ENDPOINT_ALIAS[MAX_ID_LENGTH]; 
+    STRING ENDPOINT_STATUS[MAX_ID_LENGTH];
+    INTEGER INUSE;
+};
+
+//endpoint management and call management
+CMIS_ENDPOINT         cmis_eptlist[MAX_ENDPOINTS]; 
+CMIS_CONNECTION       cmis_callist[MAX_ENDPOINTS];
+
+RIVULET_ENDPOINT      rivulet_eptlist[MAX_ENDPOINTS];
+RIVULET_CONNECTION    rivulet_callist[MAX_ENDPOINTS]; 
+
+// Receive msg list 
+ResponseData ResponseList[MAX_RESPONSES];
+
+
+
+/*******************************************************************************************
+  Global Variables
+*******************************************************************************************/
+
+STRING  gsRivuletSessionID[50];
+STRING  gsResponseMsg[1024];   
+
+INTEGER giRivuletFlag;
+INTEGER giRivuletConfigured;     
+
+// Rivulet Communication Variables
+INTEGER giRivuletCoorID;       
+INTEGER giRivuletCount;
+INTEGER gsRivuletTimer;
+
+		
+/*******************************************************************************************
+  Functions
+*******************************************************************************************/
+
+function clear_rivulet_eptlist()
+{
+    integer i;
+    
+    for (i=1 to MAX_ENDPOINTS)
+    {
+        rivulet_eptlist[i].epname     = "";
+        rivulet_eptlist[i].eptype     = ENDPOINT_NOT_CONFIGURED;
+        rivulet_eptlist[i].cmis_epid  = 0;
+        rivulet_eptlist[i].CurStatus  = RIVULET_EP_OFFLINE;
+        rivulet_eptlist[i].CallActive = OFF; 
+        rivulet_eptlist[i].VEC_IP     = ""; 
+    }
+} 
+      
+function clear_cmis_eptlist()
+{
+    integer i, j;
+    
+    for (i=1 to MAX_ENDPOINTS)
+    {
+        cmis_eptlist[i].CurRqst     = RQST_IDLE;
+        cmis_eptlist[i].CurStatus   = CMIS_IDLE;
+        cmis_eptlist[i].CallActive  = OFF;
+        cmis_eptlist[i].LineCnt     = 0; 
+        cmis_eptlist[i].CfgType     = CMIS_NORIVULET;
+        
+        for (j=1 to 4)
+            cmis_eptlist[i].Rivulet_epid[j] = 0; 
+    }
+} 
+
+
+function clear_rivulet_connection(integer i)
+{
+    integer ept1, ept2;
+
+    print( "RIVULET: Rivulet serviceid=%s DISCONNECTED\n", rivulet_callist[i].ServiceID);  
+    
+    ept1 = rivulet_callist[i].endpoint1;
+    ept2 = rivulet_callist[i].endpoint2;
+        
+    rivulet_eptlist[ept1].CallActive = OFF;
+    rivulet_eptlist[ept2].CallActive = OFF;
+
+    rivulet_callist[i].endpoint1     = 0;
+    rivulet_callist[i].endpoint2     = 0;
+    rivulet_callist[i].calltype      = CALL_NONE;
+    rivulet_callist[i].CurRqst       = RQST_IDLE;
+    rivulet_callist[i].CurStatus     = RIVULET_IDLE;
+    rivulet_callist[i].cmis_cid      = 0;
+    rivulet_callist[i].ErrorString   = "";
+    rivulet_callist[i].CorrelationID = "";
+    rivulet_callist[i].ServiceID     = ""; 
+    rivulet_callist[i].ServiceCode   = ""; 
+}   
+
+
+
+function set_rivulet_connection(integer i, string id)
+{
+    integer ept1, ept2;
+    string  serviceid[MAX_ID_LENGTH];
+
+    print( "RIV: Rivulet service CONNECTED\n");  
+    
+    serviceid = id;
+    
+    ept1 = rivulet_callist[i].endpoint1;
+    ept2 = rivulet_callist[i].endpoint2;
+
+    rivulet_eptlist[ept1].CallActive = ON;
+    rivulet_eptlist[ept2].CallActive = ON;
+    
+    rivulet_callist[i].ServiceID     = serviceid; 
+    rivulet_callist[i].CorrelationID = "";
+
+    rivulet_callist[i].CurStatus     = RIVULET_CONNECTED;
+}
+
+
+
+function clear_cmis_connection(integer i)
+{
+    integer j;
+    
+    cmis_callist[i].Room1       = 0;    //Endpoint 1
+    cmis_callist[i].Room2       = 0;    //Endpoint 2
+    cmis_callist[i].CurRqst     = RQST_IDLE;      //Connection
+    cmis_callist[i].CurStatus   = CMIS_IDLE;
+    cmis_callist[i].ErrorString = "";
+    
+    for (j=1 to 4)
+        cmis_callist[i].rivulet_cid[j] = 0;
+
+}
+
+function clear_rivulet_callist()
+{
+    integer i;
+    
+    for (i=1 to MAX_ENDPOINTS)
+        clear_rivulet_connection(i);
+}   
+
+function clear_cmis_callist()
+{
+    integer i;
+    
+    for (i=1 to MAX_ENDPOINTS)
+        clear_cmis_connection(i);
+}
+
+function clearResponse( integer i )
+{
+    ResponseList[i].COORELATIONID = "";
+    ResponseList[i].SERVICEID = "";
+    ResponseList[i].SERVICECODE = "";
+    ResponseList[i].API_CMD_RESP = "";
+    ResponseList[i].API_CMD_ERROR = "";
+    ResponseList[i].ENDPOINT_ALIAS = "";
+    ResponseList[i].ENDPOINT_STATUS = "";
+    ResponseList[i].INUSE = FALSE;
+} 
+
+function clearResponseList()
+{ 
+    integer i;
+    for ( i = 1 to MAX_RESPONSES )
+    {
+        ClearResponse(i);
+    }
+} 
+
+// SUPPORTING FUNCTION CALLS FOR RIVULET
+
+STRING_FUNCTION getCoorID()
+{
+    if ( giRivuletCoorid = 65535 )
+    {
+        giRivuletCoorid = 1;
+    } 
+    else
+    {
+        giRivuletCoorid = giRivuletCoorid + 1; 
+    }
+    return( itoa( giRivuletCoorid ));  
+}                                      
+
+
+STRING_FUNCTION addXMLHeader( string xmlString )
+{   
+     integer contentLength;
+     contentLength = Len( xmlString ); 
+     xmlString = "Content-Type : text/rivapi\n" +  "Content-Length : " + itoa(contentLength) + "\n\n" + xmlString;
+     return(xmlString); 
+}   
+
+function sendData( string xmlData )
+{ 
+    // Can only send 255 bytes at a time 
+    integer length; 
+    string sendString[160];
+    string tmpString[1024];
+    tmpString = xmlData;
+    while(1)	
+	{
+	    length = len(tmpString);
+	    if (length > 160)
+	    {
+	        sendString = RemoveByLength(160, tmpString);
+	        TxRivulet = sendString; 
+            //* DEBUG */ print( "Sending To Rivulet:  %s len=%d\n", sendString, len(sendString) ); 
+            processlogic();            
+	    }
+	    else
+	    {
+	        sendstring = tmpstring;
+	        TxRivulet = sendString; 
+	        //* DEBUG */ print( "Sending Last To Rivulet:  %s\n", sendString );
+	        break;
+	    }   
+	}
+}  
+
+STRING_FUNCTION getAttributeValue( string xmlNodeName, string attributeName, string xml )
+ {  
+     string tmpstring[1024], tmpnodename[255], rmtmpstring[1024], attributeValue[255];
+     integer position,svalpos,evalpos,attrvallen;
+     tmpstring = xml;
+
+     //find the node name... if it is present
+     tmpnodename = "<" + xmlNodeName;
+     position = Find( tmpnodename, tmpstring, 1 );
+     // If node is not found get out
+     if ( position = 0 ) return( "" );
+     position = position + len(tmpnodename);
+     rmtmpstring = RemoveByLength( position, tmpstring);
+     position = Find( attributeName, tmpstring, 1 ); 
+     // Really need to extract ONLY the XML node and then 
+     // search. 
+     if ( position = 0 ) return ( "" );
+     position = Find( "\x22", tmpstring, position );
+     svalpos = position;
+     position = Find( "\x22", tmpstring, position+1);
+     evalpos = position;
+     //* DEBUG */ print( "getAttributeValue  svalpos=%d, evalpos=%d, tmpstring=%s\n", svalpos, evalpos, tmpstring);
+     attrvallen = evalpos - svalpos - 1; 
+     attributeValue = Mid(tmpstring, svalpos+1, attrvallen );
+     //* DEBUG */ print( "\n\n\ngetAttributeValue  node=%s, attr=%s, val=%s\n\n\n", xmlNodeName, attributeName, attributeValue ); 
+     return( attributeValue );
+ } 
+ 
+INTEGER_FUNCTION getUnusedResponse()
+{ 
+    integer cnt, i; 
+
+    //cnt = 0;
+        
+    //for ( i = 1 to MAX_RESPONSES )
+    //{
+    //    if (ResponseList[i].INUSE = TRUE)  
+    //        cnt = cnt + 1;
+    //}
+    
+    //print("GetUnusedResponses: %i responses in the queue\n", cnt);
+    
+    for ( i = 1 to MAX_RESPONSES )
+    {
+        if ( ResponseList[i].INUSE = FALSE )
+        {
+            return( i );
+        }
+    }
+    return( 0 );
+}
+
+
+
+function ProcessRivuletMsg(string smsg)
+{   
+    integer position; 
+    integer responseid; 
+    integer endpointid;
+    string sessionid[50]; 
+    //*DEBUG*/ print("\n\n\n\n\nProcessRivuletMsg: %s\n\n\n\n\n", smsg); 
+    
+    //Check to see if this is a login request and if so extract session id
+    //This will only be called if we do not have a current session id.
+    if ( len(gsRivuletSessionID) = 0 )
+    {
+        position = Find( "login-success", smsg, 1 );
+        if ( position != 0 )
+        {
+            sessionid = getAttributeValue( "binding", "session-id", smsg );
+            if ( len(sessionid) != 0 )
+            {
+                gsRivuletSessionID = sessionid;  
+                print("RIV: RGM Login Successful\n");
+                print("Session ID = %s\n", gsRivuletSessionID );
+            }
+        }
+    }
+    else
+    {  
+        //Get unused response structure from pool
+        responseid = getUnusedResponse();
+        
+        if (responseid = 0) 
+        {
+            print("WARNING: No room for Rivulet Responses\n");
+            return; 
+        }
+        //We now will take data from each XML response and put it on the receive
+        //list for pickup by the connection list procsess thread. 
+        ResponseList[responseid].COORELATIONID   = getAttributeValue("correlation","id", smsg ); 
+        ResponseList[responseid].API_CMD_RESP    = getAttributeValue("api-cmd-rsp", "rsp", smsg ); 
+        ResponseList[responseid].SERVICEID       = getAttributeValue("api-cmd-rsp", "service-id", smsg ); 
+        ResponseList[responseid].SERVICECODE     = getAttributeValue("api-cmd-rsp", "service-status-code", smsg);
+        ResponseList[responseid].API_CMD_ERROR   = getAttributeValue("api-fault", "fault-detail", smsg );
+        ResponseList[responseid].ENDPOINT_ALIAS  = getAttributeValue("api-cmd-rsp", "ep-port-alias-name", smsg );
+        ResponseList[responseid].ENDPOINT_STATUS = getAttributeValue("api-cmd-rsp", "ep-port-alias-status-code", smsg );
+        
+        //*DEBUG*/print( "\n\n\n RespID = %d COORID = %s\n", responseid, ResponseList[responseid].COORELATIONID );
+        //*DEBUG*/print( "ServiceID = %s\n", ResponseList[responseid].SERVICEID);
+        //*DEBUG*/print( "CMDRESP = %s\n", ResponseList[responseid].API_CMD_RESP );
+        //*DEBUG*/print( "CMDERROR = %s\n", ResponseList[responseid].API_CMD_ERROR ); 
+        if (diDebug)
+        {
+            print("\n******BEGIN RGM Response Data**********\n"); 
+            print("Response ID = %i\n", responseid);
+            print("Correlation ID = %s\n", ResponseList[responseid].COORELATIONID);
+            print("api-cmd-rsp = %s\n", ResponseList[responseid].API_CMD_RESP);
+            //print("api-cmd-error = %s\n", ResponseList[responseid].API_CMD_ERROR); 
+        }
+        // perform "DIS" connect checks first, because "CONNECT" msgs are subset of "DISCONNECT" msgs.
+        if (find(RIVULET_DISCONNECT_SERVICE_SUCCESS_MSG, ResponseList[responseid].API_CMD_RESP))
+        {
+            print("*** Rivulet Disconnect Success Msg***\n"); 
+        }
+        else if (find(RIVULET_DISCONNECT_SERVICE_FAILURE_MSG, ResponseList[responseid].API_CMD_RESP))
+        {
+            print("*** Rivulet Disconnect Failure Msg: %s***\n", ResponseList[responseid].API_CMD_ERROR); 
+        }
+        else if (find(RIVULET_CONNECT_SERVICE_SUCCESS_MSG, ResponseList[responseid].API_CMD_RESP))
+        {
+            print("*** Rivulet Connect Success Msg: Service ID = %s***\n", ResponseList[responseid].SERVICEID); 
+        }        
+        else if (find(RIVULET_CONNECT_SERVICE_FAILURE_MSG, ResponseList[responseid].API_CMD_RESP))
+        {
+            print("*** Rivulet Connect Failure Msg: %s***\n", ResponseList[responseid].API_CMD_ERROR); 
+        }
+        if (diDebug) print("******END RGM Response Data**********\n\n"); 
+        ResponseList[responseid].INUSE = TRUE;
+    }
+}  
+
+
+//**********************************************************************************************
+// BEGIN RIVULET TRANSACTIONS
+//**********************************************************************************************
+
+function SendLoginRequest()
+{   
+    string sXMLLogin[4096];  
+	string coorid[MAX_ID_LENGTH];  
+ 	coorid = getCoorID();
+ 	sXMLLogin =  "<?xml version=\x221.0\x22 encoding=\x22UTF-8\x22?><api-envelope><api-version version = \x2205.01.00.R002\x22 ></api-version> <correlation id = \x22"
+	 + coorid + "\x22 > </correlation> <binding access-method = \x22trusted\x22 ></binding><api-cmd-req req = \x22login\x22 ></api-cmd-req> </api-envelope>"; 
+    sXMLLogin = addXMLHeader( sXMLLogin );
+    sendData( sXMLLogin ); 
+} 
+
+function sendPortStatusRequest( integer index )
+{     
+    string sXMLPortStatus[1024]; 
+    string coorid[MAX_ID_LENGTH]; 
+    string serviceid[MAX_ID_LENGTH]; 
+    string PortAlias[MAX_ID_LENGTH];
+    integer i; 
+
+    if (rivulet_eptlist[index].eptype = ENDPOINT_NOT_CONFIGURED)
+        return;
+        
+    if (rivulet_eptlist[index].eptype = ENDPOINT_VEC_IN)    
+        return;                                                 
+
+    // Don't query endpoints if a call is active... service query will cover.
+    if (rivulet_eptlist[index].CallActive = ON)
+        return;
+
+    PortAlias = rivulet_eptlist[index].epname;
+
+    if (diDebug) print("RIV: Send Port Status Request, %s\n", PortAlias);           
+    coorid = getCoorID(); 
+         
+    sXMLPortStatus = "<?xml version=\x221.0\x22 encoding=\x22UTF-8\x22?>"
+                   + "<api-envelope>"
+                   + "<api-version version = \x2205.01.00.R002\x22 >"
+                   + "</api-version>"
+                   + " <correlation id = \x22"
+                   + coorid 
+	               + "\x22 > </correlation>"
+	               + " <binding session-id = \x22"
+	               + gsRivuletSessionID 
+	               + "\x22 > </binding>"
+	               + " <api-cmd-req req = \x22get-ep-port-alias-status\x22"  
+	               + " ep-port-alias-name = \x22" 
+	               + PortAlias 
+	               + "\x22></api-cmd-req> </api-envelope>";
+    sXMLPortStatus = addXMLHeader( sXMLPortStatus );
+    sendData( sXMLPortStatus ); 
+}  
+
+
+function sendServiceStatusRequest( integer index )
+{     
+    string sXMLPortStatus[1024]; 
+    string coorid[MAX_ID_LENGTH]; 
+    string serviceid[MAX_ID_LENGTH]; 
+    string PortAlias[MAX_ID_LENGTH];
+    integer i; 
+
+    serviceid = rivulet_callist[index].ServiceID;
+    coorid    = getCoorID(); 
+
+    print("RIV: Send Service Status Request, %s\n", serviceid);           
+             
+    sXMLPortStatus = "<?xml version=\x221.0\x22 encoding=\x22UTF-8\x22?>"
+                   + "<api-envelope>"
+                   + "<api-version version = \x2205.01.00.R002\x22 >"
+                   + "</api-version>"
+                   + " <correlation id = \x22"
+                   + coorid 
+	               + "\x22 > </correlation>"
+	               + " <binding session-id = \x22"
+	               + gsRivuletSessionID 
+	               + "\x22 > </binding>"
+	               + " <api-cmd-req req = \x22get-service-status\x22"  	               
+	               + " service-id = \x22" 
+	               + serviceid 
+	               + "\x22></api-cmd-req> </api-envelope>";
+    sXMLPortStatus = addXMLHeader( sXMLPortStatus );
+    sendData( sXMLPortStatus ); 
+}       
+
+
+function SendConnectRequest( integer cid )
+ {   
+     string sXMLConnect[1024];  
+	 string coorid[MAX_ID_LENGTH]; 
+     integer ep1, ep2; 
+     string srcPortAlias[MAX_ID_LENGTH];
+     string dstPortAlias[MAX_ID_LENGTH]; 
+     string vec_ip[MAX_ID_LENGTH];
+
+     ep1 = rivulet_callist[cid].endpoint1;
+     ep2 = rivulet_callist[cid].endpoint2;
+
+     srcPortAlias = rivulet_eptlist[ep1].epname;
+     dstPortAlias = rivulet_eptlist[ep2].epname;
+
+     coorid = getCoorID(); 
+     rivulet_callist[cid].CorrelationID = coorid; 
+ 	  	 
+     if ( rivulet_callist[cid].CallType = CALL_HVPTOHVP  )
+     {            
+        //HALF-DUPLEX OPERATION
+        //svc-bidir = true
+        //If half duplex was desired, set the parameter above to false...
+        //future improvement.
+             
+        sXMLConnect =  "<?xml version=\x221.0\x22 encoding=\x22UTF-8\x22?><api-envelope><api-version version = \x2205.01.00.R002\x22 > </api-version> " +
+            "<correlation id = \x22" + coorid + "\x22 > </correlation> <binding session-id = \x22"+ gsRivuletSessionID + "\x22 > </binding> " +
+            "<api-cmd-req req = \x22connect-service\x22 svc-type = \x22dynamic\x22 svc-bidir = \x22true\x22 source-alias = \x22" + 
+            srcPortAlias + "\x22 destination-alias = \x22" + dstPortAlias + "\x22 >" +
+            "<source-selectors ></source-selectors>" +
+			"<destination-selectors ></destination-selectors>" +
+			"</api-cmd-req></api-envelope>"; 
+            
+     	sXMLConnect = addXMLHeader( sXMLConnect );
+        sendData( sXMLConnect );  
+    }
+    else if ( rivulet_callist[cid].CallType = CALL_HVPTOVEC )
+    {  
+
+       //srcPortAlias = "RM" + itoa(ConnectionList[cid].Room1) + "PT" + itoa(1);
+       //dstPortAlias = "RM" + itoa(ConnectionList[cid].Room1) + "PT" + itoa(1) + "VPV";
+        if (rivulet_eptlist[ep1].eptype = ENDPOINT_VEC_IN)
+            vec_ip = rivulet_eptlist[ep1].VEC_IP;
+        else if (rivulet_eptlist[ep2].eptype = ENDPOINT_VEC_IN)
+            vec_ip = rivulet_eptlist[ep2].VEC_IP;
+        else
+            vec_ip = "";
+       	 
+        sXMLConnect =  "<?xml version=\x221.0\x22 encoding=\x22UTF-8\x22?><api-envelope><api-version version = \x2205.01.00.R002\x22 > </api-version> " +
+            "<correlation id = \x22" + coorid + "\x22 > </correlation> <binding session-id = \x22"+ gsRivuletSessionID + "\x22 > </binding> " +
+            "<api-cmd-req req = \x22connect-service\x22 svc-type = \x22dynamic\x22 svc-bidir = \x22false\x22 source-alias = \x22" + 
+            srcPortAlias + "\x22 destination-alias = \x22" + dstPortAlias + "\x22 >" +
+            "<source-selectors ></source-selectors>" +
+	        "<destination-selectors  IP_ADDRESS=\x22" + vec_ip + "\x22 ></destination-selectors>" +
+		    "</api-cmd-req></api-envelope>"; 
+		    
+		//*DEBUG*/print( "\n\n\n VEC CONNECT IP_ADDRESS=%s\n\n", ConnectionList[cid].VEC_IP );
+        sXMLConnect = addXMLHeader( sXMLConnect );
+        sendData( sXMLConnect ); 
+    }
+    else if ( rivulet_callist[cid].CallType = CALL_DVPTODVP )
+    {
+        // identical to HVPTOHVP...
+        //HALF-DUPLEX OPERATION
+        //svc-bidir = true
+        //If half duplex was desired, set the parameter above to false...
+        //future improvement.
+             
+        sXMLConnect =  "<?xml version=\x221.0\x22 encoding=\x22UTF-8\x22?><api-envelope><api-version version = \x2205.01.00.R002\x22 > </api-version> " +
+            "<correlation id = \x22" + coorid + "\x22 > </correlation> <binding session-id = \x22"+ gsRivuletSessionID + "\x22 > </binding> " +
+            "<api-cmd-req req = \x22connect-service\x22 svc-type = \x22dynamic\x22 svc-bidir = \x22false\x22 source-alias = \x22" + 
+            srcPortAlias + "\x22 destination-alias = \x22" + dstPortAlias + "\x22 >" +
+            "<source-selectors ></source-selectors>" +
+			"<destination-selectors ></destination-selectors>" +
+			"</api-cmd-req></api-envelope>"; 
+            
+     	sXMLConnect = addXMLHeader( sXMLConnect );
+        sendData( sXMLConnect );  
+    }
+    else
+    {
+        print( "Unsupported Connection Type:  Type = %d\n", rivulet_callist[cid].CallType );
+    }
+}
+
+
+function SendDisconnectRequest( integer cid )
+{     
+    string sXMLDisconnect[1024]; 
+    string coorid[MAX_ID_LENGTH]; 
+    string serviceid[MAX_ID_LENGTH]; 
+    integer i; 
+      
+    coorid = getCoorID(); 
+    rivulet_callist[cid].CorrelationID = coorid;
+    
+    serviceid = rivulet_callist[cid].ServiceID; 
+
+    //*DEBUG*/print( "Disconnecting Line=%i, Service id=%s\n", i, serviceid );
+         
+    sXMLDisconnect = "<?xml version=\x221.0\x22 encoding=\x22UTF-8\x22?>"
+                   + "<api-envelope>"
+                   + "<api-version version = \x2205.01.00.R002\x22 ></api-version>"
+                   + " <correlation id = \x22"
+	               + coorid
+	               + "\x22 > </correlation>"
+	               + " <binding session-id = \x22"
+	               + gsRivuletSessionID 
+	               + "\x22 > </binding>"
+	               + " <api-cmd-req req = \x22disconnect-service\x22 service-id = \x22" 
+	               + serviceid
+	               + "\x22></api-cmd-req> </api-envelope>";
+    sXMLDisconnect = addXMLHeader( sXMLDisconnect );
+    sendData( sXMLDisconnect );  
+}      
+ 
+
+  
+//**********************************************************************************************
+// END RIVULET TRANSACTIONS
+//**********************************************************************************************
+
+integer_function GetAvailableRivulet()
+{
+    integer i, availconnection;
+
+    availconnection = 0;
+    
+    for (i=1 to MAX_ENDPOINTS)
+    {
+        if (rivulet_callist[i].CurStatus = RIVULET_IDLE) 
+        {
+            availconnection = i;
+            break;
+        }
+    }
+    
+    return(availconnection);
+}   
+
+
+integer_function GetAvailableCMIS()
+{
+    integer i, availconnection;
+
+    availconnection = 0;
+    
+    for (i=1 to MAX_ENDPOINTS)
+    {
+        if (cmis_callist[i].CurStatus = CMIS_IDLE) 
+        {
+            availconnection = i;
+            break;
+        }
+    }
+    return(availconnection);
+}  
+
+integer_function find_cmis_connection(integer ept1, integer ept2)
+{
+    integer i, cmis_connection;
+    
+    cmis_connection = 0;
+           
+    for (i=1 to MAX_ENDPOINTS)
+    {
+        if (cmis_callist[i].CurStatus <> RIVULET_IDLE)
+        {
+            if ((cmis_callist[i].Room1 = ept1) || (cmis_callist[i].Room2 = ept1))
+            {
+                cmis_connection = i;
+                break;
+            }
+        }
+    }   
+    return(cmis_connection);
+}
+
+function RoutingEnable(integer endpoint1, integer endpoint2)
+{
+    integer i,j;
+    integer rivep1, rivep2;
+    integer cmis_connection;
+    integer rivulet_connection; 
+    
+
+    // Don't activate the connection unless both endpoints are rivulet capable.
+    if ((cmis_eptlist[endpoint1].CfgType = CMIS_NORIVULET) || (cmis_eptlist[endpoint2].CfgType = CMIS_NORIVULET)) 
+    {
+        print("RIV: Both endpoints must be rivulet, ept1=%i, ept2=%i\n", endpoint1, endpoint2); 
+        return;
+    }
+        
+    cmis_connection = GetAvailableCMIS();
+    
+    if (cmis_connection = 0)
+    {
+        print("RIV: No Available CMIS connections\n");
+        return;                            
+    } 
+
+    print("RIV: CMIS Call - Request Connect\n"); 
+       
+    cmis_callist[cmis_connection].Room1 = endpoint1;
+    cmis_callist[cmis_connection].Room2 = endpoint2;
+
+    for (j=1 to 4)
+    {
+        rivep1 = cmis_eptlist[endpoint1].Rivulet_epid[j];
+        rivep2 = cmis_eptlist[endpoint2].Rivulet_epid[j];
+        
+        if ((rivep1 = 0) || (rivep2 = 0))
+            break;
+        
+        rivulet_connection = GetAvailableRivulet();
+    
+        if (rivulet_connection = 0)
+        {
+            print("RIV: No more Available Rivulet connections\n");
+            break;                            
+        } 
+        else
+        {
+            print("RIV: Setting up Rivulet %i\n", j);
+        }
+        
+        if ((rivulet_eptlist[rivep1].eptype = ENDPOINT_HVP_BI) && (rivulet_eptlist[rivep2].eptype = ENDPOINT_HVP_BI))
+        {
+            if (diDebug) print("HVP to HVP\n");
+            rivulet_callist[rivulet_connection].endpoint1 = rivep1;
+            rivulet_callist[rivulet_connection].endpoint2 = rivep2;
+            rivulet_callist[rivulet_connection].CallType  = CALL_HVPTOHVP;                       
+        }
+
+        else if ((rivulet_eptlist[rivep1].eptype = ENDPOINT_VEC_IN) && (rivulet_eptlist[rivep2].eptype = ENDPOINT_HVP_BI))
+        {
+            if (diDebug) print("VEC to HVP\n");
+            rivulet_callist[rivulet_connection].endpoint1 = rivep2;
+            rivulet_callist[rivulet_connection].endpoint2 = rivep1;
+            rivulet_callist[rivulet_connection].CallType  = CALL_HVPTOVEC;
+        }
+    
+        else if ((rivulet_eptlist[rivep1].eptype = ENDPOINT_HVP_BI) && (rivulet_eptlist[rivep2].eptype = ENDPOINT_VEC_IN))
+        {
+            if (diDebug) print("HVP to VEC\n");
+            rivulet_callist[rivulet_connection].endpoint1 = rivep1;
+            rivulet_callist[rivulet_connection].endpoint2 = rivep2;
+            rivulet_callist[rivulet_connection].CallType  = CALL_HVPTOVEC;
+        }
+        else if ((rivulet_eptlist[rivep1].eptype = ENDPOINT_DVP_BI) && (rivulet_eptlist[rivep2].eptype = ENDPOINT_DVP_BI))
+        {
+            if (diDebug) print("DVP to DVP\n");
+            rivulet_callist[rivulet_connection].endpoint1 = rivep1;
+            rivulet_callist[rivulet_connection].endpoint2 = rivep2;
+            rivulet_callist[rivulet_connection].CallType  = CALL_DVPTODVP;
+        }
+        else
+        {
+            print("Not a valid endpoint combination\n");
+            return;
+        } 
+    
+        print("RIV: Rqst Rivulet Connect %s to %s submitted\n", rivulet_eptlist[rivep1].epname, 
+                                                                rivulet_eptlist[rivep2].epname);            
+
+        cmis_callist[cmis_connection].rivulet_cid[j] = rivulet_connection; 
+
+        rivulet_callist[rivulet_connection].CurStatus = RIVULET_IDLE;
+        rivulet_callist[rivulet_connection].CurRqst   = RQST_CONNECT;
+        rivulet_callist[rivulet_connection].cmis_cid  = cmis_connection;
+    }
+    
+    cmis_callist[cmis_connection].CurRqst = RQST_CONNECT;
+} 
+
+
+function RoutingDisable(integer endpoint1, integer endpoint2)
+{
+    integer i,j;
+    integer cmis_connection, rivulet_connection;
+    string ept1[MAX_ID_LENGTH], ept2[MAX_ID_LENGTH];
+
+    // Don't deactivate the connection unless both endpoints are rivulet capable.
+    if ((cmis_eptlist[endpoint1].CfgType = CMIS_NORIVULET) || (cmis_eptlist[endpoint2].CfgType = CMIS_NORIVULET)) 
+    {
+        print("RIV: Both endpoints must be rivulet\n");
+        return;
+    }
+
+    cmis_connection = find_cmis_connection(endpoint1, endpoint2);
+            
+    if (cmis_connection = 0)
+    {
+        print("Connection not found for endpoints %d, %d\n", endpoint1, endpoint2);
+        return;
+    }
+
+    print("RIV: CMIS Call - Request Disconnect\n"); 
+
+    for (j=1 to 4)
+    {
+        rivulet_connection = cmis_callist[cmis_connection].rivulet_cid[j];
+        
+        if (rivulet_connection)
+        {
+            ept1 = rivulet_eptlist[rivulet_callist[rivulet_connection].endpoint1].epname;
+            ept2 = rivulet_eptlist[rivulet_callist[rivulet_connection].endpoint2].epname;
+            print("RIV: disconnect rivulet %s to %s\n", ept1, ept2);
+           
+            rivulet_callist[rivulet_connection].CurRqst = RQST_DISCONNECT;
+        }
+    }
+            
+    cmis_callist[cmis_connection].CurRqst = RQST_DISCONNECT;            
+} 
+
+INTEGER_FUNCTION getResponseByCoorID( string coorid )
+{
+    integer i;
+    for ( i = 1 to MAX_RESPONSES )
+    {
+        if ( find (coorid, ResponseList[i].COORELATIONID ))
+        {
+            if (ResponseList[i].INUSE = TRUE) // don't let it be used if the msg has not yet been flagged "in use"
+                return( i );
+        }
+    }
+    return( 0 );
+}
+
+
+
+integer_function check_cmis_connection(integer i)
+{
+    integer j, cid, status; 
+    integer connect_cnt, disconnect_cnt, line_cnt;
+    
+    line_cnt = 0;
+    connect_cnt = 0;
+    disconnect_cnt = 0;
+    status = rivulet_callist[cid].CurStatus;
+        
+    for (j=1 to 4)
+    {
+        cid = cmis_callist[i].rivulet_cid[j];
+        
+        if (cid)
+        {
+            line_cnt = line_cnt + 1;
+            if (status = RIVULET_CONNECTED)
+                connect_cnt = connect_cnt + 1;  
+            else if (status = RIVULET_IDLE)
+                disconnect_cnt = disconnect_cnt + 1;
+        }
+    }
+    
+    if (line_cnt = connect_cnt)
+        return(CMIS_CONNECTED);
+    else if (line_cnt = disconnect_cnt)
+        return(CMIS_DISCONNECTED);
+    else
+        return(CMIS_INBETWEEN);              
+} 
+
+
+function Process_rivulet_connection(integer i)
+{
+    integer rid;
+     
+    if (rivulet_callist[i].CurTimer)
+        rivulet_callist[i].CurTimer = rivulet_callist[i].CurTimer - 1;
+
+    //status = rivulet_callist[i].CurStatus;
+
+    if (rivulet_callist[i].CurRqst = RQST_CONNECT )
+    { 
+        print("RIV: Rivulet Connection Rqst - RQST_CONNECT\n");
+        SendConnectRequest( i );
+        rivulet_callist[i].CurRqst   = RIVULET_IDLE; 
+        rivulet_callist[i].CurStatus = RIVULET_CONNECTING;   
+        rivulet_callist[i].CurTImer  = RIVULET_TIMEOUT; 
+    }
+    
+    else if ( rivulet_callist[i].CurRqst = RQST_DISCONNECT )
+    {
+        print("RIV: Rivulet Connection Rqst - RQST_DISCONNECT\n");
+        SendDisconnectRequest( i );        
+        rivulet_callist[i].CurRqst   = RIVULET_IDLE; 
+        rivulet_callist[i].CurStatus = RIVULET_DISCONNECTING; 
+        rivulet_callist[i].CurTImer  = RIVULET_TIMEOUT;                
+    }
+    
+    if (rivulet_callist[i].CurStatus = RIVULET_IDLE)
+        return;
+
+    else if (rivulet_callist[i].CurStatus = RIVULET_CONNECTED)
+        return;
+        
+    else if ( rivulet_callist[i].CurStatus = RIVULET_CONNECTING )
+    {
+        /*DEBUG*/print( "RIV: Rivulet Connection Status - RIVULET_CONNECTING\n");  
+        if (rivulet_callist[i].CurTimer = 0)
+        {
+             // Timer expire, go to error state.
+             rivulet_callist[i].CurStatus = RIVULET_ERROR;                    
+        }
+        else
+        {        
+            // Check to see if the reply has been rcv'd 
+            rid = getResponseByCoorID(rivulet_callist[i].CorrelationID);
+
+            if (rid !=0)
+            {
+                print("\n\nRIV: Connecting, ResponseID=%i, CorrelationID=%s, API_CMD_RESP=%s\n",
+                                       rid, ResponseList[rid].CoorelationID, ResponseList[rid].API_CMD_RESP);                        
+                print("RIV: Connecting, CorrelationID=%s\n", rivulet_callist[i].CorrelationID); 
+                                       
+                print("found reply...coorid=%s\n", ResponseList[rid].COORELATIONID);
+                if (find("failure", ResponseList[rid].API_CMD_RESP))
+                {
+                  
+                    rivulet_callist[i].CurStatus = RIVULET_ERROR;
+                }
+                else
+                {
+                    set_rivulet_connection(i, ResponseList[rid].SERVICEID);
+                }
+                clearResponse(rid); 
+            }
+        }
+    }  
+                        
+    else if (rivulet_callist[i].CurStatus = RIVULET_DISCONNECTING )
+    {
+        /*DEBUG*/print( "RIV: Rivulet Connection Status - RIVULET_DISCONNECTING\n");  
+        if (rivulet_callist[i].CurTimer = 0)
+        {
+             // Timer expire, go to error state.
+             rivulet_callist[i].CurStatus = RIVULET_ERROR;                    
+        }
+        else
+        {        
+            // Check to see if the reply has been rcv'd 
+            rid = getResponseByCoorID(rivulet_callist[i].CorrelationID);
+
+            if (rid !=0)
+            {
+                print("\n\nRIV: Disconnecting ResponseID=%i, CorrelationID=%s, API_CMD_RESP=%s\n", 
+                                           rid, ResponseList[rid].CoorelationID, ResponseList[rid].API_CMD_RESP);                        
+                print("RIV: Disconnecting, CorrelationID=%s\n", rivulet_callist[i].CorrelationID);                        
+                if (find("failure", ResponseList[rid].API_CMD_RESP))
+                    rivulet_callist[i].CurStatus = RIVULET_ERROR;
+                else
+                    rivulet_callist[i].CurStatus = RIVULET_DISCONNECTED;
+                clearResponse(rid); 
+            } 
+        }
+    }
+    else if (rivulet_callist[i].CurStatus = RIVULET_DISCONNECTED )
+    {
+        /*DEBUG*/print( "RIV: Rivulet Connection Status - RIVULET_DISCONNECTED\n");  
+        clear_rivulet_connection(i);
+    } 
+    
+    else if (rivulet_callist[i].CurStatus = RIVULET_ERROR)
+    {
+        /*DEBUG*/print( "RIV: Rivulet Connection Status - RIVULET_ERROR\n");  
+        print("RIV: Rivulet Service Error\n");
+        clear_rivulet_connection(i);
+    } 
+}   
+
+   
+function Process_cmis_connection(integer i)
+{
+    integer status;
+     
+    if (cmis_callist[i].CurTimer)
+        cmis_callist[i].CurTimer = cmis_callist[i].CurTimer - 1;
+
+    // Processing Connect or Disconnect requests
+    if (cmis_callist[i].CurRqst = RQST_CONNECT )
+    { 
+        print("RIV: Processing CMIS Connection Rqst - RQST_CONNECT\n");
+        cmis_callist[i].CurStatus = CMIS_CONNECTING;   
+                
+        // Rivulet call connects have already been submitted.
+        cmis_callist[i].CurRqst  = CMIS_IDLE; 
+        cmis_callist[i].CurTImer = CMIS_TIMEOUT;
+                
+        aocmis_epstatus[cmis_callist[i].Room1] = CMIS_CONNECTING; 
+        aocmis_epStatus[cmis_callist[i].Room2] = CMIS_CONNECTING; 
+    }
+    
+    else if ( cmis_callist[i].CurRqst = RQST_DISCONNECT )
+    {
+        print("RIV: Processing CMIS Connection Rqst - RQST_DISCONNECT\n");
+        cmis_callist[i].CurStatus = CMIS_DISCONNECTING; 
+                
+        // Rivulet call disconnects have already been submitted.
+        cmis_callist[i].CurRqst  = CMIS_IDLE; 
+        cmis_callist[i].CurTImer = CMIS_TIMEOUT;
+ 
+        aocmis_epStatus[cmis_callist[i].Room1] = CMIS_DISCONNECTING; 
+        aocmis_epStatus[cmis_callist[i].Room2] = CMIS_DISCONNECTING; 
+    }
+
+    // Now process current status...    
+    if (cmis_callist[i].CurStatus = CMIS_IDLE)
+        return;
+
+    else if (cmis_callist[i].CurStatus = CMIS_CONNECTED)
+        return;
+        
+    else if ( cmis_callist[i].CurStatus = CMIS_CONNECTING )
+    {
+        print("RIV: CMIS Connection Status - CMIS_CONNECTING\n");
+        if (check_cmis_connection(i) = CMIS_CONNECTED)
+        {
+             print("RIV: CMIS CONNECTED\n");
+             cmis_callist[i].CurStatus = CMIS_CONNECTED;
+             aocmis_epStatus[cmis_callist[i].Room1] = CMIS_CONNECTED; 
+             aocmis_epStatus[cmis_callist[i].Room2] = CMIS_CONNECTED; 
+        } 
+        else if (cmis_callist[i].CurTimer = 0)
+        {
+             // Timer expire, go to error state.
+             cmis_callist[i].CurStatus = CMIS_ERROR;                    
+        }
+    }
+    
+    else if ( cmis_callist[i].CurStatus = CMIS_DISCONNECTING )
+    {
+        /*DEBUG*/print( "RIVULET: CMIS DISCONNECTING\n");                 
+        if (check_cmis_connection(i) = CMIS_DISCONNECTED)
+        {
+             print("RIVULET: CMIS DISCONNECTED\n");
+             cmis_callist[i].CurStatus = CMIS_DISCONNECTED;
+             aocmis_epStatus[cmis_callist[i].Room1] = CMIS_DISCONNECTED; 
+             aocmis_epStatus[cmis_callist[i].Room2] = CMIS_DISCONNECTED; 
+        }
+        else if (cmis_callist[i].CurTimer = 0)
+        {
+             // Timer expire, go to disconnect state.
+             cmis_callist[i].CurStatus = CMIS_ERROR;                    
+        } 
+    }
+    
+    else if ( cmis_callist[i].CurStatus = CMIS_DISCONNECTED )
+    {                                                         
+        aocmis_epStatus[cmis_callist[i].Room1] = CMIS_IDLE; 
+        aocmis_epStatus[cmis_callist[i].Room2] = CMIS_IDLE; 
+        clear_cmis_connection(i);
+    }
+    
+    else if ( cmis_callist[i].CurStatus = CMIS_ERROR )
+    {
+        aocmis_epStatus[cmis_callist[i].Room1] = CMIS_ERROR; 
+        aocmis_epStatus[cmis_callist[i].Room2] = CMIS_ERROR; 
+
+        // Let Conference Hub initiate the shutdown???
+        //clear_cmis_connection(i);
+    }
+}   
+
+function ProcessRivuletEndpointStatus(integer index)
+{
+    integer i, endpoint;
+    string sname[MAX_ID_LENGTH];
+    string status[MAX_ID_LENGTH];
+
+    endpoint = 0;
+
+    sname = ResponseList[index].ENDPOINT_ALIAS;
+
+    if (find("failure", ResponseList[index].API_CMD_RESP))
+    {
+        print ("Port Status Query failure: %s\n", sname); 
+        return;
+    }
+    
+    print("*** Rivulet Endpoint: %s, %s***\n", sname,
+                                               ResponseList[index].ENDPOINT_STATUS);
+
+    for (i=1 to MAX_ENDPOINTS)
+    {
+        if (find(rivulet_eptlist[i].epname, sname))
+            endpoint = i;
+        else
+            break;
+    }
+    
+    if (endpoint)    
+        if (find("NOT_AVAILABLE", ResponseList[index].ENDPOINT_STATUS)) 
+            // have a reply WITHOUT "NOT_AVAILABLE", then endpoint is useable.
+            if (rivulet_eptlist[endpoint].CallActive) 
+            {     
+                rivulet_eptlist[endpoint].CurStatus = RIVULET_EP_NOTAVAIL;
+                status = "CALL ACTIVE";
+            }
+            else 
+            {
+                rivulet_eptlist[endpoint].CurStatus = RIVULET_EP_OFFLINE;                    
+                status = "ENDPOINT OFFLINE"; 
+            }
+        else 
+        {
+            rivulet_eptlist[endpoint].CurStatus = RIVULET_EP_AVAILABLE;
+            status = "AVAILABLE"; 
+        }
+    else
+        return;
+                               
+} 
+
+
+function ProcessRivuletServiceStatus(integer i)
+{
+    integer j; 
+    string id[MAX_ID_LENGTH];
+    string code[MAX_ID_LENGTH];
+    
+    id   = ResponseList[i].SERVICEID;
+    code = ResponseList[i].SERVICECODE; 
+
+    if (find("failure", ResponseList[i].API_CMD_RESP))
+    {
+        print("Rivulet Service Failure, ServiceID=%s\n", id);
+        return;
+    }
+            
+    print("*** Rivulet Connection: Service ID=%s, Status=%s ***\n", id, code);
+                           
+    for (j=1 to MAX_ENDPOINTS)
+    {
+        if (find(id, rivulet_callist[j].SERVICEID))
+        {
+            rivulet_callist[j].SERVICECODE = code;
+            break;
+        }
+    }            
+}
+
+
+
+
+PUSH sigRivuletConnected
+{   
+    integer i,j, dviid, linecount, rid, gotallresp;
+    integer iTimer;
+    
+    string coorid[10];	 
+	print("Connected to RCAS\n");     
+
+	// We are now connected to the RCAS server.  We must send login request.  
+	// Wait for a few
+	delay(500);
+    sendLoginRequest();  
+
+    iTimer = 0;	
+    
+    while (sigRivuletConnected)
+    { 
+        iTimer = iTimer + 1;
+
+        // Check Rivulet endpoints 
+        for( i = 1 to MAX_ENDPOINTS )
+        {
+            // Send Rivulet Port query. 
+            if ((iTimer mod 300) = 0)
+            {
+                sendPortStatusRequest(i);  // does not send a query unless configured and not actively in a call
+            }
+        }
+        
+        // Check Rivulet connections
+        for( i = 1 to MAX_ENDPOINTS )
+        {
+            Process_rivulet_connection(i);
+
+            if ((iTimer mod 300) = 0)
+            { 
+                if ( rivulet_callist[i].CurStatus = RIVULET_CONNECTED )
+                    sendServiceStatusRequest(i); 
+            }
+        }
+        
+        // Don't need to worry about checking CMIS endpoints... Conference Hub will handle
+        // Check CMIS connections                     
+        for( i = 1 to MAX_ENDPOINTS )
+            Process_cmis_connection(i);
+
+        // Check for Query Replies 
+        for (i = 1 to MAX_RESPONSES)
+        {
+            if (ResponseList[i].INUSE = TRUE)
+            {
+                if (find(RIVULET_GET_PORT_STATUS_MSG, ResponseList[i].API_CMD_RESP))
+                {
+                    ProcessRivuletEndpointStatus(i);
+                    clearResponse(i);
+                } 
+                else if (find(RIVULET_GET_SERVICE_STATUS_MSG, ResponseList[i].API_CMD_RESP))
+                {
+                    ProcessRivuletServiceStatus(i);
+                    clearResponse(i);                     
+                }
+                else
+                {
+                   print("Old Message?: CorrelationID=%s, %s\n",ResponseList[i].COORELATIONID, ResponseList[i].API_CMD_RESP);
+                   if (len(ResponseList[i].API_CMD_RESP) = 0) 
+                   {
+                       print("Blew away message\n");
+                       clearResponse(i);  
+                   }
+                }
+            }
+        } 
+ 
+        //delay(100);   //Original...
+        delay(20);
+    } 
+}  
+
+RELEASE sigRivuletConnected
+{  
+	integer i; 
+    print("Disconnected from the RCAS\n");  
+	// Reset coorelation ID and session ID
+	giRivuletCoorID = 0;
+	gsRivuletSessionID = "";  
+	clearResponseList();
+
+    // It should not be necessary to clear endpoint lists because
+    // they do not change if the rivulet RGM restarts.
+    clear_rivulet_callist();     
+    clear_cmis_callist();
+} 
+
+
+/*******************************************************************************************
+  Events
+*******************************************************************************************/
+// INFO Need to check into how this is structured... didn't think we needed a "debounce" on TCP/IP connections.
+
+
+PUSH sigStartupComplete
+{
+    integer i; 
+    
+    if (giRivuletConfigured)
+        doRivLinkEnable = ON;
+}  
+
+ /****************************************************
+ This event function processes the incoming messages
+ from the Rivulet RCAS server.  
+ *****************************************************/
+ /////////////////////////////////////////////////////////////////////////////////////////////
+ //Note:  This code does not take into account a situation where a second chunk
+ //       contains first a ending envelope and then an beginning from next message. 
+ //       (this should not happen as Crestron seems to only process single complete messages)
+ /////////////////////////////////////////////////////////////////////////////////////////////
+CHANGE RxRivulet
+{   
+    integer iLen, spos, epos;
+	string sFmRivulet[255];
+	string sReceiveReturn[1024];
+
+	sFmRivulet = RxRivulet; 
+	clearbuffer(RxRivulet);
+    iLen = len(sFmRivulet);
+    
+    // Gather all data in message chunk.    
+    while (iLen)
+    {
+	    sReceiveReturn = sReceiveReturn + sFmRivulet;    
+	    sFmRivulet = RxRivulet;
+	    clearbuffer(RxRivulet);
+	    iLen = len(sFmRivulet);
+	} 
+    
+    // Check if beginning envelope is in chunk
+    spos = Find( "<api-envelope>", sReceiveReturn, 1 );
+	
+	if ( spos != 0 ) // We have chunk with beginning envelope
+	{   
+	    // Check if ending envelope is in chunk
+	    epos = Find( "</api-envelope>", sReceiveReturn, 1 );
+	    if ( epos != 0 )
+	    {  
+	        // Since both are in chunk, we have complete xml, process.
+	        ProcessRivuletMsg(sReceiveReturn);
+	        gsResponseMsg = "";
+	    }
+	    else
+	    {  
+	        //We only have beginning of envelope, set global response and continue.
+	        gsResponseMsg = sReceiveReturn;
+	    }
+	}
+	else  // We have chunk w/o beginning envelope
+	{  
+	    //check if ending envelope is in chunk
+	    epos = Find( "</api-envelope>", sReceiveReturn, 1 );
+	    if ( epos != 0 )
+	    { 
+	    	//We found ending envelope. Add to global response, send Process Message and 
+	    	//reset global response to empty
+	    	gsResponseMsg = gsResponseMsg + sReceiveReturn;
+	        ProcessRivuletMsg(gsResponseMsg);
+	        gsResponseMsg = ""; 
+	    }
+	    else
+	    { 
+	        //We have XML without beginning or end (must be the middle).  
+	        //We must add to global response and continue.
+	        gsResponseMsg = gsResponseMsg + sReceiveReturn;
+	    }
+	}
+} 
+
+// This event parses information passed from ConferenceHub.
+// It is used for configuration. 
+
+// INFO - I believe this is initial video setups... based on configuration data received..  
+//        Should be able to be tremendously simplified for Rivulet needs...
+CHANGE siRivConfig
+{
+    integer ilinenum, irivnum, itype;
+	string sInfo[255];
+	string sSplit[255];
+	string sName[MAX_ID_LENGTH];
+	string stype[5];
+	string sdir[2];
+	string token[MAX_ID_LENGTH];
+	integer index, id, i, j, k, start, count;
+	
+	sInfo = siRivConfig;
+	
+	token = Remove(":", sInfo);				// Obtain first word
+	token = left(token, len(token) - 1);	// Remove ":"
+	sSplit = Remove(":", sInfo);			// Extract Index
+	index = atoi(left(sSplit, len(sSplit) - 1));	// Remove ":", make integer
+
+    // if anything is rcv'd rivulet is configured.
+	giRivuletConfigured = ON;
+	                              
+	ilinenum = cmis_eptlist[index].LineCnt + 1;
+	irivnum  = giRivuletCount + 1;
+
+   	// Process general line information	
+	if (token = "rivulet")
+	{ 
+		sSplit = Remove(":", sInfo);
+		sName  = left(sSplit, len(sSplit) - 1);
+
+		sSplit = Remove(":", sInfo);
+		stype  = left(sSplit, len(sSplit) - 1);
+
+		sSplit = Remove(":", sInfo);
+		sdir   = left(sSplit, len(sSplit) - 1); 
+		       
+        if (find("HD", stype))
+        {
+            if (find ("B", sdir)) 
+                itype = ENDPOINT_HVP_BI;
+            else if (find ("I", sdir))
+                itype = ENDPOINT_HVP_IN;
+            else if (find ("O", sdir))
+                itype = ENDPOINT_HVP_OUT;
+            else
+            {
+                print("\t\tRIVULET: ep %i-%i, HD, Unsupported direction data\n", index, cmis_eptlist[index].LineCnt);
+                return;
+            }
+        }
+        else if (find("SD", stype))
+        {
+            itype = ENDPOINT_DVP_BI;
+        }
+        else		
+		{
+            print("\t\tRIVULET: ep %i-%i, Unsupported signal type data\n", index, cmis_eptlist[index].LineCnt);
+            return;
+		}
+		
+        //cmis_eptlist[index].Rivulet_eptype[ilinenum] = irivtype;
+		
+		print("\t\tCMIS-ept=%i, rivulet-ept=%i: %s %s %s\n", index, irivnum, sName, stype, sdir);
+
+  	}	// End of Rivulet information
+
+	else if (token = "RivVEC")
+	{ 
+		sSplit = Remove(":", sInfo);	            // Extract input start
+		sname = left(sSplit, len(sSplit) - 1);     // IP Address
+
+	    itype = ENDPOINT_VEC_IN; 
+	    rivulet_eptlist[irivnum].VEC_IP = sname;
+    } 
+    
+    cmis_eptlist[index].CurStatus  = RIVULET_IDLE;
+    cmis_eptlist[index].CallActive = OFF;
+    cmis_eptlist[index].LineCnt    = ilinenum;
+    cmis_eptlist[index].CfgType    = CMIS_YESRIVULET;
+    cmis_eptlist[index].Rivulet_epid[ilinenum] = irivnum;
+
+    rivulet_eptlist[irivnum].epname     = sname;
+    rivulet_eptlist[irivnum].eptype     = itype;
+    rivulet_eptlist[irivnum].cmis_epid  = index;
+    rivulet_eptlist[irivnum].CurStatus  = RIVULET_OFFLINE;
+    rivulet_eptlist[irivnum].CallActive = OFF; 
+    
+    giRivuletCount = irivnum;    
+    //aoCMIS_epstatus[index] = RIVULET_OFFLINE;
+
+    print("\n\n\n**** CMIS ENDPOINT - BEGIN *****\n"); 
+    print("Endpoint: %i\n", index);
+    print("Managing %i Rivulet Endpoints\n", cmis_eptlist[index].LineCnt);
+    
+    for (i = 1 to cmis_eptlist[index].LineCnt) 
+    {
+        irivnum = cmis_eptlist[index].Rivulet_epid[i];
+        print("Rivulet: line=%i, riv_epid=%i, name=%s, type=%i\n", i, irivnum,
+                                                       rivulet_eptlist[irivnum].epname,
+                                                       rivulet_eptlist[irivnum].eptype);
+    }
+    print("**** CMIS ENDPOINT - END *****\n"); 
+} 
+
+
+
+// This event parses information passed from ConferenceHub.
+// It is used to initiate routing. 
+// INFO - Dynamic Connect/Disconnect information from the rest of our hub control...
+CHANGE siVidRoute
+{
+	string sRoute[255];
+	string sSplit[255];
+	string token[MAX_ID_LENGTH];
+	integer isrc, idst, isrcoff, idstoff, ipriv;
+	
+	sRoute = siVidRoute;
+	
+	token = Remove(":", sRoute);			// Obtain first word
+	token = left(token, len(token) - 1);	// Remove ":"
+
+	if (token = "enable")	// Connect two rooms for conferencing
+	{
+		sSplit = Remove(":", sRoute);	// Extract src
+		isrc = atoi(left(sSplit, len(sSplit) - 1)); 
+	
+		sSplit = Remove(":", sRoute);	// Extract dst
+		idst = atoi(left(sSplit, len(sSplit) - 1));
+
+		RoutingEnable(isrc, idst);		 
+	}
+	else if (token = "disable")	// Disconnect two rooms that were in a conference
+	{
+		sSplit = Remove(":", sRoute);	// Extract src
+		isrc = atoi(left(sSplit, len(sSplit) - 1)); 
+
+		sSplit = Remove(":", sRoute);	// Extract dst
+		idst = atoi(left(sSplit, len(sSplit) - 1));
+
+		RoutingDisable(isrc, idst);
+	}
+}
+
+// This is a one-time event automatically called at startup 
+// INFO - in the world of Crestron, we do not normally let "main" be the active process,
+//        And, in our case, we probably want the TCP/IP connection, once it is
+//        established be the main controlling module.
+function Main()
+{
+	integer i, j;
+
+	giRivuletFlag = OFF;
+
+    giRivuletConfigured = OFF;
+    gsRivuletSessionID = "";
+    giRivuletCoorID = 0;
+    gsResponseMsg = "";	
+           
+    giRivuletCount = 0;    //Total number of rivulet endpoints managed.
+    
+    clear_rivulet_eptlist();
+    clear_rivulet_callist();
+
+    clear_cmis_eptlist();
+    clear_cmis_callist();
+
+    for (i = 1 to MAX_ENDPOINTS)
+        aoCMIS_epstatus[i] = CMIS_IDLE;
+    
+    clearResponseList();  
+
+    // Enable I/O   
+    WaitForInitializationComplete();
+
+}

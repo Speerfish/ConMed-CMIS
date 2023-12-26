@@ -1,0 +1,99 @@
+<version> 1.0
+<type> IHNH
+<name> Julie Penrose Health Education
+<svideo> 16
+<hd> 8
+<audio> 8
+<vtc> 0
+<simulate> 0
+<vswitchtype> autopatch
+<aswitchtype> converge880
+
+# OR 1, IP ID 0E
+<ep> 1
+  <type> OR
+ <view> 2 4 5
+    <connection> eth 1
+  <svideo> 1 1 1 1
+  <hd> 1 1 1 1
+  <audio> 1 1 1 1
+</ep>
+
+# OR 2, IP ID 0B
+<ep> 2
+  <type> OR
+  <view> 2 4 5
+     <connection> eth 2
+  <svideo> 2 1 2 1
+  <hd> 2 1 2 1
+  <audio> 2 1 2 1
+</ep>
+
+# OR 3, IP ID 06
+<ep> 3
+  <type> OR
+  <view> 2 4 5
+   <connection> eth 3
+  <svideo> 2 1 2 1
+  <hd> 2 1 2 1
+  <audio> 2 1 2 1
+</ep>
+
+# Control 1
+<ep> 4
+  <type> LR
+  <view> 7 1 2 3 4 5 6 7
+  <connection> local 6
+  <svideo> 4 1 4 1
+  <hd> 4 1 4 1
+  <audio> 4 1 4 1
+  <rivulet>CONTROL_ROOM_A-P1-A/1 HD B
+  <lrattr> 1 1 "Control 1" "Control 1"
+</ep>
+
+# Control 2
+<ep> 5
+  <type> LR
+  <view> 7 1 2 3 4 5 6 7
+  <connection> local 7
+  <svideo> 5 1 5 1
+  <hd> 5 1 5 1
+  <audio> 5 1 5 1
+  <rivulet>CONTROL_ROOM_B-P1-A/1 HD B
+  <lrattr> 1 1 "Control 2" "Control 2"
+</ep>
+
+# Rivulet 1
+<ep> 6
+  <type> LR
+  <view> 7 1 2 3 4 5 6 7
+  <connection> local 1
+  <svideo> 5 1 5 1
+  <hd> 4 1 4 1
+  <audio> 4 1 4 1
+  <rivulet>OR8-P1-A/1 HD B
+  <lrattr> 1 1 "Rivulet 1" "Rivulet 1"
+</ep>
+
+# Rivulet 2
+<ep> 7 
+  <type> LR
+  <view> 7 1 2 3 4 5 6 7
+  <connection> local 3
+  <svideo> 6 1 6 1
+  <hd> 5 1 5 1
+  <audio> 5 1 5 1
+  <rivulet>CATH_LAB-P1-A/1 HD B
+  <lrattr> 1 1 "Rivulet 2" "Rivulet 2"
+</ep>
+
+# St. Francis
+<ep> 8
+<type> LR
+<view> 7 1 2 3 4 5 6 7
+<connection> local 2
+<svideo> 4 1 4 1
+<hd> 4 1 4 1
+<audio> 4 1 4 1
+<lrattr> 1 1 "St. Francis" "St. Francis"
+</ep>
