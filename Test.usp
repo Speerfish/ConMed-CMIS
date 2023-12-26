@@ -1,0 +1,96 @@
+/*******************************************************************************************
+  ConferenceHub.usp
+
+	Main Conference Hub controller source code.
+*******************************************************************************************/
+
+function ConferenceCheckActiveEndpoints()
+{
+    integer i;
+    
+    print("Checking Active Endpoints online: ");
+    for (i = 1 to MAX_ENDPOINTS)
+    {
+        if ((gEndpoints[i].State != STATE_C0) &&
+            (gEndpoints[i].ConferenceEndpoint) &&
+            (gEndpoints[i].Type != CONFIG_SIM))
+        {
+            gEndpoints[i].TimeoutCount = gEndpoints[i].TimeoutCount + 1;
+            if (gEndpoints[i].TimeoutCount > 5)
+            {
+                ConferenceDisableRoom(i);
+                    print("Hub: Endpoint %2d timed out, set to offline\n",i);
+            } 
+            else 
+                print("%i ,", i);
+        }
+    }
+    print ("\n");
+}
+
+
+function ConferenceSendUpdate()
+{
+    integer i,id;
+    integer index;
+    string msg[255];
+    string sId[255]; 
+    
+    for (i = 1 to MAX_ENDPOINTS)
+    {
+        index = gEndpoints[i].ConnectionIndex;
+        id = gEndpoints[i].RoomIndex;
+        makestring(sId,"%02d",id);
+
+        msg = ConferenceCreateUpdateMessage(i);		//create unique system status message for the endpoint.
+
+        if (gEndpoints[i].ConferenceEndpoint)  
+        {
+            print("Sending update for endpoint %i\n", i);
+        	if (gEndpoints[i].Type = CONFIG_LR)
+        	{
+            	TxRoomMessageLocal[index] = CHAR_STX + HUB_RMID + sId + msg;        
+            }
+            else
+            { 
+            	TxRoomMessageEthernet[index] = CHAR_STX + HUB_RMID + sId + msg;
+            }
+        } 
+        else
+            print("Not sending update for endpoint %i\n", i);
+    }
+    if (didebug) print("Hub: Send Update (System Status Messages)\n");
+}
+
+
+
+
+
+
+
+
+    print("Hub: Conference start update loop\n");
+ 
+    while (1)
+    {
+        ConferenceCheckActiveEndpoints();
+        ConferenceSendUpdate();
+        delay(6000);  // Wait a minute and check again
+        giNoUpdateDelay = 0; // Start updates on endpoint state changes 
+        
+		for(i = 1 to MAX_ETHERNET_ROOMS)
+		{
+			if ((gEndpoints[i].ConferenceEndpoint = ON) && (gEndpoints[i].ConnectionType = CONFIG_ETH))
+			{        
+        		if (giRoomStatusDisable[i])
+        		{
+            		print("Hub: ENET:  Enable ethernet to room %2i (RoomIndex %2i)\n", i, gEndpoints[i].RoomIndex);
+		            giRoomStatusDisable[i] = 0;
+		            doRoomEnableEthernet[i] = 1;
+        		}
+        	}
+        }
+    }
+}
+
+
