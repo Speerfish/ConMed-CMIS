@@ -1,0 +1,637 @@
+result: 0
+
+========================
+stored analysis results:
+========================
+	version data:
+		current client: 1
+		minimum client: 0
+		current server: 1
+		minimum server: 0
+		negotiated    : 1
+
+======================
+discovery phase 0 data
+======================
+	parameters:
+		spec data:
+			data rate  : 30000000
+			egress rate: 1000000000
+		block set, number: 1
+			block    0  starting_quantum:   11  number_of_quantum:    2
+		packet cluster spec data, number: 28
+			packet  0  data_size: 1420  packet_size: 1498
+			packet  1  data_size: 1420  packet_size: 1498
+			packet  2  data_size: 1420  packet_size: 1498
+			packet  3  data_size: 1420  packet_size: 1498
+			packet  4  data_size: 1420  packet_size: 1498
+			packet  5  data_size: 1420  packet_size: 1498
+			packet  6  data_size: 1420  packet_size: 1498
+			packet  7  data_size: 1420  packet_size: 1498
+			packet  8  data_size: 1420  packet_size: 1498
+			packet  9  data_size: 1420  packet_size: 1498
+			packet 10  data_size: 1420  packet_size: 1498
+			packet 11  data_size: 1420  packet_size: 1498
+			packet 12  data_size: 1420  packet_size: 1498
+			packet 13  data_size: 1420  packet_size: 1498
+			packet 14  data_size: 1420  packet_size: 1498
+			packet 15  data_size: 1420  packet_size: 1498
+			packet 16  data_size: 1420  packet_size: 1498
+			packet 17  data_size: 1420  packet_size: 1498
+			packet 18  data_size: 1420  packet_size: 1498
+			packet 19  data_size: 1420  packet_size: 1498
+			packet 20  data_size: 1420  packet_size: 1498
+			packet 21  data_size: 1420  packet_size: 1498
+			packet 22  data_size: 1420  packet_size: 1498
+			packet 23  data_size: 1420  packet_size: 1498
+			packet 24  data_size: 1420  packet_size: 1498
+			packet 25  data_size: 1420  packet_size: 1498
+			packet 26  data_size: 1420  packet_size: 1498
+			packet 27  data_size: 1035  packet_size: 1113
+		number of sweeps requested: 11
+		inflation factor          : 5
+		maximum score to pass     : 60
+		block results count: 11
+	raw recorded data by block:
+		block 0
+			sweep[00]  id:   0  tx_int:       5959  tx:    2750000  rx_int:      22305  rx:    7199100
+			sweep[01]  id:   0  tx_int:       5960  tx:    2750000  rx_int:      22306  rx:    7188900
+			sweep[02]  id:   0  tx_int:       5961  tx:    2750000  rx_int:      22307  rx:    7217000
+			sweep[03]  id:   0  tx_int:       5962  tx:    2749900  rx_int:      22308  rx:    7299000
+			sweep[04]  id:   0  tx_int:       5963  tx:    2750000  rx_int:      22309  rx:    7235200
+			sweep[05]  id:   0  tx_int:       5964  tx:    2750000  rx_int:      22310  rx:    7168200
+			sweep[06]  id:   0  tx_int:       5965  tx:    2750000  rx_int:      22311  rx:    7156800
+			sweep[07]  id:   0  tx_int:       5966  tx:    2750000  rx_int:      22312  rx:    7181900
+			sweep[08]  id:   0  tx_int:       5967  tx:    2749900  rx_int:      22313  rx:    7212500
+			sweep[09]  id:   0  tx_int:       5968  tx:    2750000  rx_int:      22314  rx:    7300900
+			sweep[10]  id:   0  tx_int:       5969  tx:    2750000  rx_int:      22315  rx:    7183400
+	raw recorded phase zero data by sweep:
+		sweep  0  pkts rx'd: 28
+		sweep  1  pkts rx'd: 28
+		sweep  2  pkts rx'd: 28
+		sweep  3  pkts rx'd: 28
+		sweep  4  pkts rx'd: 28
+		sweep  5  pkts rx'd: 28
+		sweep  6  pkts rx'd: 28
+		sweep  7  pkts rx'd: 28
+		sweep  8  pkts rx'd: 28
+		sweep  9  pkts rx'd: 28
+		sweep 10  pkts rx'd: 28
+	calculated result data by block:
+		block 0
+			sweep[00]  tx_theory:    2750000  rx_norm:   17199100  delta:   14449100
+			sweep[01]  tx_theory:    2750000  rx_norm:   17188900  delta:   14438900
+			sweep[02]  tx_theory:    2750000  rx_norm:   17217000  delta:   14467000
+			sweep[03]  tx_theory:    2750000  rx_norm:   17299000  delta:   14549000
+			sweep[04]  tx_theory:    2750000  rx_norm:   17235200  delta:   14485200
+			sweep[05]  tx_theory:    2750000  rx_norm:   17168200  delta:   14418200
+			sweep[06]  tx_theory:    2750000  rx_norm:   17156800  delta:   14406800
+			sweep[07]  tx_theory:    2750000  rx_norm:   17181900  delta:   14431900
+			sweep[08]  tx_theory:    2750000  rx_norm:   17212500  delta:   14462500
+			sweep[09]  tx_theory:    2750000  rx_norm:   17300900  delta:   14550900
+			sweep[10]  tx_theory:    2750000  rx_norm:   17183400  delta:   14433400
+	phase zero scores: 
+		missing_packets                       : FALSE
+		# total greater than previous         : 27
+		# total possible greater than previous: 55
+		percent total greater than previous   : 49
+		passed phase zero                     : TRUE
+
+======================
+discovery phase 1 data
+======================
+	phase one discovery parameters:
+		spec data:
+			data rate  : 30000000
+			egress rate: 1000000000
+		block set, number: 10
+			block    0  starting_quantum:    4  number_of_quantum:    2
+			block    1  starting_quantum:   12  number_of_quantum:    2
+			block    2  starting_quantum:   15  number_of_quantum:    2
+			block    3  starting_quantum:   22  number_of_quantum:    2
+			block    4  starting_quantum:   23  number_of_quantum:    2
+			block    5  starting_quantum:   27  number_of_quantum:    2
+			block    6  starting_quantum:   29  number_of_quantum:    2
+			block    7  starting_quantum:   31  number_of_quantum:    2
+			block    8  starting_quantum:   34  number_of_quantum:    2
+			block    9  starting_quantum:   38  number_of_quantum:    2
+		packet cluster spec data, number: 27
+			packet  0  data_size: 1420  packet_size: 1498
+			packet  1  data_size: 1420  packet_size: 1498
+			packet  2  data_size: 1420  packet_size: 1498
+			packet  3  data_size: 1420  packet_size: 1498
+			packet  4  data_size: 1420  packet_size: 1498
+			packet  5  data_size: 1420  packet_size: 1498
+			packet  6  data_size: 1420  packet_size: 1498
+			packet  7  data_size: 1420  packet_size: 1498
+			packet  8  data_size: 1420  packet_size: 1498
+			packet  9  data_size: 1420  packet_size: 1498
+			packet 10  data_size: 1420  packet_size: 1498
+			packet 11  data_size: 1420  packet_size: 1498
+			packet 12  data_size: 1420  packet_size: 1498
+			packet 13  data_size: 1420  packet_size: 1498
+			packet 14  data_size: 1420  packet_size: 1498
+			packet 15  data_size: 1420  packet_size: 1498
+			packet 16  data_size: 1420  packet_size: 1498
+			packet 17  data_size: 1420  packet_size: 1498
+			packet 18  data_size: 1420  packet_size: 1498
+			packet 19  data_size: 1420  packet_size: 1498
+			packet 20  data_size: 1420  packet_size: 1498
+			packet 21  data_size: 1420  packet_size: 1498
+			packet 22  data_size: 1420  packet_size: 1498
+			packet 23  data_size: 1420  packet_size: 1498
+			packet 24  data_size: 1420  packet_size: 1498
+			packet 25  data_size: 1420  packet_size: 1498
+			packet 26  data_size:  580  packet_size:  658
+		number of sweeps requested: 10
+		block results count: 100
+	raw recorded data by sweep:
+		sweep  0
+			block[00]  id:   0  tx_int:       5980  tx:     999800  rx_int:      22326  rx:    5411600
+			block[01]  id:   1  tx_int:       5981  tx:    3000000  rx_int:      22327  rx:    7391000
+			block[02]  id:   2  tx_int:       5982  tx:    3750000  rx_int:      22328  rx:    8171700
+			block[03]  id:   3  tx_int:       5983  tx:    5499900  rx_int:      22329  rx:    9905000
+			block[04]  id:   4  tx_int:       5984  tx:    5750000  rx_int:      22331  rx:     186300
+			block[05]  id:   5  tx_int:       5985  tx:    6750000  rx_int:      22332  rx:    1218600
+			block[06]  id:   6  tx_int:       5986  tx:    7250000  rx_int:      22333  rx:    1605300
+			block[07]  id:   7  tx_int:       5987  tx:    7750000  rx_int:      22334  rx:    2140800
+			block[08]  id:   8  tx_int:       5988  tx:    8500100  rx_int:      22335  rx:    2873600
+			block[09]  id:   9  tx_int:       5989  tx:    9500100  rx_int:      22336  rx:    3900600
+		sweep  1
+			block[00]  id:   0  tx_int:       5991  tx:    1000000  rx_int:      22337  rx:    5384100
+			block[01]  id:   1  tx_int:       5992  tx:    3000100  rx_int:      22338  rx:    7465300
+			block[02]  id:   2  tx_int:       5993  tx:    3750000  rx_int:      22339  rx:    8256300
+			block[03]  id:   3  tx_int:       5994  tx:    5500000  rx_int:      22340  rx:    9876800
+			block[04]  id:   4  tx_int:       5995  tx:    5750000  rx_int:      22342  rx:     160500
+			block[05]  id:   5  tx_int:       5996  tx:    6750000  rx_int:      22343  rx:    1095300
+			block[06]  id:   6  tx_int:       5997  tx:    7250100  rx_int:      22344  rx:    1682600
+			block[07]  id:   7  tx_int:       5998  tx:    7750100  rx_int:      22345  rx:    2164000
+			block[08]  id:   8  tx_int:       5999  tx:    8500100  rx_int:      22346  rx:    2845000
+			block[09]  id:   9  tx_int:       6000  tx:    9499900  rx_int:      22347  rx:    3882900
+		sweep  2
+			block[00]  id:   0  tx_int:       6002  tx:    1000000  rx_int:      22348  rx:    5413300
+			block[01]  id:   1  tx_int:       6003  tx:    3000000  rx_int:      22349  rx:    7439300
+			block[02]  id:   2  tx_int:       6004  tx:    3750000  rx_int:      22350  rx:    8172200
+			block[03]  id:   3  tx_int:       6005  tx:    5500000  rx_int:      22352  rx:      53000
+			block[04]  id:   4  tx_int:       6006  tx:    5750100  rx_int:      22353  rx:     234700
+			block[05]  id:   5  tx_int:       6007  tx:    6749900  rx_int:      22354  rx:    1167400
+			block[06]  id:   6  tx_int:       6008  tx:    7250000  rx_int:      22355  rx:    1650700
+			block[07]  id:   7  tx_int:       6009  tx:    7750100  rx_int:      22356  rx:    2184200
+			block[08]  id:   8  tx_int:       6010  tx:    8500000  rx_int:      22357  rx:    2968700
+			block[09]  id:   9  tx_int:       6011  tx:    9500000  rx_int:      22358  rx:    3901300
+		sweep  3
+			block[00]  id:   0  tx_int:       6013  tx:    1000000  rx_int:      22359  rx:    5530700
+			block[01]  id:   1  tx_int:       6014  tx:    2999900  rx_int:      22360  rx:    7461400
+			block[02]  id:   2  tx_int:       6015  tx:    3750000  rx_int:      22361  rx:    8102900
+			block[03]  id:   3  tx_int:       6016  tx:    5500000  rx_int:      22362  rx:    9878000
+			block[04]  id:   4  tx_int:       6017  tx:    5750000  rx_int:      22364  rx:     159100
+			block[05]  id:   5  tx_int:       6018  tx:    6750000  rx_int:      22365  rx:    1098400
+			block[06]  id:   6  tx_int:       6019  tx:    7250000  rx_int:      22366  rx:    1578900
+			block[07]  id:   7  tx_int:       6020  tx:    7750000  rx_int:      22367  rx:    2208200
+			block[08]  id:   8  tx_int:       6021  tx:    8500000  rx_int:      22368  rx:    2890900
+			block[09]  id:   9  tx_int:       6022  tx:    9500000  rx_int:      22369  rx:    3973200
+		sweep  4
+			block[00]  id:   0  tx_int:       6024  tx:    1000000  rx_int:      22370  rx:    5457100
+			block[01]  id:   1  tx_int:       6025  tx:    3000000  rx_int:      22371  rx:    7387900
+			block[02]  id:   2  tx_int:       6026  tx:    3750000  rx_int:      22372  rx:    8170900
+			block[03]  id:   3  tx_int:       6027  tx:    5499900  rx_int:      22373  rx:    9949900
+			block[04]  id:   4  tx_int:       6028  tx:    5750100  rx_int:      22375  rx:     183400
+			block[05]  id:   5  tx_int:       6029  tx:    6750000  rx_int:      22376  rx:    1121600
+			block[06]  id:   6  tx_int:       6030  tx:    7250000  rx_int:      22377  rx:    1759900
+			block[07]  id:   7  tx_int:       6031  tx:    7750000  rx_int:      22378  rx:    2284700
+			block[08]  id:   8  tx_int:       6032  tx:    8500000  rx_int:      22379  rx:    2917500
+			block[09]  id:   9  tx_int:       6033  tx:    9499900  rx_int:      22380  rx:    4012700
+		sweep  5
+			block[00]  id:   0  tx_int:       6035  tx:    1000000  rx_int:      22381  rx:    5431200
+			block[01]  id:   1  tx_int:       6036  tx:    3000000  rx_int:      22382  rx:    7462400
+			block[02]  id:   2  tx_int:       6037  tx:    3750000  rx_int:      22383  rx:    8142900
+			block[03]  id:   3  tx_int:       6038  tx:    5500000  rx_int:      22384  rx:    9876400
+			block[04]  id:   4  tx_int:       6039  tx:    5750000  rx_int:      22386  rx:     157700
+			block[05]  id:   5  tx_int:       6040  tx:    6750000  rx_int:      22387  rx:    1190200
+			block[06]  id:   6  tx_int:       6041  tx:    7249900  rx_int:      22388  rx:    1673500
+			block[07]  id:   7  tx_int:       6042  tx:    7750000  rx_int:      22389  rx:    2208800
+			block[08]  id:   8  tx_int:       6043  tx:    8500000  rx_int:      22390  rx:    2941900
+			block[09]  id:   9  tx_int:       6044  tx:    9500000  rx_int:      22391  rx:    4024200
+		sweep  6
+			block[00]  id:   0  tx_int:       6046  tx:    1000000  rx_int:      22392  rx:    5405700
+			block[01]  id:   1  tx_int:       6047  tx:    3000000  rx_int:      22393  rx:    7434300
+			block[02]  id:   2  tx_int:       6048  tx:    3749900  rx_int:      22394  rx:    8167200
+			block[03]  id:   3  tx_int:       6049  tx:    5500000  rx_int:      22395  rx:    9854800
+			block[04]  id:   4  tx_int:       6050  tx:    5750000  rx_int:      22397  rx:     184200
+			block[05]  id:   5  tx_int:       6051  tx:    6750000  rx_int:      22398  rx:    1166700
+			block[06]  id:   6  tx_int:       6052  tx:    7250000  rx_int:      22399  rx:    1697700
+			block[07]  id:   7  tx_int:       6053  tx:    7749800  rx_int:      22400  rx:    2131100
+			block[08]  id:   8  tx_int:       6054  tx:    8500000  rx_int:      22401  rx:    2916100
+			block[09]  id:   9  tx_int:       6055  tx:    9500000  rx_int:      22402  rx:    3896400
+		sweep  7
+			block[00]  id:   0  tx_int:       6057  tx:    1000000  rx_int:      22403  rx:    5478900
+			block[01]  id:   1  tx_int:       6058  tx:    3000000  rx_int:      22404  rx:    7458800
+			block[02]  id:   2  tx_int:       6059  tx:    3750100  rx_int:      22405  rx:    8193700
+			block[03]  id:   3  tx_int:       6060  tx:    5500100  rx_int:      22406  rx:    9876500
+			block[04]  id:   4  tx_int:       6061  tx:    5750000  rx_int:      22408  rx:     158600
+			block[05]  id:   5  tx_int:       6062  tx:    6750000  rx_int:      22409  rx:    1188800
+			block[06]  id:   6  tx_int:       6063  tx:    7250000  rx_int:      22410  rx:    1671900
+			block[07]  id:   7  tx_int:       6064  tx:    7750000  rx_int:      22411  rx:    2107700
+			block[08]  id:   8  tx_int:       6065  tx:    8500000  rx_int:      22412  rx:    2888200
+			block[09]  id:   9  tx_int:       6066  tx:    9500000  rx_int:      22413  rx:    3920800
+		sweep  8
+			block[00]  id:   0  tx_int:       6068  tx:    1000000  rx_int:      22414  rx:    5454600
+			block[01]  id:   1  tx_int:       6069  tx:    3000000  rx_int:      22415  rx:    7385300
+			block[02]  id:   2  tx_int:       6070  tx:    3750000  rx_int:      22416  rx:    8173600
+			block[03]  id:   3  tx_int:       6071  tx:    5499900  rx_int:      22417  rx:    9899300
+			block[04]  id:   4  tx_int:       6072  tx:    5750000  rx_int:      22419  rx:     230600
+			block[05]  id:   5  tx_int:       6073  tx:    6750000  rx_int:      22420  rx:    1121500
+			block[06]  id:   6  tx_int:       6074  tx:    7250000  rx_int:      22421  rx:    1697300
+			block[07]  id:   7  tx_int:       6075  tx:    7750000  rx_int:      22422  rx:    2131800
+			block[08]  id:   8  tx_int:       6076  tx:    8499900  rx_int:      22423  rx:    2914500
+			block[09]  id:   9  tx_int:       6077  tx:    9499900  rx_int:      22424  rx:    3901200
+		sweep  9
+			block[00]  id:   0  tx_int:       6079  tx:    1000100  rx_int:      22425  rx:    5426600
+			block[01]  id:   1  tx_int:       6080  tx:    3000000  rx_int:      22426  rx:    7409300
+			block[02]  id:   2  tx_int:       6081  tx:    3750000  rx_int:      22427  rx:    8142400
+			block[03]  id:   3  tx_int:       6082  tx:    5499900  rx_int:      22428  rx:    9971400
+			block[04]  id:   4  tx_int:       6083  tx:    5749900  rx_int:      22430  rx:     157500
+			block[05]  id:   5  tx_int:       6084  tx:    6749900  rx_int:      22431  rx:    1189700
+			block[06]  id:   6  tx_int:       6085  tx:    7250000  rx_int:      22432  rx:    1673400
+			block[07]  id:   7  tx_int:       6086  tx:    7750100  rx_int:      22433  rx:    2203700
+			block[08]  id:   8  tx_int:       6087  tx:    8500100  rx_int:      22434  rx:    2840900
+			block[09]  id:   9  tx_int:       6088  tx:    9500000  rx_int:      22435  rx:    3876200
+	raw recorded data by block:
+		block 0
+			sweep[00]  id:   0  tx_int:       5980  tx:     999800  rx_int:      22326  rx:    5411600
+			sweep[01]  id:   0  tx_int:       5991  tx:    1000000  rx_int:      22337  rx:    5384100
+			sweep[02]  id:   0  tx_int:       6002  tx:    1000000  rx_int:      22348  rx:    5413300
+			sweep[03]  id:   0  tx_int:       6013  tx:    1000000  rx_int:      22359  rx:    5530700
+			sweep[04]  id:   0  tx_int:       6024  tx:    1000000  rx_int:      22370  rx:    5457100
+			sweep[05]  id:   0  tx_int:       6035  tx:    1000000  rx_int:      22381  rx:    5431200
+			sweep[06]  id:   0  tx_int:       6046  tx:    1000000  rx_int:      22392  rx:    5405700
+			sweep[07]  id:   0  tx_int:       6057  tx:    1000000  rx_int:      22403  rx:    5478900
+			sweep[08]  id:   0  tx_int:       6068  tx:    1000000  rx_int:      22414  rx:    5454600
+			sweep[09]  id:   0  tx_int:       6079  tx:    1000100  rx_int:      22425  rx:    5426600
+		block 1
+			sweep[00]  id:   1  tx_int:       5981  tx:    3000000  rx_int:      22327  rx:    7391000
+			sweep[01]  id:   1  tx_int:       5992  tx:    3000100  rx_int:      22338  rx:    7465300
+			sweep[02]  id:   1  tx_int:       6003  tx:    3000000  rx_int:      22349  rx:    7439300
+			sweep[03]  id:   1  tx_int:       6014  tx:    2999900  rx_int:      22360  rx:    7461400
+			sweep[04]  id:   1  tx_int:       6025  tx:    3000000  rx_int:      22371  rx:    7387900
+			sweep[05]  id:   1  tx_int:       6036  tx:    3000000  rx_int:      22382  rx:    7462400
+			sweep[06]  id:   1  tx_int:       6047  tx:    3000000  rx_int:      22393  rx:    7434300
+			sweep[07]  id:   1  tx_int:       6058  tx:    3000000  rx_int:      22404  rx:    7458800
+			sweep[08]  id:   1  tx_int:       6069  tx:    3000000  rx_int:      22415  rx:    7385300
+			sweep[09]  id:   1  tx_int:       6080  tx:    3000000  rx_int:      22426  rx:    7409300
+		block 2
+			sweep[00]  id:   2  tx_int:       5982  tx:    3750000  rx_int:      22328  rx:    8171700
+			sweep[01]  id:   2  tx_int:       5993  tx:    3750000  rx_int:      22339  rx:    8256300
+			sweep[02]  id:   2  tx_int:       6004  tx:    3750000  rx_int:      22350  rx:    8172200
+			sweep[03]  id:   2  tx_int:       6015  tx:    3750000  rx_int:      22361  rx:    8102900
+			sweep[04]  id:   2  tx_int:       6026  tx:    3750000  rx_int:      22372  rx:    8170900
+			sweep[05]  id:   2  tx_int:       6037  tx:    3750000  rx_int:      22383  rx:    8142900
+			sweep[06]  id:   2  tx_int:       6048  tx:    3749900  rx_int:      22394  rx:    8167200
+			sweep[07]  id:   2  tx_int:       6059  tx:    3750100  rx_int:      22405  rx:    8193700
+			sweep[08]  id:   2  tx_int:       6070  tx:    3750000  rx_int:      22416  rx:    8173600
+			sweep[09]  id:   2  tx_int:       6081  tx:    3750000  rx_int:      22427  rx:    8142400
+		block 3
+			sweep[00]  id:   3  tx_int:       5983  tx:    5499900  rx_int:      22329  rx:    9905000
+			sweep[01]  id:   3  tx_int:       5994  tx:    5500000  rx_int:      22340  rx:    9876800
+			sweep[02]  id:   3  tx_int:       6005  tx:    5500000  rx_int:      22352  rx:      53000
+			sweep[03]  id:   3  tx_int:       6016  tx:    5500000  rx_int:      22362  rx:    9878000
+			sweep[04]  id:   3  tx_int:       6027  tx:    5499900  rx_int:      22373  rx:    9949900
+			sweep[05]  id:   3  tx_int:       6038  tx:    5500000  rx_int:      22384  rx:    9876400
+			sweep[06]  id:   3  tx_int:       6049  tx:    5500000  rx_int:      22395  rx:    9854800
+			sweep[07]  id:   3  tx_int:       6060  tx:    5500100  rx_int:      22406  rx:    9876500
+			sweep[08]  id:   3  tx_int:       6071  tx:    5499900  rx_int:      22417  rx:    9899300
+			sweep[09]  id:   3  tx_int:       6082  tx:    5499900  rx_int:      22428  rx:    9971400
+		block 4
+			sweep[00]  id:   4  tx_int:       5984  tx:    5750000  rx_int:      22331  rx:     186300
+			sweep[01]  id:   4  tx_int:       5995  tx:    5750000  rx_int:      22342  rx:     160500
+			sweep[02]  id:   4  tx_int:       6006  tx:    5750100  rx_int:      22353  rx:     234700
+			sweep[03]  id:   4  tx_int:       6017  tx:    5750000  rx_int:      22364  rx:     159100
+			sweep[04]  id:   4  tx_int:       6028  tx:    5750100  rx_int:      22375  rx:     183400
+			sweep[05]  id:   4  tx_int:       6039  tx:    5750000  rx_int:      22386  rx:     157700
+			sweep[06]  id:   4  tx_int:       6050  tx:    5750000  rx_int:      22397  rx:     184200
+			sweep[07]  id:   4  tx_int:       6061  tx:    5750000  rx_int:      22408  rx:     158600
+			sweep[08]  id:   4  tx_int:       6072  tx:    5750000  rx_int:      22419  rx:     230600
+			sweep[09]  id:   4  tx_int:       6083  tx:    5749900  rx_int:      22430  rx:     157500
+		block 5
+			sweep[00]  id:   5  tx_int:       5985  tx:    6750000  rx_int:      22332  rx:    1218600
+			sweep[01]  id:   5  tx_int:       5996  tx:    6750000  rx_int:      22343  rx:    1095300
+			sweep[02]  id:   5  tx_int:       6007  tx:    6749900  rx_int:      22354  rx:    1167400
+			sweep[03]  id:   5  tx_int:       6018  tx:    6750000  rx_int:      22365  rx:    1098400
+			sweep[04]  id:   5  tx_int:       6029  tx:    6750000  rx_int:      22376  rx:    1121600
+			sweep[05]  id:   5  tx_int:       6040  tx:    6750000  rx_int:      22387  rx:    1190200
+			sweep[06]  id:   5  tx_int:       6051  tx:    6750000  rx_int:      22398  rx:    1166700
+			sweep[07]  id:   5  tx_int:       6062  tx:    6750000  rx_int:      22409  rx:    1188800
+			sweep[08]  id:   5  tx_int:       6073  tx:    6750000  rx_int:      22420  rx:    1121500
+			sweep[09]  id:   5  tx_int:       6084  tx:    6749900  rx_int:      22431  rx:    1189700
+		block 6
+			sweep[00]  id:   6  tx_int:       5986  tx:    7250000  rx_int:      22333  rx:    1605300
+			sweep[01]  id:   6  tx_int:       5997  tx:    7250100  rx_int:      22344  rx:    1682600
+			sweep[02]  id:   6  tx_int:       6008  tx:    7250000  rx_int:      22355  rx:    1650700
+			sweep[03]  id:   6  tx_int:       6019  tx:    7250000  rx_int:      22366  rx:    1578900
+			sweep[04]  id:   6  tx_int:       6030  tx:    7250000  rx_int:      22377  rx:    1759900
+			sweep[05]  id:   6  tx_int:       6041  tx:    7249900  rx_int:      22388  rx:    1673500
+			sweep[06]  id:   6  tx_int:       6052  tx:    7250000  rx_int:      22399  rx:    1697700
+			sweep[07]  id:   6  tx_int:       6063  tx:    7250000  rx_int:      22410  rx:    1671900
+			sweep[08]  id:   6  tx_int:       6074  tx:    7250000  rx_int:      22421  rx:    1697300
+			sweep[09]  id:   6  tx_int:       6085  tx:    7250000  rx_int:      22432  rx:    1673400
+		block 7
+			sweep[00]  id:   7  tx_int:       5987  tx:    7750000  rx_int:      22334  rx:    2140800
+			sweep[01]  id:   7  tx_int:       5998  tx:    7750100  rx_int:      22345  rx:    2164000
+			sweep[02]  id:   7  tx_int:       6009  tx:    7750100  rx_int:      22356  rx:    2184200
+			sweep[03]  id:   7  tx_int:       6020  tx:    7750000  rx_int:      22367  rx:    2208200
+			sweep[04]  id:   7  tx_int:       6031  tx:    7750000  rx_int:      22378  rx:    2284700
+			sweep[05]  id:   7  tx_int:       6042  tx:    7750000  rx_int:      22389  rx:    2208800
+			sweep[06]  id:   7  tx_int:       6053  tx:    7749800  rx_int:      22400  rx:    2131100
+			sweep[07]  id:   7  tx_int:       6064  tx:    7750000  rx_int:      22411  rx:    2107700
+			sweep[08]  id:   7  tx_int:       6075  tx:    7750000  rx_int:      22422  rx:    2131800
+			sweep[09]  id:   7  tx_int:       6086  tx:    7750100  rx_int:      22433  rx:    2203700
+		block 8
+			sweep[00]  id:   8  tx_int:       5988  tx:    8500100  rx_int:      22335  rx:    2873600
+			sweep[01]  id:   8  tx_int:       5999  tx:    8500100  rx_int:      22346  rx:    2845000
+			sweep[02]  id:   8  tx_int:       6010  tx:    8500000  rx_int:      22357  rx:    2968700
+			sweep[03]  id:   8  tx_int:       6021  tx:    8500000  rx_int:      22368  rx:    2890900
+			sweep[04]  id:   8  tx_int:       6032  tx:    8500000  rx_int:      22379  rx:    2917500
+			sweep[05]  id:   8  tx_int:       6043  tx:    8500000  rx_int:      22390  rx:    2941900
+			sweep[06]  id:   8  tx_int:       6054  tx:    8500000  rx_int:      22401  rx:    2916100
+			sweep[07]  id:   8  tx_int:       6065  tx:    8500000  rx_int:      22412  rx:    2888200
+			sweep[08]  id:   8  tx_int:       6076  tx:    8499900  rx_int:      22423  rx:    2914500
+			sweep[09]  id:   8  tx_int:       6087  tx:    8500100  rx_int:      22434  rx:    2840900
+		block 9
+			sweep[00]  id:   9  tx_int:       5989  tx:    9500100  rx_int:      22336  rx:    3900600
+			sweep[01]  id:   9  tx_int:       6000  tx:    9499900  rx_int:      22347  rx:    3882900
+			sweep[02]  id:   9  tx_int:       6011  tx:    9500000  rx_int:      22358  rx:    3901300
+			sweep[03]  id:   9  tx_int:       6022  tx:    9500000  rx_int:      22369  rx:    3973200
+			sweep[04]  id:   9  tx_int:       6033  tx:    9499900  rx_int:      22380  rx:    4012700
+			sweep[05]  id:   9  tx_int:       6044  tx:    9500000  rx_int:      22391  rx:    4024200
+			sweep[06]  id:   9  tx_int:       6055  tx:    9500000  rx_int:      22402  rx:    3896400
+			sweep[07]  id:   9  tx_int:       6066  tx:    9500000  rx_int:      22413  rx:    3920800
+			sweep[08]  id:   9  tx_int:       6077  tx:    9499900  rx_int:      22424  rx:    3901200
+			sweep[09]  id:   9  tx_int:       6088  tx:    9500000  rx_int:      22435  rx:    3876200
+	calculated result data by sweep:
+		sweep  0
+			block[00]  tx_theory:    1000000  rx_norm:   15411600  delta:   14411600
+			block[01]  tx_theory:    3000000  rx_norm:   17391000  delta:   14391000
+			block[02]  tx_theory:    3750000  rx_norm:   18171700  delta:   14421700
+			block[03]  tx_theory:    5500000  rx_norm:   19905000  delta:   14405000
+			block[04]  tx_theory:    5750000  rx_norm:   20186300  delta:   14436300
+			block[05]  tx_theory:    6750000  rx_norm:   21218600  delta:   14468600
+			block[06]  tx_theory:    7250000  rx_norm:   21605300  delta:   14355300
+			block[07]  tx_theory:    7750000  rx_norm:   22140800  delta:   14390800
+			block[08]  tx_theory:    8500000  rx_norm:   22873600  delta:   14373600
+			block[09]  tx_theory:    9500000  rx_norm:   23900600  delta:   14400600
+		sweep  1
+			block[00]  tx_theory:    1000000  rx_norm:   15384100  delta:   14384100
+			block[01]  tx_theory:    3000000  rx_norm:   17465300  delta:   14465300
+			block[02]  tx_theory:    3750000  rx_norm:   18256300  delta:   14506300
+			block[03]  tx_theory:    5500000  rx_norm:   19876800  delta:   14376800
+			block[04]  tx_theory:    5750000  rx_norm:   20160500  delta:   14410500
+			block[05]  tx_theory:    6750000  rx_norm:   21095300  delta:   14345300
+			block[06]  tx_theory:    7250000  rx_norm:   21682600  delta:   14432600
+			block[07]  tx_theory:    7750000  rx_norm:   22164000  delta:   14414000
+			block[08]  tx_theory:    8500000  rx_norm:   22845000  delta:   14345000
+			block[09]  tx_theory:    9500000  rx_norm:   23882900  delta:   14382900
+		sweep  2
+			block[00]  tx_theory:    1000000  rx_norm:   15413300  delta:   14413300
+			block[01]  tx_theory:    3000000  rx_norm:   17439300  delta:   14439300
+			block[02]  tx_theory:    3750000  rx_norm:   18172200  delta:   14422200
+			block[03]  tx_theory:    5500000  rx_norm:   20053000  delta:   14553000
+			block[04]  tx_theory:    5750000  rx_norm:   20234700  delta:   14484700
+			block[05]  tx_theory:    6750000  rx_norm:   21167400  delta:   14417400
+			block[06]  tx_theory:    7250000  rx_norm:   21650700  delta:   14400700
+			block[07]  tx_theory:    7750000  rx_norm:   22184200  delta:   14434200
+			block[08]  tx_theory:    8500000  rx_norm:   22968700  delta:   14468700
+			block[09]  tx_theory:    9500000  rx_norm:   23901300  delta:   14401300
+		sweep  3
+			block[00]  tx_theory:    1000000  rx_norm:   15530700  delta:   14530700
+			block[01]  tx_theory:    3000000  rx_norm:   17461400  delta:   14461400
+			block[02]  tx_theory:    3750000  rx_norm:   18102900  delta:   14352900
+			block[03]  tx_theory:    5500000  rx_norm:   19878000  delta:   14378000
+			block[04]  tx_theory:    5750000  rx_norm:   20159100  delta:   14409100
+			block[05]  tx_theory:    6750000  rx_norm:   21098400  delta:   14348400
+			block[06]  tx_theory:    7250000  rx_norm:   21578900  delta:   14328900
+			block[07]  tx_theory:    7750000  rx_norm:   22208200  delta:   14458200
+			block[08]  tx_theory:    8500000  rx_norm:   22890900  delta:   14390900
+			block[09]  tx_theory:    9500000  rx_norm:   23973200  delta:   14473200
+		sweep  4
+			block[00]  tx_theory:    1000000  rx_norm:   15457100  delta:   14457100
+			block[01]  tx_theory:    3000000  rx_norm:   17387900  delta:   14387900
+			block[02]  tx_theory:    3750000  rx_norm:   18170900  delta:   14420900
+			block[03]  tx_theory:    5500000  rx_norm:   19949900  delta:   14449900
+			block[04]  tx_theory:    5750000  rx_norm:   20183400  delta:   14433400
+			block[05]  tx_theory:    6750000  rx_norm:   21121600  delta:   14371600
+			block[06]  tx_theory:    7250000  rx_norm:   21759900  delta:   14509900
+			block[07]  tx_theory:    7750000  rx_norm:   22284700  delta:   14534700
+			block[08]  tx_theory:    8500000  rx_norm:   22917500  delta:   14417500
+			block[09]  tx_theory:    9500000  rx_norm:   24012700  delta:   14512700
+		sweep  5
+			block[00]  tx_theory:    1000000  rx_norm:   15431200  delta:   14431200
+			block[01]  tx_theory:    3000000  rx_norm:   17462400  delta:   14462400
+			block[02]  tx_theory:    3750000  rx_norm:   18142900  delta:   14392900
+			block[03]  tx_theory:    5500000  rx_norm:   19876400  delta:   14376400
+			block[04]  tx_theory:    5750000  rx_norm:   20157700  delta:   14407700
+			block[05]  tx_theory:    6750000  rx_norm:   21190200  delta:   14440200
+			block[06]  tx_theory:    7250000  rx_norm:   21673500  delta:   14423500
+			block[07]  tx_theory:    7750000  rx_norm:   22208800  delta:   14458800
+			block[08]  tx_theory:    8500000  rx_norm:   22941900  delta:   14441900
+			block[09]  tx_theory:    9500000  rx_norm:   24024200  delta:   14524200
+		sweep  6
+			block[00]  tx_theory:    1000000  rx_norm:   15405700  delta:   14405700
+			block[01]  tx_theory:    3000000  rx_norm:   17434300  delta:   14434300
+			block[02]  tx_theory:    3750000  rx_norm:   18167200  delta:   14417200
+			block[03]  tx_theory:    5500000  rx_norm:   19854800  delta:   14354800
+			block[04]  tx_theory:    5750000  rx_norm:   20184200  delta:   14434200
+			block[05]  tx_theory:    6750000  rx_norm:   21166700  delta:   14416700
+			block[06]  tx_theory:    7250000  rx_norm:   21697700  delta:   14447700
+			block[07]  tx_theory:    7750000  rx_norm:   22131100  delta:   14381100
+			block[08]  tx_theory:    8500000  rx_norm:   22916100  delta:   14416100
+			block[09]  tx_theory:    9500000  rx_norm:   23896400  delta:   14396400
+		sweep  7
+			block[00]  tx_theory:    1000000  rx_norm:   15478900  delta:   14478900
+			block[01]  tx_theory:    3000000  rx_norm:   17458800  delta:   14458800
+			block[02]  tx_theory:    3750000  rx_norm:   18193700  delta:   14443700
+			block[03]  tx_theory:    5500000  rx_norm:   19876500  delta:   14376500
+			block[04]  tx_theory:    5750000  rx_norm:   20158600  delta:   14408600
+			block[05]  tx_theory:    6750000  rx_norm:   21188800  delta:   14438800
+			block[06]  tx_theory:    7250000  rx_norm:   21671900  delta:   14421900
+			block[07]  tx_theory:    7750000  rx_norm:   22107700  delta:   14357700
+			block[08]  tx_theory:    8500000  rx_norm:   22888200  delta:   14388200
+			block[09]  tx_theory:    9500000  rx_norm:   23920800  delta:   14420800
+		sweep  8
+			block[00]  tx_theory:    1000000  rx_norm:   15454600  delta:   14454600
+			block[01]  tx_theory:    3000000  rx_norm:   17385300  delta:   14385300
+			block[02]  tx_theory:    3750000  rx_norm:   18173600  delta:   14423600
+			block[03]  tx_theory:    5500000  rx_norm:   19899300  delta:   14399300
+			block[04]  tx_theory:    5750000  rx_norm:   20230600  delta:   14480600
+			block[05]  tx_theory:    6750000  rx_norm:   21121500  delta:   14371500
+			block[06]  tx_theory:    7250000  rx_norm:   21697300  delta:   14447300
+			block[07]  tx_theory:    7750000  rx_norm:   22131800  delta:   14381800
+			block[08]  tx_theory:    8500000  rx_norm:   22914500  delta:   14414500
+			block[09]  tx_theory:    9500000  rx_norm:   23901200  delta:   14401200
+		sweep  9
+			block[00]  tx_theory:    1000000  rx_norm:   15426600  delta:   14426600
+			block[01]  tx_theory:    3000000  rx_norm:   17409300  delta:   14409300
+			block[02]  tx_theory:    3750000  rx_norm:   18142400  delta:   14392400
+			block[03]  tx_theory:    5500000  rx_norm:   19971400  delta:   14471400
+			block[04]  tx_theory:    5750000  rx_norm:   20157500  delta:   14407500
+			block[05]  tx_theory:    6750000  rx_norm:   21189700  delta:   14439700
+			block[06]  tx_theory:    7250000  rx_norm:   21673400  delta:   14423400
+			block[07]  tx_theory:    7750000  rx_norm:   22203700  delta:   14453700
+			block[08]  tx_theory:    8500000  rx_norm:   22840900  delta:   14340900
+			block[09]  tx_theory:    9500000  rx_norm:   23876200  delta:   14376200
+	calculated result data by block:
+		block 0
+			sweep[00]  tx_theory:    1000000  rx_norm:   15411600  delta:   14411600
+			sweep[01]  tx_theory:    1000000  rx_norm:   15384100  delta:   14384100
+			sweep[02]  tx_theory:    1000000  rx_norm:   15413300  delta:   14413300
+			sweep[03]  tx_theory:    1000000  rx_norm:   15530700  delta:   14530700
+			sweep[04]  tx_theory:    1000000  rx_norm:   15457100  delta:   14457100
+			sweep[05]  tx_theory:    1000000  rx_norm:   15431200  delta:   14431200
+			sweep[06]  tx_theory:    1000000  rx_norm:   15405700  delta:   14405700
+			sweep[07]  tx_theory:    1000000  rx_norm:   15478900  delta:   14478900
+			sweep[08]  tx_theory:    1000000  rx_norm:   15454600  delta:   14454600
+			sweep[09]  tx_theory:    1000000  rx_norm:   15426600  delta:   14426600
+		block 1
+			sweep[00]  tx_theory:    3000000  rx_norm:   17391000  delta:   14391000
+			sweep[01]  tx_theory:    3000000  rx_norm:   17465300  delta:   14465300
+			sweep[02]  tx_theory:    3000000  rx_norm:   17439300  delta:   14439300
+			sweep[03]  tx_theory:    3000000  rx_norm:   17461400  delta:   14461400
+			sweep[04]  tx_theory:    3000000  rx_norm:   17387900  delta:   14387900
+			sweep[05]  tx_theory:    3000000  rx_norm:   17462400  delta:   14462400
+			sweep[06]  tx_theory:    3000000  rx_norm:   17434300  delta:   14434300
+			sweep[07]  tx_theory:    3000000  rx_norm:   17458800  delta:   14458800
+			sweep[08]  tx_theory:    3000000  rx_norm:   17385300  delta:   14385300
+			sweep[09]  tx_theory:    3000000  rx_norm:   17409300  delta:   14409300
+		block 2
+			sweep[00]  tx_theory:    3750000  rx_norm:   18171700  delta:   14421700
+			sweep[01]  tx_theory:    3750000  rx_norm:   18256300  delta:   14506300
+			sweep[02]  tx_theory:    3750000  rx_norm:   18172200  delta:   14422200
+			sweep[03]  tx_theory:    3750000  rx_norm:   18102900  delta:   14352900
+			sweep[04]  tx_theory:    3750000  rx_norm:   18170900  delta:   14420900
+			sweep[05]  tx_theory:    3750000  rx_norm:   18142900  delta:   14392900
+			sweep[06]  tx_theory:    3750000  rx_norm:   18167200  delta:   14417200
+			sweep[07]  tx_theory:    3750000  rx_norm:   18193700  delta:   14443700
+			sweep[08]  tx_theory:    3750000  rx_norm:   18173600  delta:   14423600
+			sweep[09]  tx_theory:    3750000  rx_norm:   18142400  delta:   14392400
+		block 3
+			sweep[00]  tx_theory:    5500000  rx_norm:   19905000  delta:   14405000
+			sweep[01]  tx_theory:    5500000  rx_norm:   19876800  delta:   14376800
+			sweep[02]  tx_theory:    5500000  rx_norm:   20053000  delta:   14553000
+			sweep[03]  tx_theory:    5500000  rx_norm:   19878000  delta:   14378000
+			sweep[04]  tx_theory:    5500000  rx_norm:   19949900  delta:   14449900
+			sweep[05]  tx_theory:    5500000  rx_norm:   19876400  delta:   14376400
+			sweep[06]  tx_theory:    5500000  rx_norm:   19854800  delta:   14354800
+			sweep[07]  tx_theory:    5500000  rx_norm:   19876500  delta:   14376500
+			sweep[08]  tx_theory:    5500000  rx_norm:   19899300  delta:   14399300
+			sweep[09]  tx_theory:    5500000  rx_norm:   19971400  delta:   14471400
+		block 4
+			sweep[00]  tx_theory:    5750000  rx_norm:   20186300  delta:   14436300
+			sweep[01]  tx_theory:    5750000  rx_norm:   20160500  delta:   14410500
+			sweep[02]  tx_theory:    5750000  rx_norm:   20234700  delta:   14484700
+			sweep[03]  tx_theory:    5750000  rx_norm:   20159100  delta:   14409100
+			sweep[04]  tx_theory:    5750000  rx_norm:   20183400  delta:   14433400
+			sweep[05]  tx_theory:    5750000  rx_norm:   20157700  delta:   14407700
+			sweep[06]  tx_theory:    5750000  rx_norm:   20184200  delta:   14434200
+			sweep[07]  tx_theory:    5750000  rx_norm:   20158600  delta:   14408600
+			sweep[08]  tx_theory:    5750000  rx_norm:   20230600  delta:   14480600
+			sweep[09]  tx_theory:    5750000  rx_norm:   20157500  delta:   14407500
+		block 5
+			sweep[00]  tx_theory:    6750000  rx_norm:   21218600  delta:   14468600
+			sweep[01]  tx_theory:    6750000  rx_norm:   21095300  delta:   14345300
+			sweep[02]  tx_theory:    6750000  rx_norm:   21167400  delta:   14417400
+			sweep[03]  tx_theory:    6750000  rx_norm:   21098400  delta:   14348400
+			sweep[04]  tx_theory:    6750000  rx_norm:   21121600  delta:   14371600
+			sweep[05]  tx_theory:    6750000  rx_norm:   21190200  delta:   14440200
+			sweep[06]  tx_theory:    6750000  rx_norm:   21166700  delta:   14416700
+			sweep[07]  tx_theory:    6750000  rx_norm:   21188800  delta:   14438800
+			sweep[08]  tx_theory:    6750000  rx_norm:   21121500  delta:   14371500
+			sweep[09]  tx_theory:    6750000  rx_norm:   21189700  delta:   14439700
+		block 6
+			sweep[00]  tx_theory:    7250000  rx_norm:   21605300  delta:   14355300
+			sweep[01]  tx_theory:    7250000  rx_norm:   21682600  delta:   14432600
+			sweep[02]  tx_theory:    7250000  rx_norm:   21650700  delta:   14400700
+			sweep[03]  tx_theory:    7250000  rx_norm:   21578900  delta:   14328900
+			sweep[04]  tx_theory:    7250000  rx_norm:   21759900  delta:   14509900
+			sweep[05]  tx_theory:    7250000  rx_norm:   21673500  delta:   14423500
+			sweep[06]  tx_theory:    7250000  rx_norm:   21697700  delta:   14447700
+			sweep[07]  tx_theory:    7250000  rx_norm:   21671900  delta:   14421900
+			sweep[08]  tx_theory:    7250000  rx_norm:   21697300  delta:   14447300
+			sweep[09]  tx_theory:    7250000  rx_norm:   21673400  delta:   14423400
+		block 7
+			sweep[00]  tx_theory:    7750000  rx_norm:   22140800  delta:   14390800
+			sweep[01]  tx_theory:    7750000  rx_norm:   22164000  delta:   14414000
+			sweep[02]  tx_theory:    7750000  rx_norm:   22184200  delta:   14434200
+			sweep[03]  tx_theory:    7750000  rx_norm:   22208200  delta:   14458200
+			sweep[04]  tx_theory:    7750000  rx_norm:   22284700  delta:   14534700
+			sweep[05]  tx_theory:    7750000  rx_norm:   22208800  delta:   14458800
+			sweep[06]  tx_theory:    7750000  rx_norm:   22131100  delta:   14381100
+			sweep[07]  tx_theory:    7750000  rx_norm:   22107700  delta:   14357700
+			sweep[08]  tx_theory:    7750000  rx_norm:   22131800  delta:   14381800
+			sweep[09]  tx_theory:    7750000  rx_norm:   22203700  delta:   14453700
+		block 8
+			sweep[00]  tx_theory:    8500000  rx_norm:   22873600  delta:   14373600
+			sweep[01]  tx_theory:    8500000  rx_norm:   22845000  delta:   14345000
+			sweep[02]  tx_theory:    8500000  rx_norm:   22968700  delta:   14468700
+			sweep[03]  tx_theory:    8500000  rx_norm:   22890900  delta:   14390900
+			sweep[04]  tx_theory:    8500000  rx_norm:   22917500  delta:   14417500
+			sweep[05]  tx_theory:    8500000  rx_norm:   22941900  delta:   14441900
+			sweep[06]  tx_theory:    8500000  rx_norm:   22916100  delta:   14416100
+			sweep[07]  tx_theory:    8500000  rx_norm:   22888200  delta:   14388200
+			sweep[08]  tx_theory:    8500000  rx_norm:   22914500  delta:   14414500
+			sweep[09]  tx_theory:    8500000  rx_norm:   22840900  delta:   14340900
+		block 9
+			sweep[00]  tx_theory:    9500000  rx_norm:   23900600  delta:   14400600
+			sweep[01]  tx_theory:    9500000  rx_norm:   23882900  delta:   14382900
+			sweep[02]  tx_theory:    9500000  rx_norm:   23901300  delta:   14401300
+			sweep[03]  tx_theory:    9500000  rx_norm:   23973200  delta:   14473200
+			sweep[04]  tx_theory:    9500000  rx_norm:   24012700  delta:   14512700
+			sweep[05]  tx_theory:    9500000  rx_norm:   24024200  delta:   14524200
+			sweep[06]  tx_theory:    9500000  rx_norm:   23896400  delta:   14396400
+			sweep[07]  tx_theory:    9500000  rx_norm:   23920800  delta:   14420800
+			sweep[08]  tx_theory:    9500000  rx_norm:   23901200  delta:   14401200
+			sweep[09]  tx_theory:    9500000  rx_norm:   23876200  delta:   14376200
+	block stats:
+			block[00]  min:  14384100 (07)    avg:  14434875 (09)    med:  14431200 (06)    spd:     43800 (04)    
+			block[01]  min:  14385300 (08)    avg:  14430550 (08)    med:  14439300 (09)    spd:     52100 (05)    
+			block[02]  min:  14352900 (03)    avg:  14416825 (03)    med:  14421700 (04)    spd:      6400 (00) <  
+			block[03]  min:  14354800 (04)    avg:  14404162 (01)    med:  14399300 (00) <  spd:     73100 (09)    
+			block[04]  min:  14407500 (09)    avg:  14427550 (07)    med:  14433400 (07)    spd:     27200 (02)    
+			block[05]  min:  14345300 (02)    avg:  14405537 (02)    med:  14417400 (03)    spd:     68100 (07)    
+			block[06]  min:  14328900 (00) <  avg:  14419050 (04)    med:  14423500 (05)    spd:     25400 (01)    
+			block[07]  min:  14357700 (05)    avg:  14421575 (05)    med:  14434200 (08)    spd:     67400 (06)    
+			block[08]  min:  14340900 (01)    avg:  14398462 (00) <  med:  14414500 (02)    spd:     29300 (03)    
+			block[09]  min:  14376200 (06)    avg:  14423637 (06)    med:  14401300 (01)    spd:     72600 (08)    
+	individual block deltas:
+			block[00]  min:     55200 (07)    avg:     36413 (09)    med:     31900 (06)    spd:     37400 (04)    
+			block[01]  min:     56400 (08)    avg:     32088 (08)    med:     40000 (09)    spd:     45700 (05)    
+			block[02]  min:     24000 (03)    avg:     18363 (03)    med:     22400 (04)    spd:         0 (00) <  
+			block[03]  min:     25900 (04)    avg:      5700 (01)    med:         0 (00) <  spd:     66700 (09)    
+			block[04]  min:     78600 (09)    avg:     29088 (07)    med:     34100 (07)    spd:     20800 (02)    
+			block[05]  min:     16400 (02)    avg:      7075 (02)    med:     18100 (03)    spd:     61700 (07)    
+			block[06]  min:         0 (00) <  avg:     20588 (04)    med:     24200 (05)    spd:     19000 (01)    
+			block[07]  min:     28800 (05)    avg:     23113 (05)    med:     34900 (08)    spd:     61000 (06)    
+			block[08]  min:     12000 (01)    avg:         0 (00) <  med:     15200 (02)    spd:     22900 (03)    
+			block[09]  min:     47300 (06)    avg:     25175 (06)    med:      2000 (01)    spd:     66200 (08)    
+
+chart of median results:
+
+blk
+ 0   ===============================================================================
+ 1   ====================================================================================================
+ 2   ========================================================
+ 3 < 
+ 4   =====================================================================================
+ 5   =============================================
+ 6   ============================================================
+ 7   =======================================================================================
+ 8   ======================================
+ 9   =====
+
+		best blocks:
+			best_minimum  :  6
+			best_average  :  8
+			best_median   :  3 <
+			best_spread   :  2
+			worst_average :  0
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+

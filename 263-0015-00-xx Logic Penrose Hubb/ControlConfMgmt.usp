@@ -1,0 +1,679 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name:
+System Name:
+System Number:
+Programmer:
+Comments:
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+// #ENABLE_DYNAMIC
+// #SYMBOL_NAME ""
+// #HINT ""
+// #DEFINE_CONSTANT
+// #CATEGORY "" 
+// #DEFAULT_VOLATILE
+// #PRINT_TO_TRACE
+// #DIGITAL_EXPAND 
+// #ANALOG_SERIAL_EXPAND 
+// #OUTPUT_SHIFT 
+// #HELP_PDF_FILE ""
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+//#ENABLE_TRACE
+
+#DEFINE_CONSTANT NUM_ENDPOINTS 8		// can scale up
+#DEFINE_CONSTANT NUM_COMBINATIONS 56	// NUM_ENDPOINTS*(NUM_ENDPOINTS-1); dirty but works
+
+#DEFINE_CONSTANT NO_CONFERENCE	0
+#DEFINE_CONSTANT LECTUREHALL	1
+#DEFINE_CONSTANT BREAKOUT		2
+
+#DEFINE_CONSTANT CONTROL1		1
+#DEFINE_CONSTANT CONTROL2		2
+
+#DEFINE_CONSTANT READYSTRING		"Ready"
+#DEFINE_CONSTANT NOCONFSTRING		"No Conference"
+#DEFINE_CONSTANT NOSOURCESTRING		"<No Source>"
+
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+/*******************************************************************************************
+  Include Libraries
+  (Uncomment and include additional libraries as needed)
+*******************************************************************************************/
+// #CRESTRON_LIBRARY ""
+// #USER_LIBRARY ""
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+// DIGITAL_INPUT
+DIGITAL_INPUT Control1Active;
+DIGITAL_INPUT Control2Active;
+DIGITAL_INPUT RouteControl1[2];	// 1 is lecture hall, 2 is breakout
+DIGITAL_INPUT RouteControl2[2];	// 1 is lecture hall, 2 is breakout
+ 
+// ANALOG_INPUT 
+// STRING_INPUT 
+// BUFFER_INPUT 
+STRING_INPUT siAudVidRoute[20];			// Information from ConferenceHub
+STRING_INPUT siControlConfMsg[2][30];	// 1 is control 1, 2 is control 2
+STRING_INPUT siControlSVidLabel[2][30];	// SVideo labels from Control1, Control 2
+STRING_INPUT siControlDVILabel[2][30];	// DVI labels from Control1, COntrol2
+
+// DIGITAL_OUTPUT 
+// ANALOG_OUTPUT 
+// STRING_OUTPUT 
+
+DIGITAL_OUTPUT RouteControl1FB[2];	// 1 is lecture hall, 2 is breakout
+DIGITAL_OUTPUT RouteControl2FB[2];	// 1 is lecture hall, 2 is breakout
+DIGITAL_OUTPUT MuteEndpoint[NUM_ENDPOINTS];
+DIGITAL_OUTPUT ConnectEndpoints[NUM_COMBINATIONS];
+
+STRING_OUTPUT	soLectureConfMsg;	// Msg for lecture hall
+STRING_OUTPUT	soBreakoutConfMsg;	// Msg for breakout room
+STRING_OUTPUT	soLectureSVidLabel;
+STRING_OUTPUT	soBreakoutSVidLabel;
+STRING_OUTPUT	soLectureDVILabel;
+STRING_OUTPUT	soBreakoutDVILabel;
+		/*
+		  ConnectEndpoints example:
+		     3 endpoints
+		     6 combinations (3 * 2 = 6)
+		     ConnectEndpoints[1]	Not used (1 to 1)
+		     ConnectEndpoints[2]	Endpoint 1 to 2
+		     ConnectEndpoints[3]	Endpoint 1 to 3
+		     ConnectEndpoints[4]	Not used (2 to 1)
+		     ConnectEndpoints[5]	Not used (2 to 2)
+		     ConnectEndpoints[6]	Endpoint 2 to 3
+		*/   
+
+/*******************************************************************************************
+  SOCKETS
+  (Uncomment and define socket definitions as needed)
+*******************************************************************************************/
+// TCP_CLIENT
+// TCP_SERVER
+// UDP_SOCKET
+
+/*******************************************************************************************
+  Parameters
+  (Uncomment and declare parameters as needed)
+*******************************************************************************************/
+// INTEGER_PARAMETER
+// SIGNED_INTEGER_PARAMETER
+// LONG_INTEGER_PARAMETER
+// SIGNED_LONG_INTEGER_PARAMETER
+// STRING_PARAMETER
+
+/*******************************************************************************************
+  Parameter Properties
+  (Uncomment and declare parameter properties as needed)
+*******************************************************************************************/
+/*
+#BEGIN_PARAMETER_PROPERTIES parameter_variable, parameter_variable, ...
+   // propValidUnits = // unitString or unitDecimal|unitHex|unitPercent|unitCharacter|unitTime|unitTicks;
+   // propDefaultUnit = // unitString, unitDecimal, unitHex, unitPercent, unitCharacter, unitTime or unitTicks;
+   // propBounds = lower_bound , upper_bound;
+   // propDefaultValue = ;  // or, propDefaultValue = "";
+   // propList = // { "value" , "label" } , { "value" , "label" } , ... ;
+   // propShortDescription = "status_bar_hint_text";
+   // #BEGIN_PROP_FULL_DESCRIPTION  line_1...  line_2...  line_n  #END_PROP_FULL_DESCRIPTION
+   // #BEGIN_PROP_NOTES line_1...  line_2...  line_n  #END_PROP_NOTES
+#END_PARAMETER_PROPERTIES
+*/
+
+/*******************************************************************************************
+  Structure Definitions
+  (Uncomment and define structure definitions as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: struct.myString = "";
+*******************************************************************************************/
+/*
+STRUCTURE MyStruct1
+{
+};
+
+MyStruct1 struct;
+*/
+
+/*******************************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+*******************************************************************************************/
+// INTEGER
+// LONG_INTEGER
+// SIGNED_INTEGER
+// SIGNED_LONG_INTEGER
+// STRING
+
+// local stored variables
+STRING sControlConfMsg[2][30];
+STRING sControlSVidLabel[2][30];
+STRING sControlDVILabel[2][30];
+INTEGER iCtrl1, iCtrl2;
+
+/*******************************************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+*******************************************************************************************/
+/*
+Function MyFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+}
+*/
+
+/*
+Integer_Function MyIntFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+
+    Return (0);
+}
+*/
+
+/*
+String_Function MyStrFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+
+    Return ("");
+}
+*/
+
+string_function SpaceToCR(string source)
+{
+    integer ispaceposition;
+    integer iCRposition;
+    
+	string 	stemp[30];
+	string 	stemp2[30];
+
+	iCRposition = find("\r",source);
+	if (iCRposition)
+		return(source);		// already has CR, don't modify
+
+	iSpaceposition = find(" ",source);
+	stemp2 = source;
+
+	if (ispaceposition > 0)
+    {
+    	//If here, then string does contain a " ", so replace it with <space> char
+        stemp = remove(" ", stemp2);
+        SetString("\r", ispaceposition, stemp);
+        stemp = stemp + stemp2; 
+        return(stemp);
+    }
+    else
+        return(source);	
+}
+
+
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+/*
+PUSH input
+{
+    // TODO:  Add code here
+}
+*/
+
+// Control 1 inputs come from the Lecture Hall and Breakout Room buttons
+// located under the Control 1 side of the Control Room Conference Page.
+PUSH RouteControl1
+{
+	integer iButton, i;
+	
+	iButton = GetLastModifiedArrayindex();
+
+	// If Control 1 is not active in a conference,
+	// or if the button pressed is already active for Control 2,
+	// return and don't permit Control 1 to be routed
+	// to the selected destination.
+	if ((!Control1Active) || (RouteControl2FB[iButton]))
+		return;
+
+	// Inhibit conference handover until it works
+	if (iCtrl1 != NO_CONFERENCE)
+		return;
+	
+	// Otherwise, if there is no conflict with the other Control endpoint,
+	// treat the two buttons as an interlock - for example, disable 
+	// Control 1 to Breakout if Control 1 is re-routed to Lecture Hall. 
+	for (i = LECTUREHALL to BREAKOUT)
+	{
+		if (i = iButton)
+		{
+			RouteControl1FB[i] = ON;
+			iCtrl1 = i;
+			if (i = LECTUREHALL)
+			{
+				soLectureConfMsg = sControlConfMsg[CONTROL1];
+				soLectureSVidLabel = sControlSVidLabel[CONTROL1];
+				soLectureDVILabel = sControlDVILabel[CONTROL1];
+			}
+			else	// i = BREAKOUT
+			{
+				soBreakoutConfMsg = sControlConfMsg[CONTROL1];
+				soBreakoutSVidLabel = sControlSVidLabel[CONTROL1];
+				soBreakoutDVILabel = sControlDVILabel[CONTROL1];				
+			}
+		}
+		else
+		{
+			RouteControl1FB[i] = OFF;
+			iCtrl1 = NO_CONFERENCE;			
+			if (i = LECTUREHALL)
+			{
+				soLectureConfMsg = NOCONFSTRING;
+				soLectureSVidLabel = NOSOURCESTRING;
+				soLectureDVILabel = NOSOURCESTRING;
+			}
+			else	// i = BREAKOUT
+			{
+				soBreakoutConfMsg = NOCONFSTRING;
+				soBreakoutSVidLabel = NOSOURCESTRING;
+				soBreakoutDVILabel = NOSOURCESTRING;
+			}
+		}
+	}
+}
+
+// Control 2 inputs come from the Lecture Hall and Breakout Room buttons
+// located under the Control 2 side of the Control Room Conference Page.
+PUSH RouteControl2
+{
+	integer iButton, i;
+
+	iButton = GetLastModifiedArrayindex();
+
+	// If Control 2 is not active in a conference,
+	// or if the button pressed is already active for Control 1,
+	// return and don't permit Control 2 to be routed
+	// to the selected destination.
+	if ((!Control2Active) || (RouteControl1FB[iButton]))
+		return;
+
+	// Inhibit conference handover until it works
+	if (iCtrl2 != NO_CONFERENCE)
+		return;
+
+	// Otherwise, if there is no conflict with the other Control endpoint,
+	// treat the two buttons as an interlock - for example, disable 
+	// Control 2 to Lecture Hall if Control 2 is re-routed to Breakout.
+	for (i = LECTUREHALL to BREAKOUT)
+	{
+		if (i = iButton)
+		{
+			RouteControl2FB[i] = ON;
+			iCtrl2 = i;
+			if (i = LECTUREHALL)
+			{
+				soLectureConfMsg = sControlConfMsg[CONTROL2];
+				soLectureSVidLabel = sControlSVidLabel[CONTROL2];
+				soLectureDVILabel = sControlDVILabel[CONTROL2];
+			}
+			else	// i = BREAKOUT
+			{
+				soBreakoutConfMsg = sControlConfMsg[CONTROL2];
+				soBreakoutSVidLabel = sControlSVidLabel[CONTROL2];
+				soBreakoutDVILabel = sControlDVILabel[CONTROL2];				
+			}
+		}
+		else
+		{
+			RouteControl2FB[i] = OFF;
+			iCtrl2 = NO_CONFERENCE;
+			if (i = LECTUREHALL)
+			{
+				soLectureConfMsg = NOCONFSTRING;
+				soLectureSVidLabel = NOSOURCESTRING;
+				soLectureDVILabel = NOSOURCESTRING;
+			}
+			else	// i = BREAKOUT
+			{
+				soBreakoutConfMsg = NOCONFSTRING;
+				soBreakoutSVidLabel = NOSOURCESTRING;
+				soBreakoutDVILabel = NOSOURCESTRING;
+			}			
+		}
+	}
+}
+
+// Control1Active should be tied to the sigConferenceActive output of the Endpointcomm
+// associated with Control 1.  When the conference ends, routing from Control 1 to
+// the Lecture Hall or Breakout Room will be terminated, and the associated endpoint's
+// conference message will be set appropriately.
+RELEASE Control1Active
+{
+	integer i;
+	
+	for (i = LECTUREHALL to BREAKOUT)
+	{
+		if (RouteControl1FB[i])
+		{
+			if (i = LECTUREHALL)
+			{
+				soLectureConfMsg = NOCONFSTRING;
+				soLectureSVidLabel = NOSOURCESTRING;
+				soLectureDVILabel = NOSOURCESTRING;				
+			}
+			else // i = BREAKOUT
+			{
+				soBreakoutConfMsg = NOCONFSTRING;
+				soBreakoutSVidLabel = NOSOURCESTRING;
+				soBreakoutDVILabel = NOSOURCESTRING;				
+			}
+			RouteControl1FB[i] = OFF;
+			
+		}
+	}
+	iCtrl1 = NO_CONFERENCE;					
+}
+
+// Control2Active should be tied to the sigConferenceActive output of the Endpointcomm
+// associated with Control 2.  When the conference ends, routing from Control 2 to
+// the Lecture Hall or Breakout Room will be terminated, and the associated endpoint's
+// conference message will be set appropriately.
+RELEASE Control2Active
+{
+	integer i;
+	
+	for (i = LECTUREHALL to BREAKOuT)
+	{
+		if (RouteControl2FB[i])
+		{
+			if (i = LECTUREHALL)
+			{
+				soLectureConfMsg = NOCONFSTRING;
+				soLectureSVidLabel = NOSOURCESTRING;
+				soLectureDVILabel = NOSOURCESTRING;				
+			}
+			else // i = BREAKOUT
+			{
+				soBreakoutConfMsg = NOCONFSTRING;
+				soBreakoutSVidLabel = NOSOURCESTRING;
+				soBreakoutDVILabel = NOSOURCESTRING;				
+			}
+			RouteControl2FB[i] = OFF;
+						
+		}
+	}
+	iCtrl2 = NO_CONFERENCE;
+}
+
+// When a conferencing endpoint's status message changes,
+// stow a copy in sControlConfMsg.  "Ready" state is rewritten
+// as "No Conference".
+CHANGE siControlConfMsg
+{
+	integer i;
+
+	i = GetLastModifiedArrayindex();
+
+	if (siControlConfMsg[i] = READYSTRING)
+		sControlConfMsg[i] = NOCONFSTRING;
+	else
+		sControlConfMsg[i] = siControlConfMsg[i];
+		
+	// update whereever this is routed
+	if (i = CONTROL1)
+	{
+		if (iCtrl1 = LECTUREHALL)
+			soLectureConfMsg = sControlConfMsg[i];
+		else	// i = BREAKOUT
+			soBreakoutConfMsg = sControlConfMsg[i];
+	}
+	else // i = CONTROL2
+	{
+		if (iCtrl2 = LECTUREHALL)
+			soLectureConfMsg = sControlConfMsg[i];
+		else	// i = BREAKOUT
+			soBreakoutConfMsg = sControlConfMsg[i];
+	}
+}
+
+// When a conferencing endpoint's s-video line name changes,
+// update appropriately.
+CHANGE siControlSVidLabel
+{
+	integer i;
+    string sxString[30];
+
+	i = GetLastModifiedArrayindex();
+
+	if (siControlSVidLabel[i] = "")
+		sControlSVidLabel[i] = NOSOURCESTRING;
+	else	
+		sControlSVidLabel[i] = SpaceToCR(siControlSVidLabel[i]);
+	
+	// update whereever this is routed
+	if (i = CONTROL1)
+	{
+		if (iCtrl1 = LECTUREHALL)
+			soLectureSVidLabel = sControlSVidLabel[i];
+		else	// i = BREAKOUT
+			soBreakoutSVidLabel = sControlSVidLabel[i];
+	}
+	else // i = CONTROL2
+	{
+		if (iCtrl2 = LECTUREHALL)
+			soLectureSVidLabel = sControlSVidLabel[i];
+		else	// i = BREAKOUT
+			soBreakoutSVidLabel = sControlSVidLabel[i];
+	}
+
+}
+
+// When a conferencing endpoint's DVI line name changes,
+// update appropriately.
+CHANGE siControlDVILabel
+{
+	integer i;
+    string sxString[30];
+
+	i = GetLastModifiedArrayindex();
+
+	if (siControlDVILabel[i] = "")
+		sControlDVILabel[i] = NOSOURCESTRING;
+	else
+		sControlDVILabel[i] = SpaceToCR(siControlDVILabel[i]);
+
+
+	// update whereever this is routed
+	if (i = CONTROL1)
+	{
+		if (iCtrl1 = LECTUREHALL)
+			soLectureDVILabel = sControlDVILabel[i];
+		else	// i = BREAKOUT
+			soBreakoutDVILabel = sControlDVILabel[i];
+	}
+	else // i = CONTROL2
+	{
+		if (iCtrl2 = LECTUREHALL)
+			soLectureDVILabel = sControlDVILabel[i];
+		else	// i = BREAKOUT
+			soBreakoutDVILabel = sControlDVILabel[i];
+	}
+}
+
+/*
+RELEASE input
+{
+    // TODO:  Add code here
+}
+*/
+
+/*
+CHANGE input
+{
+    // TODO:  Add code here
+}
+*/
+
+// This function interprets enable, disable, and privacy notices from the HubConference
+// module and converts these conditions to a straightforward series of output signals.
+CHANGE siAudVidRoute
+{
+	string sRoute[255];
+	string sSplit[255];
+	string token[20];
+    integer isrc, idst, isrcoff, idstoff, ipriv;
+    integer index, i, id;
+    string sType[2];
+
+	sRoute = siAudVidRoute;
+						
+	token = Remove(":", sRoute);			// Obtain first word
+	token = left(token, len(token) - 1);	// Remove ":"
+    if (token = "privacy") 					// Set or unset privacy on a conference
+    {
+		sSplit = Remove(":", sRoute);	// Extract src
+		isrc = atoi(left(sSplit, len(sSplit) - 1)); 
+    
+		sSplit = Remove(":", sRoute);	// Extract dst
+		idst = atoi(left(sSplit, len(sSplit) - 1));
+
+		sSplit = Remove(":", sRoute);	// Extract privacy
+		ipriv = atoi(left(sSplit, len(sSplit) - 1));
+
+    	if (ipriv)	// If an endpoint has invoked Privacy On, MuteEndpoint[x] will go high.
+    		MuteEndpoint[isrc] = ON;
+    	else	// If an endpoint has disabled Privacy, MuteEndpoint[x] will go low.
+			MuteEndpoint[isrc] = OFF;
+   	}
+	else if (token = "enable")	// Connect two rooms for conferencing
+	{
+		sSplit = Remove(":", sRoute);	// Extract src
+		isrc = atoi(left(sSplit, len(sSplit) - 1)); 
+	
+		sSplit = Remove(":", sRoute);	// Extract dst
+		idst = atoi(left(sSplit, len(sSplit) - 1));
+
+		// Sort the endpoint numbers so that (for example) enable:7:4 becomes enable:4:7
+		if (isrc > idst)
+		{
+			i = isrc;
+			isrc = idst;
+			idst = i;		 
+		}
+		ConnectEndpoints[(NUM_ENDPOINTS*(isrc-1)) + idst] = ON;	// Drive endpoint matrix signal high		
+	}                                                                                                   
+	else if (token = "disable")	// Disconnect two rooms that were in a conference
+	{
+		sSplit = Remove(":", sRoute);	// Extract src
+		isrc = atoi(left(sSplit, len(sSplit) - 1)); 
+
+		sSplit = Remove(":", sRoute);	// Extract dst
+		idst = atoi(left(sSplit, len(sSplit) - 1));
+		
+		// Sort the endpoint numbers so that (for example) disable:7:4 becomes disable:4:7
+		if (isrc > idst)
+		{
+			i = isrc;
+			isrc = idst;
+			idst = i;		 
+		}	
+		ConnectEndpoints[(NUM_ENDPOINTS*(isrc-1)) + idst] = OFF;	// Drive endpoint matrix signal low
+	}
+
+}
+
+/*
+EVENT
+{
+    // TODO:  Add code here
+}
+*/
+
+/*
+SOCKETCONNECT
+{
+    // TODO:  Add code here
+}
+*/
+
+/*
+SOCKETDISCONNECT
+{
+    // TODO:  Add code here
+}
+*/
+
+/*
+SOCKETRECEIVE
+{
+    // TODO:  Add code here
+}
+*/
+
+/*
+SOCKETSTATUS
+{
+    // TODO:  Add code here
+}
+*/
+
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+
+Function Main()
+{
+    // TODO:  Add code here
+    // Initialize declared global and local variables/arrays as needed.
+
+    // WaitForInitializationComplete();
+    // If you are reading any Input or Output variables, uncomment
+    //   the WaitForInitializationComplete statement above and read
+    //   them afterwards.  Input/Output variables will not have
+    //   their correct values set until after the logic processor
+    //   runs and propagates the values to them. 
+    
+    iCtrl1 = NO_CONFERENCE;
+    iCtrl2 = NO_CONFERENCE;
+    
+	sControlConfMsg[CONTROL1] = NOCONFSTRING;
+	sControlConfMsg[CONTROL2] = NOCONFSTRING;
+	sControlSVidLabel[CONTROL1] = NOSOURCESTRING;
+	sControlSVidLabel[CONTROL2] = NOSOURCESTRING;
+	sControlDVILabel[CONTROL1] = NOSOURCESTRING;
+	sControlDVILabel[CONTROL1] = NOSOURCESTRING;
+	
+	soLectureConfMsg = NOCONFSTRING;
+	soBreakoutConfMsg = NOCONFSTRING;
+	soLectureSVidLabel = NOSOURCESTRING;
+	soBreakoutSVidLabel = NOSOURCESTRING;
+	soLectureDVILabel = NOSOURCESTRING;
+	soBreakoutDVILabel = NOSOURCESTRING;
+}
+
+

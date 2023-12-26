@@ -1,0 +1,890 @@
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+result: -9
+
+========================
+stored analysis results:
+========================
+	version data:
+		current client: 1
+		minimum client: 0
+		current server: 1
+		minimum server: 0
+		negotiated    : 1
+
+======================
+discovery phase 0 data
+======================
+	parameters:
+		spec data:
+			data rate  : 30000000
+			egress rate: 1000000000
+		block set, number: 1
+			block    0  starting_quantum:    1  number_of_quantum:    2
+		packet cluster spec data, number: 28
+			packet  0  data_size: 1420  packet_size: 1498
+			packet  1  data_size: 1420  packet_size: 1498
+			packet  2  data_size: 1420  packet_size: 1498
+			packet  3  data_size: 1420  packet_size: 1498
+			packet  4  data_size: 1420  packet_size: 1498
+			packet  5  data_size: 1420  packet_size: 1498
+			packet  6  data_size: 1420  packet_size: 1498
+			packet  7  data_size: 1420  packet_size: 1498
+			packet  8  data_size: 1420  packet_size: 1498
+			packet  9  data_size: 1420  packet_size: 1498
+			packet 10  data_size: 1420  packet_size: 1498
+			packet 11  data_size: 1420  packet_size: 1498
+			packet 12  data_size: 1420  packet_size: 1498
+			packet 13  data_size: 1420  packet_size: 1498
+			packet 14  data_size: 1420  packet_size: 1498
+			packet 15  data_size: 1420  packet_size: 1498
+			packet 16  data_size: 1420  packet_size: 1498
+			packet 17  data_size: 1420  packet_size: 1498
+			packet 18  data_size: 1420  packet_size: 1498
+			packet 19  data_size: 1420  packet_size: 1498
+			packet 20  data_size: 1420  packet_size: 1498
+			packet 21  data_size: 1420  packet_size: 1498
+			packet 22  data_size: 1420  packet_size: 1498
+			packet 23  data_size: 1420  packet_size: 1498
+			packet 24  data_size: 1420  packet_size: 1498
+			packet 25  data_size: 1420  packet_size: 1498
+			packet 26  data_size: 1420  packet_size: 1498
+			packet 27  data_size: 1035  packet_size: 1113
+		number of sweeps requested: 11
+		inflation factor          : 5
+		maximum score to pass     : 60
+		block results count: 0
+	raw recorded data by block:
+		block 0
+	raw recorded phase zero data by sweep:
+		sweep  0  pkts rx'd: 28
+		sweep  1  pkts rx'd: 28
+		sweep  2  pkts rx'd: 28
+		sweep  3  pkts rx'd: 28
+		sweep  4  pkts rx'd: 28
+		sweep  5  pkts rx'd: 28
+		sweep  6  pkts rx'd: 28
+		sweep  7  pkts rx'd: 28
+		sweep  8  pkts rx'd: 28
+		sweep  9  pkts rx'd: 28
+		sweep 10  pkts rx'd: 28
+	calculated result data by block:
+		block 0
+	phase zero scores: 
+		missing_packets                       : FALSE
+		# total greater than previous         : 0
+		# total possible greater than previous: 0
+		percent total greater than previous   : 0
+		passed phase zero                     : FALSE
+
+======================
+discovery phase 1 data
+======================
+
+		phase 1 was not run!!!
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+result: -8
+
+========================
+stored analysis results:
+========================
+	version data:
+		current client: 1
+		minimum client: 0
+		current server: 1
+		minimum server: 0
+		negotiated    : 1
+
+======================
+discovery phase 0 data
+======================
+	parameters:
+		spec data:
+			data rate  : 30000000
+			egress rate: 1000000000
+		block set, number: 1
+			block    0  starting_quantum:   13  number_of_quantum:    2
+		packet cluster spec data, number: 28
+			packet  0  data_size: 1420  packet_size: 1498
+			packet  1  data_size: 1420  packet_size: 1498
+			packet  2  data_size: 1420  packet_size: 1498
+			packet  3  data_size: 1420  packet_size: 1498
+			packet  4  data_size: 1420  packet_size: 1498
+			packet  5  data_size: 1420  packet_size: 1498
+			packet  6  data_size: 1420  packet_size: 1498
+			packet  7  data_size: 1420  packet_size: 1498
+			packet  8  data_size: 1420  packet_size: 1498
+			packet  9  data_size: 1420  packet_size: 1498
+			packet 10  data_size: 1420  packet_size: 1498
+			packet 11  data_size: 1420  packet_size: 1498
+			packet 12  data_size: 1420  packet_size: 1498
+			packet 13  data_size: 1420  packet_size: 1498
+			packet 14  data_size: 1420  packet_size: 1498
+			packet 15  data_size: 1420  packet_size: 1498
+			packet 16  data_size: 1420  packet_size: 1498
+			packet 17  data_size: 1420  packet_size: 1498
+			packet 18  data_size: 1420  packet_size: 1498
+			packet 19  data_size: 1420  packet_size: 1498
+			packet 20  data_size: 1420  packet_size: 1498
+			packet 21  data_size: 1420  packet_size: 1498
+			packet 22  data_size: 1420  packet_size: 1498
+			packet 23  data_size: 1420  packet_size: 1498
+			packet 24  data_size: 1420  packet_size: 1498
+			packet 25  data_size: 1420  packet_size: 1498
+			packet 26  data_size: 1420  packet_size: 1498
+			packet 27  data_size: 1035  packet_size: 1113
+		number of sweeps requested: 11
+		inflation factor          : 5
+		maximum score to pass     : 60
+		block results count: 0
+	raw recorded data by block:
+		block 0
+	raw recorded phase zero data by sweep:
+		sweep  0  pkts rx'd: 28
+		sweep  1  pkts rx'd: 28
+		sweep  2  pkts rx'd: 28
+		sweep  3  pkts rx'd: 28
+		sweep  4  pkts rx'd: 28
+		sweep  5  pkts rx'd: 28
+		sweep  6  pkts rx'd: 28
+		sweep  7  pkts rx'd: 28
+		sweep  8  pkts rx'd: 28
+		sweep  9  pkts rx'd: 28
+		sweep 10  pkts rx'd: 28
+	calculated result data by block:
+		block 0
+	phase zero scores: 
+		missing_packets                       : FALSE
+		# total greater than previous         : 0
+		# total possible greater than previous: 0
+		percent total greater than previous   : 0
+		passed phase zero                     : FALSE
+
+======================
+discovery phase 1 data
+======================
+
+		phase 1 was not run!!!
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+result: -7
+
+========================
+stored analysis results:
+========================
+	version data:
+		current client: 1
+		minimum client: 0
+		current server: 1
+		minimum server: 0
+		negotiated    : 1
+
+======================
+discovery phase 0 data
+======================
+	parameters:
+		spec data:
+			data rate  : 30000000
+			egress rate: 1000000000
+		block set, number: 1
+			block    0  starting_quantum:    4  number_of_quantum:    2
+		packet cluster spec data, number: 28
+			packet  0  data_size: 1420  packet_size: 1498
+			packet  1  data_size: 1420  packet_size: 1498
+			packet  2  data_size: 1420  packet_size: 1498
+			packet  3  data_size: 1420  packet_size: 1498
+			packet  4  data_size: 1420  packet_size: 1498
+			packet  5  data_size: 1420  packet_size: 1498
+			packet  6  data_size: 1420  packet_size: 1498
+			packet  7  data_size: 1420  packet_size: 1498
+			packet  8  data_size: 1420  packet_size: 1498
+			packet  9  data_size: 1420  packet_size: 1498
+			packet 10  data_size: 1420  packet_size: 1498
+			packet 11  data_size: 1420  packet_size: 1498
+			packet 12  data_size: 1420  packet_size: 1498
+			packet 13  data_size: 1420  packet_size: 1498
+			packet 14  data_size: 1420  packet_size: 1498
+			packet 15  data_size: 1420  packet_size: 1498
+			packet 16  data_size: 1420  packet_size: 1498
+			packet 17  data_size: 1420  packet_size: 1498
+			packet 18  data_size: 1420  packet_size: 1498
+			packet 19  data_size: 1420  packet_size: 1498
+			packet 20  data_size: 1420  packet_size: 1498
+			packet 21  data_size: 1420  packet_size: 1498
+			packet 22  data_size: 1420  packet_size: 1498
+			packet 23  data_size: 1420  packet_size: 1498
+			packet 24  data_size: 1420  packet_size: 1498
+			packet 25  data_size: 1420  packet_size: 1498
+			packet 26  data_size: 1420  packet_size: 1498
+			packet 27  data_size: 1035  packet_size: 1113
+		number of sweeps requested: 11
+		inflation factor          : 5
+		maximum score to pass     : 60
+		block results count: 0
+	raw recorded data by block:
+		block 0
+	raw recorded phase zero data by sweep:
+		sweep  0  pkts rx'd: 28
+		sweep  1  pkts rx'd: 28
+		sweep  2  pkts rx'd: 28
+		sweep  3  pkts rx'd: 28
+		sweep  4  pkts rx'd: 28
+		sweep  5  pkts rx'd: 28
+		sweep  6  pkts rx'd: 28
+		sweep  7  pkts rx'd: 28
+		sweep  8  pkts rx'd: 28
+		sweep  9  pkts rx'd: 28
+		sweep 10  pkts rx'd: 28
+	calculated result data by block:
+		block 0
+	phase zero scores: 
+		missing_packets                       : FALSE
+		# total greater than previous         : 0
+		# total possible greater than previous: 0
+		percent total greater than previous   : 0
+		passed phase zero                     : FALSE
+
+======================
+discovery phase 1 data
+======================
+
+		phase 1 was not run!!!
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+result: -6
+
+========================
+stored analysis results:
+========================
+	version data:
+		current client: 1
+		minimum client: 0
+		current server: 1
+		minimum server: 0
+		negotiated    : 1
+
+======================
+discovery phase 0 data
+======================
+	parameters:
+		spec data:
+			data rate  : 30000000
+			egress rate: 1000000000
+		block set, number: 1
+			block    0  starting_quantum:    3  number_of_quantum:    2
+		packet cluster spec data, number: 28
+			packet  0  data_size: 1420  packet_size: 1498
+			packet  1  data_size: 1420  packet_size: 1498
+			packet  2  data_size: 1420  packet_size: 1498
+			packet  3  data_size: 1420  packet_size: 1498
+			packet  4  data_size: 1420  packet_size: 1498
+			packet  5  data_size: 1420  packet_size: 1498
+			packet  6  data_size: 1420  packet_size: 1498
+			packet  7  data_size: 1420  packet_size: 1498
+			packet  8  data_size: 1420  packet_size: 1498
+			packet  9  data_size: 1420  packet_size: 1498
+			packet 10  data_size: 1420  packet_size: 1498
+			packet 11  data_size: 1420  packet_size: 1498
+			packet 12  data_size: 1420  packet_size: 1498
+			packet 13  data_size: 1420  packet_size: 1498
+			packet 14  data_size: 1420  packet_size: 1498
+			packet 15  data_size: 1420  packet_size: 1498
+			packet 16  data_size: 1420  packet_size: 1498
+			packet 17  data_size: 1420  packet_size: 1498
+			packet 18  data_size: 1420  packet_size: 1498
+			packet 19  data_size: 1420  packet_size: 1498
+			packet 20  data_size: 1420  packet_size: 1498
+			packet 21  data_size: 1420  packet_size: 1498
+			packet 22  data_size: 1420  packet_size: 1498
+			packet 23  data_size: 1420  packet_size: 1498
+			packet 24  data_size: 1420  packet_size: 1498
+			packet 25  data_size: 1420  packet_size: 1498
+			packet 26  data_size: 1420  packet_size: 1498
+			packet 27  data_size: 1035  packet_size: 1113
+		number of sweeps requested: 11
+		inflation factor          : 5
+		maximum score to pass     : 60
+		block results count: 0
+	raw recorded data by block:
+		block 0
+	raw recorded phase zero data by sweep:
+		sweep  0  pkts rx'd: 28
+		sweep  1  pkts rx'd: 28
+		sweep  2  pkts rx'd: 28
+		sweep  3  pkts rx'd: 28
+		sweep  4  pkts rx'd: 28
+		sweep  5  pkts rx'd: 28
+		sweep  6  pkts rx'd: 28
+		sweep  7  pkts rx'd: 28
+		sweep  8  pkts rx'd: 28
+		sweep  9  pkts rx'd: 28
+		sweep 10  pkts rx'd: 28
+	calculated result data by block:
+		block 0
+	phase zero scores: 
+		missing_packets                       : FALSE
+		# total greater than previous         : 0
+		# total possible greater than previous: 0
+		percent total greater than previous   : 0
+		passed phase zero                     : FALSE
+
+======================
+discovery phase 1 data
+======================
+
+		phase 1 was not run!!!
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+result: -5
+
+========================
+stored analysis results:
+========================
+	version data:
+		current client: 1
+		minimum client: 0
+		current server: 1
+		minimum server: 0
+		negotiated    : 1
+
+======================
+discovery phase 0 data
+======================
+	parameters:
+		spec data:
+			data rate  : 30000000
+			egress rate: 1000000000
+		block set, number: 1
+			block    0  starting_quantum:    2  number_of_quantum:    2
+		packet cluster spec data, number: 28
+			packet  0  data_size: 1420  packet_size: 1498
+			packet  1  data_size: 1420  packet_size: 1498
+			packet  2  data_size: 1420  packet_size: 1498
+			packet  3  data_size: 1420  packet_size: 1498
+			packet  4  data_size: 1420  packet_size: 1498
+			packet  5  data_size: 1420  packet_size: 1498
+			packet  6  data_size: 1420  packet_size: 1498
+			packet  7  data_size: 1420  packet_size: 1498
+			packet  8  data_size: 1420  packet_size: 1498
+			packet  9  data_size: 1420  packet_size: 1498
+			packet 10  data_size: 1420  packet_size: 1498
+			packet 11  data_size: 1420  packet_size: 1498
+			packet 12  data_size: 1420  packet_size: 1498
+			packet 13  data_size: 1420  packet_size: 1498
+			packet 14  data_size: 1420  packet_size: 1498
+			packet 15  data_size: 1420  packet_size: 1498
+			packet 16  data_size: 1420  packet_size: 1498
+			packet 17  data_size: 1420  packet_size: 1498
+			packet 18  data_size: 1420  packet_size: 1498
+			packet 19  data_size: 1420  packet_size: 1498
+			packet 20  data_size: 1420  packet_size: 1498
+			packet 21  data_size: 1420  packet_size: 1498
+			packet 22  data_size: 1420  packet_size: 1498
+			packet 23  data_size: 1420  packet_size: 1498
+			packet 24  data_size: 1420  packet_size: 1498
+			packet 25  data_size: 1420  packet_size: 1498
+			packet 26  data_size: 1420  packet_size: 1498
+			packet 27  data_size: 1035  packet_size: 1113
+		number of sweeps requested: 11
+		inflation factor          : 5
+		maximum score to pass     : 60
+		block results count: 0
+	raw recorded data by block:
+		block 0
+	raw recorded phase zero data by sweep:
+		sweep  0  pkts rx'd: 28
+		sweep  1  pkts rx'd: 28
+		sweep  2  pkts rx'd: 28
+		sweep  3  pkts rx'd: 28
+		sweep  4  pkts rx'd: 28
+		sweep  5  pkts rx'd: 28
+		sweep  6  pkts rx'd: 28
+		sweep  7  pkts rx'd: 28
+		sweep  8  pkts rx'd: 28
+		sweep  9  pkts rx'd: 28
+		sweep 10  pkts rx'd: 28
+	calculated result data by block:
+		block 0
+	phase zero scores: 
+		missing_packets                       : FALSE
+		# total greater than previous         : 0
+		# total possible greater than previous: 0
+		percent total greater than previous   : 0
+		passed phase zero                     : FALSE
+
+======================
+discovery phase 1 data
+======================
+
+		phase 1 was not run!!!
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+result: -4
+
+========================
+stored analysis results:
+========================
+	version data:
+		current client: 1
+		minimum client: 0
+		current server: 1
+		minimum server: 0
+		negotiated    : 1
+
+======================
+discovery phase 0 data
+======================
+	parameters:
+		spec data:
+			data rate  : 30000000
+			egress rate: 1000000000
+		block set, number: 1
+			block    0  starting_quantum:    3  number_of_quantum:    2
+		packet cluster spec data, number: 28
+			packet  0  data_size: 1420  packet_size: 1498
+			packet  1  data_size: 1420  packet_size: 1498
+			packet  2  data_size: 1420  packet_size: 1498
+			packet  3  data_size: 1420  packet_size: 1498
+			packet  4  data_size: 1420  packet_size: 1498
+			packet  5  data_size: 1420  packet_size: 1498
+			packet  6  data_size: 1420  packet_size: 1498
+			packet  7  data_size: 1420  packet_size: 1498
+			packet  8  data_size: 1420  packet_size: 1498
+			packet  9  data_size: 1420  packet_size: 1498
+			packet 10  data_size: 1420  packet_size: 1498
+			packet 11  data_size: 1420  packet_size: 1498
+			packet 12  data_size: 1420  packet_size: 1498
+			packet 13  data_size: 1420  packet_size: 1498
+			packet 14  data_size: 1420  packet_size: 1498
+			packet 15  data_size: 1420  packet_size: 1498
+			packet 16  data_size: 1420  packet_size: 1498
+			packet 17  data_size: 1420  packet_size: 1498
+			packet 18  data_size: 1420  packet_size: 1498
+			packet 19  data_size: 1420  packet_size: 1498
+			packet 20  data_size: 1420  packet_size: 1498
+			packet 21  data_size: 1420  packet_size: 1498
+			packet 22  data_size: 1420  packet_size: 1498
+			packet 23  data_size: 1420  packet_size: 1498
+			packet 24  data_size: 1420  packet_size: 1498
+			packet 25  data_size: 1420  packet_size: 1498
+			packet 26  data_size: 1420  packet_size: 1498
+			packet 27  data_size: 1035  packet_size: 1113
+		number of sweeps requested: 11
+		inflation factor          : 5
+		maximum score to pass     : 60
+		block results count: 0
+	raw recorded data by block:
+		block 0
+	raw recorded phase zero data by sweep:
+		sweep  0  pkts rx'd: 28
+		sweep  1  pkts rx'd: 28
+		sweep  2  pkts rx'd: 28
+		sweep  3  pkts rx'd: 28
+		sweep  4  pkts rx'd: 28
+		sweep  5  pkts rx'd: 28
+		sweep  6  pkts rx'd: 28
+		sweep  7  pkts rx'd: 28
+		sweep  8  pkts rx'd: 28
+		sweep  9  pkts rx'd: 28
+		sweep 10  pkts rx'd: 28
+	calculated result data by block:
+		block 0
+	phase zero scores: 
+		missing_packets                       : FALSE
+		# total greater than previous         : 0
+		# total possible greater than previous: 0
+		percent total greater than previous   : 0
+		passed phase zero                     : FALSE
+
+======================
+discovery phase 1 data
+======================
+
+		phase 1 was not run!!!
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+result: -3
+
+========================
+stored analysis results:
+========================
+	version data:
+		current client: 1
+		minimum client: 0
+		current server: 1
+		minimum server: 0
+		negotiated    : 1
+
+======================
+discovery phase 0 data
+======================
+	parameters:
+		spec data:
+			data rate  : 30000000
+			egress rate: 1000000000
+		block set, number: 1
+			block    0  starting_quantum:   11  number_of_quantum:    2
+		packet cluster spec data, number: 28
+			packet  0  data_size: 1420  packet_size: 1498
+			packet  1  data_size: 1420  packet_size: 1498
+			packet  2  data_size: 1420  packet_size: 1498
+			packet  3  data_size: 1420  packet_size: 1498
+			packet  4  data_size: 1420  packet_size: 1498
+			packet  5  data_size: 1420  packet_size: 1498
+			packet  6  data_size: 1420  packet_size: 1498
+			packet  7  data_size: 1420  packet_size: 1498
+			packet  8  data_size: 1420  packet_size: 1498
+			packet  9  data_size: 1420  packet_size: 1498
+			packet 10  data_size: 1420  packet_size: 1498
+			packet 11  data_size: 1420  packet_size: 1498
+			packet 12  data_size: 1420  packet_size: 1498
+			packet 13  data_size: 1420  packet_size: 1498
+			packet 14  data_size: 1420  packet_size: 1498
+			packet 15  data_size: 1420  packet_size: 1498
+			packet 16  data_size: 1420  packet_size: 1498
+			packet 17  data_size: 1420  packet_size: 1498
+			packet 18  data_size: 1420  packet_size: 1498
+			packet 19  data_size: 1420  packet_size: 1498
+			packet 20  data_size: 1420  packet_size: 1498
+			packet 21  data_size: 1420  packet_size: 1498
+			packet 22  data_size: 1420  packet_size: 1498
+			packet 23  data_size: 1420  packet_size: 1498
+			packet 24  data_size: 1420  packet_size: 1498
+			packet 25  data_size: 1420  packet_size: 1498
+			packet 26  data_size: 1420  packet_size: 1498
+			packet 27  data_size: 1035  packet_size: 1113
+		number of sweeps requested: 11
+		inflation factor          : 5
+		maximum score to pass     : 60
+		block results count: 0
+	raw recorded data by block:
+		block 0
+	raw recorded phase zero data by sweep:
+		sweep  0  pkts rx'd: 28
+		sweep  1  pkts rx'd: 28
+		sweep  2  pkts rx'd: 28
+		sweep  3  pkts rx'd: 28
+		sweep  4  pkts rx'd: 28
+		sweep  5  pkts rx'd: 28
+		sweep  6  pkts rx'd: 28
+		sweep  7  pkts rx'd: 28
+		sweep  8  pkts rx'd: 28
+		sweep  9  pkts rx'd: 28
+		sweep 10  pkts rx'd: 28
+	calculated result data by block:
+		block 0
+	phase zero scores: 
+		missing_packets                       : FALSE
+		# total greater than previous         : 0
+		# total possible greater than previous: 0
+		percent total greater than previous   : 0
+		passed phase zero                     : FALSE
+
+======================
+discovery phase 1 data
+======================
+
+		phase 1 was not run!!!
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+result: -2
+
+========================
+stored analysis results:
+========================
+	version data:
+		current client: 1
+		minimum client: 0
+		current server: 1
+		minimum server: 0
+		negotiated    : 1
+
+======================
+discovery phase 0 data
+======================
+	parameters:
+		spec data:
+			data rate  : 30000000
+			egress rate: 1000000000
+		block set, number: 1
+			block    0  starting_quantum:    4  number_of_quantum:    2
+		packet cluster spec data, number: 28
+			packet  0  data_size: 1420  packet_size: 1498
+			packet  1  data_size: 1420  packet_size: 1498
+			packet  2  data_size: 1420  packet_size: 1498
+			packet  3  data_size: 1420  packet_size: 1498
+			packet  4  data_size: 1420  packet_size: 1498
+			packet  5  data_size: 1420  packet_size: 1498
+			packet  6  data_size: 1420  packet_size: 1498
+			packet  7  data_size: 1420  packet_size: 1498
+			packet  8  data_size: 1420  packet_size: 1498
+			packet  9  data_size: 1420  packet_size: 1498
+			packet 10  data_size: 1420  packet_size: 1498
+			packet 11  data_size: 1420  packet_size: 1498
+			packet 12  data_size: 1420  packet_size: 1498
+			packet 13  data_size: 1420  packet_size: 1498
+			packet 14  data_size: 1420  packet_size: 1498
+			packet 15  data_size: 1420  packet_size: 1498
+			packet 16  data_size: 1420  packet_size: 1498
+			packet 17  data_size: 1420  packet_size: 1498
+			packet 18  data_size: 1420  packet_size: 1498
+			packet 19  data_size: 1420  packet_size: 1498
+			packet 20  data_size: 1420  packet_size: 1498
+			packet 21  data_size: 1420  packet_size: 1498
+			packet 22  data_size: 1420  packet_size: 1498
+			packet 23  data_size: 1420  packet_size: 1498
+			packet 24  data_size: 1420  packet_size: 1498
+			packet 25  data_size: 1420  packet_size: 1498
+			packet 26  data_size: 1420  packet_size: 1498
+			packet 27  data_size: 1035  packet_size: 1113
+		number of sweeps requested: 11
+		inflation factor          : 5
+		maximum score to pass     : 60
+		block results count: 0
+	raw recorded data by block:
+		block 0
+	raw recorded phase zero data by sweep:
+		sweep  0  pkts rx'd: 28
+		sweep  1  pkts rx'd: 28
+		sweep  2  pkts rx'd: 28
+		sweep  3  pkts rx'd: 28
+		sweep  4  pkts rx'd: 28
+		sweep  5  pkts rx'd: 28
+		sweep  6  pkts rx'd: 28
+		sweep  7  pkts rx'd: 28
+		sweep  8  pkts rx'd: 28
+		sweep  9  pkts rx'd: 28
+		sweep 10  pkts rx'd: 28
+	calculated result data by block:
+		block 0
+	phase zero scores: 
+		missing_packets                       : FALSE
+		# total greater than previous         : 0
+		# total possible greater than previous: 0
+		percent total greater than previous   : 0
+		passed phase zero                     : FALSE
+
+======================
+discovery phase 1 data
+======================
+
+		phase 1 was not run!!!
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+result: -1
+
+========================
+stored analysis results:
+========================
+	version data:
+		current client: 1
+		minimum client: 0
+		current server: 1
+		minimum server: 0
+		negotiated    : 1
+
+======================
+discovery phase 0 data
+======================
+	parameters:
+		spec data:
+			data rate  : 30000000
+			egress rate: 1000000000
+		block set, number: 1
+			block    0  starting_quantum:    2  number_of_quantum:    2
+		packet cluster spec data, number: 28
+			packet  0  data_size: 1420  packet_size: 1498
+			packet  1  data_size: 1420  packet_size: 1498
+			packet  2  data_size: 1420  packet_size: 1498
+			packet  3  data_size: 1420  packet_size: 1498
+			packet  4  data_size: 1420  packet_size: 1498
+			packet  5  data_size: 1420  packet_size: 1498
+			packet  6  data_size: 1420  packet_size: 1498
+			packet  7  data_size: 1420  packet_size: 1498
+			packet  8  data_size: 1420  packet_size: 1498
+			packet  9  data_size: 1420  packet_size: 1498
+			packet 10  data_size: 1420  packet_size: 1498
+			packet 11  data_size: 1420  packet_size: 1498
+			packet 12  data_size: 1420  packet_size: 1498
+			packet 13  data_size: 1420  packet_size: 1498
+			packet 14  data_size: 1420  packet_size: 1498
+			packet 15  data_size: 1420  packet_size: 1498
+			packet 16  data_size: 1420  packet_size: 1498
+			packet 17  data_size: 1420  packet_size: 1498
+			packet 18  data_size: 1420  packet_size: 1498
+			packet 19  data_size: 1420  packet_size: 1498
+			packet 20  data_size: 1420  packet_size: 1498
+			packet 21  data_size: 1420  packet_size: 1498
+			packet 22  data_size: 1420  packet_size: 1498
+			packet 23  data_size: 1420  packet_size: 1498
+			packet 24  data_size: 1420  packet_size: 1498
+			packet 25  data_size: 1420  packet_size: 1498
+			packet 26  data_size: 1420  packet_size: 1498
+			packet 27  data_size: 1035  packet_size: 1113
+		number of sweeps requested: 11
+		inflation factor          : 5
+		maximum score to pass     : 60
+		block results count: 0
+	raw recorded data by block:
+		block 0
+	raw recorded phase zero data by sweep:
+		sweep  0  pkts rx'd: 28
+		sweep  1  pkts rx'd: 28
+		sweep  2  pkts rx'd: 28
+		sweep  3  pkts rx'd: 28
+		sweep  4  pkts rx'd: 28
+		sweep  5  pkts rx'd: 28
+		sweep  6  pkts rx'd: 28
+		sweep  7  pkts rx'd: 28
+		sweep  8  pkts rx'd: 28
+		sweep  9  pkts rx'd: 28
+		sweep 10  pkts rx'd: 28
+	calculated result data by block:
+		block 0
+	phase zero scores: 
+		missing_packets                       : FALSE
+		# total greater than previous         : 0
+		# total possible greater than previous: 0
+		percent total greater than previous   : 0
+		passed phase zero                     : FALSE
+
+======================
+discovery phase 1 data
+======================
+
+		phase 1 was not run!!!
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+result: 0
+
+========================
+stored analysis results:
+========================
+	version data:
+		current client: 1
+		minimum client: 0
+		current server: 1
+		minimum server: 0
+		negotiated    : 1
+
+======================
+discovery phase 0 data
+======================
+	parameters:
+		spec data:
+			data rate  : 30000000
+			egress rate: 1000000000
+		block set, number: 1
+			block    0  starting_quantum:    1  number_of_quantum:    2
+		packet cluster spec data, number: 28
+			packet  0  data_size: 1420  packet_size: 1498
+			packet  1  data_size: 1420  packet_size: 1498
+			packet  2  data_size: 1420  packet_size: 1498
+			packet  3  data_size: 1420  packet_size: 1498
+			packet  4  data_size: 1420  packet_size: 1498
+			packet  5  data_size: 1420  packet_size: 1498
+			packet  6  data_size: 1420  packet_size: 1498
+			packet  7  data_size: 1420  packet_size: 1498
+			packet  8  data_size: 1420  packet_size: 1498
+			packet  9  data_size: 1420  packet_size: 1498
+			packet 10  data_size: 1420  packet_size: 1498
+			packet 11  data_size: 1420  packet_size: 1498
+			packet 12  data_size: 1420  packet_size: 1498
+			packet 13  data_size: 1420  packet_size: 1498
+			packet 14  data_size: 1420  packet_size: 1498
+			packet 15  data_size: 1420  packet_size: 1498
+			packet 16  data_size: 1420  packet_size: 1498
+			packet 17  data_size: 1420  packet_size: 1498
+			packet 18  data_size: 1420  packet_size: 1498
+			packet 19  data_size: 1420  packet_size: 1498
+			packet 20  data_size: 1420  packet_size: 1498
+			packet 21  data_size: 1420  packet_size: 1498
+			packet 22  data_size: 1420  packet_size: 1498
+			packet 23  data_size: 1420  packet_size: 1498
+			packet 24  data_size: 1420  packet_size: 1498
+			packet 25  data_size: 1420  packet_size: 1498
+			packet 26  data_size: 1420  packet_size: 1498
+			packet 27  data_size: 1035  packet_size: 1113
+		number of sweeps requested: 11
+		inflation factor          : 5
+		maximum score to pass     : 60
+		block results count: 0
+	raw recorded data by block:
+		block 0
+	raw recorded phase zero data by sweep:
+		sweep  0  pkts rx'd: 28
+		sweep  1  pkts rx'd: 28
+		sweep  2  pkts rx'd: 28
+		sweep  3  pkts rx'd: 28
+		sweep  4  pkts rx'd: 28
+		sweep  5  pkts rx'd: 28
+		sweep  6  pkts rx'd: 28
+		sweep  7  pkts rx'd: 28
+		sweep  8  pkts rx'd: 28
+		sweep  9  pkts rx'd: 28
+		sweep 10  pkts rx'd: 28
+	calculated result data by block:
+		block 0
+	phase zero scores: 
+		missing_packets                       : FALSE
+		# total greater than previous         : 0
+		# total possible greater than previous: 0
+		percent total greater than previous   : 0
+		passed phase zero                     : FALSE
+
+======================
+discovery phase 1 data
+======================
+
+		phase 1 was not run!!!
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
