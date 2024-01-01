@@ -1,0 +1,1267 @@
+20:55:52 - 05-29-2009: E3-pg_HwRestart -> 1
+20:55:52 - 05-29-2009: E3-pbSource1fb -> 1
+20:55:52 - 05-29-2009: E3-pbTarget4fb -> 1
+20:55:52 - 05-29-2009: E3-btnConfStartEnable -> 1d
+20:55:52 - 05-29-2009: E3-btnPrivacyEnable -> 1d
+20:55:52 - 05-29-2009: sVersion -> S/W Version: 1.3A02
+20:55:52 - 05-29-2009: sLogic -> Logic: 263-XXXX-YY-ZZ
+20:55:52 - 05-29-2009: sPhoneNumber -> Technical Support: (800) 470-1106
+20:55:52 - 05-29-2009: sFacilityName -> Julie Penrose Health Education
+20:55:52 - 05-29-2009: E3-SysAttrRoomName -> Rivulet\x0D2
+20:55:52 - 05-29-2009: E3-ConfMessage -> Ready
+20:55:52 - 05-29-2009: E3-Room1Name -> Womens
+20:55:52 - 05-29-2009: E3-Room2Name -> Sisters
+20:55:52 - 05-29-2009: E3-Room3Name -> Wetlab
+20:55:52 - 05-29-2009: E3-Room4Name -> Control 1
+20:55:52 - 05-29-2009: E3-Room5Name -> Control 2
+20:55:52 - 05-29-2009: E3-Room6Name -> Rivulet 1
+20:55:52 - 05-29-2009: E3-Room7Name -> Rivulet 2
+20:55:52 - 05-29-2009: E3-Room8Name -> Offline
+20:55:52 - 05-29-2009: E1-pg_HwRestart -> 1
+20:55:52 - 05-29-2009: E1-pbSource1fb -> 1
+20:55:52 - 05-29-2009: E1-pbTarget4fb -> 1
+20:55:52 - 05-29-2009: E1-btnConfStartEnable -> 1d
+20:55:52 - 05-29-2009: E1-btnPrivacyEnable -> 1d
+20:55:52 - 05-29-2009: E1-SysAttrRoomName -> Rivulet\x0D1
+20:55:52 - 05-29-2009: E1-ConfMessage -> Ready
+20:55:52 - 05-29-2009: E1-Room1Name -> Womens
+20:55:52 - 05-29-2009: E1-Room2Name -> Sisters
+20:55:52 - 05-29-2009: E1-Room3Name -> Wetlab
+20:55:52 - 05-29-2009: E1-Room4Name -> Control 1
+20:55:52 - 05-29-2009: E1-Room5Name -> Control 2
+20:55:52 - 05-29-2009: E1-Room6Name -> Rivulet 1
+20:55:52 - 05-29-2009: E1-Room7Name -> Rivulet 2
+20:55:52 - 05-29-2009: E1-Room8Name -> Offline
+20:55:52 - 05-29-2009: RoomEnable1 -> 1
+20:55:52 - 05-29-2009: RoomConnect1 -> 1
+20:55:52 - 05-29-2009: RoomStatus1 -> 2d
+20:55:52 - 05-29-2009: RoomEnable2 -> 1
+20:55:52 - 05-29-2009: RoomConnect2 -> 1
+20:55:52 - 05-29-2009: RoomStatus2 -> 2d
+20:55:52 - 05-29-2009: RoomEnable3 -> 1
+20:55:52 - 05-29-2009: RoomConnect3 -> 1
+20:55:52 - 05-29-2009: RoomStatus3 -> 2d
+20:55:52 - 05-29-2009: //IP-ID-08_Connect-F -> 1
+20:55:52 - 05-29-2009: //IP-ID-08_status -> 2d
+20:55:52 - 05-29-2009: RivLinkEnable -> 1
+20:55:52 - 05-29-2009: RivLinkConnect -> 1
+20:55:52 - 05-29-2009: RivLinkStatus -> 2d
+20:55:52 - 05-29-2009: Lect_Program_1_Mute_FB -> 1
+20:55:52 - 05-29-2009: Lect_Speech_Mute_FB -> 1
+20:55:52 - 05-29-2009: Lect_Manual_Focus_FB -> 1
+20:55:52 - 05-29-2009: Brk_Main_Mute_FB -> 1
+20:55:52 - 05-29-2009: Ctrl_Overflow_Disable -> 1
+20:55:52 - 05-29-2009: Lect_Program_2_Mute_FB_C -> 1
+20:55:52 - 05-29-2009: Lect_Zone_2_Mute_FB -> 1
+20:55:52 - 05-29-2009: Ctrl_TopLCD_Power_FB -> 1
+20:55:52 - 05-29-2009: Ctrl_BottomLCD_Power_FB -> 1
+20:55:52 - 05-29-2009: E6-pg_HwRestart -> 1
+20:55:52 - 05-29-2009: E6-pbSource1fb -> 1
+20:55:52 - 05-29-2009: E6-pbTarget4fb -> 1
+20:55:52 - 05-29-2009: E7-pg_HwRestart -> 1
+20:55:52 - 05-29-2009: E7-pbSource1fb -> 1
+20:55:52 - 05-29-2009: E7-pbTarget4fb -> 1
+20:55:52 - 05-29-2009: Focus_Mode -> 1d
+20:55:52 - 05-29-2009: Lect_Program_2_Vol_Bar -> 19275d
+20:55:52 - 05-29-2009: Lect_Podium_Mic_Bar -> 53199d
+20:55:52 - 05-29-2009: Lect_Wireless_1_Bar -> 54741d
+20:55:52 - 05-29-2009: Lect_Program_1_Vol_Bar -> 24672d
+20:55:52 - 05-29-2009: Lect_Wireless_2_Bar -> 50115d
+20:55:52 - 05-29-2009: Lect_Zone_1_Bar -> 39321d
+20:55:52 - 05-29-2009: Brk_Wireless_Vol_Bar -> 43947d
+20:55:52 - 05-29-2009: Brk_Main_Vol_Bar -> 37008d
+20:55:52 - 05-29-2009: Brk_Wireless_Mute_Ind -> 1d
+20:55:52 - 05-29-2009: VTC_Enable_Buttons -> 1d
+20:55:52 - 05-29-2009: INI_Modes -> 1d
+20:55:52 - 05-29-2009: Offsite_Room_1_Available -> 1d
+20:55:52 - 05-29-2009: Offsite_Room_2_Available -> 1d
+20:55:52 - 05-29-2009: Offsite_Room_3_Available -> 1d
+20:55:52 - 05-29-2009: Lect_Zone_2_Bar -> 44718d
+20:55:52 - 05-29-2009: Wetlab_Fiber_1_Bar -> 50115d
+20:55:52 - 05-29-2009: E6-btnConfStartEnable -> 1d
+20:55:52 - 05-29-2009: E6-btnPrivacyEnable -> 1d
+20:55:52 - 05-29-2009: E7-btnConfStartEnable -> 1d
+20:55:52 - 05-29-2009: E7-btnPrivacyEnable -> 1d
+20:55:52 - 05-29-2009: Lect_Call_Status -> Channel 7 idle
+20:55:52 - 05-29-2009: Lect_Conf_Message$ -> No Conference
+20:55:52 - 05-29-2009: Brk_Connect_Message$ -> Local
+20:55:52 - 05-29-2009: Brk_DVI_Conf_Source_Name -> <No\x0DSignal>
+20:55:52 - 05-29-2009: Brk_SVid_Conf_Source_Name -> <No\x0DSignal>
+20:55:52 - 05-29-2009: E6-SysAttrRoomName -> Control\x0D1
+20:55:52 - 05-29-2009: E6-ConfMessage -> Ready
+20:55:52 - 05-29-2009: E6-Room1Name -> Womens
+20:55:52 - 05-29-2009: E6-Room2Name -> Sisters
+20:55:52 - 05-29-2009: E6-Room3Name -> Wetlab
+20:55:52 - 05-29-2009: E6-Room4Name -> Control 1
+20:55:52 - 05-29-2009: E6-Room5Name -> Control 2
+20:55:52 - 05-29-2009: E6-Room6Name -> Rivulet 1
+20:55:52 - 05-29-2009: E6-Room7Name -> Rivulet 2
+20:55:52 - 05-29-2009: E6-Room8Name -> Offline
+20:55:52 - 05-29-2009: E7-SysAttrRoomName -> Control\x0D2
+20:55:52 - 05-29-2009: E7-ConfMessage -> Ready
+20:55:52 - 05-29-2009: E7-Room1Name -> Womens
+20:55:52 - 05-29-2009: E7-Room2Name -> Sisters
+20:55:52 - 05-29-2009: E7-Room3Name -> Wetlab
+20:55:52 - 05-29-2009: E7-Room4Name -> Control 1
+20:55:52 - 05-29-2009: E7-Room5Name -> Control 2
+20:55:52 - 05-29-2009: E7-Room6Name -> Rivulet 1
+20:55:52 - 05-29-2009: E7-Room7Name -> Rivulet 2
+20:55:52 - 05-29-2009: E7-Room8Name -> Offline
+20:55:52 - 05-29-2009: Brk_Conf_Message$ -> No Conference
+20:55:52 - 05-29-2009: Lect_DVI_Conf_Source_Name -> <No Source>
+20:55:52 - 05-29-2009: Lect_SVid_Conf_Source_Name -> <No Source>
+20:55:52 - 05-29-2009: Init_Stage_1 -> 1
+20:55:52 - 05-29-2009: Init_Stage_2 -> 1
+20:55:52 - 05-29-2009: Init_Stage_3 -> 1
+20:55:52 - 05-29-2009: Init_Stage3_Complete -> 1
+20:55:52 - 05-29-2009: E1-RmAttrConferenceFlag -> 1
+20:55:52 - 05-29-2009: E1-RmAttrPermissionFlag -> 1
+20:55:52 - 05-29-2009: LocalEnable1 -> 1
+20:55:52 - 05-29-2009: E1-RmAttrSVidCountIn -> 1d
+20:55:52 - 05-29-2009: E1-RmAttrHDCountIn -> 1d
+20:55:52 - 05-29-2009: E1-RmAttrSVidCountOut -> 1d
+20:55:52 - 05-29-2009: E1-RmAttrHDCountOut -> 1d
+20:55:52 - 05-29-2009: E1_Init_0_Complete -> 1
+20:55:52 - 05-29-2009: E1_Init_1_Complete -> 1
+20:55:52 - 05-29-2009: E1_Init_2_Complete -> 1
+20:55:52 - 05-29-2009: E1_Init_3_Complete -> 1
+20:55:52 - 05-29-2009: LocalConnect1 -> 1
+20:55:52 - 05-29-2009: E1-Room4Available -> 1
+20:55:52 - 05-29-2009: E1-Room5Available -> 1
+20:55:52 - 05-29-2009: E1-sysRoomCount -> 8d
+20:55:52 - 05-29-2009: E1-sysMyRoomID -> 6d
+20:55:52 - 05-29-2009: //NotNeeded-btnVTCEnable -> 2d
+20:55:52 - 05-29-2009: E1-txt_ConfInSource1 -> <No Signal>
+20:55:52 - 05-29-2009: E1-txt_ConfInSource2 -> <No Signal>
+20:55:52 - 05-29-2009: E1-txt_ConfInSource3 -> <No Signal>
+20:55:52 - 05-29-2009: E1-txt_ConfInSource4 -> <No Signal>
+20:55:52 - 05-29-2009: //E1-Target2Source -> 3d
+20:55:52 - 05-29-2009: E1-TargetRoomName -> Please Select
+20:55:52 - 05-29-2009: E1-Room1Available_FB -> 1
+20:55:52 - 05-29-2009: //E2-pg_HwRestart -> 1
+20:55:52 - 05-29-2009: //E2-pbSource1fb -> 1
+20:55:52 - 05-29-2009: //E2-pbTarget4fb -> 1
+20:55:52 - 05-29-2009: //E2-Target2Source -> 3d
+20:55:52 - 05-29-2009: E2-TargetRoomName -> Please Select
+20:55:52 - 05-29-2009: E1-Room2Available_FB -> 1
+20:55:52 - 05-29-2009: E2-RmAttrConferenceFlag -> 1
+20:55:52 - 05-29-2009: E2-RmAttrPermissionFlag -> 1
+20:55:52 - 05-29-2009: LocalEnable2 -> 1
+20:55:52 - 05-29-2009: E2-RmAttrSVidCountIn -> 1d
+20:55:52 - 05-29-2009: E2-RmAttrHDCountIn -> 1d
+20:55:52 - 05-29-2009: E2-RmAttrSVidCountOut -> 1d
+20:55:52 - 05-29-2009: E2-RmAttrHDCountOut -> 1d
+20:55:52 - 05-29-2009: E2_Init_0_Complete -> 1
+20:55:52 - 05-29-2009: E2_Init_1_Complete -> 1
+20:55:52 - 05-29-2009: E2_Init_2_Complete -> 1
+20:55:52 - 05-29-2009: E2_Init_3_Complete -> 1
+20:55:52 - 05-29-2009: LocalConnect2 -> 1
+20:55:52 - 05-29-2009: E3-RmAttrConferenceFlag -> 1
+20:55:52 - 05-29-2009: E3-RmAttrPermissionFlag -> 1
+20:55:52 - 05-29-2009: LocalEnable3 -> 1
+20:55:52 - 05-29-2009: E3-RmAttrSVidCountIn -> 1d
+20:55:52 - 05-29-2009: E3-RmAttrHDCountIn -> 1d
+20:55:52 - 05-29-2009: E3-RmAttrSVidCountOut -> 1d
+20:55:52 - 05-29-2009: E3-RmAttrHDCountOut -> 1d
+20:55:52 - 05-29-2009: E3_Init_0_Complete -> 1
+20:55:52 - 05-29-2009: E3_Init_1_Complete -> 1
+20:55:52 - 05-29-2009: E3_Init_2_Complete -> 1
+20:55:52 - 05-29-2009: E3_Init_3_Complete -> 1
+20:55:52 - 05-29-2009: LocalConnect3 -> 1
+20:55:52 - 05-29-2009: E3-Room4Available -> 1
+20:55:52 - 05-29-2009: E3-Room5Available -> 1
+20:55:52 - 05-29-2009: E3-sysRoomCount -> 8d
+20:55:52 - 05-29-2009: E3-sysMyRoomID -> 7d
+20:55:52 - 05-29-2009: E3-txt_ConfInSource1 -> <No Signal>
+20:55:52 - 05-29-2009: E3-txt_ConfInSource2 -> <No Signal>
+20:55:52 - 05-29-2009: E3-txt_ConfInSource3 -> <No Signal>
+20:55:52 - 05-29-2009: E3-txt_ConfInSource4 -> <No Signal>
+20:55:52 - 05-29-2009: //E3-Target2Source -> 3d
+20:55:52 - 05-29-2009: E3-TargetRoomName -> Please Select
+20:55:52 - 05-29-2009: E3-Room3Available_FB -> 1
+20:55:52 - 05-29-2009: //S-5.2.1_Power_Off_Fb -> 1
+20:55:52 - 05-29-2009: Lect_No_Conference -> 1
+20:55:52 - 05-29-2009: Lect_Projector_Power_OFF -> 1
+20:55:52 - 05-29-2009: Lect_RearLCD_Power_OFF_FB -> 1
+20:55:52 - 05-29-2009: //S-6.2.1_Power_Off_Fb -> 1
+20:55:52 - 05-29-2009: //S-6.3.1.1_Power_Off_FB -> 1
+20:55:52 - 05-29-2009: //S-6.3.1.1_Input_ExtronSVid_FB -> 1
+20:55:52 - 05-29-2009: //S-6.3.1.1_Audio_Mute_Off_FB -> 1
+20:55:52 - 05-29-2009: Brk_LeftLCD_Power_4 -> 1
+20:55:52 - 05-29-2009: Brk_LeftLCD_Power_3 -> 1
+20:55:52 - 05-29-2009: //S-6.3.2.1_Power_Off_FB -> 1
+20:55:52 - 05-29-2009: //S-6.3.2.1_Input_ExtronSVid_FB -> 1
+20:55:52 - 05-29-2009: Brk_RightLCD_Power_4 -> 1
+20:55:52 - 05-29-2009: Brk_Message -> 1
+20:55:52 - 05-29-2009: Brk_No_Conference -> 1
+20:55:52 - 05-29-2009: //S-6.1.1.1.10_VOLUME-MUTE-OFF-FB -> 1
+20:55:52 - 05-29-2009: Brk_Wireless_Mute_FB_NOT -> 1
+20:55:52 - 05-29-2009: //S-7.1.1.2.2_VOLUME-MUTE-OFF-FB -> 1
+20:55:52 - 05-29-2009: //S-6.1.1.2.11_NOM-ON-FB -> 1
+20:55:52 - 05-29-2009: //S-6.1.1.2.12_NOM-ON-FB -> 1
+20:55:52 - 05-29-2009: Brk_Conf_Wetlab_Oneshot -> 1
+20:55:52 - 05-29-2009: //S-6.1.1.1.8_VOLUME-MUTE-OFF-FB -> 1
+20:55:52 - 05-29-2009: //S-7.1.1.1.6_VOLUME-MUTE-OFF-FB -> 1
+20:55:52 - 05-29-2009: //S-7.1.1.1.7_VOLUME-MUTE-OFF-FB -> 1
+20:55:52 - 05-29-2009: //S-6.1.1.2.17_VOLUME-BAR -> 50115d
+20:55:52 - 05-29-2009: S-6//.1.1.2.19_VOLUME-BAR -> 50115d
+20:55:52 - 05-29-2009: //S-6.1.1.2.19_VOLUME-MUTE-ON-FB -> 1
+20:55:52 - 05-29-2009: Hardroute_Lecture_DocCam -> 1
+20:55:52 - 05-29-2009: Hardroute_Lecture_DVD -> 1
+20:55:52 - 05-29-2009: //S-6.9.1.1_Input_ExtronSVid_FB -> 1
+20:55:52 - 05-29-2009: //S-6.9.1.1_Audio_Mute_Off_FB -> 1
+20:55:52 - 05-29-2009: //S-6.9.1.1_Aspect_Wide_FB -> 1
+20:55:52 - 05-29-2009: //S-6.9.1.1_PIP_Off_FB -> 1
+20:55:52 - 05-29-2009: //S-6.9.1.1_PIP_Input_PC_Fb -> 1
+20:55:52 - 05-29-2009: //S-6.9.1.1_Contrast_Bar -> 65535d
+20:55:52 - 05-29-2009: //S-6.9.1.1_Brightness_Bar -> 29490d
+20:55:52 - 05-29-2009: //S-6.9.1.1_Color_Bar -> 35388d
+20:55:52 - 05-29-2009: //S-6.9.1.1_Sharpness_Bar -> 49806d
+20:55:52 - 05-29-2009: //S-6.9.1.1_Volume_Bar -> 6553d
+20:55:52 - 05-29-2009: //S-6.9.2.1_Input_BNC_FB -> 1
+20:55:52 - 05-29-2009: //S-6.9.2.1_Audio_Mute_Off_FB -> 1
+20:55:52 - 05-29-2009: //S-6.9.2.1_Aspect_ExtronRGBWide_FB -> 1
+20:55:52 - 05-29-2009: //S-6.9.2.1_PIP_Off_FB -> 1
+20:55:52 - 05-29-2009: //S-6.9.2.1_PIP_Input_Video_Fb -> 1
+20:55:52 - 05-29-2009: //S-6.9.2.1_Contrast_Bar -> 52428d
+20:55:52 - 05-29-2009: S-6.//9.2.1_Brightness_Bar -> 39321d
+20:55:52 - 05-29-2009: //S-6.9.2.1_Volume_Bar -> 6553d
+20:55:52 - 05-29-2009: LocalConnect6 -> 1
+20:55:52 - 05-29-2009: LocalConnect7 -> 1
+20:55:52 - 05-29-2009: ConfHubComplete -> 1
+20:55:52 - 05-29-2009: LocalEnable6 -> 1
+20:55:52 - 05-29-2009: LocalEnable7 -> 1
+20:55:52 - 05-29-2009: E6-RmAttrConferenceFlag -> 1
+20:55:52 - 05-29-2009: E7-RmAttrConferenceFlag -> 1
+20:55:52 - 05-29-2009: E6-RmAttrPermissionFlag -> 1
+20:55:52 - 05-29-2009: E7-RmAttrPermissionFlag -> 1
+20:55:52 - 05-29-2009: E6-RmAttrSVidCountIn -> 1d
+20:55:52 - 05-29-2009: E7-RmAttrSVidCountIn -> 1d
+20:55:52 - 05-29-2009: E6-RmAttrHDCountIn -> 1d
+20:55:52 - 05-29-2009: E7-RmAttrHDCountIn -> 1d
+20:55:52 - 05-29-2009: E6-RmAttrSVidCountOut -> 1d
+20:55:52 - 05-29-2009: E7-RmAttrSVidCountOut -> 1d
+20:55:52 - 05-29-2009: E6-RmAttrHDCountOut -> 1d
+20:55:52 - 05-29-2009: E7-RmAttrHDCountOut -> 1d
+20:55:52 - 05-29-2009: E6-txt_ConfInSource2 -> <No Signal>
+20:55:52 - 05-29-2009: E7-txt_ConfInSource2 -> <No Signal>
+20:55:52 - 05-29-2009: E6-txt_ConfInSource1 -> <No Signal>
+20:55:52 - 05-29-2009: E7-txt_ConfInSource1 -> <No Signal>
+20:55:52 - 05-29-2009: E6_Init_0_Complete -> 1
+20:55:52 - 05-29-2009: E6_Init_1_Complete -> 1
+20:55:52 - 05-29-2009: E6_Init_2_Complete -> 1
+20:55:52 - 05-29-2009: E6_Init_3_Complete -> 1
+20:55:52 - 05-29-2009: E6-Room1Available -> 1
+20:55:52 - 05-29-2009: E6-Room2Available -> 1
+20:55:52 - 05-29-2009: E6-Room3Available -> 1
+20:55:52 - 05-29-2009: E6-Room5Available -> 1
+20:55:52 - 05-29-2009: E6-Room6Available -> 1
+20:55:52 - 05-29-2009: E6-Room7Available -> 1
+20:55:52 - 05-29-2009: E6-Room8Available -> 1
+20:55:52 - 05-29-2009: E6-sysRoomCount -> 8d
+20:55:52 - 05-29-2009: E6-sysMyRoomID -> 4d
+20:55:52 - 05-29-2009: E6-txt_ConfInSource3 -> <No Signal>
+20:55:52 - 05-29-2009: E6-txt_ConfInSource4 -> <No Signal>
+20:55:52 - 05-29-2009: //E6-Target2Source -> 3d
+20:55:52 - 05-29-2009: E6-TargetRoomName -> Please Select
+20:55:52 - 05-29-2009: E7_Init_0_Complete -> 1
+20:55:52 - 05-29-2009: E7_Init_1_Complete -> 1
+20:55:52 - 05-29-2009: E7_Init_2_Complete -> 1
+20:55:52 - 05-29-2009: E7_Init_3_Complete -> 1
+20:55:52 - 05-29-2009: E7-Room1Available -> 1
+20:55:52 - 05-29-2009: E7-Room2Available -> 1
+20:55:52 - 05-29-2009: E7-Room3Available -> 1
+20:55:52 - 05-29-2009: E7-Room4Available -> 1
+20:55:52 - 05-29-2009: E7-Room6Available -> 1
+20:55:52 - 05-29-2009: E7-Room7Available -> 1
+20:55:52 - 05-29-2009: E7-Room8Available -> 1
+20:55:52 - 05-29-2009: E7-sysRoomCount -> 8d
+20:55:52 - 05-29-2009: E7-sysMyRoomID -> 5d
+20:55:52 - 05-29-2009: E7-txt_ConfInSource3 -> <No Signal>
+20:55:52 - 05-29-2009: E7-txt_ConfInSource4 -> <No Signal>
+20:55:52 - 05-29-2009: //E7-Target2Source -> 3d
+20:55:52 - 05-29-2009: E7-TargetRoomName -> Please Select
+20:55:52 - 05-29-2009: //S-6.5.1_Near_End_Camera_is_Active -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Video_Input_is_2_(Aux_Cam) -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Audio_Input_Mic1_is_On -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Audio_Input_Mic2_is_On -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Audio_Input_Mic3_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Audio_Input_Line1_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Receive_Input_is_1 -> 1
+20:55:52 - 05-29-2009: Lect_VTC_PIP_OFF_FB -> 1
+20:55:52 - 05-29-2009: //Lect_VTCSend_Privacy_OFF_FB -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Volume_Level -> 46531d
+20:55:52 - 05-29-2009: //S-7.5.1_Volume_Mute_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Dial_Call_Quality_Auto_is_Selected -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Dial_Call_Type_IP_is_Selected -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Dial_Call_Restricted_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_DuoVideo_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_MCU_State_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_MCU_State_is_Continuous_Presence -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Filter_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Speaker_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Selfview_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Do_Not_Disturb_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Multisite_Receive_is_On -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Stream_Auto_is_On -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Stream_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Access_Code_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Snapshot_Source_is_Video_1 -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Presentation_Mode_is_Normal -> 1
+20:55:52 - 05-29-2009: //Lect_VTCSend_Auto_Answer_OFF_FB -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Auto_PIP_is_On -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Number_of_Monitors_is_2 -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_ScreenSaver_is_On -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Encrypt_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Volume_Mute_Input_1_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Volume_Mute_Input_2_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Volume_Mute_Input_3_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Volume_Mute_Input_4_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Volume_Mute_Input_5_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Volume_Mute_Input_6_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Volume_Mute_Output_1_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Volume_Mute_Output_2_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Volume_Mute_Output_3_is_Off -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_ISDN_Bandwidth -> 512d
+20:55:52 - 05-29-2009: //S-6.5.1_LAN_Bandwidth -> 1920d
+20:55:52 - 05-29-2009: //S-6.5.1_Natural_Presentation_Available -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_MCU_Available -> 1
+20:55:52 - 05-29-2009: //S-6.5.1_Tandberg_Video_Switch(TVS)_is_Not_Co -> 1
+20:55:52 - 05-29-2009: Brk_Conf_Storz_Oneshot -> 1
+20:55:52 - 05-29-2009: Lect_Conf_Storz_Oneshot -> 1
+20:55:52 - 05-29-2009: Brk_Conf_Womens_Down -> 1
+20:55:52 - 05-29-2009: Brk_Conf_Sisters_Down -> 1
+20:55:52 - 05-29-2009: //Brk_Conf_Down_Crtl_19 -> 1
+20:55:52 - 05-29-2009: Init_Stage0_Complete -> 1
+20:55:52 - 05-29-2009: Init_Stage1_Complete -> 1
+20:55:52 - 05-29-2009: Init_Stage2_Complete -> 1
+20:55:53 - 05-29-2009: [Console Data] : 
+20:55:58 - 05-29-2009: [Console Data] : RACK2>
+20:55:58 - 05-29-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:55:58 - 05-29-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:55:58 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:55:58 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:55:58 - 05-29-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+20:55:58 - 05-29-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+20:55:58 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+20:55:59 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+20:55:59 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x14\x01\x00\x15
+20:55:59 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+20:55:59 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+20:55:59 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x1Ev
+20:55:59 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x13\x01\x00\x14
+20:55:59 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+20:56:00 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+20:56:00 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+20:56:00 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x15\x01\x00\x16
+20:56:00 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x01Z
+20:56:00 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+20:56:00 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+20:56:00 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA<\x01\x00=
+20:56:00 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+20:56:00 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+20:56:00 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+20:56:00 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA@\x01\x00A
+20:56:00 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A@\x14\x98
+20:56:01 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+20:56:01 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+20:56:01 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA$\x01\x00%
+20:56:01 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A$d\xCC
+20:56:01 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+20:56:01 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7P\xCB
+20:56:01 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA%\x01\x00&
+20:56:01 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A%-\x96
+20:56:01 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+20:56:01 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8<\xB8
+20:56:01 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA'\x01\x00(
+20:56:01 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A'6\xA1
+20:56:02 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+20:56:02 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+20:56:02 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA(\x01\x00)
+20:56:02 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+20:56:02 - 05-29-2009: //S-6.9.1.1_Tint_Bar -> 32767d
+20:56:02 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA(\x01\x012\
+20:56:02 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+20:56:02 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+20:56:02 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+20:56:02 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA&\x01\x00'
+20:56:02 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A&L\xB6
+20:56:02 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+20:56:02 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+20:56:02 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x12\x01\x00\x13
+20:56:02 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+20:56:02 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+20:56:02 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+20:56:13 - 05-29-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:56:14 - 05-29-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:56:14 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:56:14 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:56:14 - 05-29-2009: [Console Data] : RoomControl-Endpoint 1: Conference page entered
+20:56:14 - 05-29-2009: E1-pbConfStart -> 1
+20:56:14 - 05-29-2009: E1-General_Buttons_Enable -> 0d
+20:56:14 - 05-29-2009: E1-pgRoomList -> 1
+20:56:14 - 05-29-2009: E1-pg_HwRestart -> 0
+20:56:14 - 05-29-2009: E1-pbConfStart_FB -> 1
+20:56:14 - 05-29-2009: E1-GUIRoomState1 -> 1d
+20:56:14 - 05-29-2009: E1-GUIRoomState2 -> 1d
+20:56:14 - 05-29-2009: E1-GUIRoomState3 -> 1d
+20:56:14 - 05-29-2009: E1-GUIRoomState4 -> 2d
+20:56:14 - 05-29-2009: E1-GUIRoomState5 -> 2d
+20:56:14 - 05-29-2009: E1-GUIRoomState7 -> 1d
+20:56:14 - 05-29-2009: E1-GUIRoomState8 -> 1d
+20:56:14 - 05-29-2009: E1-pbConfStart -> 0
+20:56:14 - 05-29-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+20:56:14 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+20:56:14 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+20:56:14 - 05-29-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+20:56:20 - 05-29-2009: RxRoomLocal2 -> 020899:10::E0031101101100:03
+20:56:20 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10::E0031101101100:03], state 1
+20:56:20 - 05-29-2009: RxRoomLocal1 -> 020699:10:Rivulet 1:E0031101101100:03
+20:56:20 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+20:56:20 - 05-29-2009: RxRoomLocal3 -> 020799:10:Rivulet 2:E0031101101100:03
+20:56:20 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+20:56:20 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101100:03], state 1
+20:56:20 - 05-29-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+20:56:20 - 05-29-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+20:56:20 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+20:56:20 - 05-29-2009: RxRoom2 -> 020299:10:Sisters:O0031000101100:03
+20:56:20 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Sisters:O0031000101100:03], state 1
+20:56:22 - 05-29-2009: RxRoom3 -> 020399:10:Wetlab:E0031000101100:03
+20:56:22 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+20:56:22 - 05-29-2009: TxRoom1 -> 029901:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:56:22 - 05-29-2009: TxRoom2 -> 029902:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:56:22 - 05-29-2009: TxRoom3 -> 029903:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:56:22 - 05-29-2009: RxRoom1 -> 020199:10:Womens:O0031000101100:03
+20:56:22 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Womens:O0031000101100:03], state 1
+20:56:22 - 05-29-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Womens+2,Sisters+3,Wetlab+0,Control 1+5,Control 2+6,Rivulet 1+7,Rivulet 2+8,+:03
+20:56:22 - 05-29-2009: E6-sysMyRoomID -> 4d
+20:56:22 - 05-29-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Womens+2,Sisters+3,Wetlab+4,Control 1+0,Control 2+6,Rivulet 1+7,Rivulet 2+8,+:03
+20:56:22 - 05-29-2009: E7-sysMyRoomID -> 5d
+20:56:22 - 05-29-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:56:22 - 05-29-2009: E1-sysMyRoomID -> 6d
+20:56:22 - 05-29-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:56:22 - 05-29-2009: E3-sysMyRoomID -> 7d
+20:56:22 - 05-29-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:56:22 - 05-29-2009: E6-sysRoomCount -> 8d
+20:56:22 - 05-29-2009: E7-sysRoomCount -> 8d
+20:56:22 - 05-29-2009: E1-sysRoomCount -> 8d
+20:56:22 - 05-29-2009: E3-sysRoomCount -> 8d
+20:56:23 - 05-29-2009: [Console Data] : Hub: Send Update (System Status Messages)
+20:56:26 - 05-29-2009: E1-pbRoomNumber4 -> 1
+20:56:26 - 05-29-2009: [Console Data] : RoomControl-Endpoint 1: Room Button: 4
+20:56:26 - 05-29-2009: [Console Data] : RoomControl-Endpoint 1: MyRoomID: 6,  sysRoomCount: 8,  RoomAvailable: 1
+20:56:26 - 05-29-2009: [Console Data] : RoomControl-Endpoint 1: Target Room: 4
+20:56:26 - 05-29-2009: E1-fpbRoomNumber4 -> 1
+20:56:26 - 05-29-2009: E1-TargetRoomID -> 4d
+20:56:26 - 05-29-2009: E1-TargetRoomName -> Control 1
+20:56:26 - 05-29-2009: E1-PulseCloseRoomSelect -> 1
+20:56:26 - 05-29-2009: E1-ConfCallActivate -> 1
+20:56:26 - 05-29-2009: E1-fbConfStartButton -> 1
+20:56:26 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 06 [020604:20:Rivulet 1+1101101:03], state 1
+20:56:26 - 05-29-2009: RxRoomLocal1 -> 020604:20:Rivulet 1+1101101:03
+20:56:26 - 05-29-2009: E1-ConferenceState -> 1d
+20:56:26 - 05-29-2009: E1-ConfMessage -> Request To Control 1
+20:56:26 - 05-29-2009: E1-fbCallStateFlash -> 1
+20:56:26 - 05-29-2009: E1-btnConfStartEnable -> 0d
+20:56:26 - 05-29-2009: E1-pgRoomList -> 0
+20:56:26 - 05-29-2009: E1-pg_HwRestart -> 1
+20:56:26 - 05-29-2009: E1-General_Buttons_Enable -> 1d
+20:56:26 - 05-29-2009: TxRoomLocal6 -> 020604:20:Rivulet 1+1101101:03
+20:56:26 - 05-29-2009: //E1-fbFlash -> 1
+20:56:26 - 05-29-2009: //E6-RmAttrRemoteSVidCountIn -> 1d
+20:56:26 - 05-29-2009: //E6-RmAttrRemoteRGBCountIn -> 0d
+20:56:26 - 05-29-2009: //E6-RmAttrRemoteHDCountIn -> 1d
+20:56:26 - 05-29-2009: //E6-RmAttrRemoteSVidCountOut -> 1d
+20:56:26 - 05-29-2009: //E6-RmAttrRemoteRGBCountOut -> 0d
+20:56:26 - 05-29-2009: //E6-RmAttrRemoteHDCountOut -> 1d
+20:56:26 - 05-29-2009: //E6-RingGenerator -> 1
+20:56:26 - 05-29-2009: E6-ConferenceState -> 1d
+20:56:26 - 05-29-2009: E1-btnConfCancelEnable -> 1d
+20:56:26 - 05-29-2009: E1-pbRoomNumber4 -> 0
+20:56:26 - 05-29-2009: E1-fpbRoomNumber4 -> 0
+20:56:26 - 05-29-2009: E6-ConfMessage -> Request From Rivulet 1
+20:56:26 - 05-29-2009: Brk_Conf_Message$ -> Request From Rivulet 1
+20:56:26 - 05-29-2009: E6-fbCallStateFlash -> 1
+20:56:26 - 05-29-2009: E6-fbFlash -> 1
+20:56:26 - 05-29-2009: E6-btnConfStartEnable -> 0d
+20:56:26 - 05-29-2009: E6-btnConfAcceptEnable -> 1d
+20:56:26 - 05-29-2009: E6-btnConfDeclineEnable -> 1d
+20:56:27 - 05-29-2009: E1-PulseCloseRoomSelect -> 0
+20:56:27 - 05-29-2009: E1-ConfCallActivate -> 0
+20:56:27 - 05-29-2009: E1-fbConfStartButton -> 0
+20:56:27 - 05-29-2009: //E1-fbFlash -> 0
+20:56:27 - 05-29-2009: E6-fbFlash -> 0
+20:56:28 - 05-29-2009: //E1-fbFlash -> 1
+20:56:28 - 05-29-2009: E6-fbFlash -> 1
+20:56:29 - 05-29-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:56:29 - 05-29-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:56:29 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:56:29 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:56:29 - 05-29-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+20:56:29 - 05-29-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+20:56:29 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+20:56:29 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+20:56:29 - 05-29-2009: //E1-fbFlash -> 0
+20:56:29 - 05-29-2009: E6-fbFlash -> 0
+20:56:30 - 05-29-2009: //E1-fbFlash -> 1
+20:56:30 - 05-29-2009: E6-fbFlash -> 1
+20:56:31 - 05-29-2009: [Console Data] : RIV: Send Port Status Request, CONTROL_ROOM_A-P1-A/1-DVP
+20:56:31 - 05-29-2009: TxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 345\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?><api-envelope><api-version version = "05.01.00.R002" ></api-version> <
+20:56:31 - 05-29-2009: TxRivulet -> correlation id = "2" > </correlation> <binding session-id = "f7536f29-2932-4d55-af83-d0b39ae29bd7" > </binding> <api-cmd-req req = "get-ep-port-alias-status" ep
+20:56:31 - 05-29-2009: TxRivulet -> -port-alias-name = "CONTROL_ROOM_A-P1-A/1-DVP"></api-cmd-req> </api-envelope>
+20:56:31 - 05-29-2009: RxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 452\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?>\x0D\x0A<api-envelope> \x0A<api-version \x0A\x09version = "05.01.00.R005" >\x0A </api-version> \x0A <correlation \x0A\x09id = "2" >\x0A </correlation> \x0A <binding \x0A\x09 session-id = "f7536f29-29
+20:56:31 - 05-29-2009: RxRivulet -> 32-4d55-af83-d0b39ae29bd7" >\x0A </binding>\x0A <api-cmd-rsp \x0A\x09 rsp = "get-ep-port-alias-status-success" \x0A\x09 ep-port-alias-name = "CONTROL_ROOM_A-P1-A/1-DVP" \x0A\x09 ep-port-alias-status-code = "AVAILABLE" \x0A\x09 ep-port-type = "DVP" >\x0A </api-cmd-rsp> \x0A</api-envelop
+20:56:31 - 05-29-2009: RxRivulet -> e> \x0A
+20:56:31 - 05-29-2009: //E1-fbFlash -> 0
+20:56:31 - 05-29-2009: [Console Data] : ******BEGIN RGM Response Data**********
+20:56:31 - 05-29-2009: [Console Data] : Response ID = 1
+20:56:31 - 05-29-2009: [Console Data] : Correlation ID = 2
+20:56:31 - 05-29-2009: [Console Data] : api-cmd-rsp = get-ep-port-alias-status-success
+20:56:31 - 05-29-2009: [Console Data] : api-ep-port-alias-name = CONTROL_ROOM_A-P1-A/1-DVP
+20:56:31 - 05-29-2009: [Console Data] : api-cmd-error = 
+20:56:31 - 05-29-2009: [Console Data] : api-ep-port-alias-status-code = AVAILABLE
+20:56:31 - 05-29-2009: [Console Data] : ******END RGM Response Data**********
+20:56:31 - 05-29-2009: E6-fbFlash -> 0
+20:56:32 - 05-29-2009: [Console Data] : *** Rivulet Endpoint: CONTROL_ROOM_A-P1-A/1-DVP, AVAILABLE***
+20:56:32 - 05-29-2009: [Console Data] : RIV: Send Port Status Request, CONTROL_ROOM_B-P1-B/1-DVP
+20:56:32 - 05-29-2009: TxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 345\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?><api-envelope><api-version version = "05.01.00.R002" ></api-version> <
+20:56:32 - 05-29-2009: TxRivulet -> correlation id = "3" > </correlation> <binding session-id = "f7536f29-2932-4d55-af83-d0b39ae29bd7" > </binding> <api-cmd-req req = "get-ep-port-alias-status" ep
+20:56:32 - 05-29-2009: //E1-fbFlash -> 1
+20:56:32 - 05-29-2009: TxRivulet -> -port-alias-name = "CONTROL_ROOM_B-P1-B/1-DVP"></api-cmd-req> </api-envelope>
+20:56:32 - 05-29-2009: RxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 452\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?>\x0D\x0A<api-envelope> \x0A<api-version \x0A\x09version = "05.01.00.R005" >\x0A </api-version> \x0A <correlation \x0A\x09id = "3" >\x0A </correlation> \x0A <binding \x0A\x09 session-id = "f7536f29-29
+20:56:32 - 05-29-2009: RxRivulet -> 32-4d55-af83-d0b39ae29bd7" >\x0A </binding>\x0A <api-cmd-rsp \x0A\x09 rsp = "get-ep-port-alias-status-success" \x0A\x09 ep-port-alias-name = "CONTROL_ROOM_B-P1-B/1-DVP" \x0A\x09 ep-port-alias-status-code = "AVAILABLE" \x0A\x09 ep-port-type = "DVP" >\x0A </api-cmd-rsp> \x0A</api-envelop
+20:56:32 - 05-29-2009: RxRivulet -> e> \x0A
+20:56:32 - 05-29-2009: E6-fbFlash -> 1
+20:56:33 - 05-29-2009: [Console Data] : ******BEGIN RGM Response Data**********
+20:56:33 - 05-29-2009: [Console Data] : Response ID = 1
+20:56:33 - 05-29-2009: [Console Data] : Correlation ID = 3
+20:56:33 - 05-29-2009: [Console Data] : api-cmd-rsp = get-ep-port-alias-status-success
+20:56:33 - 05-29-2009: [Console Data] : api-ep-port-alias-name = CONTROL_ROOM_B-P1-B/1-DVP
+20:56:33 - 05-29-2009: [Console Data] : api-cmd-error = 
+20:56:33 - 05-29-2009: [Console Data] : api-ep-port-alias-status-code = AVAILABLE
+20:56:33 - 05-29-2009: [Console Data] : ******END RGM Response Data**********
+20:56:33 - 05-29-2009: [Console Data] : *** Rivulet Endpoint: CONTROL_ROOM_B-P1-B/1-DVP, AVAILABLE***
+20:56:33 - 05-29-2009: //E1-fbFlash -> 0
+20:56:33 - 05-29-2009: [Console Data] : RIV: Send Port Status Request, OR8-P1-A/1-DVP
+20:56:33 - 05-29-2009: TxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 334\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?><api-envelope><api-version version = "05.01.00.R002" ></api-version> <
+20:56:33 - 05-29-2009: E6-fbFlash -> 0
+20:56:33 - 05-29-2009: TxRivulet -> correlation id = "4" > </correlation> <binding session-id = "f7536f29-2932-4d55-af83-d0b39ae29bd7" > </binding> <api-cmd-req req = "get-ep-port-alias-status" ep
+20:56:34 - 05-29-2009: TxRivulet -> -port-alias-name = "OR8-P1-A/1-DVP"></api-cmd-req> </api-envelope>
+20:56:34 - 05-29-2009: RxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 441\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?>\x0D\x0A<api-envelope> \x0A<api-version \x0A\x09version = "05.01.00.R005" >\x0A </api-version> \x0A <correlation \x0A\x09id = "4" >\x0A </correlation> \x0A <binding \x0A\x09 session-id = "f7536f29-29
+20:56:34 - 05-29-2009: RxRivulet -> 32-4d55-af83-d0b39ae29bd7" >\x0A </binding>\x0A <api-cmd-rsp \x0A\x09 rsp = "get-ep-port-alias-status-success" \x0A\x09 ep-port-alias-name = "OR8-P1-A/1-DVP" \x0A\x09 ep-port-alias-status-code = "AVAILABLE" \x0A\x09 ep-port-type = "DVP" >\x0A </api-cmd-rsp> \x0A</api-envelope> \x0A
+20:56:34 - 05-29-2009: [Console Data] : ******BEGIN RGM Response Data**********
+20:56:34 - 05-29-2009: [Console Data] : Response ID = 1
+20:56:34 - 05-29-2009: [Console Data] : Correlation ID = 4
+20:56:34 - 05-29-2009: [Console Data] : api-cmd-rsp = get-ep-port-alias-status-success
+20:56:34 - 05-29-2009: [Console Data] : api-ep-port-alias-name = OR8-P1-A/1-DVP
+20:56:34 - 05-29-2009: [Console Data] : api-cmd-error = 
+20:56:34 - 05-29-2009: [Console Data] : api-ep-port-alias-status-code = AVAILABLE
+20:56:34 - 05-29-2009: [Console Data] : ******END RGM Response Data**********
+20:56:34 - 05-29-2009: [Console Data] : *** Rivulet Endpoint: OR8-P1-A/1-DVP, AVAILABLE***
+20:56:34 - 05-29-2009: //E1-fbFlash -> 1
+20:56:34 - 05-29-2009: E6-fbFlash -> 1
+20:56:35 - 05-29-2009: [Console Data] : RIV: Send Port Status Request, CATH_LAB-P1-A/1-DVP
+20:56:35 - 05-29-2009: TxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 339\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?><api-envelope><api-version version = "05.01.00.R002" ></api-version> <
+20:56:35 - 05-29-2009: TxRivulet -> correlation id = "5" > </correlation> <binding session-id = "f7536f29-2932-4d55-af83-d0b39ae29bd7" > </binding> <api-cmd-req req = "get-ep-port-alias-status" ep
+20:56:35 - 05-29-2009: TxRivulet -> -port-alias-name = "CATH_LAB-P1-A/1-DVP"></api-cmd-req> </api-envelope>
+20:56:35 - 05-29-2009: RxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 687\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?>\x0D\x0A<api-envelope> \x0A<api-version \x0A\x09version = "05.01.00.R005" >\x0A </api-version> \x0A <correlation \x0A\x09id = "5" >\x0A </correlation> \x0A <binding \x0A\x09 session-id = "f7536f29-29
+20:56:35 - 05-29-2009: RxRivulet -> 32-4d55-af83-d0b39ae29bd7" >\x0A </binding>\x0A <api-cmd-rsp \x0A\x09 rsp = "get-ep-port-alias-status-failure" \x0A\x09 ep-port-alias-name = "CATH_LAB-P1-A/1-DVP" >\x0A </api-cmd-rsp> \x0A <api-fault \x0A\x09fault-code-list = "PORT_ALIAS_DOES_NOT_EXIST" \x0A\x09fault-actor = "RCAS serv
+20:56:35 - 05-29-2009: RxRivulet -> er" \x0A\x09fault-string = "Port alias could not be found in the configuration of the system" \x0A\x09fault-detail = "The port alias is either mispelled or it does not exist, use the 'get-ep-port-alias-list' command"  >\x0A </api-fault>\x0A</api-envelope> \x0A
+20:56:35 - 05-29-2009: [Console Data] : ******BEGIN RGM Response Data**********
+20:56:35 - 05-29-2009: [Console Data] : Response ID = 1
+20:56:35 - 05-29-2009: [Console Data] : Correlation ID = 5
+20:56:35 - 05-29-2009: [Console Data] : api-cmd-rsp = get-ep-port-alias-status-failure
+20:56:35 - 05-29-2009: [Console Data] : api-ep-port-alias-name = CATH_LAB-P1-A/1-DVP
+20:56:35 - 05-29-2009: [Console Data] : api-cmd-error = The port alias is either mispelled or it does not exist, use the 'get-ep-port-alias-list' command
+20:56:35 - 05-29-2009: [Console Data] : api-ep-port-alias-status-code = 
+20:56:35 - 05-29-2009: [Console Data] : ******END RGM Response Data**********
+20:56:35 - 05-29-2009: [Console Data] : Port Status Query failure: CATH_LAB-P1-A/1-DVP
+20:56:35 - 05-29-2009: //E1-fbFlash -> 0
+20:56:35 - 05-29-2009: E6-fbFlash -> 0
+20:56:36 - 05-29-2009: //E1-fbFlash -> 1
+20:56:36 - 05-29-2009: E6-fbFlash -> 1
+20:56:37 - 05-29-2009: //E1-fbFlash -> 0
+20:56:37 - 05-29-2009: E6-fbFlash -> 0
+20:56:38 - 05-29-2009: //E1-fbFlash -> 1
+20:56:38 - 05-29-2009: E6-fbFlash -> 1
+20:56:39 - 05-29-2009: //E1-fbFlash -> 0
+20:56:39 - 05-29-2009: E6-fbFlash -> 0
+20:56:40 - 05-29-2009: //E1-fbFlash -> 1
+20:56:40 - 05-29-2009: E6-fbFlash -> 1
+20:56:41 - 05-29-2009: E6-pbConfAccept -> 1
+20:56:41 - 05-29-2009: E6-fbConfAcceptButton -> 1
+20:56:41 - 05-29-2009: RxRoomLocal6 -> 020406:21:Control 1+1101101:03
+20:56:41 - 05-29-2009: //E6-RingGenerator -> 0
+20:56:41 - 05-29-2009: E6-ConferenceState -> 2d
+20:56:41 - 05-29-2009: E6-ConfMessage -> Live With Rivulet 1
+20:56:41 - 05-29-2009: E6-sigConferenceActive -> 1
+20:56:41 - 05-29-2009: E6-btnConfCancelEnable -> 1d
+20:56:41 - 05-29-2009: E6-btnConfAcceptEnable -> 0d
+20:56:41 - 05-29-2009: E6-btnConfDeclineEnable -> 0d
+20:56:41 - 05-29-2009: //E6-EnableVideoInBtn -> 1d
+20:56:41 - 05-29-2009: //E6-EnableVideoOutBtn -> 1d
+20:56:41 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 04 [020406:21:Control 1+1101101:03], state 1
+20:56:41 - 05-29-2009: TxRoomLocal1 -> 020406:21:Control 1+1101101:03
+20:56:41 - 05-29-2009: sAudVidRoutes -> enable:4:6:
+20:56:41 - 05-29-2009: Brk_Conf_Message$ -> Live With Rivulet 1
+20:56:41 - 05-29-2009: E6-btnVideoEnable -> 1d
+20:56:41 - 05-29-2009: //E6-Target1Source -> 0d
+20:56:41 - 05-29-2009: E6-sigConfRoute_Trig -> 1
+20:56:41 - 05-29-2009: [Console Data] : RIV: CMIS Call - Request Connect
+20:56:41 - 05-29-2009: [Console Data] : RIV: Setting up Rivulet 1
+20:56:41 - 05-29-2009: [Console Data] : HVP to HVP
+20:56:41 - 05-29-2009: [Console Data] : RIV: Rqst Rivulet Connect CONTROL_ROOM_A-P1-A/1-DVP to OR8-P1-A/1-DVP submitted
+20:56:41 - 05-29-2009: //E1-RmAttrRemoteSVidCountIn -> 1d
+20:56:41 - 05-29-2009: //E1-RmAttrRemoteRGBCountIn -> 0d
+20:56:41 - 05-29-2009: //E1-RmAttrRemoteHDCountIn -> 1d
+20:56:41 - 05-29-2009: //E1-RmAttrRemoteSVidCountOut -> 1d
+20:56:41 - 05-29-2009: //E1-RmAttrRemoteRGBCountOut -> 0d
+20:56:41 - 05-29-2009: //E1-RmAttrRemoteHDCountOut -> 1d
+20:56:41 - 05-29-2009: E1-ConferenceState -> 2d
+20:56:41 - 05-29-2009: E1-ConfMessage -> Live With Control 1
+20:56:41 - 05-29-2009: //E1-sigConferenceActive -> 1
+20:56:41 - 05-29-2009: //E1-EnableVideoInBtn -> 1d
+20:56:41 - 05-29-2009: //E1-EnableVideoOutBtn -> 1d
+20:56:41 - 05-29-2009: RxRoomLocal1 -> 020604:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03
+20:56:41 - 05-29-2009: //Connect_Control2_to_Wetlab-notused -> 1
+20:56:41 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 06 [020604:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03], state 2
+20:56:41 - 05-29-2009: RxRoomLocal6 -> 020406:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03
+20:56:41 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 04 [020406:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03], state 2
+20:56:41 - 05-29-2009: TxRoomLocal6 -> 020604:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03
+20:56:41 - 05-29-2009: E6-txt_ConfInSource1 -> <aaa>
+20:56:41 - 05-29-2009: E6-txt_ConfInSource2 -> <bbb>
+20:56:41 - 05-29-2009: E6-txt_ConfInSource3 -> <ccc>
+20:56:41 - 05-29-2009: E6-txt_ConfInSource4 -> <ddd>
+20:56:41 - 05-29-2009: Brk_DVI_Conf_Source_Name -> <aaa>
+20:56:41 - 05-29-2009: Brk_SVid_Conf_Source_Name -> <bbb>
+20:56:41 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 04 [020406:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03], state 2
+20:56:41 - 05-29-2009: RxRoomLocal6 -> 020406:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03
+20:56:41 - 05-29-2009: //E6-Target2Source -> 3d
+20:56:41 - 05-29-2009: TxRoomLocal1 -> 020406:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03
+20:56:41 - 05-29-2009: E1-txt_ConfInSource1 -> <aaa>
+20:56:41 - 05-29-2009: E1-txt_ConfInSource2 -> <bbb>
+20:56:41 - 05-29-2009: E1-txt_ConfInSource3 -> <ccc>
+20:56:41 - 05-29-2009: E1-txt_ConfInSource4 -> <ddd>
+20:56:41 - 05-29-2009: E6-pbConfAccept -> 0
+20:56:41 - 05-29-2009: E6-fbConfAcceptButton -> 0
+20:56:41 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Rqst - RQST_CONNECT
+20:56:41 - 05-29-2009: TxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 494\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?><api-envelope><api-version version = "05.01.00.R002" > </api-version> 
+20:56:41 - 05-29-2009: TxRoomLocal1 -> 020406:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03
+20:56:41 - 05-29-2009: TxRivulet -> <correlation id = "6" > </correlation> <binding session-id = "f7536f29-2932-4d55-af83-d0b39ae29bd7" > </binding> <api-cmd-req req = "connect-service" svc-type =
+20:56:41 - 05-29-2009: E6-sigConfRoute_Trig -> 0
+20:56:41 - 05-29-2009: TxRoom1 -> 029901:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+0,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:56:41 - 05-29-2009: //E1-fbFlash -> 0
+20:56:41 - 05-29-2009: TxRoom2 -> 029902:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+0,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:56:41 - 05-29-2009: TxRoom3 -> 029903:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+0,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:56:41 - 05-29-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Womens+2,Sisters+3,Wetlab+0,Control 1+5,Control 2+0,Rivulet 1+7,Rivulet 2+8,+:03
+20:56:41 - 05-29-2009: E6-sysMyRoomID -> 4d
+20:56:41 - 05-29-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Womens+2,Sisters+3,Wetlab+0,Control 1+0,Control 2+0,Rivulet 1+7,Rivulet 2+8,+:03
+20:56:41 - 05-29-2009: E7-sysMyRoomID -> 5d
+20:56:41 - 05-29-2009: E6-fbFlash -> 0
+20:56:41 - 05-29-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+0,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:56:42 - 05-29-2009: E1-sysMyRoomID -> 6d
+20:56:42 - 05-29-2009: E1-Room4Available -> 0
+20:56:42 - 05-29-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+0,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:56:42 - 05-29-2009: E3-sysMyRoomID -> 7d
+20:56:42 - 05-29-2009: E3-Room4Available -> 0
+20:56:42 - 05-29-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+0,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:56:42 - 05-29-2009: TxRivulet ->  "dynamic" svc-bidir = "true" source-alias = "CONTROL_ROOM_A-P1-A/1-DVP" destination-alias = "OR8-P1-A/1-DVP" ><source-selectors ></source-selectors><destinatio
+20:56:42 - 05-29-2009: E6-Room6Available -> 0
+20:56:42 - 05-29-2009: E6-sysRoomCount -> 8d
+20:56:42 - 05-29-2009: E7-Room4Available -> 0
+20:56:42 - 05-29-2009: E7-Room6Available -> 0
+20:56:42 - 05-29-2009: E7-sysRoomCount -> 8d
+20:56:42 - 05-29-2009: E1-sysRoomCount -> 8d
+20:56:42 - 05-29-2009: E3-sysRoomCount -> 8d
+20:56:42 - 05-29-2009: TxRivulet -> n-selectors ></destination-selectors></api-cmd-req></api-envelope>
+20:56:42 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:42 - 05-29-2009: [Console Data] : RIV: Processing CMIS Connection Rqst - RQST_CONNECT
+20:56:42 - 05-29-2009: //ep_status4 -> 1d
+20:56:42 - 05-29-2009: [Console Data] : Hub: ENET: Rivulet status 1 on endpoint 4
+20:56:42 - 05-29-2009: //ep_status6 -> 1d
+20:56:42 - 05-29-2009: [Console Data] : Hub: ENET: Rivulet status 1 on endpoint 6
+20:56:42 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:42 - 05-29-2009: [Console Data] : Hub: Send Update (System Status Messages)
+20:56:42 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:42 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:42 - 05-29-2009: //E1-fbFlash -> 1
+20:56:42 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:42 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:42 - 05-29-2009: E6-fbFlash -> 1
+20:56:43 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:43 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:43 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:43 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:43 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:43 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:43 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:43 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:43 - 05-29-2009: //E1-fbFlash -> 0
+20:56:43 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:43 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:43 - 05-29-2009: E6-fbFlash -> 0
+20:56:44 - 05-29-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:56:44 - 05-29-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:56:44 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:56:44 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:56:44 - 05-29-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+20:56:44 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:44 - 05-29-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+20:56:44 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+20:56:44 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+20:56:44 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:44 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:44 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:44 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:44 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:44 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x14\x01\x00\x15
+20:56:44 - 05-29-2009: //E1-fbFlash -> 1
+20:56:44 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:44 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:44 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+20:56:45 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+20:56:45 - 05-29-2009: E6-fbFlash -> 1
+20:56:45 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x1Ev
+20:56:45 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:45 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:45 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x13\x01\x00\x14
+20:56:45 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+20:56:45 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:45 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:45 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+20:56:45 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+20:56:45 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x15\x01\x00\x16
+20:56:45 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x01Z
+20:56:45 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:45 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:45 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+20:56:45 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+20:56:45 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:45 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA<\x01\x00=
+20:56:45 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+20:56:45 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:45 - 05-29-2009: //E1-fbFlash -> 0
+20:56:45 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:45 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+20:56:45 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+20:56:45 - 05-29-2009: E6-fbFlash -> 0
+20:56:45 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:46 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA@\x01\x00A
+20:56:46 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A@\x14\x98
+20:56:46 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:46 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:46 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+20:56:46 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+20:56:46 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA$\x01\x00%
+20:56:46 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A$d\xCC
+20:56:46 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:46 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:46 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+20:56:46 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:46 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7P\xCB
+20:56:46 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:46 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA%\x01\x00&
+20:56:46 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A%-\x96
+20:56:46 - 05-29-2009: //E1-fbFlash -> 1
+20:56:46 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:46 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:46 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+20:56:46 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8<\xB8
+20:56:46 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA'\x01\x00(
+20:56:46 - 05-29-2009: E6-fbFlash -> 1
+20:56:47 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A'6\xA1
+20:56:47 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:47 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:47 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+20:56:47 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+20:56:47 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:47 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:47 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA(\x01\x00)
+20:56:47 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+20:56:47 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:47 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+20:56:47 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:47 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+20:56:47 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA&\x01\x00'
+20:56:47 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A&L\xB6
+20:56:47 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:47 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:47 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+20:56:47 - 05-29-2009: //E1-fbFlash -> 0
+20:56:47 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+20:56:47 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x12\x01\x00\x13
+20:56:47 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+20:56:47 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:48 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:47 - 05-29-2009: E6-fbFlash -> 0
+20:56:48 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+20:56:48 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+20:56:48 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:48 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:48 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:48 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:48 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:48 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:48 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:48 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:48 - 05-29-2009: //E1-fbFlash -> 1
+20:56:49 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:49 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:48 - 05-29-2009: E6-fbFlash -> 1
+20:56:49 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:49 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:49 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:49 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:49 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:49 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:49 - 05-29-2009: //E1-fbFlash -> 0
+20:56:49 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:49 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:50 - 05-29-2009: E6-fbFlash -> 0
+20:56:50 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:50 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:50 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:50 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:50 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:50 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:50 - 05-29-2009: RxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 546\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?>\x0D\x0A<api-envelope> \x0A<api-version \x0A\x09version = "05.01.00.R005" >\x0A </api-version> \x0A <correlation \x0A\x09id = "6" >\x0A </correlation> \x0A <binding \x0A\x09 session-id = "f7536f29-29
+20:56:50 - 05-29-2009: RxRivulet -> 32-4d55-af83-d0b39ae29bd7" >\x0A </binding>\x0A <api-cmd-rsp \x0A\x09 rsp = "connect-service-failure" >\x0A </api-cmd-rsp> \x0A <api-fault \x0A\x09fault-code-list = "BANDWIDTH_NOT_AVAILABLE" \x0A\x09fault-actor = "RCAS server" \x0A\x09fault-string = "could not connect the service" \x0A\x09fa
+20:56:50 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:50 - 05-29-2009: RxRivulet -> ult-detail = "service failed to connect due to Connect failure"  >\x0A </api-fault>\x0A</api-envelope> \x0A
+20:56:50 - 05-29-2009: //E1-fbFlash -> 1
+20:56:50 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:50 - 05-29-2009: [Console Data] : ******BEGIN RGM Response Data**********
+20:56:50 - 05-29-2009: [Console Data] : Response ID = 1
+20:56:50 - 05-29-2009: [Console Data] : Correlation ID = 6
+20:56:50 - 05-29-2009: [Console Data] : api-cmd-rsp = connect-service-failure
+20:56:50 - 05-29-2009: [Console Data] : api-ep-port-alias-name = 
+20:56:50 - 05-29-2009: [Console Data] : api-cmd-error = service failed to connect due to Connect failure
+20:56:50 - 05-29-2009: [Console Data] : api-ep-port-alias-status-code = 
+20:56:50 - 05-29-2009: [Console Data] : *** Rivulet Connect Failure Msg: service failed to connect due to Connect failure***
+20:56:50 - 05-29-2009: [Console Data] : ******END RGM Response Data**********
+20:56:51 - 05-29-2009: E6-fbFlash -> 1
+20:56:51 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+20:56:51 - 05-29-2009: [Console Data] : RIV: Connecting, ResponseID=1, CorrelationID=6, API_CMD_RESP=connect-service-failure
+20:56:51 - 05-29-2009: [Console Data] : RIV: Connecting, CorrelationID=6
+20:56:51 - 05-29-2009: [Console Data] : found reply...coorid=6
+20:56:51 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:51 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_ERROR
+20:56:51 - 05-29-2009: [Console Data] : RIV: Rivulet Service Error
+20:56:51 - 05-29-2009: [Console Data] : RIVULET: Rivulet serviceid= DISCONNECTED
+20:56:51 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:51 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:51 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:51 - 05-29-2009: //E1-fbFlash -> 0
+20:56:51 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:51 - 05-29-2009: E6-fbFlash -> 0
+20:56:52 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:52 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:52 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:52 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:52 - 05-29-2009: //E1-fbFlash -> 1
+20:56:52 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:52 - 05-29-2009: E6-fbFlash -> 1
+20:56:53 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:53 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:53 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:53 - 05-29-2009: //E1-fbFlash -> 0
+20:56:53 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:53 - 05-29-2009: E6-fbFlash -> 0
+20:56:54 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:54 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:54 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:54 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:54 - 05-29-2009: //E1-fbFlash -> 1
+20:56:54 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:54 - 05-29-2009: E6-fbFlash -> 1
+20:56:55 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:55 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:55 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:55 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:55 - 05-29-2009: //E1-fbFlash -> 0
+20:56:55 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:55 - 05-29-2009: E6-fbFlash -> 0
+20:56:56 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:56 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:56 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:56 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:56 - 05-29-2009: //E1-fbFlash -> 1
+20:56:56 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:56 - 05-29-2009: E6-fbFlash -> 1
+20:56:57 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:57 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:57 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:57 - 05-29-2009: //E1-fbFlash -> 0
+20:56:57 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:57 - 05-29-2009: E6-fbFlash -> 0
+20:56:58 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:58 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:58 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:58 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:58 - 05-29-2009: //E1-fbFlash -> 1
+20:56:58 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:58 - 05-29-2009: E6-fbFlash -> 1
+20:56:59 - 05-29-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:56:59 - 05-29-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:56:59 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:56:59 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:56:59 - 05-29-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+20:56:59 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+20:56:59 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:59 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+20:56:59 - 05-29-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+20:56:59 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:59 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:59 - 05-29-2009: //E1-fbFlash -> 0
+20:56:59 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:56:59 - 05-29-2009: E6-fbFlash -> 0
+20:57:00 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:00 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:00 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:00 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:00 - 05-29-2009: //E1-fbFlash -> 1
+20:57:00 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:00 - 05-29-2009: E6-fbFlash -> 1
+20:57:01 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:01 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:01 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:01 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:01 - 05-29-2009: //E1-fbFlash -> 0
+20:57:01 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:01 - 05-29-2009: E6-fbFlash -> 0
+20:57:02 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:02 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:02 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:02 - 05-29-2009: //E1-fbFlash -> 1
+20:57:02 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:02 - 05-29-2009: E6-fbFlash -> 1
+20:57:03 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:03 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:03 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:03 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:03 - 05-29-2009: //E1-fbFlash -> 0
+20:57:03 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:04 - 05-29-2009: E6-fbFlash -> 0
+20:57:04 - 05-29-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+20:57:04 - 05-29-2009: //ep_status4 -> 5d
+20:57:04 - 05-29-2009: [Console Data] : Hub: ENET: Rivulet status 5 on endpoint 4
+20:57:04 - 05-29-2009: [Console Data] : Hub: RIVULET: Connection not available, 4
+20:57:04 - 05-29-2009: [Console Data] : Hub: ConferenceDisableRoom  4
+20:57:04 - 05-29-2009: sAudVidRoutes -> disable:4:6:
+20:57:04 - 05-29-2009: TxRoomLocal1 -> 020406:22:Control 1+100:03
+20:57:04 - 05-29-2009: [Console Data] : RIV: CMIS Call - Request Disconnect
+20:57:04 - 05-29-2009: [Console Data] : RIV: disconnect rivulet  to 
+20:57:04 - 05-29-2009: //Connect_Control2_to_Wetlab-notused -> 0
+20:57:04 - 05-29-2009: //E1-RmAttrRemoteSVidCountIn -> 0d
+20:57:04 - 05-29-2009: //E1-RmAttrRemoteRGBCountIn -> 0d
+20:57:04 - 05-29-2009: [Console Data] : Hub: ENET: Rivulet status 5 on endpoint 6
+20:57:04 - 05-29-2009: [Console Data] : Hub: RIVULET: Connection not available, 6
+20:57:04 - 05-29-2009: [Console Data] : Hub: ConferenceDisableRoom  6
+20:57:04 - 05-29-2009: //E1-RmAttrRemoteHDCountIn -> 0d
+20:57:04 - 05-29-2009: //E1-RmAttrRemoteSVidCountOut -> 1d
+20:57:04 - 05-29-2009: //E1-RmAttrRemoteRGBCountOut -> 0d
+20:57:04 - 05-29-2009: //E1-RmAttrRemoteHDCountOut -> 0d
+20:57:04 - 05-29-2009: E1-ConferenceState -> 0d
+20:57:04 - 05-29-2009: E1-ConfMessage -> Ready
+20:57:04 - 05-29-2009: E1-fbCallStateFlash -> 0
+20:57:04 - 05-29-2009: //E1-sigConferenceActive -> 0
+20:57:04 - 05-29-2009: E1-btnConfStartEnable -> 1d
+20:57:04 - 05-29-2009: E1-btnConfCancelEnable -> 0d
+20:57:04 - 05-29-2009: //E1-EnableVideoInBtn -> 0d
+20:57:04 - 05-29-2009: //ep_status6 -> 5d
+20:57:04 - 05-29-2009: //E1-EnableVideoOutBtn -> 0d
+20:57:04 - 05-29-2009: E1-txt_ConfInSource1 -> <No Signal>
+20:57:04 - 05-29-2009: E1-txt_ConfInSource2 -> <No Signal>
+20:57:04 - 05-29-2009: E1-txt_ConfInSource3 -> <No Signal>
+20:57:04 - 05-29-2009: E1-txt_ConfInSource4 -> <No Signal>
+20:57:04 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Rqst - RQST_DISCONNECT
+20:57:04 - 05-29-2009: TxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 306\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?><api-envelope><api-version version = "05.01.00.R002" ></api-version> <
+20:57:04 - 05-29-2009: TxRivulet -> correlation id = "7" > </correlation> <binding session-id = "f7536f29-2932-4d55-af83-d0b39ae29bd7" > </binding> <api-cmd-req req = "disconnect-service" service-
+20:57:04 - 05-29-2009: TxRivulet -> id = ""></api-cmd-req> </api-envelope>
+20:57:04 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_DISCONNECTING
+20:57:04 - 05-29-2009: RxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 558\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?>\x0D\x0A<api-envelope> \x0A<api-version \x0A\x09version = "05.01.00.R005" >\x0A </api-version> \x0A <correlation \x0A\x09id = "7" >\x0A </correlation> \x0A <binding \x0A\x09 session-id = "f7536f29-29
+20:57:04 - 05-29-2009: RxRivulet -> 32-4d55-af83-d0b39ae29bd7" >\x0A </binding>\x0A <api-cmd-rsp \x0A\x09 rsp = "disconnect-service-failure" >\x0A </api-cmd-rsp> \x0A <api-fault \x0A\x09fault-code-list = "METHOD_PARAMETERS_DO_NOT_MATCH" \x0A\x09fault-actor = "RCAS server" \x0A\x09fault-string = "Required service id field
+20:57:04 - 05-29-2009: RxRivulet ->  not found" \x0A\x09fault-detail = "the service id field is absent or misspelled"  >\x0A </api-fault>\x0A</api-envelope> \x0A
+20:57:04 - 05-29-2009: [Console Data] : RIV: Processing CMIS Connection Rqst - RQST_DISCONNECT
+20:57:04 - 05-29-2009: //ep_status4 -> 3d
+20:57:04 - 05-29-2009: [Console Data] : Hub: ENET: Rivulet status 3 on endpoint 4
+20:57:04 - 05-29-2009: //ep_status6 -> 3d
+20:57:04 - 05-29-2009: [Console Data] : Hub: ENET: Rivulet status 3 on endpoint 6
+20:57:04 - 05-29-2009: [Console Data] : RIVULET: CMIS DISCONNECTING
+20:57:05 - 05-29-2009: [Console Data] : ******BEGIN RGM Response Data**********
+20:57:05 - 05-29-2009: E6-fbFlash -> 1
+20:57:05 - 05-29-2009: [Console Data] : Response ID = 1
+20:57:05 - 05-29-2009: [Console Data] : Correlation ID = 7
+20:57:05 - 05-29-2009: [Console Data] : api-cmd-rsp = disconnect-service-failure
+20:57:05 - 05-29-2009: [Console Data] : api-ep-port-alias-name = 
+20:57:05 - 05-29-2009: [Console Data] : api-cmd-error = the service id field is absent or misspelled
+20:57:05 - 05-29-2009: [Console Data] : api-ep-port-alias-status-code = 
+20:57:05 - 05-29-2009: [Console Data] : *** Rivulet Disconnect Failure Msg: the service id field is absent or misspelled***
+20:57:05 - 05-29-2009: [Console Data] : ******END RGM Response Data**********
+20:57:05 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_DISCONNECTING
+20:57:05 - 05-29-2009: [Console Data] : RIV: Disconnecting ResponseID=1, CorrelationID=7, API_CMD_RESP=disconnect-service-failure
+20:57:05 - 05-29-2009: [Console Data] : RIV: Disconnecting, CorrelationID=7
+20:57:05 - 05-29-2009: [Console Data] : RIVULET: CMIS DISCONNECTING
+20:57:05 - 05-29-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_ERROR
+20:57:05 - 05-29-2009: [Console Data] : RIV: Rivulet Service Error
+20:57:05 - 05-29-2009: [Console Data] : RIVULET: Rivulet serviceid= DISCONNECTED
+20:57:05 - 05-29-2009: [Console Data] : RIVULET: CMIS DISCONNECTING
+20:57:05 - 05-29-2009: [Console Data] : RIVULET: CMIS DISCONNECTED
+20:57:05 - 05-29-2009: //ep_status4 -> 4d
+20:57:05 - 05-29-2009: [Console Data] : Hub: ENET: Rivulet status 4 on endpoint 4
+20:57:05 - 05-29-2009: [Console Data] : Hub: ENET: Rivulet status 4 on endpoint 6
+20:57:05 - 05-29-2009: //ep_status6 -> 4d
+20:57:05 - 05-29-2009: //ep_status4 -> 0d
+20:57:05 - 05-29-2009: [Console Data] : Hub: ENET: Rivulet status 0 on endpoint 4
+20:57:05 - 05-29-2009: //ep_status6 -> 0d
+20:57:05 - 05-29-2009: [Console Data] : Hub: ENET: Rivulet status 0 on endpoint 6
+20:57:06 - 05-29-2009: E6-fbFlash -> 0
+20:57:07 - 05-29-2009: E6-fbFlash -> 1
+20:57:08 - 05-29-2009: E6-fbFlash -> 0
+20:57:09 - 05-29-2009: E6-fbFlash -> 1
+20:57:10 - 05-29-2009: E6-fbFlash -> 0
+20:57:11 - 05-29-2009: E6-fbFlash -> 1
+20:57:12 - 05-29-2009: E6-fbFlash -> 0
+20:57:13 - 05-29-2009: E6-fbFlash -> 1
+20:57:14 - 05-29-2009: E6-fbFlash -> 0
+20:57:14 - 05-29-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:57:14 - 05-29-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:57:14 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:57:14 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:57:14 - 05-29-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+20:57:14 - 05-29-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+20:57:14 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+20:57:14 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+20:57:15 - 05-29-2009: E6-fbFlash -> 1
+20:57:16 - 05-29-2009: E6-fbFlash -> 0
+20:57:17 - 05-29-2009: E6-fbFlash -> 1
+20:57:18 - 05-29-2009: E6-fbFlash -> 0
+20:57:19 - 05-29-2009: E6-fbFlash -> 1
+20:57:20 - 05-29-2009: E6-fbFlash -> 0
+20:57:20 - 05-29-2009: RxRoomLocal2 -> 020899:10::E0031101101100:03
+20:57:20 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10::E0031101101100:03], state 1
+20:57:20 - 05-29-2009: RxRoomLocal1 -> 020699:10:Rivulet 1:E0031101101100:03
+20:57:20 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 0
+20:57:20 - 05-29-2009: [Console Data] : Hub: ConferenceEnableRoom  6
+20:57:20 - 05-29-2009: TxRoom1 -> 029901:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+0,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:57:20 - 05-29-2009: TxRoom2 -> 029902:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+0,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:57:20 - 05-29-2009: RxRoomLocal3 -> 020799:10:Rivulet 2:E0031101101100:03
+20:57:20 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+20:57:20 - 05-29-2009: TxRoom3 -> 029903:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+0,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:57:20 - 05-29-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Womens+2,Sisters+3,Wetlab+0,Control 1+5,Control 2+6,Rivulet 1+7,Rivulet 2+8,+:03
+20:57:20 - 05-29-2009: E6-sysMyRoomID -> 4d
+20:57:20 - 05-29-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Womens+2,Sisters+3,Wetlab+0,Control 1+0,Control 2+6,Rivulet 1+7,Rivulet 2+8,+:03
+20:57:20 - 05-29-2009: E7-sysMyRoomID -> 5d
+20:57:20 - 05-29-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+0,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:57:20 - 05-29-2009: E1-sysMyRoomID -> 6d
+20:57:20 - 05-29-2009: RxRoom2 -> 020299:10:Sisters:O0031000101100:03
+20:57:20 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Sisters:O0031000101100:03], state 1
+20:57:21 - 05-29-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+0,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:57:21 - 05-29-2009: E3-sysMyRoomID -> 7d
+20:57:21 - 05-29-2009: E6-fbFlash -> 1
+20:57:21 - 05-29-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+0,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:57:21 - 05-29-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101206:03
+20:57:21 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101206:03], state 0
+20:57:21 - 05-29-2009: [Console Data] : Hub: ConferenceEnableRoom  4
+20:57:21 - 05-29-2009: [Console Data] : Hub: ConferenceEndDeadCall invoked
+20:57:21 - 05-29-2009: [Console Data] : Hub: ConferenceEndDeadCall: Room Conference
+20:57:21 - 05-29-2009: TxRoomLocal6 -> 020604:22:Hub+0000000:03
+20:57:21 - 05-29-2009: //E6-RmAttrRemoteSVidCountIn -> 0d
+20:57:21 - 05-29-2009: //E6-RmAttrRemoteRGBCountIn -> 0d
+20:57:21 - 05-29-2009: //E6-RmAttrRemoteHDCountIn -> 0d
+20:57:21 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+20:57:21 - 05-29-2009: //E6-RmAttrRemoteSVidCountOut -> 0d
+20:57:21 - 05-29-2009: //E6-RmAttrRemoteRGBCountOut -> 0d
+20:57:21 - 05-29-2009: //E6-RmAttrRemoteHDCountOut -> 0d
+20:57:21 - 05-29-2009: E6-ConferenceState -> 0d
+20:57:21 - 05-29-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+20:57:21 - 05-29-2009: E6-Room6Available -> 1
+20:57:21 - 05-29-2009: E6-sysRoomCount -> 8d
+20:57:21 - 05-29-2009: E7-Room6Available -> 1
+20:57:21 - 05-29-2009: E7-sysRoomCount -> 8d
+20:57:21 - 05-29-2009: E1-sysRoomCount -> 8d
+20:57:21 - 05-29-2009: E6-ConfMessage -> Ready
+20:57:21 - 05-29-2009: Brk_Conf_Message$ -> No Conference
+20:57:21 - 05-29-2009: E6-fbCallStateFlash -> 0
+20:57:21 - 05-29-2009: E6-fbFlash -> 0
+20:57:21 - 05-29-2009: E6-sigConferenceActive -> 0
+20:57:21 - 05-29-2009: E6-btnVideoEnable -> 0d
+20:57:21 - 05-29-2009: E6-btnConfStartEnable -> 1d
+20:57:21 - 05-29-2009: E6-btnConfCancelEnable -> 0d
+20:57:21 - 05-29-2009: //E6-EnableVideoInBtn -> 0d
+20:57:21 - 05-29-2009: //E6-EnableVideoOutBtn -> 0d
+20:57:21 - 05-29-2009: E6-txt_ConfInSource1 -> <No Signal>
+20:57:21 - 05-29-2009: Brk_DVI_Conf_Source_Name -> <No\x0DSignal>
+20:57:21 - 05-29-2009: E6-txt_ConfInSource2 -> <No Signal>
+20:57:21 - 05-29-2009: Brk_SVid_Conf_Source_Name -> <No\x0DSignal>
+20:57:21 - 05-29-2009: E6-txt_ConfInSource3 -> <No Signal>
+20:57:21 - 05-29-2009: E6-txt_ConfInSource4 -> <No Signal>
+20:57:21 - 05-29-2009: E3-sysRoomCount -> 8d
+20:57:21 - 05-29-2009: E6-General_Buttons_Enable -> 1d
+20:57:21 - 05-29-2009: //E6-Target1Source -> 0d
+20:57:21 - 05-29-2009: TxRoom1 -> 029901:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:57:21 - 05-29-2009: TxRoom2 -> 029902:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:57:21 - 05-29-2009: //E6-Target2Source -> 3d
+20:57:21 - 05-29-2009: TxRoom3 -> 029903:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:57:21 - 05-29-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Womens+2,Sisters+3,Wetlab+0,Control 1+5,Control 2+6,Rivulet 1+7,Rivulet 2+8,+:03
+20:57:21 - 05-29-2009: E6-sysMyRoomID -> 4d
+20:57:21 - 05-29-2009: E6-sysRoomCount -> 8d
+20:57:21 - 05-29-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Womens+2,Sisters+3,Wetlab+4,Control 1+0,Control 2+6,Rivulet 1+7,Rivulet 2+8,+:03
+20:57:22 - 05-29-2009: E7-sysMyRoomID -> 5d
+20:57:22 - 05-29-2009: E7-Room4Available -> 1
+20:57:22 - 05-29-2009: E7-sysRoomCount -> 8d
+20:57:22 - 05-29-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:57:22 - 05-29-2009: E1-sysMyRoomID -> 6d
+20:57:22 - 05-29-2009: E1-Room4Available -> 1
+20:57:22 - 05-29-2009: RxRoom3 -> 020399:10:Wetlab:E0031000101100:03
+20:57:22 - 05-29-2009: E1-sysRoomCount -> 8d
+20:57:22 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+20:57:22 - 05-29-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:57:22 - 05-29-2009: E3-sysMyRoomID -> 7d
+20:57:22 - 05-29-2009: E3-Room4Available -> 1
+20:57:22 - 05-29-2009: E3-sysRoomCount -> 8d
+20:57:22 - 05-29-2009: RxRoom1 -> 020199:10:Womens:O0031000101100:03
+20:57:22 - 05-29-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Womens:O0031000101100:03], state 1
+20:57:22 - 05-29-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:57:22 - 05-29-2009: [Console Data] : Hub: Send Update (System Status Messages)
+20:57:22 - 05-29-2009: [Console Data] : Hub: Send Update (System Status Messages)
+20:57:23 - 05-29-2009: TxRoom1 -> 029901:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:57:23 - 05-29-2009: TxRoom2 -> 029902:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:57:23 - 05-29-2009: TxRoom3 -> 029903:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:57:23 - 05-29-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Womens+2,Sisters+3,Wetlab+0,Control 1+5,Control 2+6,Rivulet 1+7,Rivulet 2+8,+:03
+20:57:23 - 05-29-2009: E6-sysMyRoomID -> 4d
+20:57:23 - 05-29-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Womens+2,Sisters+3,Wetlab+4,Control 1+0,Control 2+6,Rivulet 1+7,Rivulet 2+8,+:03
+20:57:23 - 05-29-2009: E7-sysMyRoomID -> 5d
+20:57:23 - 05-29-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:57:23 - 05-29-2009: E1-sysMyRoomID -> 6d
+20:57:23 - 05-29-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:57:23 - 05-29-2009: E3-sysMyRoomID -> 7d
+20:57:23 - 05-29-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Womens+0,Sisters+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,+:03
+20:57:23 - 05-29-2009: E6-sysRoomCount -> 8d
+20:57:23 - 05-29-2009: E7-sysRoomCount -> 8d
+20:57:23 - 05-29-2009: E1-sysRoomCount -> 8d
+20:57:23 - 05-29-2009: E3-sysRoomCount -> 8d
+20:57:23 - 05-29-2009: [Console Data] : Hub: Send Update (System Status Messages)
+20:57:29 - 05-29-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:57:29 - 05-29-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:57:29 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:57:29 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:57:29 - 05-29-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+20:57:29 - 05-29-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+20:57:29 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+20:57:29 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+20:57:29 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x14\x01\x00\x15
+20:57:30 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+20:57:30 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+20:57:30 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x1Ev
+20:57:30 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x13\x01\x00\x14
+20:57:30 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+20:57:30 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+20:57:30 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+20:57:30 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x15\x01\x00\x16
+20:57:30 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x01Z
+20:57:30 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+20:57:30 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+20:57:30 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA<\x01\x00=
+20:57:30 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+20:57:31 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+20:57:31 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+20:57:31 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA@\x01\x00A
+20:57:31 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A@\x14\x98
+20:57:31 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+20:57:31 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+20:57:31 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA$\x01\x00%
+20:57:31 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A$d\xCC
+20:57:31 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+20:57:31 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7P\xCB
+20:57:31 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA%\x01\x00&
+20:57:31 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A%-\x96
+20:57:32 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+20:57:32 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8<\xB8
+20:57:32 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA'\x01\x00(
+20:57:32 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A'6\xA1
+20:57:32 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+20:57:32 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+20:57:32 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA(\x01\x00)
+20:57:32 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+20:57:32 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+20:57:32 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+20:57:32 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA&\x01\x00'
+20:57:32 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A&L\xB6
+20:57:33 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+20:57:33 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+20:57:33 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x12\x01\x00\x13
+20:57:33 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+20:57:33 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+20:57:33 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+20:57:39 - 05-29-2009: [Console Data] : RIV: Send Port Status Request, CONTROL_ROOM_A-P1-A/1-DVP
+20:57:39 - 05-29-2009: TxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 345\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?><api-envelope><api-version version = "05.01.00.R002" ></api-version> <
+20:57:39 - 05-29-2009: TxRivulet -> correlation id = "8" > </correlation> <binding session-id = "f7536f29-2932-4d55-af83-d0b39ae29bd7" > </binding> <api-cmd-req req = "get-ep-port-alias-status" ep
+20:57:39 - 05-29-2009: TxRivulet -> -port-alias-name = "CONTROL_ROOM_A-P1-A/1-DVP"></api-cmd-req> </api-envelope>
+20:57:40 - 05-29-2009: RxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 452\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?>\x0D\x0A<api-envelope> \x0A<api-version \x0A\x09version = "05.01.00.R005" >\x0A </api-version> \x0A <correlation \x0A\x09id = "8" >\x0A </correlation> \x0A <binding \x0A\x09 session-id = "f7536f29-29
+20:57:40 - 05-29-2009: RxRivulet -> 32-4d55-af83-d0b39ae29bd7" >\x0A </binding>\x0A <api-cmd-rsp \x0A\x09 rsp = "get-ep-port-alias-status-success" \x0A\x09 ep-port-alias-name = "CONTROL_ROOM_A-P1-A/1-DVP" \x0A\x09 ep-port-alias-status-code = "AVAILABLE" \x0A\x09 ep-port-type = "DVP" >\x0A </api-cmd-rsp> \x0A</api-envelop
+20:57:40 - 05-29-2009: RxRivulet -> e> \x0A
+20:57:40 - 05-29-2009: [Console Data] : ******BEGIN RGM Response Data**********
+20:57:40 - 05-29-2009: [Console Data] : Response ID = 1
+20:57:40 - 05-29-2009: [Console Data] : Correlation ID = 8
+20:57:40 - 05-29-2009: [Console Data] : api-cmd-rsp = get-ep-port-alias-status-success
+20:57:40 - 05-29-2009: [Console Data] : api-ep-port-alias-name = CONTROL_ROOM_A-P1-A/1-DVP
+20:57:40 - 05-29-2009: [Console Data] : api-cmd-error = 
+20:57:40 - 05-29-2009: [Console Data] : api-ep-port-alias-status-code = AVAILABLE
+20:57:40 - 05-29-2009: [Console Data] : ******END RGM Response Data**********
+20:57:40 - 05-29-2009: [Console Data] : *** Rivulet Endpoint: CONTROL_ROOM_A-P1-A/1-DVP, AVAILABLE***
+20:57:42 - 05-29-2009: [Console Data] : RIV: Send Port Status Request, CONTROL_ROOM_B-P1-B/1-DVP
+20:57:42 - 05-29-2009: TxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 345\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?><api-envelope><api-version version = "05.01.00.R002" ></api-version> <
+20:57:42 - 05-29-2009: TxRivulet -> correlation id = "9" > </correlation> <binding session-id = "f7536f29-2932-4d55-af83-d0b39ae29bd7" > </binding> <api-cmd-req req = "get-ep-port-alias-status" ep
+20:57:42 - 05-29-2009: TxRivulet -> -port-alias-name = "CONTROL_ROOM_B-P1-B/1-DVP"></api-cmd-req> </api-envelope>
+20:57:42 - 05-29-2009: RxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 452\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?>\x0D\x0A<api-envelope> \x0A<api-version \x0A\x09version = "05.01.00.R005" >\x0A </api-version> \x0A <correlation \x0A\x09id = "9" >\x0A </correlation> \x0A <binding \x0A\x09 session-id = "f7536f29-29
+20:57:42 - 05-29-2009: RxRivulet -> 32-4d55-af83-d0b39ae29bd7" >\x0A </binding>\x0A <api-cmd-rsp \x0A\x09 rsp = "get-ep-port-alias-status-success" \x0A\x09 ep-port-alias-name = "CONTROL_ROOM_B-P1-B/1-DVP" \x0A\x09 ep-port-alias-status-code = "AVAILABLE" \x0A\x09 ep-port-type = "DVP" >\x0A </api-cmd-rsp> \x0A</api-envelop
+20:57:42 - 05-29-2009: RxRivulet -> e> \x0A
+20:57:42 - 05-29-2009: [Console Data] : ******BEGIN RGM Response Data**********
+20:57:42 - 05-29-2009: [Console Data] : Response ID = 1
+20:57:42 - 05-29-2009: [Console Data] : Correlation ID = 9
+20:57:42 - 05-29-2009: [Console Data] : api-cmd-rsp = get-ep-port-alias-status-success
+20:57:42 - 05-29-2009: [Console Data] : api-ep-port-alias-name = CONTROL_ROOM_B-P1-B/1-DVP
+20:57:42 - 05-29-2009: [Console Data] : api-cmd-error = 
+20:57:42 - 05-29-2009: [Console Data] : api-ep-port-alias-status-code = AVAILABLE
+20:57:42 - 05-29-2009: [Console Data] : ******END RGM Response Data**********
+20:57:42 - 05-29-2009: [Console Data] : *** Rivulet Endpoint: CONTROL_ROOM_B-P1-B/1-DVP, AVAILABLE***
+20:57:44 - 05-29-2009: [Console Data] : RIV: Send Port Status Request, OR8-P1-A/1-DVP
+20:57:44 - 05-29-2009: TxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 335\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?><api-envelope><api-version version = "05.01.00.R002" ></api-version> <
+20:57:44 - 05-29-2009: TxRivulet -> correlation id = "10" > </correlation> <binding session-id = "f7536f29-2932-4d55-af83-d0b39ae29bd7" > </binding> <api-cmd-req req = "get-ep-port-alias-status" e
+20:57:44 - 05-29-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:57:44 - 05-29-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:57:44 - 05-29-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:57:44 - 05-29-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+20:57:44 - 05-29-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+20:57:44 - 05-29-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+20:57:44 - 05-29-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+20:57:44 - 05-29-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+20:57:44 - 05-29-2009: TxRivulet -> p-port-alias-name = "OR8-P1-A/1-DVP"></api-cmd-req> </api-envelope>
+20:57:44 - 05-29-2009: RxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 442\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?>\x0D\x0A<api-envelope> \x0A<api-version \x0A\x09version = "05.01.00.R005" >\x0A </api-version> \x0A <correlation \x0A\x09id = "10" >\x0A </correlation> \x0A <binding \x0A\x09 session-id = "f7536f29-2
+20:57:44 - 05-29-2009: RxRivulet -> 932-4d55-af83-d0b39ae29bd7" >\x0A </binding>\x0A <api-cmd-rsp \x0A\x09 rsp = "get-ep-port-alias-status-success" \x0A\x09 ep-port-alias-name = "OR8-P1-A/1-DVP" \x0A\x09 ep-port-alias-status-code = "AVAILABLE" \x0A\x09 ep-port-type = "DVP" >\x0A </api-cmd-rsp> \x0A</api-envelope> \x0A
+20:57:44 - 05-29-2009: [Console Data] : ******BEGIN RGM Response Data**********
+20:57:44 - 05-29-2009: [Console Data] : Response ID = 1
+20:57:44 - 05-29-2009: [Console Data] : Correlation ID = 10
+20:57:44 - 05-29-2009: [Console Data] : api-cmd-rsp = get-ep-port-alias-status-success
+20:57:44 - 05-29-2009: [Console Data] : api-ep-port-alias-name = OR8-P1-A/1-DVP
+20:57:44 - 05-29-2009: [Console Data] : api-cmd-error = 
+20:57:44 - 05-29-2009: [Console Data] : api-ep-port-alias-status-code = AVAILABLE
+20:57:45 - 05-29-2009: [Console Data] : ******END RGM Response Data**********
+20:57:45 - 05-29-2009: [Console Data] : *** Rivulet Endpoint: OR8-P1-A/1-DVP, AVAILABLE***
+20:57:46 - 05-29-2009: [Console Data] : RIV: Send Port Status Request, CATH_LAB-P1-A/1-DVP
+20:57:46 - 05-29-2009: TxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 340\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?><api-envelope><api-version version = "05.01.00.R002" ></api-version> <
+20:57:46 - 05-29-2009: TxRivulet -> correlation id = "11" > </correlation> <binding session-id = "f7536f29-2932-4d55-af83-d0b39ae29bd7" > </binding> <api-cmd-req req = "get-ep-port-alias-status" e
+20:57:46 - 05-29-2009: TxRivulet -> p-port-alias-name = "CATH_LAB-P1-A/1-DVP"></api-cmd-req> </api-envelope>
+20:57:46 - 05-29-2009: RxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 688\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?>\x0D\x0A<api-envelope> \x0A<api-version \x0A\x09version = "05.01.00.R005" >\x0A </api-version> \x0A <correlation \x0A\x09id = "11" >\x0A </correlation> \x0A <binding \x0A\x09 session-id = "f7536f29-2
+20:57:47 - 05-29-2009: RxRivulet -> 932-4d55-af83-d0b39ae29bd7" >\x0A </binding>\x0A <api-cmd-rsp \x0A\x09 rsp = "get-ep-port-alias-status-failure" \x0A\x09 ep-port-alias-name = "CATH_LAB-P1-A/1-DVP" >\x0A </api-cmd-rsp> \x0A <api-fault \x0A\x09fault-code-list = "PORT_ALIAS_DOES_NOT_EXIST" \x0A\x09fault-actor = "RCAS ser
+20:57:47 - 05-29-2009: RxRivulet -> ver" \x0A\x09fault-string = "Port alias could not be found in the configuration of the system" \x0A\x09fault-detail = "The port alias is either mispelled or it does not exist, use the 'get-ep-port-alias-list' command"  >\x0A </api-fault>\x0A</api-envelope> \x0A
+20:57:47 - 05-29-2009: [Console Data] : ******BEGIN RGM Response Data**********
+20:57:47 - 05-29-2009: [Console Data] : Response ID = 1
+20:57:47 - 05-29-2009: [Console Data] : Correlation ID = 11
+20:57:47 - 05-29-2009: [Console Data] : api-cmd-rsp = get-ep-port-alias-status-failure
+20:57:47 - 05-29-2009: [Console Data] : api-ep-port-alias-name = CATH_LAB-P1-A/1-DVP
+20:57:47 - 05-29-2009: [Console Data] : api-cmd-error = The port alias is either mispelled or it does not exist, use the 'get-ep-port-alias-list' command
+20:57:47 - 05-29-2009: [Console Data] : api-ep-port-alias-status-code = 
+20:57:47 - 05-29-2009: [Console Data] : ******END RGM Response Data**********
+20:57:47 - 05-29-2009: [Console Data] : Port Status Query failure: CATH_LAB-P1-A/1-DVP

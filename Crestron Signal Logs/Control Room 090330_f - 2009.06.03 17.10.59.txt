@@ -1,0 +1,2209 @@
+16:41:43 - 06-03-2009: E3-pg_HwRestart -> 1
+16:41:43 - 06-03-2009: E3-pbSource1fb -> 1
+16:41:43 - 06-03-2009: E3-pbTarget4fb -> 1
+16:41:43 - 06-03-2009: E3-btnConfStartEnable -> 1d
+16:41:43 - 06-03-2009: E3-btnPrivacyEnable -> 1d
+16:41:43 - 06-03-2009: sVersion -> S/W Version: 1.3A02
+16:41:43 - 06-03-2009: sLogic -> Logic: 263-XXXX-YY-ZZ
+16:41:43 - 06-03-2009: sPhoneNumber -> Technical Support: (800) 470-1106
+16:41:43 - 06-03-2009: sFacilityName -> Julie Penrose Health Education
+16:41:43 - 06-03-2009: E3-SysAttrRoomName -> Rivulet 2
+16:41:43 - 06-03-2009: E3-ConfMessage -> Ready
+16:41:43 - 06-03-2009: E3-Room1Name -> Sisters
+16:41:43 - 06-03-2009: E3-Room2Name -> Womens
+16:41:43 - 06-03-2009: E3-Room3Name -> Wetlab
+16:41:43 - 06-03-2009: E3-Room4Name -> Control 1
+16:41:43 - 06-03-2009: E3-Room5Name -> Control 2
+16:41:43 - 06-03-2009: E3-Room6Name -> Rivulet 1
+16:41:43 - 06-03-2009: E3-Room7Name -> Rivulet 2
+16:41:43 - 06-03-2009: E3-Room8Name -> St. Francis
+16:41:43 - 06-03-2009: E1-pg_HwRestart -> 1
+16:41:43 - 06-03-2009: E1-pbSource1fb -> 1
+16:41:43 - 06-03-2009: E1-pbTarget4fb -> 1
+16:41:43 - 06-03-2009: E1-btnConfStartEnable -> 1d
+16:41:43 - 06-03-2009: E1-btnPrivacyEnable -> 1d
+16:41:43 - 06-03-2009: E1-SysAttrRoomName -> Rivulet 1
+16:41:43 - 06-03-2009: E1-ConfMessage -> Ready
+16:41:43 - 06-03-2009: E1-Room1Name -> Sisters
+16:41:43 - 06-03-2009: E1-Room2Name -> Womens
+16:41:43 - 06-03-2009: E1-Room3Name -> Wetlab
+16:41:43 - 06-03-2009: E1-Room4Name -> Control 1
+16:41:43 - 06-03-2009: E1-Room5Name -> Control 2
+16:41:43 - 06-03-2009: E1-Room6Name -> Rivulet 1
+16:41:43 - 06-03-2009: E1-Room7Name -> Rivulet 2
+16:41:43 - 06-03-2009: E1-Room8Name -> St. Francis
+16:41:43 - 06-03-2009: RoomEnable4 -> 1
+16:41:43 - 06-03-2009: RoomConnect4 -> 1
+16:41:43 - 06-03-2009: RoomStatus4 -> 2d
+16:41:43 - 06-03-2009: //IP-ID-08_Connect-F -> 1
+16:41:43 - 06-03-2009: //IP-ID-08_status -> 2d
+16:41:43 - 06-03-2009: RoomEnable9 -> 1
+16:41:43 - 06-03-2009: RoomConnect9 -> 1
+16:41:43 - 06-03-2009: RoomStatus9 -> 2d
+16:41:43 - 06-03-2009: RoomEnable12 -> 1
+16:41:43 - 06-03-2009: RoomConnect12 -> 1
+16:41:43 - 06-03-2009: RoomStatus12 -> 2d
+16:41:43 - 06-03-2009: RivLinkEnable -> 1
+16:41:43 - 06-03-2009: RivLinkStatus -> 3d
+16:41:43 - 06-03-2009: E2-pg_HwRestart -> 1
+16:41:43 - 06-03-2009: E2-pbSource1fb -> 1
+16:41:43 - 06-03-2009: E2-pbTarget4fb -> 1
+16:41:43 - 06-03-2009: E2-btnConfStartEnable -> 1d
+16:41:43 - 06-03-2009: E2-btnPrivacyEnable -> 1d
+16:41:43 - 06-03-2009: E2-SysAttrRoomName -> St. Francis
+16:41:43 - 06-03-2009: E2-ConfMessage -> Ready
+16:41:43 - 06-03-2009: E2-Room1Name -> Sisters
+16:41:43 - 06-03-2009: E2-Room2Name -> Womens
+16:41:43 - 06-03-2009: E2-Room3Name -> Wetlab
+16:41:43 - 06-03-2009: E2-Room4Name -> Control 1
+16:41:43 - 06-03-2009: E2-Room5Name -> Control 2
+16:41:43 - 06-03-2009: E2-Room6Name -> Rivulet 1
+16:41:43 - 06-03-2009: E2-Room7Name -> Rivulet 2
+16:41:43 - 06-03-2009: E2-Room8Name -> St. Francis
+16:41:43 - 06-03-2009: Lect_Manual_Focus_FB -> 1
+16:41:43 - 06-03-2009: Brk_RightLCD_Power_+ -> 1
+16:41:43 - 06-03-2009: Brk_Wireless_Mute_FB -> 1
+16:41:43 - 06-03-2009: Ctrl_Overflow_Disable -> 1
+16:41:43 - 06-03-2009: Ctrl_BottomLCD_Power_FB -> 1
+16:41:43 - 06-03-2009: E6-pg_HwRestart -> 1
+16:41:43 - 06-03-2009: E6-pbSource1fb -> 1
+16:41:43 - 06-03-2009: E6-pbTarget4fb -> 1
+16:41:43 - 06-03-2009: E7-pg_HwRestart -> 1
+16:41:43 - 06-03-2009: E7-pbSource1fb -> 1
+16:41:43 - 06-03-2009: E7-pbTarget4fb -> 1
+16:41:43 - 06-03-2009: Focus_Mode -> 1d
+16:41:43 - 06-03-2009: Lect_Speech_Mute_Ind -> 1d
+16:41:43 - 06-03-2009: Lect_Program_Mute_Ind -> 1d
+16:41:43 - 06-03-2009: Brk_Main_Mute_Ind -> 1d
+16:41:43 - 06-03-2009: VTC_Enable_Buttons -> 1d
+16:41:43 - 06-03-2009: INI_Modes -> 1d
+16:41:43 - 06-03-2009: Offsite_Room_1_Available -> 1d
+16:41:43 - 06-03-2009: E6-btnConfStartEnable -> 1d
+16:41:43 - 06-03-2009: E6-btnPrivacyEnable -> 1d
+16:41:43 - 06-03-2009: E7-btnConfStartEnable -> 1d
+16:41:43 - 06-03-2009: E7-btnPrivacyEnable -> 1d
+16:41:43 - 06-03-2009: Lect_Call_Status -> Channel 7 idle
+16:41:43 - 06-03-2009: Lect_Conf_Message$ -> No Conference
+16:41:43 - 06-03-2009: Brk_Connect_Message$ -> Local
+16:41:43 - 06-03-2009: Brk_DVI_Conf_Source_Name -> <No\x0DSignal>
+16:41:43 - 06-03-2009: Brk_SVid_Conf_Source_Name -> <No\x0DSignal>
+16:41:43 - 06-03-2009: E6-SysAttrRoomName -> Control 1
+16:41:43 - 06-03-2009: E6-ConfMessage -> Ready
+16:41:43 - 06-03-2009: E6-Room1Name -> Sisters
+16:41:43 - 06-03-2009: E6-Room2Name -> Womens
+16:41:43 - 06-03-2009: E6-Room3Name -> Wetlab
+16:41:43 - 06-03-2009: E6-Room4Name -> Control 1
+16:41:43 - 06-03-2009: E6-Room5Name -> Control 2
+16:41:43 - 06-03-2009: E6-Room6Name -> Rivulet 1
+16:41:43 - 06-03-2009: E6-Room7Name -> Rivulet 2
+16:41:43 - 06-03-2009: E6-Room8Name -> St. Francis
+16:41:43 - 06-03-2009: E7-SysAttrRoomName -> Control 2
+16:41:43 - 06-03-2009: E7-ConfMessage -> Ready
+16:41:43 - 06-03-2009: E7-Room1Name -> Sisters
+16:41:43 - 06-03-2009: E7-Room2Name -> Womens
+16:41:43 - 06-03-2009: E7-Room3Name -> Wetlab
+16:41:43 - 06-03-2009: E7-Room4Name -> Control 1
+16:41:43 - 06-03-2009: E7-Room5Name -> Control 2
+16:41:43 - 06-03-2009: E7-Room6Name -> Rivulet 1
+16:41:43 - 06-03-2009: E7-Room7Name -> Rivulet 2
+16:41:43 - 06-03-2009: E7-Room8Name -> St. Francis
+16:41:43 - 06-03-2009: Brk_Conf_Message$ -> No Conference
+16:41:43 - 06-03-2009: Lect_DVI_Conf_Source_Name -> <No Source>
+16:41:43 - 06-03-2009: Lect_SVid_Conf_Source_Name -> <No Source>
+16:41:43 - 06-03-2009: Init_Stage_1 -> 1
+16:41:43 - 06-03-2009: Init_Stage_2 -> 1
+16:41:43 - 06-03-2009: Init_Stage_3 -> 1
+16:41:43 - 06-03-2009: Init_Stage3_Complete -> 1
+16:41:43 - 06-03-2009: E1-RmAttrConferenceFlag -> 1
+16:41:43 - 06-03-2009: E1-RmAttrPermissionFlag -> 1
+16:41:43 - 06-03-2009: LocalEnable1 -> 1
+16:41:43 - 06-03-2009: E1-RmAttrSVidCountIn -> 1d
+16:41:43 - 06-03-2009: E1-RmAttrHDCountIn -> 1d
+16:41:43 - 06-03-2009: E1-RmAttrSVidCountOut -> 1d
+16:41:43 - 06-03-2009: E1-RmAttrHDCountOut -> 1d
+16:41:43 - 06-03-2009: E1_Init_0_Complete -> 1
+16:41:43 - 06-03-2009: E1_Init_1_Complete -> 1
+16:41:43 - 06-03-2009: E1_Init_2_Complete -> 1
+16:41:43 - 06-03-2009: E1_Init_3_Complete -> 1
+16:41:43 - 06-03-2009: LocalConnect1 -> 1
+16:41:43 - 06-03-2009: E1-Room4Available -> 1
+16:41:43 - 06-03-2009: E1-Room5Available -> 1
+16:41:43 - 06-03-2009: E1-sysRoomCount -> 8d
+16:41:43 - 06-03-2009: E1-sysMyRoomID -> 6d
+16:41:43 - 06-03-2009: //NotNeeded-btnVTCEnable -> 2d
+16:41:43 - 06-03-2009: E1-txt_ConfInSource1 -> <No Signal>
+16:41:43 - 06-03-2009: E1-txt_ConfInSource2 -> <No Signal>
+16:41:43 - 06-03-2009: E1-txt_ConfInSource3 -> <No Signal>
+16:41:43 - 06-03-2009: E1-txt_ConfInSource4 -> <No Signal>
+16:41:43 - 06-03-2009: //E1-Target2Source -> 3d
+16:41:43 - 06-03-2009: E1-TargetRoomName -> Please Select
+16:41:43 - 06-03-2009: E1-Room1Available_FB -> 1
+16:41:43 - 06-03-2009: E2-RmAttrConferenceFlag -> 1
+16:41:43 - 06-03-2009: E2-RmAttrPermissionFlag -> 1
+16:41:43 - 06-03-2009: LocalEnable2 -> 1
+16:41:43 - 06-03-2009: E2-RmAttrSVidCountIn -> 1d
+16:41:43 - 06-03-2009: E2-RmAttrHDCountIn -> 1d
+16:41:43 - 06-03-2009: E2-RmAttrSVidCountOut -> 1d
+16:41:43 - 06-03-2009: E2-RmAttrHDCountOut -> 1d
+16:41:43 - 06-03-2009: E2_Init_0_Complete -> 1
+16:41:43 - 06-03-2009: E2_Init_1_Complete -> 1
+16:41:43 - 06-03-2009: E2_Init_2_Complete -> 1
+16:41:43 - 06-03-2009: E2_Init_3_Complete -> 1
+16:41:43 - 06-03-2009: LocalConnect2 -> 1
+16:41:43 - 06-03-2009: E2-Room4Available -> 1
+16:41:43 - 06-03-2009: E2-Room5Available -> 1
+16:41:43 - 06-03-2009: E2-sysRoomCount -> 8d
+16:41:43 - 06-03-2009: E2-sysMyRoomID -> 8d
+16:41:43 - 06-03-2009: E2-txt_ConfInSource1 -> <No Signal>
+16:41:43 - 06-03-2009: E2-txt_ConfInSource2 -> <No Signal>
+16:41:43 - 06-03-2009: E2-txt_ConfInSource3 -> <No Signal>
+16:41:43 - 06-03-2009: E2-txt_ConfInSource4 -> <No Signal>
+16:41:43 - 06-03-2009: //E2-Target2Source -> 3d
+16:41:43 - 06-03-2009: E2-TargetRoomName -> Please Select
+16:41:43 - 06-03-2009: E3-RmAttrConferenceFlag -> 1
+16:41:43 - 06-03-2009: E3-RmAttrPermissionFlag -> 1
+16:41:43 - 06-03-2009: LocalEnable3 -> 1
+16:41:43 - 06-03-2009: E3-RmAttrSVidCountIn -> 1d
+16:41:43 - 06-03-2009: E3-RmAttrHDCountIn -> 1d
+16:41:43 - 06-03-2009: E3-RmAttrSVidCountOut -> 1d
+16:41:43 - 06-03-2009: E3-RmAttrHDCountOut -> 1d
+16:41:43 - 06-03-2009: E3_Init_0_Complete -> 1
+16:41:43 - 06-03-2009: E3_Init_1_Complete -> 1
+16:41:43 - 06-03-2009: E3_Init_2_Complete -> 1
+16:41:43 - 06-03-2009: E3_Init_3_Complete -> 1
+16:41:43 - 06-03-2009: LocalConnect3 -> 1
+16:41:43 - 06-03-2009: E3-Room4Available -> 1
+16:41:43 - 06-03-2009: E3-Room5Available -> 1
+16:41:43 - 06-03-2009: E3-sysRoomCount -> 8d
+16:41:43 - 06-03-2009: E3-sysMyRoomID -> 7d
+16:41:43 - 06-03-2009: E3-txt_ConfInSource1 -> <No Signal>
+16:41:43 - 06-03-2009: E3-txt_ConfInSource2 -> <No Signal>
+16:41:43 - 06-03-2009: E3-txt_ConfInSource3 -> <No Signal>
+16:41:43 - 06-03-2009: E3-txt_ConfInSource4 -> <No Signal>
+16:41:43 - 06-03-2009: //E3-Target2Source -> 3d
+16:41:44 - 06-03-2009: E3-TargetRoomName -> Please Select
+16:41:44 - 06-03-2009: //S-5.2.1_Power_Off_Fb -> 1
+16:41:44 - 06-03-2009: Lect_No_Conference -> 1
+16:41:44 - 06-03-2009: Lect_Projector_Power_OFF -> 1
+16:41:44 - 06-03-2009: Lect_RearLCD_Power_OFF_FB -> 1
+16:41:44 - 06-03-2009: //S-6.2.1_Power_Off_Fb -> 1
+16:41:44 - 06-03-2009: //S-6.3.1.1_Power_Off_FB -> 1
+16:41:44 - 06-03-2009: //S-6.3.1.1_Input_ExtronSVid_FB -> 1
+16:41:44 - 06-03-2009: //S-6.3.1.1_Audio_Mute_Off_FB -> 1
+16:41:44 - 06-03-2009: Brk_LeftLCD_Power_4 -> 1
+16:41:44 - 06-03-2009: Brk_LeftLCD_Power_3 -> 1
+16:41:44 - 06-03-2009: //S-6.3.2.1_Input_ExtronSVid_FB -> 1
+16:41:44 - 06-03-2009: //S-6.3.2.1_Audio_Mute_Off_FB -> 1
+16:41:44 - 06-03-2009: //S-6.3.2.1_Aspect_Normal_FB -> 1
+16:41:44 - 06-03-2009: //S-6.3.2.1_PIP_Off_FB -> 1
+16:41:44 - 06-03-2009: //S-6.3.2.1_PIP_Input_Video_Fb -> 1
+16:41:44 - 06-03-2009: //S-6.3.2.1_Contrast_Bar -> 52428d
+16:41:44 - 06-03-2009: //S-6.3.2.1_Brightness_Bar -> 32767d
+16:41:44 - 06-03-2009: //S-6.3.2.1_Tint_Bar -> 32767d
+16:41:44 - 06-03-2009: //S-6.3.2.1_Sharpness_Bar -> 32767d
+16:41:44 - 06-03-2009: //S-6.3.2.1_Volume_Bar -> 7208d
+16:41:44 - 06-03-2009: Brk_RightLCD_Power_4 -> 1
+16:41:44 - 06-03-2009: Brk_Message -> 1
+16:41:44 - 06-03-2009: Brk_No_Conference -> 1
+16:41:44 - 06-03-2009: Lect_Program_1_Mute_FB_NOT -> 1
+16:41:44 - 06-03-2009: Lect_Speech_Mute_FB_NOT -> 1
+16:41:44 - 06-03-2009: Brk_Main_Mute_FB_NOT -> 1
+16:41:44 - 06-03-2009: //S-6.1.1.2.12_NOM-OFF-FB -> 1
+16:41:44 - 06-03-2009: Brk_Conf_Wetlab_Oneshot -> 1
+16:41:44 - 06-03-2009: Hardroute_Lecture_DocCam -> 1
+16:41:44 - 06-03-2009: Hardroute_Lecture_DVD -> 1
+16:41:44 - 06-03-2009: //S-6.9.1.1_Power_Off_FB -> 1
+16:41:44 - 06-03-2009: //S-6.9.2.1_Input_PC_FB -> 1
+16:41:44 - 06-03-2009: //S-6.9.2.1_Audio_Mute_Off_FB -> 1
+16:41:44 - 06-03-2009: //S-6.9.2.1_Aspect_ExtronRGBWide_FB -> 1
+16:41:44 - 06-03-2009: //S-6.9.2.1_PIP_Off_FB -> 1
+16:41:44 - 06-03-2009: //S-6.9.2.1_PIP_Input_Video_Fb -> 1
+16:41:44 - 06-03-2009: //S-6.9.2.1_Contrast_Bar -> 58981d
+16:41:44 - 06-03-2009: S-6.//9.2.1_Brightness_Bar -> 63568d
+16:41:44 - 06-03-2009: //S-6.9.2.1_Volume_Bar -> 6553d
+16:41:44 - 06-03-2009: LocalConnect6 -> 1
+16:41:44 - 06-03-2009: LocalConnect7 -> 1
+16:41:44 - 06-03-2009: ConfHubComplete -> 1
+16:41:44 - 06-03-2009: LocalEnable6 -> 1
+16:41:44 - 06-03-2009: LocalEnable7 -> 1
+16:41:44 - 06-03-2009: E6-RmAttrConferenceFlag -> 1
+16:41:44 - 06-03-2009: E7-RmAttrConferenceFlag -> 1
+16:41:44 - 06-03-2009: E6-RmAttrPermissionFlag -> 1
+16:41:44 - 06-03-2009: E7-RmAttrPermissionFlag -> 1
+16:41:44 - 06-03-2009: E6-RmAttrSVidCountIn -> 1d
+16:41:44 - 06-03-2009: E7-RmAttrSVidCountIn -> 1d
+16:41:44 - 06-03-2009: E6-RmAttrHDCountIn -> 1d
+16:41:44 - 06-03-2009: E7-RmAttrHDCountIn -> 1d
+16:41:44 - 06-03-2009: E6-RmAttrSVidCountOut -> 1d
+16:41:44 - 06-03-2009: E7-RmAttrSVidCountOut -> 1d
+16:41:44 - 06-03-2009: E6-RmAttrHDCountOut -> 1d
+16:41:44 - 06-03-2009: E7-RmAttrHDCountOut -> 1d
+16:41:44 - 06-03-2009: E6-txt_ConfInSource2 -> <No Signal>
+16:41:44 - 06-03-2009: E7-txt_ConfInSource2 -> <No Signal>
+16:41:44 - 06-03-2009: E6-txt_ConfInSource1 -> <No Signal>
+16:41:44 - 06-03-2009: E7-txt_ConfInSource1 -> <No Signal>
+16:41:44 - 06-03-2009: E6_Init_0_Complete -> 1
+16:41:44 - 06-03-2009: E6_Init_1_Complete -> 1
+16:41:44 - 06-03-2009: E6_Init_2_Complete -> 1
+16:41:44 - 06-03-2009: E6_Init_3_Complete -> 1
+16:41:44 - 06-03-2009: E6-Room1Available -> 1
+16:41:44 - 06-03-2009: E6-Room2Available -> 1
+16:41:44 - 06-03-2009: E6-Room3Available -> 1
+16:41:44 - 06-03-2009: E6-Room5Available -> 1
+16:41:44 - 06-03-2009: E6-Room6Available -> 1
+16:41:44 - 06-03-2009: E6-Room7Available -> 1
+16:41:44 - 06-03-2009: E6-Room8Available -> 1
+16:41:44 - 06-03-2009: E6-sysRoomCount -> 8d
+16:41:44 - 06-03-2009: E6-sysMyRoomID -> 4d
+16:41:44 - 06-03-2009: E6-txt_ConfInSource3 -> <No Signal>
+16:41:44 - 06-03-2009: E6-txt_ConfInSource4 -> <No Signal>
+16:41:44 - 06-03-2009: //E6-Target2Source -> 3d
+16:41:44 - 06-03-2009: E6-TargetRoomName -> Please Select
+16:41:44 - 06-03-2009: E7_Init_0_Complete -> 1
+16:41:44 - 06-03-2009: E7_Init_1_Complete -> 1
+16:41:44 - 06-03-2009: E7_Init_2_Complete -> 1
+16:41:44 - 06-03-2009: E7_Init_3_Complete -> 1
+16:41:44 - 06-03-2009: E7-Room1Available -> 1
+16:41:44 - 06-03-2009: E7-Room2Available -> 1
+16:41:44 - 06-03-2009: E7-Room3Available -> 1
+16:41:44 - 06-03-2009: E7-Room4Available -> 1
+16:41:44 - 06-03-2009: E7-Room6Available -> 1
+16:41:44 - 06-03-2009: E7-Room7Available -> 1
+16:41:44 - 06-03-2009: E7-Room8Available -> 1
+16:41:44 - 06-03-2009: E7-sysRoomCount -> 8d
+16:41:44 - 06-03-2009: E7-sysMyRoomID -> 5d
+16:41:44 - 06-03-2009: E7-txt_ConfInSource3 -> <No Signal>
+16:41:44 - 06-03-2009: E7-txt_ConfInSource4 -> <No Signal>
+16:41:44 - 06-03-2009: //E7-Target2Source -> 3d
+16:41:44 - 06-03-2009: E7-TargetRoomName -> Please Select
+16:41:44 - 06-03-2009: //S-6.5.1_Near_End_Camera_is_Active -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Video_Input_is_2_(Aux_Cam) -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Audio_Input_Mic1_is_On -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Audio_Input_Mic2_is_On -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Audio_Input_Mic3_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Audio_Input_Line1_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Receive_Input_is_1 -> 1
+16:41:44 - 06-03-2009: Lect_VTC_PIP_OFF_FB -> 1
+16:41:44 - 06-03-2009: //Lect_VTCSend_Privacy_OFF_FB -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Volume_Level -> 46531d
+16:41:44 - 06-03-2009: //S-7.5.1_Volume_Mute_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Dial_Call_Quality_Auto_is_Selected -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Dial_Call_Type_IP_is_Selected -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Dial_Call_Restricted_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_DuoVideo_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_MCU_State_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_MCU_State_is_Continuous_Presence -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Filter_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Speaker_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Selfview_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Do_Not_Disturb_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Multisite_Receive_is_On -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Stream_Auto_is_On -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Stream_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Access_Code_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Snapshot_Source_is_Video_1 -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Presentation_Mode_is_Normal -> 1
+16:41:44 - 06-03-2009: //Lect_VTCSend_Auto_Answer_OFF_FB -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Auto_PIP_is_On -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Number_of_Monitors_is_2 -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_ScreenSaver_is_On -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Encrypt_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Volume_Mute_Input_1_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Volume_Mute_Input_2_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Volume_Mute_Input_3_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Volume_Mute_Input_4_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Volume_Mute_Input_5_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Volume_Mute_Input_6_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Volume_Mute_Output_1_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Volume_Mute_Output_2_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Volume_Mute_Output_3_is_Off -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_ISDN_Bandwidth -> 512d
+16:41:44 - 06-03-2009: //S-6.5.1_LAN_Bandwidth -> 1920d
+16:41:44 - 06-03-2009: //S-6.5.1_Natural_Presentation_Available -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_MCU_Available -> 1
+16:41:44 - 06-03-2009: //S-6.5.1_Tandberg_Video_Switch(TVS)_is_Not_Co -> 1
+16:41:44 - 06-03-2009: Brk_Conf_Storz_Oneshot -> 1
+16:41:44 - 06-03-2009: Lect_Conf_Storz_Oneshot -> 1
+16:41:44 - 06-03-2009: Brk_Conf_Womens_Down -> 1
+16:41:44 - 06-03-2009: Brk_Conf_Sisters_Down -> 1
+16:41:44 - 06-03-2009: Brk_Conf_Down_Crtl_19 -> 1
+16:41:44 - 06-03-2009: Init_Stage0_Complete -> 1
+16:41:44 - 06-03-2009: Init_Stage1_Complete -> 1
+16:41:44 - 06-03-2009: Init_Stage2_Complete -> 1
+16:41:44 - 06-03-2009: [Console Data] : 
+16:41:46 - 06-03-2009: [Console Data] : RACK2>
+16:41:46 - 06-03-2009: RxRoomLocal1 -> 020699:10:Rivulet 1:E0031101101100:03
+16:41:46 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+16:41:46 - 06-03-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+16:41:46 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101100:03], state 1
+16:41:46 - 06-03-2009: RxRoomLocal3 -> 020799:10:Rivulet 2:E0031101101100:03
+16:41:46 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+16:41:46 - 06-03-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+16:41:46 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101100:03], state 1
+16:41:46 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+16:41:46 - 06-03-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+16:41:46 - 06-03-2009: RivLinkStatus -> 3d
+16:41:47 - 06-03-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:41:47 - 06-03-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:41:48 - 06-03-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:41:48 - 06-03-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:41:48 - 06-03-2009: E6-sysMyRoomID -> 4d
+16:41:48 - 06-03-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:41:48 - 06-03-2009: E7-sysMyRoomID -> 5d
+16:41:48 - 06-03-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:41:48 - 06-03-2009: E1-sysMyRoomID -> 6d
+16:41:48 - 06-03-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:41:48 - 06-03-2009: E3-sysMyRoomID -> 7d
+16:41:48 - 06-03-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:41:48 - 06-03-2009: E2-sysMyRoomID -> 8d
+16:41:48 - 06-03-2009: E6-sysRoomCount -> 8d
+16:41:48 - 06-03-2009: E7-sysRoomCount -> 8d
+16:41:48 - 06-03-2009: E3-sysRoomCount -> 8d
+16:41:48 - 06-03-2009: E2-sysRoomCount -> 8d
+16:41:48 - 06-03-2009: E1-sysRoomCount -> 8d
+16:41:48 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+16:41:54 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:41:54 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:41:54 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:41:54 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:41:54 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:41:54 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:41:54 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:41:54 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:41:58 - 06-03-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+16:41:58 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+16:41:59 - 06-03-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+16:41:59 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+16:42:02 - 06-03-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+16:42:02 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+16:42:09 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:42:09 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:42:09 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:42:09 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:42:09 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:42:09 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:42:09 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:42:09 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:42:09 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:42:10 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x14l
+16:42:10 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:42:10 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+16:42:10 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:42:10 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:42:10 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:42:10 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:42:10 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:42:10 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+16:42:10 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:42:10 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x0Bd
+16:42:10 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+16:42:10 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:42:11 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA<\x01\x00=
+16:42:11 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:42:11 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+16:42:11 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:42:11 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA@\x01\x00A
+16:42:11 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:42:11 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+16:42:11 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7Z\xD5
+16:42:11 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA$\x01\x00%
+16:42:11 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A$P\xB8
+16:42:11 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+16:42:11 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8a\xDD
+16:42:11 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA%\x01\x00&
+16:42:12 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A%2\x9B
+16:42:12 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+16:42:12 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+16:42:12 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x00(
+16:42:12 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:42:12 - 06-03-2009: //S-6.3.2.1_Color_Bar -> 32767d
+16:42:12 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x012[
+16:42:12 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+16:42:12 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+16:42:12 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA(\x01\x00)
+16:42:12 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:42:12 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+16:42:12 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+16:42:12 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+16:42:12 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA&\x01\x00'
+16:42:13 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:42:13 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+16:42:13 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A&2\x9C
+16:42:13 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:42:13 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0Ba
+16:42:24 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:42:24 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:42:24 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:42:24 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:42:24 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:42:24 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:42:24 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:42:24 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:42:39 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:42:39 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:42:39 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:42:39 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:42:39 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:42:39 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:42:39 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:42:39 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:42:46 - 06-03-2009: RxRoomLocal1 -> 020699:10:Rivulet 1:E0031101101100:03
+16:42:46 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+16:42:46 - 06-03-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+16:42:46 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101100:03], state 1
+16:42:46 - 06-03-2009: RxRoomLocal3 -> 020799:10:Rivulet 2:E0031101101100:03
+16:42:46 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+16:42:46 - 06-03-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+16:42:46 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101100:03], state 1
+16:42:46 - 06-03-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+16:42:46 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+16:42:48 - 06-03-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:42:48 - 06-03-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:42:48 - 06-03-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:42:48 - 06-03-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:42:48 - 06-03-2009: E6-sysMyRoomID -> 4d
+16:42:49 - 06-03-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:42:49 - 06-03-2009: E7-sysMyRoomID -> 5d
+16:42:49 - 06-03-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:42:49 - 06-03-2009: E1-sysMyRoomID -> 6d
+16:42:49 - 06-03-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:42:49 - 06-03-2009: E3-sysMyRoomID -> 7d
+16:42:49 - 06-03-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:42:49 - 06-03-2009: E2-sysMyRoomID -> 8d
+16:42:49 - 06-03-2009: E6-sysRoomCount -> 8d
+16:42:49 - 06-03-2009: E7-sysRoomCount -> 8d
+16:42:49 - 06-03-2009: E3-sysRoomCount -> 8d
+16:42:49 - 06-03-2009: E2-sysRoomCount -> 8d
+16:42:49 - 06-03-2009: E1-sysRoomCount -> 8d
+16:42:49 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+16:42:50 - 06-03-2009: RivLinkStatus -> 3d
+16:42:54 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:42:54 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:42:54 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:42:54 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:42:54 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:42:54 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:42:54 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:42:54 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:42:54 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:42:55 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x14l
+16:42:55 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:42:55 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:42:55 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+16:42:55 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:42:55 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:42:55 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:42:55 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:42:55 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+16:42:55 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:42:55 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x0Bd
+16:42:55 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+16:42:56 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:42:56 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA<\x01\x00=
+16:42:56 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:42:56 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+16:42:56 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:42:56 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA@\x01\x00A
+16:42:56 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:42:56 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+16:42:56 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7Z\xD5
+16:42:56 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA$\x01\x00%
+16:42:56 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A$P\xB8
+16:42:56 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+16:42:56 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8a\xDD
+16:42:57 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA%\x01\x00&
+16:42:57 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A%2\x9B
+16:42:57 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+16:42:57 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+16:42:57 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x00(
+16:42:57 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+16:42:57 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:42:57 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+16:42:57 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA(\x01\x00)
+16:42:57 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+16:42:57 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+16:42:57 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+16:42:58 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA&\x01\x00'
+16:42:58 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A&2\x9C
+16:42:58 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:42:58 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+16:42:58 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:42:58 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0Ba
+16:42:58 - 06-03-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+16:42:58 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+16:42:59 - 06-03-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+16:42:59 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+16:43:02 - 06-03-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+16:43:02 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+16:43:09 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:43:09 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:43:09 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:43:09 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:43:09 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:43:09 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:43:09 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:43:09 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:43:24 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:43:24 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:43:24 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:43:24 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:43:24 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:43:24 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:43:24 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:43:24 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:43:39 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:43:39 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:43:39 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:43:39 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:43:39 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:43:39 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:43:39 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:43:39 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:43:40 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:43:40 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x14l
+16:43:40 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:43:40 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+16:43:40 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:43:40 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:43:40 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:43:40 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:43:40 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:43:40 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+16:43:40 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:43:41 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+16:43:41 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x0Bd
+16:43:41 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:43:41 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA<\x01\x00=
+16:43:41 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+16:43:41 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:43:41 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:43:41 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA@\x01\x00A
+16:43:41 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+16:43:41 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:43:41 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7Z\xD5
+16:43:41 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA$\x01\x00%
+16:43:41 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A$P\xB8
+16:43:41 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+16:43:41 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8a\xDD
+16:43:42 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA%\x01\x00&
+16:43:42 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A%2\x9B
+16:43:42 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+16:43:42 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+16:43:42 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x00(
+16:43:42 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:43:42 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+16:43:42 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+16:43:42 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA(\x01\x00)
+16:43:42 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+16:43:42 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+16:43:42 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+16:43:43 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA&\x01\x00'
+16:43:43 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A&2\x9C
+16:43:43 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:43:43 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+16:43:43 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:43:43 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0Ba
+16:43:46 - 06-03-2009: RxRoomLocal1 -> 020699:10:Rivulet 1:E0031101101100:03
+16:46:21 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+16:43:46 - 06-03-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+16:46:21 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101100:03], state 1
+16:43:46 - 06-03-2009: RxRoomLocal3 -> 020799:10:Rivulet 2:E0031101101100:03
+16:46:21 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+16:43:46 - 06-03-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+16:46:21 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101100:03], state 1
+16:43:46 - 06-03-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+16:46:21 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+16:43:49 - 06-03-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:43:49 - 06-03-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:43:49 - 06-03-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:43:49 - 06-03-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:43:49 - 06-03-2009: E6-sysMyRoomID -> 4d
+16:43:49 - 06-03-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:43:49 - 06-03-2009: E7-sysMyRoomID -> 5d
+16:43:49 - 06-03-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:43:49 - 06-03-2009: E1-sysMyRoomID -> 6d
+16:43:49 - 06-03-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:43:49 - 06-03-2009: E3-sysMyRoomID -> 7d
+16:43:50 - 06-03-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:43:50 - 06-03-2009: E2-sysMyRoomID -> 8d
+16:43:50 - 06-03-2009: E6-sysRoomCount -> 8d
+16:43:50 - 06-03-2009: E7-sysRoomCount -> 8d
+16:43:50 - 06-03-2009: E3-sysRoomCount -> 8d
+16:43:50 - 06-03-2009: E2-sysRoomCount -> 8d
+16:43:50 - 06-03-2009: E1-sysRoomCount -> 8d
+16:46:21 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+16:43:54 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:43:54 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:43:54 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:43:54 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:43:54 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:43:54 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:43:54 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:43:54 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:43:54 - 06-03-2009: RivLinkStatus -> 3d
+16:43:58 - 06-03-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+16:46:21 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+16:43:59 - 06-03-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+16:46:21 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+16:44:02 - 06-03-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+16:46:21 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+16:44:09 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:44:09 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:44:09 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:44:09 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:44:09 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:44:09 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:44:09 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:44:09 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:44:24 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:44:24 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:44:24 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:44:24 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:44:24 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:44:24 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:44:24 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:44:24 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:44:25 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:44:25 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x14l
+16:44:25 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:44:25 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+16:44:25 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:44:25 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:44:25 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:44:25 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:44:25 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:44:25 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+16:44:25 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:44:25 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x0Bd
+16:44:26 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+16:44:26 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:44:26 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA<\x01\x00=
+16:44:26 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:44:26 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+16:44:26 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:44:26 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA@\x01\x00A
+16:44:26 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:44:26 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+16:44:26 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7Z\xD5
+16:44:26 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA$\x01\x00%
+16:44:26 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A$P\xB8
+16:44:27 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+16:44:27 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8a\xDD
+16:44:27 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA%\x01\x00&
+16:44:27 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+16:44:27 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A%2\x9B
+16:44:27 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+16:44:27 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x00(
+16:44:27 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:44:27 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+16:44:27 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+16:44:27 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA(\x01\x00)
+16:44:27 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+16:44:27 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+16:44:27 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+16:44:28 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA&\x01\x00'
+16:44:28 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A&2\x9C
+16:44:28 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:44:28 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+16:44:28 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:44:28 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0Ba
+16:44:39 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:44:39 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:44:39 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:44:39 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:44:39 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:44:39 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:44:39 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:44:39 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:44:46 - 06-03-2009: RxRoomLocal1 -> 020699:10:Rivulet 1:E0031101101100:03
+16:46:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+16:44:46 - 06-03-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+16:46:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101100:03], state 1
+16:44:46 - 06-03-2009: RxRoomLocal3 -> 020799:10:Rivulet 2:E0031101101100:03
+16:46:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+16:44:46 - 06-03-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+16:46:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101100:03], state 1
+16:44:46 - 06-03-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+16:46:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+16:44:50 - 06-03-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:44:50 - 06-03-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:44:50 - 06-03-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:44:50 - 06-03-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:44:50 - 06-03-2009: E6-sysMyRoomID -> 4d
+16:44:50 - 06-03-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:44:50 - 06-03-2009: E7-sysMyRoomID -> 5d
+16:44:50 - 06-03-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:44:50 - 06-03-2009: E1-sysMyRoomID -> 6d
+16:44:50 - 06-03-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:44:50 - 06-03-2009: E3-sysMyRoomID -> 7d
+16:44:50 - 06-03-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:44:50 - 06-03-2009: E2-sysMyRoomID -> 8d
+16:44:50 - 06-03-2009: E6-sysRoomCount -> 8d
+16:44:50 - 06-03-2009: E7-sysRoomCount -> 8d
+16:44:51 - 06-03-2009: E1-sysRoomCount -> 8d
+16:44:51 - 06-03-2009: E3-sysRoomCount -> 8d
+16:44:51 - 06-03-2009: E2-sysRoomCount -> 8d
+16:46:24 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+16:44:54 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:44:54 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:44:54 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:44:54 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:44:54 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:44:54 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:44:54 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:44:54 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:44:58 - 06-03-2009: RivLinkStatus -> 3d
+16:44:58 - 06-03-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+16:46:24 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+16:44:59 - 06-03-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+16:46:24 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+16:45:02 - 06-03-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+16:46:24 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+16:45:09 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:45:09 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:45:09 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:45:09 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:45:09 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:45:09 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:45:09 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:45:09 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:45:10 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:45:10 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x14l
+16:45:10 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:45:10 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+16:45:10 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:45:10 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:45:10 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:45:10 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:45:10 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:45:10 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+16:45:10 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:45:11 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+16:45:11 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x0Bd
+16:45:11 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:45:11 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA<\x01\x00=
+16:45:11 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:45:11 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+16:45:11 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:45:11 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA@\x01\x00A
+16:45:11 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:45:11 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+16:45:11 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7Z\xD5
+16:45:11 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA$\x01\x00%
+16:45:12 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+16:45:12 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A$P\xB8
+16:45:12 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8a\xDD
+16:45:12 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA%\x01\x00&
+16:45:12 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+16:45:12 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A%2\x9B
+16:45:12 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+16:45:12 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x00(
+16:45:12 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:45:12 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+16:45:12 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+16:45:12 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA(\x01\x00)
+16:45:12 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+16:45:13 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+16:45:13 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+16:45:13 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA&\x01\x00'
+16:45:13 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A&2\x9C
+16:45:13 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:45:13 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+16:45:13 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:45:13 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0Ba
+16:45:24 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:45:24 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:45:24 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:45:24 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:45:24 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:45:24 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:45:24 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:45:24 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:45:39 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:45:39 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:45:39 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:45:39 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:45:39 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:45:39 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:45:39 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:45:39 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:45:46 - 06-03-2009: RxRoomLocal1 -> 020699:10:Rivulet 1:E0031101101100:03
+16:46:25 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+16:45:46 - 06-03-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+16:46:25 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101100:03], state 1
+16:45:46 - 06-03-2009: RxRoomLocal3 -> 020799:10:Rivulet 2:E0031101101100:03
+16:46:25 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+16:45:46 - 06-03-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+16:46:25 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101100:03], state 1
+16:45:46 - 06-03-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+16:46:25 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+16:45:51 - 06-03-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:45:51 - 06-03-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:45:51 - 06-03-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:45:51 - 06-03-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:45:51 - 06-03-2009: E6-sysMyRoomID -> 4d
+16:45:51 - 06-03-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:45:51 - 06-03-2009: E7-sysMyRoomID -> 5d
+16:45:51 - 06-03-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:45:51 - 06-03-2009: E1-sysMyRoomID -> 6d
+16:45:51 - 06-03-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:45:51 - 06-03-2009: E3-sysMyRoomID -> 7d
+16:45:51 - 06-03-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:45:51 - 06-03-2009: E2-sysMyRoomID -> 8d
+16:45:51 - 06-03-2009: E6-sysRoomCount -> 8d
+16:45:51 - 06-03-2009: E7-sysRoomCount -> 8d
+16:45:51 - 06-03-2009: E3-sysRoomCount -> 8d
+16:45:51 - 06-03-2009: E2-sysRoomCount -> 8d
+16:45:51 - 06-03-2009: E1-sysRoomCount -> 8d
+16:46:25 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+16:45:54 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:45:54 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:45:54 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:45:54 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:45:54 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:45:54 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:45:54 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:45:54 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:45:55 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:45:55 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x14l
+16:45:55 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:45:55 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+16:45:55 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:45:55 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:45:55 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:45:55 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:45:55 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:45:55 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+16:45:56 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:45:56 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x0Bd
+16:45:56 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+16:45:56 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:45:56 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA<\x01\x00=
+16:45:56 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:45:56 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+16:45:56 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:45:56 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA@\x01\x00A
+16:45:56 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:45:56 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+16:45:56 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7Z\xD5
+16:45:57 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA$\x01\x00%
+16:45:57 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A$P\xB8
+16:45:57 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+16:45:57 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8a\xDD
+16:45:57 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA%\x01\x00&
+16:45:57 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+16:45:57 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A%2\x9B
+16:45:57 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+16:45:57 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x00(
+16:45:57 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:45:57 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+16:45:57 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+16:45:57 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA(\x01\x00)
+16:45:58 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+16:45:58 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+16:45:58 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+16:45:58 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA&\x01\x00'
+16:45:58 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A&2\x9C
+16:45:58 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:45:58 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+16:45:58 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:45:58 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0Ba
+16:46:25 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+16:45:58 - 06-03-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+16:46:25 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+16:45:59 - 06-03-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+16:46:02 - 06-03-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+16:46:25 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+16:46:02 - 06-03-2009: RivLinkStatus -> 3d
+16:46:09 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:46:09 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:46:09 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:46:09 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:46:09 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:46:09 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:46:09 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:46:09 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:46:24 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:46:24 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:46:24 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:46:24 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:46:24 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:46:24 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:46:24 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:46:24 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:46:39 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:46:39 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:46:39 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:46:39 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:46:39 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:46:39 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:46:39 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:46:39 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:46:40 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:46:40 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x14l
+16:46:40 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:46:40 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+16:46:40 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:46:40 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:46:40 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:46:40 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:46:40 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:46:40 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+16:46:41 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:46:41 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+16:46:41 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x0Bd
+16:46:41 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:46:41 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA<\x01\x00=
+16:46:41 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:46:41 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+16:46:41 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:46:41 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA@\x01\x00A
+16:46:41 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:46:41 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+16:46:41 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7Z\xD5
+16:46:42 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA$\x01\x00%
+16:46:42 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A$P\xB8
+16:46:42 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+16:46:42 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8a\xDD
+16:46:42 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA%\x01\x00&
+16:46:42 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+16:46:42 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A%2\x9B
+16:46:42 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+16:46:42 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x00(
+16:46:42 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:46:42 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+16:46:42 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+16:46:42 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA(\x01\x00)
+16:46:43 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+16:46:43 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+16:46:43 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+16:46:43 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA&\x01\x00'
+16:46:43 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A&2\x9C
+16:46:43 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:46:43 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+16:46:43 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:46:43 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0Ba
+16:46:46 - 06-03-2009: RxRoomLocal1 -> 020699:10:Rivulet 1:E0031101101100:03
+16:46:46 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+16:46:46 - 06-03-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+16:46:46 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101100:03], state 1
+16:46:46 - 06-03-2009: RxRoomLocal3 -> 020799:10:Rivulet 2:E0031101101100:03
+16:46:46 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+16:46:46 - 06-03-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+16:46:46 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101100:03], state 1
+16:46:46 - 06-03-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+16:46:46 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+16:46:52 - 06-03-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:46:52 - 06-03-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:46:52 - 06-03-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:46:52 - 06-03-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:46:52 - 06-03-2009: E6-sysMyRoomID -> 4d
+16:46:52 - 06-03-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:46:52 - 06-03-2009: E7-sysMyRoomID -> 5d
+16:46:52 - 06-03-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:46:52 - 06-03-2009: E1-sysMyRoomID -> 6d
+16:46:52 - 06-03-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:46:52 - 06-03-2009: E3-sysMyRoomID -> 7d
+16:46:52 - 06-03-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:46:52 - 06-03-2009: E2-sysMyRoomID -> 8d
+16:46:52 - 06-03-2009: E6-sysRoomCount -> 8d
+16:46:52 - 06-03-2009: E1-sysRoomCount -> 8d
+16:46:52 - 06-03-2009: E3-sysRoomCount -> 8d
+16:46:52 - 06-03-2009: E2-sysRoomCount -> 8d
+16:46:52 - 06-03-2009: E7-sysRoomCount -> 8d
+16:46:52 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+16:46:54 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:46:54 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:46:54 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:46:54 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:46:54 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:46:54 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:46:54 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:46:54 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:46:58 - 06-03-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+16:46:58 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+16:46:59 - 06-03-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+16:46:59 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+16:47:02 - 06-03-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+16:47:02 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+16:47:06 - 06-03-2009: RivLinkStatus -> 3d
+16:47:09 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:47:09 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:47:09 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:47:09 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:47:09 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:47:09 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:47:09 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:47:09 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:47:24 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:47:24 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:47:24 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:47:24 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:47:24 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:47:24 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:47:24 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:47:24 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:47:25 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:47:25 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x14l
+16:47:25 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:47:25 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+16:47:25 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:47:25 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:47:25 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:47:25 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:47:26 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:47:26 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+16:47:26 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:47:26 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x0Bd
+16:47:26 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+16:47:26 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:47:26 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA<\x01\x00=
+16:47:26 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:47:26 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+16:47:26 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:47:26 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA@\x01\x00A
+16:47:26 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:47:26 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+16:47:26 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7Z\xD5
+16:47:27 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA$\x01\x00%
+16:47:27 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A$P\xB8
+16:47:27 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+16:47:27 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8a\xDD
+16:47:27 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA%\x01\x00&
+16:47:27 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A%2\x9B
+16:47:27 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+16:47:27 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+16:47:27 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x00(
+16:47:27 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+16:47:27 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:47:27 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+16:47:28 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA(\x01\x00)
+16:47:28 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+16:47:28 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+16:47:28 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+16:47:28 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA&\x01\x00'
+16:47:28 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A&2\x9C
+16:47:28 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:47:28 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+16:47:28 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:47:28 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0Ba
+16:47:39 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:47:39 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:47:39 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:47:39 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:47:39 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:47:39 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:47:39 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:47:39 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:47:46 - 06-03-2009: RxRoomLocal1 -> 020699:10:Rivulet 1:E0031101101100:03
+16:47:51 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+16:47:46 - 06-03-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+16:48:01 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101100:03], state 1
+16:47:46 - 06-03-2009: RxRoomLocal3 -> 020799:10:Rivulet 2:E0031101101100:03
+16:48:01 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+16:47:46 - 06-03-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+16:48:12 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101100:03], state 1
+16:47:46 - 06-03-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+16:48:12 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+16:47:53 - 06-03-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:47:53 - 06-03-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:47:53 - 06-03-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:47:53 - 06-03-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:47:53 - 06-03-2009: E6-sysMyRoomID -> 4d
+16:47:53 - 06-03-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:47:53 - 06-03-2009: E7-sysMyRoomID -> 5d
+16:47:53 - 06-03-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:47:53 - 06-03-2009: E1-sysMyRoomID -> 6d
+16:47:53 - 06-03-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:47:53 - 06-03-2009: E3-sysMyRoomID -> 7d
+16:47:53 - 06-03-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:47:53 - 06-03-2009: E2-sysMyRoomID -> 8d
+16:47:53 - 06-03-2009: E6-sysRoomCount -> 8d
+16:47:53 - 06-03-2009: E7-sysRoomCount -> 8d
+16:47:53 - 06-03-2009: E1-sysRoomCount -> 8d
+16:47:53 - 06-03-2009: E2-sysRoomCount -> 8d
+16:47:53 - 06-03-2009: E3-sysRoomCount -> 8d
+16:48:23 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+16:47:54 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:47:54 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:47:54 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:47:54 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:47:54 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:47:54 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:47:54 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:47:54 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:47:58 - 06-03-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+16:48:45 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+16:47:59 - 06-03-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+16:48:45 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+16:48:02 - 06-03-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+16:48:45 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+16:48:09 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:48:09 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:48:09 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:48:09 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:48:09 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:48:09 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:48:09 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:48:09 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:48:10 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:48:10 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x14l
+16:48:10 - 06-03-2009: RivLinkStatus -> 3d
+16:48:10 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:48:10 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+16:48:10 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:48:10 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:48:10 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:48:11 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:48:11 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:48:11 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+16:48:11 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:48:11 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x0Bd
+16:48:11 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+16:48:11 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:48:11 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA<\x01\x00=
+16:48:11 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:48:11 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+16:48:11 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:48:11 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA@\x01\x00A
+16:48:11 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:48:12 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+16:48:12 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7Z\xD5
+16:48:12 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA$\x01\x00%
+16:48:12 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A$P\xB8
+16:48:12 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+16:48:12 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8a\xDD
+16:48:12 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA%\x01\x00&
+16:48:12 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A%2\x9B
+16:48:12 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+16:48:12 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+16:48:12 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x00(
+16:48:12 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+16:48:12 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:48:13 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+16:48:13 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA(\x01\x00)
+16:48:13 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+16:48:13 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+16:48:13 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+16:48:13 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA&\x01\x00'
+16:48:13 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:48:13 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A&2\x9C
+16:48:13 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+16:48:13 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:48:13 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0Ba
+16:48:24 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:48:24 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:48:24 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:48:24 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:48:24 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:48:24 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:48:24 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:48:25 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:48:39 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:48:39 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:48:39 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:48:39 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:48:39 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:48:39 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:48:39 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:48:40 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:48:46 - 06-03-2009: RxRoomLocal1 -> 020699:10:Rivulet 1:E0031101101100:03
+16:50:12 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+16:50:12 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101100:03], state 1
+16:48:46 - 06-03-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+16:48:46 - 06-03-2009: RxRoomLocal3 -> 020799:10:Rivulet 2:E0031101101100:03
+16:50:12 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+16:48:46 - 06-03-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+16:50:12 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101100:03], state 1
+16:48:46 - 06-03-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+16:50:12 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+16:48:53 - 06-03-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:48:53 - 06-03-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:48:53 - 06-03-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:48:53 - 06-03-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:48:54 - 06-03-2009: E6-sysMyRoomID -> 4d
+16:48:54 - 06-03-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:48:54 - 06-03-2009: E7-sysMyRoomID -> 5d
+16:48:54 - 06-03-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:48:54 - 06-03-2009: E1-sysMyRoomID -> 6d
+16:48:54 - 06-03-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:48:54 - 06-03-2009: E3-sysMyRoomID -> 7d
+16:48:54 - 06-03-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:48:54 - 06-03-2009: E2-sysMyRoomID -> 8d
+16:48:54 - 06-03-2009: E6-sysRoomCount -> 8d
+16:48:54 - 06-03-2009: E7-sysRoomCount -> 8d
+16:48:54 - 06-03-2009: E1-sysRoomCount -> 8d
+16:48:54 - 06-03-2009: E2-sysRoomCount -> 8d
+16:48:54 - 06-03-2009: E3-sysRoomCount -> 8d
+16:50:12 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+16:48:54 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:48:54 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:48:54 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:48:54 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:48:54 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:48:54 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:48:55 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:48:55 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:48:55 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:48:55 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x14l
+16:48:55 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:48:55 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+16:48:55 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:48:55 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:48:56 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:48:56 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:48:56 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:48:56 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+16:48:56 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:48:56 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x0Bd
+16:48:56 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+16:48:56 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:48:56 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA<\x01\x00=
+16:48:56 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:48:56 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+16:48:56 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:48:56 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA@\x01\x00A
+16:48:57 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:48:57 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+16:48:57 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7Z\xD5
+16:48:57 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA$\x01\x00%
+16:48:57 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A$P\xB8
+16:48:57 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+16:48:57 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8a\xDD
+16:48:57 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA%\x01\x00&
+16:48:57 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+16:48:57 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A%2\x9B
+16:48:57 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+16:48:57 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x00(
+16:48:57 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:48:58 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+16:48:58 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+16:48:58 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA(\x01\x00)
+16:48:58 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+16:48:58 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+16:48:58 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+16:48:58 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA&\x01\x00'
+16:48:58 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:48:58 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A&2\x9C
+16:48:58 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+16:50:13 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+16:48:58 - 06-03-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+16:48:58 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:48:59 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0Ba
+16:48:59 - 06-03-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+16:50:13 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+16:49:02 - 06-03-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+16:50:13 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+16:49:09 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:49:09 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:49:09 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:49:09 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:49:10 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:49:10 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:49:10 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:49:10 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:49:14 - 06-03-2009: RivLinkStatus -> 3d
+16:49:24 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:49:24 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:49:24 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:49:24 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:49:25 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:49:25 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:49:25 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:49:25 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:49:39 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:49:40 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:49:40 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:49:40 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:49:40 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:49:40 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:49:40 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:49:40 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:49:40 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:49:40 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x14l
+16:49:40 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:49:40 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+16:49:40 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:49:40 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:49:41 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:49:41 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:49:41 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:49:41 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+16:49:41 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:49:41 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x0Bd
+16:49:41 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+16:49:41 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:49:41 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA<\x01\x00=
+16:49:41 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+16:49:41 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:49:41 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:49:41 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA@\x01\x00A
+16:49:42 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+16:49:42 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:49:42 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7Z\xD5
+16:49:42 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA$\x01\x00%
+16:49:42 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A$P\xB8
+16:49:42 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+16:49:42 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8a\xDD
+16:49:42 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA%\x01\x00&
+16:49:42 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A%2\x9B
+16:49:42 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+16:49:42 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+16:49:42 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x00(
+16:49:42 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:49:43 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+16:49:43 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+16:49:43 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA(\x01\x00)
+16:49:43 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+16:49:43 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+16:49:43 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+16:49:43 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA&\x01\x00'
+16:49:43 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A&2\x9C
+16:49:43 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:49:43 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+16:49:43 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:49:43 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0Ba
+16:49:46 - 06-03-2009: RxRoomLocal1 -> 020699:10:Rivulet 1:E0031101101100:03
+16:50:14 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+16:49:46 - 06-03-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+16:50:14 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101100:03], state 1
+16:49:46 - 06-03-2009: RxRoomLocal3 -> 020799:10:Rivulet 2:E0031101101100:03
+16:50:14 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+16:49:47 - 06-03-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+16:50:14 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101100:03], state 1
+16:49:47 - 06-03-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+16:50:14 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+16:49:54 - 06-03-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:49:54 - 06-03-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:49:54 - 06-03-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:49:54 - 06-03-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:49:54 - 06-03-2009: E6-sysMyRoomID -> 4d
+16:49:54 - 06-03-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:49:54 - 06-03-2009: E7-sysMyRoomID -> 5d
+16:49:54 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:49:55 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:49:55 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:49:55 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:49:55 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:49:55 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:49:55 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:49:55 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:49:55 - 06-03-2009: E6-sysRoomCount -> 8d
+16:49:55 - 06-03-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:49:55 - 06-03-2009: E1-sysMyRoomID -> 6d
+16:49:55 - 06-03-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:49:55 - 06-03-2009: E3-sysMyRoomID -> 7d
+16:49:55 - 06-03-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:49:55 - 06-03-2009: E2-sysMyRoomID -> 8d
+16:49:55 - 06-03-2009: E7-sysRoomCount -> 8d
+16:49:55 - 06-03-2009: E1-sysRoomCount -> 8d
+16:49:55 - 06-03-2009: E3-sysRoomCount -> 8d
+16:49:55 - 06-03-2009: E2-sysRoomCount -> 8d
+16:50:14 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+16:50:14 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+16:49:58 - 06-03-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+16:49:59 - 06-03-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+16:50:14 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+16:50:02 - 06-03-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+16:50:14 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+16:50:10 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:50:10 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:50:10 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:50:10 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:50:10 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:50:10 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:50:10 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:50:10 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:50:18 - 06-03-2009: RivLinkStatus -> 3d
+16:50:25 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:50:25 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:50:25 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:50:25 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:50:25 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:50:25 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:50:25 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:50:25 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:50:25 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:50:25 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x14l
+16:50:25 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:50:25 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:50:25 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+16:50:26 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:50:26 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:50:26 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:50:26 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:50:26 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+16:50:26 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:50:26 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x0Bd
+16:50:26 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+16:50:26 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:50:26 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA<\x01\x00=
+16:50:26 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:50:26 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+16:50:26 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:50:27 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA@\x01\x00A
+16:50:27 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:50:27 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+16:50:27 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7Z\xD5
+16:50:27 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA$\x01\x00%
+16:50:27 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A$P\xB8
+16:50:27 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+16:50:27 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8a\xDD
+16:50:27 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA%\x01\x00&
+16:50:27 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A%2\x9B
+16:50:27 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+16:50:27 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+16:50:28 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x00(
+16:50:28 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:50:28 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+16:50:28 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+16:50:28 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA(\x01\x00)
+16:50:28 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+16:50:28 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+16:50:28 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+16:50:28 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA&\x01\x00'
+16:50:28 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A&2\x9C
+16:50:28 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:50:28 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+16:50:28 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:50:29 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0Ba
+16:50:40 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:50:40 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:50:40 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:50:40 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:50:40 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:50:40 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:50:40 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:50:40 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:50:46 - 06-03-2009: RxRoomLocal1 -> 020699:10:Rivulet 1:E0031101101100:03
+16:50:46 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+16:50:46 - 06-03-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+16:50:46 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101100:03], state 1
+16:50:47 - 06-03-2009: RxRoomLocal3 -> 020799:10:Rivulet 2:E0031101101100:03
+16:50:47 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+16:50:47 - 06-03-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+16:50:47 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101100:03], state 1
+16:50:47 - 06-03-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+16:50:47 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+16:50:55 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:50:55 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:50:55 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:50:55 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:50:55 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:50:55 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:50:55 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:50:55 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:50:55 - 06-03-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:50:55 - 06-03-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:50:55 - 06-03-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:50:55 - 06-03-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:50:55 - 06-03-2009: E6-sysMyRoomID -> 4d
+16:50:56 - 06-03-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:50:56 - 06-03-2009: E7-sysMyRoomID -> 5d
+16:50:56 - 06-03-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:50:56 - 06-03-2009: E1-sysMyRoomID -> 6d
+16:50:56 - 06-03-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:50:56 - 06-03-2009: E3-sysMyRoomID -> 7d
+16:50:56 - 06-03-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:50:56 - 06-03-2009: E2-sysMyRoomID -> 8d
+16:50:56 - 06-03-2009: E6-sysRoomCount -> 8d
+16:50:56 - 06-03-2009: E7-sysRoomCount -> 8d
+16:50:56 - 06-03-2009: E1-sysRoomCount -> 8d
+16:50:56 - 06-03-2009: E3-sysRoomCount -> 8d
+16:50:56 - 06-03-2009: E2-sysRoomCount -> 8d
+16:50:56 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+16:50:58 - 06-03-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+16:50:58 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+16:50:59 - 06-03-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+16:51:00 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+16:51:02 - 06-03-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+16:51:02 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+16:51:10 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:51:10 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:51:10 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:51:10 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:51:10 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:51:10 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:51:10 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:51:10 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:51:10 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:51:10 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x14l
+16:51:10 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:51:10 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+16:51:11 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:51:11 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:51:11 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:51:11 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:51:11 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:51:11 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+16:51:11 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:51:11 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x0Bd
+16:51:11 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+16:51:11 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:51:11 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA<\x01\x00=
+16:51:11 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:51:11 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+16:51:11 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:51:12 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA@\x01\x00A
+16:51:12 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:51:12 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+16:51:12 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7Z\xD5
+16:51:12 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA$\x01\x00%
+16:51:12 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+16:51:12 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A$P\xB8
+16:51:12 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8a\xDD
+16:51:12 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA%\x01\x00&
+16:51:12 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A%2\x9B
+16:51:12 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+16:51:12 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+16:51:13 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x00(
+16:51:13 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+16:51:13 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:51:13 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+16:51:13 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA(\x01\x00)
+16:51:13 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+16:51:13 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+16:51:13 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+16:51:13 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA&\x01\x00'
+16:51:13 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A&2\x9C
+16:51:13 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:51:13 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+16:51:14 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:51:14 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0Ba
+16:51:22 - 06-03-2009: RivLinkStatus -> 3d
+16:51:25 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:51:25 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:51:25 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:51:25 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:51:25 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:51:25 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:51:25 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:51:25 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:51:40 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:51:40 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:51:40 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:51:40 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:51:40 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:51:40 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:51:40 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:51:40 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:51:46 - 06-03-2009: RxRoomLocal1 -> 020699:10:Rivulet 1:E0031101101100:03
+16:51:46 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+16:51:47 - 06-03-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+16:51:47 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101100:03], state 1
+16:51:47 - 06-03-2009: RxRoomLocal3 -> 020799:10:Rivulet 2:E0031101101100:03
+16:51:47 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+16:51:47 - 06-03-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+16:51:47 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101100:03], state 1
+16:51:47 - 06-03-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+16:51:47 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+16:51:55 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:51:55 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:51:55 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:51:55 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:51:55 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:51:55 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:51:55 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:51:55 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:51:55 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:51:55 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x14l
+16:51:55 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:51:56 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+16:51:56 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:51:56 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:51:56 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:51:56 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:51:56 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:51:56 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+16:51:56 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:51:56 - 06-03-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:51:56 - 06-03-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:51:56 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+16:51:56 - 06-03-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:51:56 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x0Bd
+16:51:56 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:51:56 - 06-03-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:51:56 - 06-03-2009: E6-sysMyRoomID -> 4d
+16:51:56 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA<\x01\x00=
+16:51:56 - 06-03-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:51:56 - 06-03-2009: E7-sysMyRoomID -> 5d
+16:51:57 - 06-03-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:51:57 - 06-03-2009: E1-sysMyRoomID -> 6d
+16:51:57 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+16:51:57 - 06-03-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:51:57 - 06-03-2009: E3-sysMyRoomID -> 7d
+16:51:57 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:51:57 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:51:57 - 06-03-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:51:57 - 06-03-2009: E2-sysMyRoomID -> 8d
+16:51:57 - 06-03-2009: E2-sysRoomCount -> 8d
+16:51:57 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA@\x01\x00A
+16:51:57 - 06-03-2009: E6-sysRoomCount -> 8d
+16:51:57 - 06-03-2009: E7-sysRoomCount -> 8d
+16:51:57 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:51:57 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+16:51:57 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7Z\xD5
+16:51:57 - 06-03-2009: E3-sysRoomCount -> 8d
+16:51:57 - 06-03-2009: E1-sysRoomCount -> 8d
+16:51:57 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA$\x01\x00%
+16:51:57 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A$P\xB8
+16:51:57 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+16:51:57 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+16:51:57 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8a\xDD
+16:51:57 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA%\x01\x00&
+16:51:57 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A%2\x9B
+16:51:58 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+16:51:58 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+16:51:58 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x00(
+16:51:58 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:51:58 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+16:51:58 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+16:51:58 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA(\x01\x00)
+16:51:58 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+16:51:58 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+16:51:58 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+16:51:58 - 06-03-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+16:51:58 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+16:51:58 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA&\x01\x00'
+16:51:58 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A&2\x9C
+16:51:58 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:51:59 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+16:51:59 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:51:59 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0Ba
+16:51:59 - 06-03-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+16:51:59 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+16:52:02 - 06-03-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+16:52:02 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+16:52:10 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:52:10 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:52:10 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:52:10 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:52:10 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:52:10 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:52:10 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:52:10 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:52:25 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:52:25 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:52:25 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:52:25 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:52:25 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:52:25 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:52:25 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:52:25 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:52:26 - 06-03-2009: RivLinkStatus -> 3d
+16:52:40 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:52:40 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:52:40 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:52:40 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:52:40 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:52:40 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:52:40 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:52:40 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:52:40 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:52:40 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x14l
+16:52:41 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:52:41 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+16:52:41 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:52:41 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:52:41 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:52:41 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:52:41 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:52:41 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+16:52:41 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:52:41 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x0Bd
+16:52:41 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+16:52:41 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:52:41 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA<\x01\x00=
+16:52:42 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:52:42 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+16:52:42 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:52:42 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA@\x01\x00A
+16:52:42 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:52:42 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+16:52:42 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7Z\xD5
+16:52:42 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA$\x01\x00%
+16:52:42 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+16:52:42 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A$P\xB8
+16:52:42 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8a\xDD
+16:52:42 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA%\x01\x00&
+16:52:43 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A%2\x9B
+16:52:43 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+16:52:43 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+16:52:43 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x00(
+16:52:43 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:52:43 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+16:52:43 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+16:52:43 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA(\x01\x00)
+16:52:43 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+16:52:43 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+16:52:43 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+16:52:43 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA&\x01\x00'
+16:52:43 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A&2\x9C
+16:52:43 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:52:43 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+16:52:44 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:52:44 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0Ba
+16:52:47 - 06-03-2009: RxRoomLocal1 -> 020699:10:Rivulet 1:E0031101101100:03
+16:55:14 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+16:52:47 - 06-03-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+16:55:14 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101100:03], state 1
+16:52:47 - 06-03-2009: RxRoomLocal3 -> 020799:10:Rivulet 2:E0031101101100:03
+16:55:14 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+16:52:47 - 06-03-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+16:55:14 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101100:03], state 1
+16:52:47 - 06-03-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+16:55:14 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+16:52:55 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:52:55 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:52:55 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:52:55 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:52:55 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:52:55 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:52:55 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:52:55 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:52:57 - 06-03-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:52:57 - 06-03-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:52:57 - 06-03-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:52:57 - 06-03-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:52:57 - 06-03-2009: E6-sysMyRoomID -> 4d
+16:52:57 - 06-03-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:52:57 - 06-03-2009: E7-sysMyRoomID -> 5d
+16:52:58 - 06-03-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:52:58 - 06-03-2009: E1-sysMyRoomID -> 6d
+16:52:58 - 06-03-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:52:58 - 06-03-2009: E3-sysMyRoomID -> 7d
+16:52:58 - 06-03-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:52:58 - 06-03-2009: E2-sysMyRoomID -> 8d
+16:52:58 - 06-03-2009: E6-sysRoomCount -> 8d
+16:52:58 - 06-03-2009: E1-sysRoomCount -> 8d
+16:52:58 - 06-03-2009: E3-sysRoomCount -> 8d
+16:52:58 - 06-03-2009: E2-sysRoomCount -> 8d
+16:52:58 - 06-03-2009: E7-sysRoomCount -> 8d
+16:55:15 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+16:52:58 - 06-03-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+16:55:15 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+16:52:59 - 06-03-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+16:55:15 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+16:53:02 - 06-03-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+16:55:15 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+16:53:10 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:53:10 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:53:10 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:53:10 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:53:10 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:53:10 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:53:10 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:53:10 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:53:25 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:53:25 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:53:25 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:53:25 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:53:25 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:53:25 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:53:25 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:53:25 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:53:25 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:53:26 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x14l
+16:53:26 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:53:26 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:53:26 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+16:53:26 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:53:26 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:53:26 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:53:26 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:53:26 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+16:53:26 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:53:26 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+16:53:26 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x0Bd
+16:53:26 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:53:27 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA<\x01\x00=
+16:53:27 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:53:27 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+16:53:27 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:53:27 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA@\x01\x00A
+16:53:27 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:53:27 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+16:53:27 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7Z\xD5
+16:53:27 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA$\x01\x00%
+16:53:27 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A$P\xB8
+16:53:27 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+16:53:27 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8a\xDD
+16:53:27 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA%\x01\x00&
+16:53:28 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A%2\x9B
+16:53:28 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+16:53:28 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+16:53:28 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x00(
+16:53:28 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:53:28 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+16:53:28 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+16:53:28 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA(\x01\x00)
+16:53:28 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+16:53:28 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+16:53:28 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+16:53:28 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA&\x01\x00'
+16:53:29 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:53:29 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A&2\x9C
+16:53:29 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+16:53:29 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:53:29 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0Ba
+16:53:30 - 06-03-2009: RivLinkStatus -> 3d
+16:53:40 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:53:40 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:53:40 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:53:40 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:53:40 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:53:40 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:53:40 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:53:40 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:53:47 - 06-03-2009: RxRoomLocal1 -> 020699:10:Rivulet 1:E0031101101100:03
+16:55:17 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+16:53:47 - 06-03-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+16:55:17 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101100:03], state 1
+16:53:47 - 06-03-2009: RxRoomLocal3 -> 020799:10:Rivulet 2:E0031101101100:03
+16:55:17 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+16:53:47 - 06-03-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+16:55:17 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101100:03], state 1
+16:53:47 - 06-03-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+16:55:17 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+16:53:55 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:53:55 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:53:55 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:53:55 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:53:55 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:53:55 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:53:55 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:53:55 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:53:58 - 06-03-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:53:58 - 06-03-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:53:58 - 06-03-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:53:58 - 06-03-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:53:58 - 06-03-2009: E6-sysMyRoomID -> 4d
+16:53:58 - 06-03-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+16:55:17 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+16:53:58 - 06-03-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:53:58 - 06-03-2009: E7-sysMyRoomID -> 5d
+16:53:58 - 06-03-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:53:58 - 06-03-2009: E1-sysMyRoomID -> 6d
+16:53:58 - 06-03-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:53:58 - 06-03-2009: E3-sysMyRoomID -> 7d
+16:53:59 - 06-03-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:53:59 - 06-03-2009: E2-sysMyRoomID -> 8d
+16:53:59 - 06-03-2009: E6-sysRoomCount -> 8d
+16:53:59 - 06-03-2009: E7-sysRoomCount -> 8d
+16:53:59 - 06-03-2009: E1-sysRoomCount -> 8d
+16:53:59 - 06-03-2009: E2-sysRoomCount -> 8d
+16:53:59 - 06-03-2009: E3-sysRoomCount -> 8d
+16:55:17 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+16:53:59 - 06-03-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+16:55:17 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+16:54:02 - 06-03-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+16:55:17 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+16:54:10 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:54:10 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:54:10 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:54:10 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:54:10 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:54:10 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:54:10 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:54:10 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:54:11 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:54:11 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x14l
+16:54:11 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:54:11 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+16:54:11 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:54:11 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:54:11 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:54:11 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:54:11 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:54:11 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+16:54:11 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:54:11 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x0Bd
+16:54:12 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+16:54:12 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:54:12 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA<\x01\x00=
+16:54:12 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+16:54:12 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:54:12 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:54:12 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA@\x01\x00A
+16:54:12 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:54:12 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+16:54:12 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7Z\xD5
+16:54:12 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA$\x01\x00%
+16:54:12 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A$P\xB8
+16:54:12 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+16:54:12 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8a\xDD
+16:54:13 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA%\x01\x00&
+16:54:13 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A%2\x9B
+16:54:13 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+16:54:13 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+16:54:13 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x00(
+16:54:13 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+16:54:13 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:54:13 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+16:54:13 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA(\x01\x00)
+16:54:13 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+16:54:13 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+16:54:13 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+16:54:14 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA&\x01\x00'
+16:54:14 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A&2\x9C
+16:54:14 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:54:14 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+16:54:14 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:54:14 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0Ba
+16:54:25 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:54:25 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:54:25 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:54:25 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:54:25 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:54:25 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:54:25 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:54:25 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:54:34 - 06-03-2009: RivLinkStatus -> 3d
+16:54:40 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:54:40 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:54:40 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:54:40 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:54:40 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:54:40 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:54:40 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:54:40 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:54:47 - 06-03-2009: RxRoomLocal1 -> 020699:10:Rivulet 1:E0031101101100:03
+16:55:19 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+16:54:47 - 06-03-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+16:55:19 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101100:03], state 1
+16:54:47 - 06-03-2009: RxRoomLocal3 -> 020799:10:Rivulet 2:E0031101101100:03
+16:55:19 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+16:54:47 - 06-03-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+16:55:19 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101100:03], state 1
+16:54:47 - 06-03-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+16:55:19 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+16:54:55 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:54:55 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:54:55 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:54:55 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:54:55 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:54:55 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:54:55 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:54:55 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:54:56 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:54:56 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x14l
+16:54:56 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x14\x01\x00\x15
+16:54:56 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:54:56 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x14\x04\
+16:54:56 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:54:56 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x13\x01\x00\x14
+16:54:56 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x13\x00W
+16:54:56 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:54:56 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x10i
+16:54:56 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x15\x01\x00\x16
+16:54:56 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x15\x0Bd
+16:54:57 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA<\x01\x00=
+16:54:57 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:54:57 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA<\x01\x00=
+16:54:57 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A<\x00\x80
+16:54:57 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA@\x01\x00A
+16:54:57 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:54:57 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA@\x01\x00A
+16:54:57 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A@\x0C\x90
+16:54:57 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA7\x01\x008
+16:54:57 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A7Z\xD5
+16:54:57 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA$\x01\x00%
+16:54:57 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA8\x01\x009
+16:54:58 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A$P\xB8
+16:54:58 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A8a\xDD
+16:54:58 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA%\x01\x00&
+16:54:58 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A%2\x9B
+16:54:58 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA'\x01\x00(
+16:54:58 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A'\x00k
+16:54:58 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA'\x01\x00(
+16:54:58 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A'2\x9D
+16:54:58 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA(\x01\x00)
+16:54:58 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A(\x00l
+16:54:58 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA(\x01\x00)
+16:55:20 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+16:54:58 - 06-03-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+16:54:58 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A(2\x9E
+16:54:58 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA&\x01\x00'
+16:54:58 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A&\x00j
+16:54:59 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA&\x01\x00'
+16:54:59 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A&2\x9C
+16:54:59 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:54:59 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0A`
+16:54:59 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x12\x01\x00\x13
+16:54:59 - 06-03-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:54:59 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x12\x0Ba
+16:54:59 - 06-03-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:54:59 - 06-03-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:54:59 - 06-03-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:54:59 - 06-03-2009: E6-sysMyRoomID -> 4d
+16:54:59 - 06-03-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,Rivulet 1+7,Rivulet 2+8,St. Francis+:03
+16:54:59 - 06-03-2009: E7-sysMyRoomID -> 5d
+16:54:59 - 06-03-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:54:59 - 06-03-2009: E1-sysMyRoomID -> 6d
+16:54:59 - 06-03-2009: TxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:54:59 - 06-03-2009: E3-sysMyRoomID -> 7d
+16:55:20 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+16:54:59 - 06-03-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+16:55:00 - 06-03-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,Rivulet 1+0,Rivulet 2+0,St. Francis+:03
+16:55:00 - 06-03-2009: E2-sysMyRoomID -> 8d
+16:55:00 - 06-03-2009: E6-sysRoomCount -> 8d
+16:55:00 - 06-03-2009: E7-sysRoomCount -> 8d
+16:55:00 - 06-03-2009: E1-sysRoomCount -> 8d
+16:55:00 - 06-03-2009: E3-sysRoomCount -> 8d
+16:55:00 - 06-03-2009: E2-sysRoomCount -> 8d
+16:55:20 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+16:55:02 - 06-03-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+16:55:20 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+16:55:10 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:55:10 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:55:10 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:55:10 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:55:10 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:55:10 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:55:10 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:55:10 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:55:30 - 06-03-2009: Lect_RearLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:55:30 - 06-03-2009: Brk_RightLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:55:30 - 06-03-2009: Ctrl_TopLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:55:30 - 06-03-2009: Ctrl_BottomLCD_TX$ -> \xAA\x11\x01\x00\x12
+16:55:30 - 06-03-2009: Ctrl_TopLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:55:30 - 06-03-2009: Ctrl_BottomLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:55:30 - 06-03-2009: Lect_RearLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x00U
+16:55:30 - 06-03-2009: Brk_RightLCD_RX$ -> \xAA\xFF\x01\x03A\x11\x01V
+16:57:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+16:57:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+16:57:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101100:03], state 1
+16:57:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+16:57:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101100:03], state 1
+16:57:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+16:57:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+16:57:24 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+16:57:24 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+16:57:41 - 06-03-2009: [Console Data] : RoomControl-Endpoint 6: Conference page entered
+16:57:42 - 06-03-2009: [Console Data] : RoomControl-Endpoint 6: Room Button: 8
+16:57:42 - 06-03-2009: [Console Data] : RoomControl-Endpoint 6: MyRoomID: 4,  sysRoomCount: 8,  RoomAvailable: 1
+16:57:42 - 06-03-2009: [Console Data] : RoomControl-Endpoint 6: Target Room: 8
+16:57:42 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020408:20:Control 1+1101101:03], state 1
+16:57:42 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020804:21:St. Francis+1101101:03], state 1
+16:57:42 - 06-03-2009: [Console Data] : Connection Request submitted to Rivulet, endpoint 8 to endpoint 4, Connection id 1
+16:57:42 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020408:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03], state 2
+16:57:42 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020408:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03], state 2
+16:57:43 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+16:57:43 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020804:25:0+1,No Source+2,St. Francis+3,+4,+:03], state 2
+16:58:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+16:58:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+16:58:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101204:03], state 2
+16:58:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+16:58:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101208:03], state 2
+16:58:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+16:58:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+16:58:24 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+16:58:25 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+16:59:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+16:59:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+16:59:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101204:03], state 2
+16:59:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+16:59:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101208:03], state 2
+16:59:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+16:59:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+16:59:24 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+16:59:25 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+17:00:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+17:00:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+17:00:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101204:03], state 2
+17:00:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+17:00:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101208:03], state 2
+17:00:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+17:00:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+17:00:24 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+17:00:26 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+17:01:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+17:01:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+17:01:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101204:03], state 2
+17:01:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+17:01:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101208:03], state 2
+17:01:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+17:01:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+17:01:24 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+17:01:26 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+17:02:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+17:02:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+17:02:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101204:03], state 2
+17:02:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+17:02:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101208:03], state 2
+17:02:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+17:02:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+17:02:24 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+17:02:27 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+17:03:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+17:03:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+17:03:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101204:03], state 2
+17:03:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+17:03:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101208:03], state 2
+17:03:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+17:03:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+17:03:24 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+17:03:27 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+17:04:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+17:04:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101204:03], state 2
+17:04:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+17:04:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+17:04:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101208:03], state 2
+17:04:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+17:04:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+17:04:25 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+17:04:28 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+17:05:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+17:05:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101204:03], state 2
+17:05:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+17:05:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+17:05:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101208:03], state 2
+17:05:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+17:05:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+17:05:25 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+17:05:28 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+17:06:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+17:06:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101204:03], state 2
+17:06:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+17:06:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+17:06:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101208:03], state 2
+17:06:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+17:06:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+17:06:25 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+17:06:29 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+17:07:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+17:07:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101204:03], state 2
+17:07:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+17:07:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+17:07:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101208:03], state 2
+17:07:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+17:07:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+17:07:25 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+17:07:30 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+17:08:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+17:08:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101204:03], state 2
+17:08:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+17:08:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+17:08:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101208:03], state 2
+17:08:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+17:08:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+17:08:25 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+17:08:30 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+17:09:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+17:09:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101204:03], state 2
+17:09:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+17:09:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+17:09:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101208:03], state 2
+17:09:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+17:09:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+17:09:25 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+17:09:31 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
+17:10:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 03 [020399:10:Wetlab:E0031000101100:03], state 1
+17:10:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 08 [020899:10:St. Francis:E0031101101204:03], state 2
+17:10:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 06 [020699:10:Rivulet 1:E0031101101100:03], state 1
+17:10:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 07 [020799:10:Rivulet 2:E0031101101100:03], state 1
+17:10:22 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 04 [020499:10:Control 1:E0031101101208:03], state 2
+17:10:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 05 [020599:10:Control 2:E0031101101100:03], state 1
+17:10:23 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 01 [020199:10:Sisters:O0031000101100:03], state 1
+17:10:25 - 06-03-2009: [Console Data] : Hub: Rcvd: Message from 02 [020299:10:Womens:O0031000101100:03], state 1
+17:10:31 - 06-03-2009: [Console Data] : Hub: Send Update (System Status Messages)
