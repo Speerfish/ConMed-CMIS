@@ -1,0 +1,325 @@
+12:32:39 - 11-16-2009: E3-pg_HwRestart -> 1
+12:32:39 - 11-16-2009: E3-pbSource1fb -> 1
+12:32:39 - 11-16-2009: E3-pbTarget4fb -> 1
+12:32:39 - 11-16-2009: E3-btnConfStartEnable -> 1d
+12:32:39 - 11-16-2009: E3-btnPrivacyEnable -> 1d
+12:32:39 - 11-16-2009: E3-ConfMessage -> Ready
+12:32:39 - 11-16-2009: E3-Room1Name -> Sisters
+12:32:39 - 11-16-2009: E3-Room2Name -> Womens
+12:32:39 - 11-16-2009: E3-Room3Name -> Wetlab
+12:32:39 - 11-16-2009: E3-Room4Name -> Control 1
+12:32:39 - 11-16-2009: E3-Room5Name -> Control 2
+12:32:39 - 11-16-2009: E3-Room6Name -> OR 8
+12:32:39 - 11-16-2009: E3-Room7Name -> Cathlab
+12:32:39 - 11-16-2009: E3-Room8Name -> St. Francis
+12:32:39 - 11-16-2009: E3-RoomConnect -> 1
+12:32:39 - 11-16-2009: LocalEnable3 -> 1
+12:32:39 - 11-16-2009: //E3-Target2Source -> 3d
+12:32:39 - 11-16-2009: E3-Room4Available -> 1
+12:32:39 - 11-16-2009: E3-Room5Available -> 1
+12:32:39 - 11-16-2009: E3-sysRoomCount -> 8d
+12:32:39 - 11-16-2009: E3-sysMyRoomID -> 7d
+12:32:39 - 11-16-2009: E3-TargetRoomName -> Please Select
+12:32:39 - 11-16-2009: Cathlab_Video_Source_Count -> 1d
+12:32:39 - 11-16-2009: Cathlab_Room_Name$ -> Cathlab
+12:32:39 - 11-16-2009: E3-txt_ConfInSource1 -> <No Signal>
+12:32:39 - 11-16-2009: E3-txt_ConfInSource2 -> <No Signal>
+12:32:39 - 11-16-2009: E3-txt_ConfInSource3 -> <No Signal>
+12:32:39 - 11-16-2009: E3-txt_ConfInSource4 -> <No Signal>
+12:32:39 - 11-16-2009: Init_Stage_1 -> 1
+12:32:39 - 11-16-2009: Init_Stage_2 -> 1
+12:32:39 - 11-16-2009: Init_Stage_3 -> 1
+12:32:39 - 11-16-2009: Init_Stage3_Complete -> 1
+12:32:39 - 11-16-2009: E3_Init_0_Complete -> 1
+12:32:39 - 11-16-2009: E3_Init_1_Complete -> 1
+12:32:39 - 11-16-2009: E3_Init_2_Complete -> 1
+12:32:39 - 11-16-2009: E3_Init_3_Complete -> 1
+12:32:39 - 11-16-2009: //NotNeeded-btnVTCEnable -> 2d
+12:32:39 - 11-16-2009: Init_Stage0_Complete -> 1
+12:32:39 - 11-16-2009: Init_Stage1_Complete -> 1
+12:32:39 - 11-16-2009: [Console Data] : 
+12:32:39 - 11-16-2009: Init_Stage2_Complete -> 1
+12:32:51 - 11-16-2009: Cathlab_Source_Count -> 0d
+12:32:51 - 11-16-2009: Cathlab_Video_Source_Count -> 1d
+12:32:51 - 11-16-2009: Cathlab_Room_Name$ -> Cathlab
+12:32:51 - 11-16-2009: E3_Init_0_Complete -> 1
+12:32:51 - 11-16-2009: Init_Stage0_Complete -> 1
+12:32:52 - 11-16-2009: //E3-Target1Source -> 0d
+12:32:52 - 11-16-2009: E3-pbSource1fb -> 1
+12:32:52 - 11-16-2009: E3-GUIRoomState1 -> 0d
+12:32:52 - 11-16-2009: Init_Stage_1 -> 1
+12:32:52 - 11-16-2009: E3-btnConfStartEnable -> 0d
+12:32:52 - 11-16-2009: E3-btnConfAcceptEnable -> 0d
+12:32:52 - 11-16-2009: E3-btnConfDeclineEnable -> 0d
+12:32:52 - 11-16-2009: //E3-EnableVideoInBtn -> 0d
+12:32:52 - 11-16-2009: //E3-EnableVideoOutBtn -> 0d
+12:32:52 - 11-16-2009: //NotNeeded-btnVTCEnable -> 2d
+12:32:55 - 11-16-2009: E3-ConfMessage -> Please Wait...
+12:32:55 - 11-16-2009: E3-RoomConnect -> 1
+12:32:55 - 11-16-2009: E3_Init_1_Complete -> 1
+12:32:55 - 11-16-2009: Init_Stage1_Complete -> 1
+12:32:55 - 11-16-2009: Init_Stage_2 -> 1
+12:32:55 - 11-16-2009: E3_Init_2_Complete -> 1
+12:32:55 - 11-16-2009: Init_Stage2_Complete -> 1
+12:32:55 - 11-16-2009: Init_Stage_3 -> 1
+12:32:55 - 11-16-2009: E3-btnPrivacyEnable -> 1d
+12:32:55 - 11-16-2009: E3-ConferenceState -> 0d
+12:32:55 - 11-16-2009: E3-txt_ConfInSource1 -> <No Signal>
+12:32:55 - 11-16-2009: E3-txt_ConfInSource2 -> <No Signal>
+12:32:55 - 11-16-2009: E3-txt_ConfInSource3 -> <No Signal>
+12:32:55 - 11-16-2009: E3-txt_ConfInSource4 -> <No Signal>
+12:32:55 - 11-16-2009: E3_Init_3_Complete -> 1
+12:32:55 - 11-16-2009: Init_Stage3_Complete -> 1
+12:32:55 - 11-16-2009: E3-GUIRoomState2 -> 0d
+12:32:55 - 11-16-2009: //E3-Target2Source -> 3d
+12:32:55 - 11-16-2009: E3-GUIRoomState3 -> 0d
+12:32:55 - 11-16-2009: E3-GUIRoomState4 -> 0d
+12:32:55 - 11-16-2009: E3-pbTarget4fb -> 1
+12:32:55 - 11-16-2009: //not_needed6 -> 0d
+12:32:55 - 11-16-2009: E3-GUIRoomState5 -> 0d
+12:32:55 - 11-16-2009: Cathlab_S-Video_Send_Sources$ -> Ceiling Camera
+12:32:55 - 11-16-2009: Cathlab_DVI_Send_Sources$ -> ProSolve
+12:32:55 - 11-16-2009: E3-GUIRoomState6 -> 0d
+12:32:55 - 11-16-2009: Cathlab_DVI_Send_Sources$ -> Emageon
+12:32:55 - 11-16-2009: Cathlab_DVI_Send_Sources$ -> Emageon Hemo
+12:32:55 - 11-16-2009: E3-GUIRoomState7 -> 0d
+12:32:55 - 11-16-2009: Cathlab_DVI_Send_Sources$ -> EP Med
+12:32:55 - 11-16-2009: E3-pg_HwRestart -> 1
+12:32:55 - 11-16-2009: E3-GUIRoomState8 -> 0d
+12:32:55 - 11-16-2009: E3-btnVideoEnable -> 0d
+12:32:55 - 11-16-2009: E3-GUIRoomState9 -> 0d
+12:32:55 - 11-16-2009: E3-GUIRoomState10 -> 0d
+12:32:55 - 11-16-2009: E3-GUIRoomState11 -> 0d
+12:32:55 - 11-16-2009: E3-GUIRoomState12 -> 0d
+12:32:55 - 11-16-2009: E3-GUIRoomState13 -> 0d
+12:32:55 - 11-16-2009: E3-GUIRoomState14 -> 0d
+12:32:55 - 11-16-2009: E3-GUIRoomState15 -> 0d
+12:32:55 - 11-16-2009: E3-GUIRoomState16 -> 0d
+12:32:55 - 11-16-2009: E3-TargetRoomID -> 0d
+12:32:55 - 11-16-2009: E3-TargetRoomName -> Please Select
+12:32:55 - 11-16-2009: LocalEnable3 -> 1
+12:32:55 - 11-16-2009: TxRoomLocal3 -> 020099:10:Cathlab:E0031000101100:03
+12:32:55 - 11-16-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+12:32:55 - 11-16-2009: E3-sysMyRoomID -> 7d
+12:32:55 - 11-16-2009: E3-Room1Name -> Sisters
+12:32:55 - 11-16-2009: E3-Room2Name -> Womens
+12:32:55 - 11-16-2009: E3-Room3Name -> Wetlab
+12:32:55 - 11-16-2009: E3-Room4Available -> 1
+12:32:55 - 11-16-2009: E3-Room4Name -> Control 1
+12:32:55 - 11-16-2009: E3-Room5Available -> 1
+12:32:55 - 11-16-2009: E3-Room5Name -> Control 2
+12:32:55 - 11-16-2009: E3-Room6Name -> OR 8
+12:32:55 - 11-16-2009: E3-Room7Name -> Cathlab
+12:32:55 - 11-16-2009: E3-Room8Name -> St. Francis
+12:32:55 - 11-16-2009: E3-sysRoomCount -> 8d
+12:32:55 - 11-16-2009: E3-ConfMessage -> Ready
+12:32:55 - 11-16-2009: E3-ConferenceState -> 0d
+12:32:55 - 11-16-2009: E3-ConfMessage -> Ready
+12:32:55 - 11-16-2009: E3-btnConfStartEnable -> 1d
+12:32:56 - 11-16-2009: [Console Data] : MP2E>EndpointComm-CathLab: SendKeepAlive Local: [020799:10:Cathlab:E0031000101100:03]
+12:32:56 - 11-16-2009: TxRoomLocal3 -> 020799:10:Cathlab:E0031000101100:03
+12:33:02 - 11-16-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+12:33:02 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Rx_FmHub recv: [029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03]
+12:33:02 - 11-16-2009: [Console Data] : sHeader-[029907]  iCmd-[11]  sData-[H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+]
+12:33:02 - 11-16-2009: [Console Data] : EndpointComm-CathLab: System Status message received
+12:33:02 - 11-16-2009: [Console Data] : EndpointComm-CathLab: ProcessSystemStatus() HubMsg: System Status
+12:33:02 - 11-16-2009: [Console Data] : EndpointComm-CathLab: aoMyRoomID: [7]
+12:33:02 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Protocol Version: 003
+12:33:02 - 11-16-2009: [Console Data] : EndpointComm-CathLab: iRmCnt-[8]
+12:33:02 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Sisters]
+12:33:02 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Womens]
+12:33:02 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Wetlab]
+12:33:02 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [4] [Control 1]
+12:33:02 - 11-16-2009: E3-sysMyRoomID -> 7d
+12:33:02 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [5] [Control 2]
+12:33:02 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [OR 8]
+12:33:02 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Cathlab]
+12:33:02 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [St. Francis]
+12:33:02 - 11-16-2009: E3-sysRoomCount -> 8d
+12:33:40 - 11-16-2009: [Console Data] : Update request from Slot-05.IP-ID-03
+12:33:41 - 11-16-2009: Conf -> 1
+12:33:41 - 11-16-2009: Conf_Page_Active -> 1
+12:33:41 - 11-16-2009: Conf -> 0
+12:33:56 - 11-16-2009: [Console Data] : EndpointComm-CathLab: SendKeepAlive Local: [020799:10:Cathlab:E0031000101100:03]
+12:33:56 - 11-16-2009: TxRoomLocal3 -> 020799:10:Cathlab:E0031000101100:03
+12:34:03 - 11-16-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+12:34:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Rx_FmHub recv: [029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03]
+12:34:03 - 11-16-2009: [Console Data] : sHeader-[029907]  iCmd-[11]  sData-[H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+]
+12:34:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: System Status message received
+12:34:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: ProcessSystemStatus() HubMsg: System Status
+12:34:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: aoMyRoomID: [7]
+12:34:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Protocol Version: 003
+12:34:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: iRmCnt-[8]
+12:34:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Sisters]
+12:34:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Womens]
+12:34:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Wetlab]
+12:34:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [4] [Control 1]
+12:34:03 - 11-16-2009: E3-sysMyRoomID -> 7d
+12:34:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [5] [Control 2]
+12:34:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [OR 8]
+12:34:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Cathlab]
+12:34:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [St. Francis]
+12:34:03 - 11-16-2009: E3-sysRoomCount -> 8d
+12:34:09 - 11-16-2009: RxRoomLocal3 -> 020407:20:Control 1+1101101:03
+12:34:09 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Rx_FmHub recv: [020407:20:Control 1+1101101:03]
+12:34:09 - 11-16-2009: [Console Data] : EndpointComm-CathLab: ProcessHubMsg() Msg from Hub: [020407:20:Control 1+1101101:03]
+12:34:09 - 11-16-2009: [Console Data] : sHeader-[020407]  iCmd-[20]  sData-[Control 1+1101101]
+12:34:09 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room Call message
+12:34:09 - 11-16-2009: //E3-RmAttrRemoteSVidCountIn -> 1d
+12:34:09 - 11-16-2009: //E3-RmAttrRemoteRGBCountIn -> 0d
+12:34:09 - 11-16-2009: //E3-RmAttrRemoteHDCountIn -> 1d
+12:34:09 - 11-16-2009: //E3-RmAttrRemoteSVidCountOut -> 1d
+12:34:09 - 11-16-2009: //E3-RmAttrRemoteRGBCountOut -> 0d
+12:34:09 - 11-16-2009: //E3-RmAttrRemoteHDCountOut -> 1d
+12:34:09 - 11-16-2009: //E3-RingGenerator -> 1
+12:34:09 - 11-16-2009: E3-ConferenceState -> 1d
+12:34:09 - 11-16-2009: E3-ConfMessage -> Request From Control 1
+12:34:09 - 11-16-2009: E3-fbCallStateFlash -> 1
+12:34:09 - 11-16-2009: E3-fbFlash -> 1
+12:34:09 - 11-16-2009: E3-btnConfStartEnable -> 0d
+12:34:09 - 11-16-2009: E3-btnConfAcceptEnable -> 1d
+12:34:09 - 11-16-2009: E3-btnConfDeclineEnable -> 1d
+12:34:10 - 11-16-2009: E3-fbFlash -> 0
+12:34:11 - 11-16-2009: E3-fbFlash -> 1
+12:34:12 - 11-16-2009: E3-fbFlash -> 0
+12:34:13 - 11-16-2009: E3-fbFlash -> 1
+12:34:14 - 11-16-2009: E3-fbFlash -> 0
+12:34:15 - 11-16-2009: E3-fbFlash -> 1
+12:34:16 - 11-16-2009: E3-pbConfAccept -> 1
+12:34:16 - 11-16-2009: E3-fbConfAcceptButton -> 1
+12:34:16 - 11-16-2009: TxRoomLocal3 -> 020704:21:Cathlab+1000101:03
+12:34:16 - 11-16-2009: //E3-RingGenerator -> 0
+12:34:16 - 11-16-2009: E3-ConferenceState -> 5d
+12:34:16 - 11-16-2009: E3-ConfMessage -> Connecting to Control 1
+12:34:16 - 11-16-2009: E3-btnConfAcceptEnable -> 0d
+12:34:16 - 11-16-2009: E3-btnConfDeclineEnable -> 0d
+12:34:16 - 11-16-2009: //E3-sigConferenceActive -> 1
+12:34:16 - 11-16-2009: E3-pbConfAccept -> 0
+12:34:16 - 11-16-2009: E3-fbConfAcceptButton -> 0
+12:34:16 - 11-16-2009: Riv_CMISep_Eth3_status -> 1d
+12:34:16 - 11-16-2009: E3-ConferenceState -> 5d
+12:34:16 - 11-16-2009: E3-ConfMessage -> Connecting to Control 1
+12:34:16 - 11-16-2009: TxRoomLocal3 -> 020704:25:0+1,Ceiling Camera+2,EP Med+3,EP Med+4,EP Med+:03
+12:34:16 - 11-16-2009: RxRoomLocal3 -> 020407:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03
+12:34:16 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Rx_FmHub recv: [020407:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03]
+12:34:16 - 11-16-2009: [Console Data] : EndpointComm-CathLab: ProcessHubMsg() Msg from Hub: [020407:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03]
+12:34:16 - 11-16-2009: [Console Data] : sHeader-[020407]  iCmd-[25]  sData-[0+1,aaa+2,bbb+3,ccc+4,ddd+]
+12:34:16 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room Call message
+12:34:16 - 11-16-2009: E3-txt_ConfInSource1 -> <aaa>
+12:34:16 - 11-16-2009: E3-txt_ConfInSource2 -> <bbb>
+12:34:16 - 11-16-2009: E3-txt_ConfInSource3 -> <ccc>
+12:34:16 - 11-16-2009: E3-txt_ConfInSource4 -> <ddd>
+12:34:16 - 11-16-2009: E3-fbFlash -> 0
+12:34:17 - 11-16-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+0,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+12:34:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Rx_FmHub recv: [029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+0,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03]
+12:34:17 - 11-16-2009: [Console Data] : sHeader-[029907]  iCmd-[11]  sData-[H0030800025+0,Sisters+0,Womens+0,Wetlab+0,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+]
+12:34:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: System Status message received
+12:34:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: ProcessSystemStatus() HubMsg: System Status
+12:34:17 - 11-16-2009: E3-sysMyRoomID -> 7d
+12:34:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: aoMyRoomID: [7]
+12:34:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Protocol Version: 003
+12:34:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: iRmCnt-[8]
+12:34:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Sisters]
+12:34:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Womens]
+12:34:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Wetlab]
+12:34:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Control 1]
+12:34:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [5] [Control 2]
+12:34:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [OR 8]
+12:34:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Cathlab]
+12:34:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [St. Francis]
+12:34:17 - 11-16-2009: E3-Room4Available -> 0
+12:34:17 - 11-16-2009: E3-sysRoomCount -> 8d
+12:34:17 - 11-16-2009: E3-fbFlash -> 1
+12:34:18 - 11-16-2009: Riv_CMISep_Eth3_status -> 5d
+12:34:18 - 11-16-2009: RxRoomLocal3 -> 020407:22:Control 1+100:03
+12:34:18 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Rx_FmHub recv: [020407:22:Control 1+100:03]
+12:34:18 - 11-16-2009: [Console Data] : EndpointComm-CathLab: ProcessHubMsg() Msg from Hub: [020407:22:Control 1+100:03]
+12:34:18 - 11-16-2009: [Console Data] : sHeader-[020407]  iCmd-[22]  sData-[Control 1+100]
+12:34:18 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room Call message
+12:34:18 - 11-16-2009: //E3-RmAttrRemoteSVidCountIn -> 0d
+12:34:18 - 11-16-2009: //E3-RmAttrRemoteRGBCountIn -> 0d
+12:34:18 - 11-16-2009: //E3-RmAttrRemoteHDCountIn -> 0d
+12:34:18 - 11-16-2009: //E3-RmAttrRemoteSVidCountOut -> 1d
+12:34:18 - 11-16-2009: //E3-RmAttrRemoteRGBCountOut -> 0d
+12:34:18 - 11-16-2009: //E3-RmAttrRemoteHDCountOut -> 0d
+12:34:18 - 11-16-2009: E3-ConferenceState -> 6d
+12:34:18 - 11-16-2009: E3-ConfMessage -> Disconnecting from Control 1
+12:34:18 - 11-16-2009: //E3-sigConferenceActive -> 0
+12:34:18 - 11-16-2009: //E3-EnableVideoInBtn -> 1d
+12:34:18 - 11-16-2009: //E3-EnableVideoOutBtn -> 1d
+12:34:18 - 11-16-2009: E3-txt_ConfInSource1 -> <No Signal>
+12:34:18 - 11-16-2009: E3-txt_ConfInSource2 -> <No Signal>
+12:34:18 - 11-16-2009: E3-txt_ConfInSource3 -> <No Signal>
+12:34:18 - 11-16-2009: E3-txt_ConfInSource4 -> <No Signal>
+12:34:18 - 11-16-2009: Riv_CMISep_Eth3_status -> 3d
+12:34:18 - 11-16-2009: E3-ConferenceState -> 6d
+12:34:18 - 11-16-2009: E3-ConfMessage -> Disconnecting from Control 1
+12:34:18 - 11-16-2009: E3-fbFlash -> 0
+12:34:19 - 11-16-2009: Riv_CMISep_Eth3_status -> 4d
+12:34:19 - 11-16-2009: Riv_CMISep_Eth3_status -> 0d
+12:34:19 - 11-16-2009: E3-ConferenceState -> 0d
+12:34:19 - 11-16-2009: E3-ConfMessage -> Ready
+12:34:19 - 11-16-2009: E3-fbCallStateFlash -> 0
+12:34:19 - 11-16-2009: E3-btnConfStartEnable -> 1d
+12:34:19 - 11-16-2009: //E3-EnableVideoInBtn -> 0d
+12:34:19 - 11-16-2009: //E3-EnableVideoOutBtn -> 0d
+12:34:56 - 11-16-2009: [Console Data] : EndpointComm-CathLab: SendKeepAlive Local: [020799:10:Cathlab:E0031000101100:03]
+12:34:56 - 11-16-2009: TxRoomLocal3 -> 020799:10:Cathlab:E0031000101100:03
+12:35:03 - 11-16-2009: [Console Data] : MP2E>EndpointComm-CathLab: Rx_FmHub recv: [029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03]
+12:35:03 - 11-16-2009: [Console Data] : sHeader-[029907]  iCmd-[11]  sData-[H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+]
+12:35:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: System Status message received
+12:35:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: ProcessSystemStatus() HubMsg: System Status
+12:35:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: aoMyRoomID: [7]
+12:35:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Protocol Version: 003
+12:35:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: iRmCnt-[8]
+12:35:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Sisters]
+12:35:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Womens]
+12:35:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Wetlab]
+12:35:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [4] [Control 1]
+12:35:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [5] [Control 2]
+12:35:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [OR 8]
+12:35:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Cathlab]
+12:35:03 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [St. Francis]
+12:35:13 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Rx_FmHub recv: [020407:20:Control 1+1101101:03]
+12:35:13 - 11-16-2009: [Console Data] : EndpointComm-CathLab: ProcessHubMsg() Msg from Hub: [020407:20:Control 1+1101101:03]
+12:35:13 - 11-16-2009: [Console Data] : sHeader-[020407]  iCmd-[20]  sData-[Control 1+1101101]
+12:35:13 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room Call message
+12:35:16 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Rx_FmHub recv: [020407:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03]
+12:35:16 - 11-16-2009: [Console Data] : EndpointComm-CathLab: ProcessHubMsg() Msg from Hub: [020407:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03]
+12:35:16 - 11-16-2009: [Console Data] : sHeader-[020407]  iCmd-[25]  sData-[0+1,aaa+2,bbb+3,ccc+4,ddd+]
+12:35:16 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room Call message
+12:35:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Rx_FmHub recv: [029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+0,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03]
+12:35:17 - 11-16-2009: [Console Data] : sHeader-[029907]  iCmd-[11]  sData-[H0030800025+0,Sisters+0,Womens+0,Wetlab+0,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+]
+12:35:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: System Status message received
+12:35:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: ProcessSystemStatus() HubMsg: System Status
+12:35:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: aoMyRoomID: [7]
+12:35:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Protocol Version: 003
+12:35:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: iRmCnt-[8]
+12:35:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Sisters]
+12:35:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Womens]
+12:35:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Wetlab]
+12:35:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Control 1]
+12:35:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [5] [Control 2]
+12:35:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [OR 8]
+12:35:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Cathlab]
+12:35:17 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [St. Francis]
+12:35:19 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Rx_FmHub recv: [020407:22:Control 1+100:03]
+12:35:19 - 11-16-2009: [Console Data] : EndpointComm-CathLab: ProcessHubMsg() Msg from Hub: [020407:22:Control 1+100:03]
+12:35:19 - 11-16-2009: [Console Data] : sHeader-[020407]  iCmd-[22]  sData-[Control 1+100]
+12:35:19 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room Call message
+12:35:56 - 11-16-2009: [Console Data] : EndpointComm-CathLab: SendKeepAlive Local: [020799:10:Cathlab:E0031000101100:03]
+12:36:04 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Rx_FmHub recv: [029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03]
+12:36:04 - 11-16-2009: [Console Data] : sHeader-[029907]  iCmd-[11]  sData-[H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+]
+12:36:04 - 11-16-2009: [Console Data] : EndpointComm-CathLab: System Status message received
+12:36:04 - 11-16-2009: [Console Data] : EndpointComm-CathLab: ProcessSystemStatus() HubMsg: System Status
+12:36:04 - 11-16-2009: [Console Data] : EndpointComm-CathLab: aoMyRoomID: [7]
+12:36:04 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Protocol Version: 003
+12:36:04 - 11-16-2009: [Console Data] : EndpointComm-CathLab: iRmCnt-[8]
+12:36:04 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Sisters]
+12:36:04 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Womens]
+12:36:04 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Wetlab]
+12:36:04 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [4] [Control 1]
+12:36:04 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [5] [Control 2]
+12:36:04 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [OR 8]
+12:36:04 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [Cathlab]
+12:36:04 - 11-16-2009: [Console Data] : EndpointComm-CathLab: Room: [0] [St. Francis]

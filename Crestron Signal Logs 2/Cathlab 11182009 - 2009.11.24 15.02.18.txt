@@ -1,0 +1,679 @@
+14:51:51 - 11-24-2009: E3-pg_HwRestart -> 1
+14:51:51 - 11-24-2009: E3-pbSource1fb -> 1
+14:51:51 - 11-24-2009: E3-pbTarget4fb -> 1
+14:51:51 - 11-24-2009: E3-btnConfStartEnable -> 1d
+14:51:51 - 11-24-2009: E3-btnPrivacyEnable -> 1d
+14:51:51 - 11-24-2009: Cathlab_DVI_Send_Sources$ -> EP Med
+14:51:51 - 11-24-2009: Cathlab_S-Video_Send_Sources$ -> Ceiling Camera
+14:51:51 - 11-24-2009: E3-ConfMessage -> Ready
+14:51:51 - 11-24-2009: E3-Room1Name -> Sisters
+14:51:51 - 11-24-2009: E3-Room2Name -> Womens
+14:51:51 - 11-24-2009: E3-Room3Name -> Wetlab
+14:51:51 - 11-24-2009: E3-Room4Name -> Control 1
+14:51:51 - 11-24-2009: E3-Room5Name -> Control 2
+14:51:51 - 11-24-2009: E3-Room6Name -> OR 8
+14:51:51 - 11-24-2009: E3-Room7Name -> Cathlab
+14:51:51 - 11-24-2009: E3-Room8Name -> St. Francis
+14:51:51 - 11-24-2009: E3-RoomConnect -> 1
+14:51:51 - 11-24-2009: LocalEnable3 -> 1
+14:51:51 - 11-24-2009: //E3-Target2Source -> 3d
+14:51:51 - 11-24-2009: E3-Room4Available -> 1
+14:51:51 - 11-24-2009: E3-Room5Available -> 1
+14:51:51 - 11-24-2009: E3-sysRoomCount -> 8d
+14:51:51 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:51:51 - 11-24-2009: E3-TargetRoomName -> Please Select
+14:51:51 - 11-24-2009: Cathlab_Video_Source_Count -> 1d
+14:51:51 - 11-24-2009: Cathlab_Room_Name$ -> Cathlab
+14:51:51 - 11-24-2009: E3-txt_ConfInSource1 -> <No Signal>
+14:51:51 - 11-24-2009: E3-txt_ConfInSource2 -> <No Signal>
+14:51:51 - 11-24-2009: E3-txt_ConfInSource3 -> <No Signal>
+14:51:51 - 11-24-2009: E3-txt_ConfInSource4 -> <No Signal>
+14:51:51 - 11-24-2009: Init_Stage_1 -> 1
+14:51:51 - 11-24-2009: Init_Stage_2 -> 1
+14:51:51 - 11-24-2009: Init_Stage_3 -> 1
+14:51:51 - 11-24-2009: Init_Stage3_Complete -> 1
+14:51:51 - 11-24-2009: E3_Init_0_Complete -> 1
+14:51:51 - 11-24-2009: E3_Init_1_Complete -> 1
+14:51:51 - 11-24-2009: E3_Init_2_Complete -> 1
+14:51:51 - 11-24-2009: E3_Init_3_Complete -> 1
+14:51:51 - 11-24-2009: //NotNeeded-btnVTCEnable -> 2d
+14:51:51 - 11-24-2009: Close_Conf_Out_Select_Pages -> 1
+14:51:51 - 11-24-2009: E3-sigConferenceNotActive -> 1
+14:51:51 - 11-24-2009: Init_Stage0_Complete -> 1
+14:51:51 - 11-24-2009: Init_Stage1_Complete -> 1
+14:51:51 - 11-24-2009: [Console Data] : 
+14:51:51 - 11-24-2009: Init_Stage2_Complete -> 1
+14:52:02 - 11-24-2009: [Console Data] : MP2E>
+14:52:02 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:52:02 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:52:02 - 11-24-2009: E3-sysRoomCount -> 8d
+14:52:12 - 11-24-2009: TxRoomLocal3 -> 020799:10:Cathlab:E0031000101100:03
+14:52:19 - 11-24-2009: RxRoomLocal3 -> 020407:20:Control 1+1101101:03
+14:52:19 - 11-24-2009: //E3-RmAttrRemoteSVidCountIn -> 1d
+14:52:19 - 11-24-2009: //E3-RmAttrRemoteRGBCountIn -> 0d
+14:52:19 - 11-24-2009: //E3-RmAttrRemoteHDCountIn -> 1d
+14:52:19 - 11-24-2009: //E3-RmAttrRemoteSVidCountOut -> 1d
+14:52:19 - 11-24-2009: //E3-RmAttrRemoteRGBCountOut -> 0d
+14:52:19 - 11-24-2009: //E3-RmAttrRemoteHDCountOut -> 1d
+14:52:19 - 11-24-2009: //E3-RingGenerator -> 1
+14:52:19 - 11-24-2009: E3-ConferenceState -> 1d
+14:52:19 - 11-24-2009: E3-ConfMessage -> Request From Control 1
+14:52:19 - 11-24-2009: E3-fbCallStateFlash -> 1
+14:52:19 - 11-24-2009: E3-btnConfStartEnable -> 0d
+14:52:19 - 11-24-2009: E3-btnConfAcceptEnable -> 1d
+14:52:19 - 11-24-2009: E3-btnConfDeclineEnable -> 1d
+14:52:19 - 11-24-2009: E3-fbFlash -> 1
+14:52:20 - 11-24-2009: E3-fbFlash -> 0
+14:52:21 - 11-24-2009: E3-fbFlash -> 1
+14:52:21 - 11-24-2009: E3-pbConfAccept -> 1
+14:52:21 - 11-24-2009: E3-fbConfAcceptButton -> 1
+14:52:21 - 11-24-2009: TxRoomLocal3 -> 020704:21:Cathlab+1000101:03
+14:52:21 - 11-24-2009: //E3-RingGenerator -> 0
+14:52:21 - 11-24-2009: E3-ConferenceState -> 5d
+14:52:21 - 11-24-2009: E3-ConfMessage -> Connecting to Control 1
+14:52:21 - 11-24-2009: E3-btnConfAcceptEnable -> 0d
+14:52:21 - 11-24-2009: E3-btnConfDeclineEnable -> 0d
+14:52:21 - 11-24-2009: E3-sigConferenceActive -> 1
+14:52:21 - 11-24-2009: E3-sigConferenceNotActive -> 0
+14:52:21 - 11-24-2009: Close_Conf_Out_Select_Pages -> 0
+14:52:22 - 11-24-2009: E3-pbConfAccept -> 0
+14:52:22 - 11-24-2009: E3-fbConfAcceptButton -> 0
+14:52:22 - 11-24-2009: RxRoomLocal3 -> 020407:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03
+14:52:22 - 11-24-2009: E3-txt_ConfInSource1 -> <aaa>
+14:52:22 - 11-24-2009: E3-txt_ConfInSource2 -> <bbb>
+14:52:22 - 11-24-2009: E3-txt_ConfInSource3 -> <ccc>
+14:52:22 - 11-24-2009: E3-txt_ConfInSource4 -> <ddd>
+14:52:22 - 11-24-2009: Riv_CMISep_Eth3_status -> 1d
+14:52:22 - 11-24-2009: E3-ConferenceState -> 5d
+14:52:22 - 11-24-2009: E3-ConfMessage -> Connecting to Control 1
+14:52:22 - 11-24-2009: TxRoomLocal3 -> 020704:25:0+1,Ceiling Camera+2,EP Med+3,EP Med+4,EP Med+:03
+14:52:22 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+0,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:52:22 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:52:22 - 11-24-2009: E3-Room4Available -> 0
+14:52:22 - 11-24-2009: E3-sysRoomCount -> 8d
+14:52:22 - 11-24-2009: E3-fbFlash -> 0
+14:52:23 - 11-24-2009: E3-fbFlash -> 1
+14:52:24 - 11-24-2009: E3-fbFlash -> 0
+14:52:25 - 11-24-2009: E3-fbFlash -> 1
+14:52:26 - 11-24-2009: E3-fbFlash -> 0
+14:52:27 - 11-24-2009: E3-fbFlash -> 1
+14:52:28 - 11-24-2009: E3-fbFlash -> 0
+14:52:29 - 11-24-2009: E3-fbFlash -> 1
+14:52:30 - 11-24-2009: E3-fbFlash -> 0
+14:52:31 - 11-24-2009: E3-fbFlash -> 1
+14:52:32 - 11-24-2009: E3-fbFlash -> 0
+14:52:33 - 11-24-2009: E3-fbFlash -> 1
+14:52:34 - 11-24-2009: E3-fbFlash -> 0
+14:52:35 - 11-24-2009: Riv_CMISep_Eth3_status -> 2d
+14:52:35 - 11-24-2009: E3-ConferenceState -> 2d
+14:52:35 - 11-24-2009: E3-ConfMessage -> Live With Control 1
+14:52:35 - 11-24-2009: E3-btnConfCancelEnable -> 1d
+14:52:35 - 11-24-2009: //E3-EnableVideoInBtn -> 1d
+14:52:35 - 11-24-2009: //E3-EnableVideoOutBtn -> 1d
+14:52:35 - 11-24-2009: E3-fbFlash -> 1
+14:52:36 - 11-24-2009: E3-fbFlash -> 0
+14:52:37 - 11-24-2009: E3-fbFlash -> 1
+14:52:38 - 11-24-2009: E3-fbFlash -> 0
+14:52:39 - 11-24-2009: E3-fbFlash -> 1
+14:52:40 - 11-24-2009: E3-fbFlash -> 0
+14:52:41 - 11-24-2009: E3-fbFlash -> 1
+14:52:42 - 11-24-2009: E3-fbFlash -> 0
+14:52:43 - 11-24-2009: E3-fbFlash -> 1
+14:52:44 - 11-24-2009: E3-fbFlash -> 0
+14:52:45 - 11-24-2009: E3-fbFlash -> 1
+14:52:46 - 11-24-2009: E3-fbFlash -> 0
+14:52:47 - 11-24-2009: E3-fbFlash -> 1
+14:52:48 - 11-24-2009: E3-fbFlash -> 0
+14:52:49 - 11-24-2009: E3-fbFlash -> 1
+14:52:50 - 11-24-2009: E3-fbFlash -> 0
+14:52:51 - 11-24-2009: E3-fbFlash -> 1
+14:52:52 - 11-24-2009: E3-fbFlash -> 0
+14:52:53 - 11-24-2009: E3-fbFlash -> 1
+14:52:54 - 11-24-2009: E3-fbFlash -> 0
+14:52:55 - 11-24-2009: E3-fbFlash -> 1
+14:52:56 - 11-24-2009: E3-fbFlash -> 0
+14:52:57 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+0,Control 1+0,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:52:57 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:52:57 - 11-24-2009: E3-Room5Available -> 0
+14:52:57 - 11-24-2009: E3-sysRoomCount -> 8d
+14:52:57 - 11-24-2009: E3-fbFlash -> 1
+14:52:58 - 11-24-2009: E3-fbFlash -> 0
+14:52:59 - 11-24-2009: E3-fbFlash -> 1
+14:53:00 - 11-24-2009: E3-fbFlash -> 0
+14:53:01 - 11-24-2009: E3-fbFlash -> 1
+14:53:02 - 11-24-2009: E3-fbFlash -> 0
+14:53:03 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+0,Control 1+0,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:53:03 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:53:03 - 11-24-2009: E3-sysRoomCount -> 8d
+14:53:03 - 11-24-2009: E3-fbFlash -> 1
+14:53:04 - 11-24-2009: E3-fbFlash -> 0
+14:53:05 - 11-24-2009: E3-fbFlash -> 1
+14:53:06 - 11-24-2009: E3-fbFlash -> 0
+14:53:07 - 11-24-2009: E3-fbFlash -> 1
+14:53:08 - 11-24-2009: E3-fbFlash -> 0
+14:53:09 - 11-24-2009: E3-fbFlash -> 1
+14:53:10 - 11-24-2009: E3-fbFlash -> 0
+14:53:11 - 11-24-2009: E3-fbFlash -> 1
+14:53:12 - 11-24-2009: TxRoomLocal3 -> 020799:10:Cathlab:E0031000101204:03
+14:53:12 - 11-24-2009: E3-fbFlash -> 0
+14:53:13 - 11-24-2009: E3-fbFlash -> 1
+14:53:14 - 11-24-2009: E3-fbFlash -> 0
+14:53:15 - 11-24-2009: E3-fbFlash -> 1
+14:53:16 - 11-24-2009: E3-fbFlash -> 0
+14:53:17 - 11-24-2009: E3-fbFlash -> 1
+14:53:18 - 11-24-2009: E3-fbFlash -> 0
+14:53:19 - 11-24-2009: E3-fbFlash -> 1
+14:53:20 - 11-24-2009: E3-fbFlash -> 0
+14:53:21 - 11-24-2009: E3-fbFlash -> 1
+14:53:22 - 11-24-2009: E3-fbFlash -> 0
+14:53:23 - 11-24-2009: E3-fbFlash -> 1
+14:53:24 - 11-24-2009: E3-fbFlash -> 0
+14:53:25 - 11-24-2009: E3-fbFlash -> 1
+14:53:26 - 11-24-2009: E3-fbFlash -> 0
+14:53:27 - 11-24-2009: E3-fbFlash -> 1
+14:53:28 - 11-24-2009: E3-pbConfCancel -> 1
+14:53:28 - 11-24-2009: E3-fbConfCancelButton -> 1
+14:53:28 - 11-24-2009: TxRoomLocal3 -> 020704:22:Cathlab+1000101:03
+14:53:28 - 11-24-2009: E3-ConferenceState -> 6d
+14:53:28 - 11-24-2009: E3-General_Buttons_Enable -> 1d
+14:53:28 - 11-24-2009: E3-pg_HwRestart -> 0
+14:53:28 - 11-24-2009: E3-pg_HwRestart -> 1
+14:53:28 - 11-24-2009: E3-ConfMessage -> Disconnecting from Control 1
+14:53:28 - 11-24-2009: E3-btnConfCancelEnable -> 0d
+14:53:28 - 11-24-2009: E3-sigConferenceActive -> 0
+14:53:28 - 11-24-2009: E3-sigConferenceNotActive -> 1
+14:53:28 - 11-24-2009: Close_Conf_Out_Select_Pages -> 1
+14:53:28 - 11-24-2009: E3-txt_ConfInSource1 -> <No Signal>
+14:53:28 - 11-24-2009: E3-txt_ConfInSource2 -> <No Signal>
+14:53:28 - 11-24-2009: E3-txt_ConfInSource3 -> <No Signal>
+14:53:28 - 11-24-2009: E3-txt_ConfInSource4 -> <No Signal>
+14:53:28 - 11-24-2009: E3-pbConfCancel -> 0
+14:53:28 - 11-24-2009: E3-fbConfCancelButton -> 0
+14:53:28 - 11-24-2009: Riv_CMISep_Eth3_status -> 3d
+14:53:28 - 11-24-2009: E3-ConferenceState -> 6d
+14:53:28 - 11-24-2009: E3-ConfMessage -> Disconnecting from Control 1
+14:53:28 - 11-24-2009: E3-fbFlash -> 0
+14:53:29 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:53:29 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:53:29 - 11-24-2009: E3-Room4Available -> 1
+14:53:29 - 11-24-2009: E3-Room5Available -> 1
+14:53:29 - 11-24-2009: E3-sysRoomCount -> 8d
+14:53:29 - 11-24-2009: E3-fbFlash -> 1
+14:53:30 - 11-24-2009: E3-fbFlash -> 0
+14:53:31 - 11-24-2009: E3-fbFlash -> 1
+14:53:32 - 11-24-2009: E3-fbFlash -> 0
+14:53:33 - 11-24-2009: E3-fbFlash -> 1
+14:53:34 - 11-24-2009: E3-fbFlash -> 0
+14:53:35 - 11-24-2009: E3-fbFlash -> 1
+14:53:36 - 11-24-2009: E3-fbFlash -> 0
+14:53:37 - 11-24-2009: E3-fbFlash -> 1
+14:53:38 - 11-24-2009: Riv_CMISep_Eth3_status -> 4d
+14:53:38 - 11-24-2009: Riv_CMISep_Eth3_status -> 0d
+14:53:38 - 11-24-2009: E3-ConferenceState -> 0d
+14:53:38 - 11-24-2009: E3-ConfMessage -> Ready
+14:53:38 - 11-24-2009: E3-fbCallStateFlash -> 0
+14:53:38 - 11-24-2009: E3-btnConfStartEnable -> 1d
+14:53:38 - 11-24-2009: //E3-EnableVideoInBtn -> 0d
+14:53:38 - 11-24-2009: //E3-EnableVideoOutBtn -> 0d
+14:53:38 - 11-24-2009: E3-fbFlash -> 0
+14:54:03 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:54:03 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:54:03 - 11-24-2009: E3-sysRoomCount -> 8d
+14:54:12 - 11-24-2009: TxRoomLocal3 -> 020799:10:Cathlab:E0031000101104:03
+14:54:23 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+0,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:54:23 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:54:23 - 11-24-2009: E3-Room4Available -> 0
+14:54:23 - 11-24-2009: E3-sysRoomCount -> 8d
+14:54:47 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:54:47 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:54:47 - 11-24-2009: E3-Room4Available -> 1
+14:54:47 - 11-24-2009: E3-sysRoomCount -> 8d
+14:55:04 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:55:04 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:55:04 - 11-24-2009: E3-sysRoomCount -> 8d
+14:55:12 - 11-24-2009: TxRoomLocal3 -> 020799:10:Cathlab:E0031000101104:03
+14:55:17 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+0,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:55:17 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:55:17 - 11-24-2009: E3-Room5Available -> 0
+14:55:17 - 11-24-2009: E3-sysRoomCount -> 8d
+14:55:35 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:55:35 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:55:35 - 11-24-2009: E3-Room5Available -> 1
+14:55:35 - 11-24-2009: E3-sysRoomCount -> 8d
+14:56:04 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:56:04 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:56:04 - 11-24-2009: E3-sysRoomCount -> 8d
+14:56:12 - 11-24-2009: TxRoomLocal3 -> 020799:10:Cathlab:E0031000101104:03
+14:56:17 - 11-24-2009: E3-pbConfStart -> 1
+14:56:17 - 11-24-2009: E3-General_Buttons_Enable -> 0d
+14:56:17 - 11-24-2009: E3-pgRoomList -> 1
+14:56:17 - 11-24-2009: E3-pg_HwRestart -> 0
+14:56:17 - 11-24-2009: [Console Data] : RoomControl-Rivulet 2 (Cathlab): Conference page entered
+14:56:17 - 11-24-2009: E3-GUIRoomState1 -> 1d
+14:56:17 - 11-24-2009: E3-GUIRoomState2 -> 1d
+14:56:17 - 11-24-2009: E3-GUIRoomState3 -> 1d
+14:56:17 - 11-24-2009: E3-GUIRoomState4 -> 2d
+14:56:17 - 11-24-2009: E3-GUIRoomState5 -> 2d
+14:56:17 - 11-24-2009: E3-GUIRoomState6 -> 1d
+14:56:17 - 11-24-2009: E3-GUIRoomState8 -> 1d
+14:56:17 - 11-24-2009: E3-pbConfStart -> 0
+14:56:18 - 11-24-2009: E3-pbRoomNumber5 -> 1
+14:56:19 - 11-24-2009: [Console Data] : RoomControl-Rivulet 2 (Cathlab): Room Button: 5
+14:56:19 - 11-24-2009: [Console Data] : RoomControl-Rivulet 2 (Cathlab): MyRoomID: 7,  sysRoomCount: 8,  RoomAvailable: 1
+14:56:19 - 11-24-2009: [Console Data] : RoomControl-Rivulet 2 (Cathlab): Target Room: 5
+14:56:19 - 11-24-2009: E3-fpbRoomNumber5 -> 1
+14:56:19 - 11-24-2009: E3-TargetRoomID -> 5d
+14:56:19 - 11-24-2009: E3-TargetRoomName -> Control 2
+14:56:19 - 11-24-2009: E3-RC-PulseCloseRoomSelect -> 1
+14:56:19 - 11-24-2009: E3-ConfCallActivate -> 1
+14:56:19 - 11-24-2009: E3-fbConfStartButton -> 1
+14:56:19 - 11-24-2009: TxRoomLocal3 -> 020705:20:Cathlab+1000101:03
+14:56:19 - 11-24-2009: E3-ConferenceState -> 1d
+14:56:19 - 11-24-2009: E3-PulseCloseRoomSelect -> 1
+14:56:19 - 11-24-2009: E3-pgRoomList -> 0
+14:56:19 - 11-24-2009: E3-pg_HwRestart -> 1
+14:56:19 - 11-24-2009: E3-General_Buttons_Enable -> 1d
+14:56:19 - 11-24-2009: E3-ConfMessage -> Request To Control 2
+14:56:19 - 11-24-2009: E3-fbCallStateFlash -> 1
+14:56:19 - 11-24-2009: E3-fbFlash -> 1
+14:56:19 - 11-24-2009: E3-btnConfStartEnable -> 0d
+14:56:19 - 11-24-2009: E3-btnConfCancelEnable -> 1d
+14:56:19 - 11-24-2009: E3-pbRoomNumber5 -> 0
+14:56:19 - 11-24-2009: E3-fpbRoomNumber5 -> 0
+14:56:19 - 11-24-2009: E3-RC-PulseCloseRoomSelect -> 0
+14:56:19 - 11-24-2009: E3-PulseCloseRoomSelect -> 0
+14:56:19 - 11-24-2009: E3-ConfCallActivate -> 0
+14:56:19 - 11-24-2009: E3-fbConfStartButton -> 0
+14:56:20 - 11-24-2009: E3-fbFlash -> 0
+14:56:21 - 11-24-2009: E3-fbFlash -> 1
+14:56:22 - 11-24-2009: E3-fbFlash -> 0
+14:56:22 - 11-24-2009: RxRoomLocal3 -> 020507:21:Control 2+1101101:03
+14:56:22 - 11-24-2009: //E3-RmAttrRemoteSVidCountIn -> 1d
+14:56:22 - 11-24-2009: //E3-RmAttrRemoteRGBCountIn -> 0d
+14:56:22 - 11-24-2009: //E3-RmAttrRemoteHDCountIn -> 1d
+14:56:22 - 11-24-2009: //E3-RmAttrRemoteSVidCountOut -> 1d
+14:56:22 - 11-24-2009: //E3-RmAttrRemoteRGBCountOut -> 0d
+14:56:22 - 11-24-2009: //E3-RmAttrRemoteHDCountOut -> 1d
+14:56:22 - 11-24-2009: E3-ConferenceState -> 5d
+14:56:22 - 11-24-2009: E3-ConfMessage -> Connecting to Control 2
+14:56:22 - 11-24-2009: E3-btnConfCancelEnable -> 0d
+14:56:22 - 11-24-2009: E3-sigConferenceActive -> 1
+14:56:22 - 11-24-2009: TxRoomLocal3 -> 020705:25:0+1,Ceiling Camera+2,EP Med+3,EP Med+4,EP Med+:03
+14:56:22 - 11-24-2009: E3-sigConferenceNotActive -> 0
+14:56:22 - 11-24-2009: Close_Conf_Out_Select_Pages -> 0
+14:56:22 - 11-24-2009: RxRoomLocal3 -> 020507:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03
+14:56:22 - 11-24-2009: E3-txt_ConfInSource1 -> <aaa>
+14:56:22 - 11-24-2009: E3-txt_ConfInSource2 -> <bbb>
+14:56:22 - 11-24-2009: E3-txt_ConfInSource3 -> <ccc>
+14:56:22 - 11-24-2009: E3-txt_ConfInSource4 -> <ddd>
+14:56:22 - 11-24-2009: Riv_CMISep_Eth3_status -> 1d
+14:56:22 - 11-24-2009: E3-ConferenceState -> 5d
+14:56:22 - 11-24-2009: E3-ConfMessage -> Connecting to Control 2
+14:56:22 - 11-24-2009: RxRoomLocal3 -> 020507:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03
+14:56:22 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+0,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:56:22 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:56:22 - 11-24-2009: E3-Room5Available -> 0
+14:56:22 - 11-24-2009: E3-sysRoomCount -> 8d
+14:56:23 - 11-24-2009: E3-fbFlash -> 1
+14:56:24 - 11-24-2009: E3-fbFlash -> 0
+14:56:25 - 11-24-2009: E3-fbFlash -> 1
+14:56:26 - 11-24-2009: E3-fbFlash -> 0
+14:56:27 - 11-24-2009: E3-fbFlash -> 1
+14:56:28 - 11-24-2009: E3-fbFlash -> 0
+14:56:29 - 11-24-2009: E3-fbFlash -> 1
+14:56:30 - 11-24-2009: E3-fbFlash -> 0
+14:56:31 - 11-24-2009: E3-fbFlash -> 1
+14:56:32 - 11-24-2009: E3-fbFlash -> 0
+14:56:33 - 11-24-2009: E3-fbFlash -> 1
+14:56:34 - 11-24-2009: E3-fbFlash -> 0
+14:56:35 - 11-24-2009: E3-fbFlash -> 1
+14:56:36 - 11-24-2009: E3-fbFlash -> 0
+14:56:36 - 11-24-2009: Riv_CMISep_Eth3_status -> 2d
+14:56:36 - 11-24-2009: E3-ConferenceState -> 2d
+14:56:36 - 11-24-2009: E3-ConfMessage -> Live With Control 2
+14:56:36 - 11-24-2009: E3-btnConfCancelEnable -> 1d
+14:56:36 - 11-24-2009: //E3-EnableVideoInBtn -> 1d
+14:56:36 - 11-24-2009: //E3-EnableVideoOutBtn -> 1d
+14:56:37 - 11-24-2009: E3-fbFlash -> 1
+14:56:38 - 11-24-2009: E3-fbFlash -> 0
+14:56:39 - 11-24-2009: E3-fbFlash -> 1
+14:56:40 - 11-24-2009: E3-fbFlash -> 0
+14:56:41 - 11-24-2009: E3-fbFlash -> 1
+14:56:42 - 11-24-2009: E3-fbFlash -> 0
+14:56:42 - 11-24-2009: RxRoomLocal3 -> 020507:22:Control 2+1101101:03
+14:56:42 - 11-24-2009: //E3-RmAttrRemoteSVidCountIn -> 1d
+14:56:42 - 11-24-2009: //E3-RmAttrRemoteRGBCountIn -> 0d
+14:56:42 - 11-24-2009: //E3-RmAttrRemoteHDCountIn -> 1d
+14:56:42 - 11-24-2009: //E3-RmAttrRemoteSVidCountOut -> 1d
+14:56:42 - 11-24-2009: //E3-RmAttrRemoteRGBCountOut -> 0d
+14:56:42 - 11-24-2009: //E3-RmAttrRemoteHDCountOut -> 1d
+14:56:42 - 11-24-2009: E3-ConferenceState -> 6d
+14:56:42 - 11-24-2009: E3-ConfMessage -> Disconnecting from Control 2
+14:56:42 - 11-24-2009: E3-btnConfCancelEnable -> 0d
+14:56:42 - 11-24-2009: E3-sigConferenceActive -> 0
+14:56:42 - 11-24-2009: E3-txt_ConfInSource1 -> <No Signal>
+14:56:42 - 11-24-2009: E3-txt_ConfInSource2 -> <No Signal>
+14:56:42 - 11-24-2009: E3-txt_ConfInSource3 -> <No Signal>
+14:56:42 - 11-24-2009: E3-txt_ConfInSource4 -> <No Signal>
+14:56:42 - 11-24-2009: E3-sigConferenceNotActive -> 1
+14:56:42 - 11-24-2009: Close_Conf_Out_Select_Pages -> 1
+14:56:43 - 11-24-2009: Riv_CMISep_Eth3_status -> 3d
+14:56:43 - 11-24-2009: E3-ConferenceState -> 6d
+14:56:43 - 11-24-2009: E3-ConfMessage -> Disconnecting from Control 2
+14:56:43 - 11-24-2009: E3-fbFlash -> 1
+14:56:43 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:56:43 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:56:43 - 11-24-2009: E3-Room5Available -> 1
+14:56:43 - 11-24-2009: E3-sysRoomCount -> 8d
+14:56:44 - 11-24-2009: E3-fbFlash -> 0
+14:56:45 - 11-24-2009: E3-fbFlash -> 1
+14:56:46 - 11-24-2009: E3-fbFlash -> 0
+14:56:47 - 11-24-2009: E3-fbFlash -> 1
+14:56:48 - 11-24-2009: E3-fbFlash -> 0
+14:56:49 - 11-24-2009: E3-fbFlash -> 1
+14:56:50 - 11-24-2009: E3-fbFlash -> 0
+14:56:51 - 11-24-2009: E3-fbFlash -> 1
+14:56:52 - 11-24-2009: E3-fbFlash -> 0
+14:56:52 - 11-24-2009: Riv_CMISep_Eth3_status -> 4d
+14:56:53 - 11-24-2009: E3-fbFlash -> 1
+14:56:53 - 11-24-2009: Riv_CMISep_Eth3_status -> 0d
+14:56:53 - 11-24-2009: E3-ConferenceState -> 0d
+14:56:53 - 11-24-2009: E3-ConfMessage -> Ready
+14:56:53 - 11-24-2009: E3-fbCallStateFlash -> 0
+14:56:53 - 11-24-2009: E3-btnConfStartEnable -> 1d
+14:56:53 - 11-24-2009: //E3-EnableVideoInBtn -> 0d
+14:56:53 - 11-24-2009: //E3-EnableVideoOutBtn -> 0d
+14:56:53 - 11-24-2009: E3-fbFlash -> 0
+14:57:05 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:57:05 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:57:05 - 11-24-2009: E3-sysRoomCount -> 8d
+14:57:11 - 11-24-2009: E3-pbConfStart -> 1
+14:57:11 - 11-24-2009: E3-General_Buttons_Enable -> 0d
+14:57:11 - 11-24-2009: E3-pgRoomList -> 1
+14:57:11 - 11-24-2009: [Console Data] : RoomControl-Rivulet 2 (Cathlab): Conference page entered
+14:57:11 - 11-24-2009: E3-pg_HwRestart -> 0
+14:57:11 - 11-24-2009: E3-pbConfStart -> 0
+14:57:12 - 11-24-2009: TxRoomLocal3 -> 020799:10:Cathlab:E0031000101100:03
+14:57:12 - 11-24-2009: E3-pbRoomNumber4 -> 1
+14:57:12 - 11-24-2009: [Console Data] : RoomControl-Rivulet 2 (Cathlab): Room Button: 4
+14:57:12 - 11-24-2009: [Console Data] : RoomControl-Rivulet 2 (Cathlab): MyRoomID: 7,  sysRoomCount: 8,  RoomAvailable: 1
+14:57:12 - 11-24-2009: [Console Data] : RoomControl-Rivulet 2 (Cathlab): Target Room: 4
+14:57:12 - 11-24-2009: E3-fpbRoomNumber4 -> 1
+14:57:12 - 11-24-2009: E3-TargetRoomID -> 4d
+14:57:12 - 11-24-2009: E3-TargetRoomName -> Control 1
+14:57:12 - 11-24-2009: E3-RC-PulseCloseRoomSelect -> 1
+14:57:12 - 11-24-2009: E3-ConfCallActivate -> 1
+14:57:12 - 11-24-2009: E3-fbConfStartButton -> 1
+14:57:12 - 11-24-2009: TxRoomLocal3 -> 020704:20:Cathlab+1000101:03
+14:57:12 - 11-24-2009: E3-ConferenceState -> 1d
+14:57:12 - 11-24-2009: E3-ConfMessage -> Request To Control 1
+14:57:12 - 11-24-2009: E3-fbCallStateFlash -> 1
+14:57:12 - 11-24-2009: E3-btnConfStartEnable -> 0d
+14:57:12 - 11-24-2009: E3-btnConfCancelEnable -> 1d
+14:57:12 - 11-24-2009: E3-PulseCloseRoomSelect -> 1
+14:57:12 - 11-24-2009: E3-fbFlash -> 1
+14:57:12 - 11-24-2009: E3-pgRoomList -> 0
+14:57:12 - 11-24-2009: E3-pg_HwRestart -> 1
+14:57:12 - 11-24-2009: E3-General_Buttons_Enable -> 1d
+14:57:12 - 11-24-2009: E3-pbRoomNumber4 -> 0
+14:57:12 - 11-24-2009: E3-fpbRoomNumber4 -> 0
+14:57:13 - 11-24-2009: E3-RC-PulseCloseRoomSelect -> 0
+14:57:13 - 11-24-2009: E3-PulseCloseRoomSelect -> 0
+14:57:13 - 11-24-2009: E3-ConfCallActivate -> 0
+14:57:13 - 11-24-2009: E3-fbConfStartButton -> 0
+14:57:13 - 11-24-2009: E3-fbFlash -> 0
+14:57:14 - 11-24-2009: RxRoomLocal3 -> 020407:21:Control 1+1101101:03
+14:57:14 - 11-24-2009: //E3-RmAttrRemoteSVidCountIn -> 1d
+14:57:14 - 11-24-2009: //E3-RmAttrRemoteRGBCountIn -> 0d
+14:57:14 - 11-24-2009: //E3-RmAttrRemoteHDCountIn -> 1d
+14:57:14 - 11-24-2009: //E3-RmAttrRemoteSVidCountOut -> 1d
+14:57:14 - 11-24-2009: //E3-RmAttrRemoteRGBCountOut -> 0d
+14:57:14 - 11-24-2009: //E3-RmAttrRemoteHDCountOut -> 1d
+14:57:14 - 11-24-2009: E3-ConferenceState -> 5d
+14:57:14 - 11-24-2009: E3-ConfMessage -> Connecting to Control 1
+14:57:14 - 11-24-2009: E3-btnConfCancelEnable -> 0d
+14:57:14 - 11-24-2009: E3-sigConferenceActive -> 1
+14:57:14 - 11-24-2009: E3-sigConferenceNotActive -> 0
+14:57:14 - 11-24-2009: Close_Conf_Out_Select_Pages -> 0
+14:57:14 - 11-24-2009: TxRoomLocal3 -> 020704:25:0+1,Ceiling Camera+2,EP Med+3,EP Med+4,EP Med+:03
+14:57:14 - 11-24-2009: E3-fbFlash -> 1
+14:57:14 - 11-24-2009: RxRoomLocal3 -> 020407:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03
+14:57:14 - 11-24-2009: E3-txt_ConfInSource1 -> <aaa>
+14:57:14 - 11-24-2009: E3-txt_ConfInSource2 -> <bbb>
+14:57:14 - 11-24-2009: E3-txt_ConfInSource3 -> <ccc>
+14:57:14 - 11-24-2009: E3-txt_ConfInSource4 -> <ddd>
+14:57:14 - 11-24-2009: Riv_CMISep_Eth3_status -> 1d
+14:57:14 - 11-24-2009: E3-ConferenceState -> 5d
+14:57:14 - 11-24-2009: E3-ConfMessage -> Connecting to Control 1
+14:57:14 - 11-24-2009: RxRoomLocal3 -> 020407:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03
+14:57:15 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+0,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:57:15 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:57:15 - 11-24-2009: E3-Room4Available -> 0
+14:57:15 - 11-24-2009: E3-sysRoomCount -> 8d
+14:57:15 - 11-24-2009: E3-fbFlash -> 0
+14:57:16 - 11-24-2009: E3-fbFlash -> 1
+14:57:17 - 11-24-2009: E3-fbFlash -> 0
+14:57:18 - 11-24-2009: E3-fbFlash -> 1
+14:57:19 - 11-24-2009: E3-fbFlash -> 0
+14:57:20 - 11-24-2009: E3-fbFlash -> 1
+14:57:21 - 11-24-2009: E3-fbFlash -> 0
+14:57:22 - 11-24-2009: E3-fbFlash -> 1
+14:57:23 - 11-24-2009: E3-fbFlash -> 0
+14:57:24 - 11-24-2009: E3-fbFlash -> 1
+14:57:25 - 11-24-2009: E3-fbFlash -> 0
+14:57:26 - 11-24-2009: E3-fbFlash -> 1
+14:57:27 - 11-24-2009: E3-fbFlash -> 0
+14:57:28 - 11-24-2009: Riv_CMISep_Eth3_status -> 2d
+14:57:28 - 11-24-2009: E3-ConferenceState -> 2d
+14:57:28 - 11-24-2009: E3-ConfMessage -> Live With Control 1
+14:57:28 - 11-24-2009: E3-btnConfCancelEnable -> 1d
+14:57:28 - 11-24-2009: //E3-EnableVideoInBtn -> 1d
+14:57:28 - 11-24-2009: //E3-EnableVideoOutBtn -> 1d
+14:57:28 - 11-24-2009: E3-fbFlash -> 1
+14:57:29 - 11-24-2009: E3-fbFlash -> 0
+14:57:30 - 11-24-2009: E3-fbFlash -> 1
+14:57:31 - 11-24-2009: E3-fbFlash -> 0
+14:57:32 - 11-24-2009: E3-fbFlash -> 1
+14:57:33 - 11-24-2009: E3-fbFlash -> 0
+14:57:34 - 11-24-2009: RxRoomLocal3 -> 020407:22:Control 1+1101101:03
+14:57:34 - 11-24-2009: //E3-RmAttrRemoteSVidCountIn -> 1d
+14:57:34 - 11-24-2009: //E3-RmAttrRemoteRGBCountIn -> 0d
+14:57:34 - 11-24-2009: //E3-RmAttrRemoteHDCountIn -> 1d
+14:57:34 - 11-24-2009: //E3-RmAttrRemoteSVidCountOut -> 1d
+14:57:34 - 11-24-2009: //E3-RmAttrRemoteRGBCountOut -> 0d
+14:57:34 - 11-24-2009: //E3-RmAttrRemoteHDCountOut -> 1d
+14:57:34 - 11-24-2009: E3-ConferenceState -> 6d
+14:57:34 - 11-24-2009: E3-ConfMessage -> Disconnecting from Control 1
+14:57:34 - 11-24-2009: E3-btnConfCancelEnable -> 0d
+14:57:34 - 11-24-2009: E3-sigConferenceActive -> 0
+14:57:34 - 11-24-2009: E3-sigConferenceNotActive -> 1
+14:57:34 - 11-24-2009: Close_Conf_Out_Select_Pages -> 1
+14:57:34 - 11-24-2009: E3-txt_ConfInSource1 -> <No Signal>
+14:57:34 - 11-24-2009: E3-txt_ConfInSource2 -> <No Signal>
+14:57:34 - 11-24-2009: E3-txt_ConfInSource3 -> <No Signal>
+14:57:34 - 11-24-2009: Riv_CMISep_Eth3_status -> 3d
+14:57:34 - 11-24-2009: E3-ConferenceState -> 6d
+14:57:34 - 11-24-2009: E3-ConfMessage -> Disconnecting from Control 1
+14:57:34 - 11-24-2009: E3-txt_ConfInSource4 -> <No Signal>
+14:57:34 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:57:34 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:57:34 - 11-24-2009: E3-Room4Available -> 1
+14:57:34 - 11-24-2009: E3-sysRoomCount -> 8d
+14:57:34 - 11-24-2009: E3-fbFlash -> 1
+14:57:35 - 11-24-2009: E3-fbFlash -> 0
+14:57:36 - 11-24-2009: E3-fbFlash -> 1
+14:57:37 - 11-24-2009: E3-fbFlash -> 0
+14:57:38 - 11-24-2009: E3-fbFlash -> 1
+14:57:39 - 11-24-2009: E3-fbFlash -> 0
+14:57:40 - 11-24-2009: E3-fbFlash -> 1
+14:57:41 - 11-24-2009: E3-fbFlash -> 0
+14:57:42 - 11-24-2009: E3-fbFlash -> 1
+14:57:43 - 11-24-2009: E3-fbFlash -> 0
+14:57:43 - 11-24-2009: Riv_CMISep_Eth3_status -> 4d
+14:57:44 - 11-24-2009: Riv_CMISep_Eth3_status -> 0d
+14:57:44 - 11-24-2009: E3-ConferenceState -> 0d
+14:57:44 - 11-24-2009: E3-ConfMessage -> Ready
+14:57:44 - 11-24-2009: E3-fbCallStateFlash -> 0
+14:57:44 - 11-24-2009: E3-btnConfStartEnable -> 1d
+14:57:44 - 11-24-2009: //E3-EnableVideoInBtn -> 0d
+14:57:44 - 11-24-2009: //E3-EnableVideoOutBtn -> 0d
+14:58:05 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:58:05 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:58:05 - 11-24-2009: E3-sysRoomCount -> 8d
+14:58:12 - 11-24-2009: TxRoomLocal3 -> 020799:10:Cathlab:E0031000101100:03
+14:59:06 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:59:06 - 11-24-2009: E3-sysMyRoomID -> 7d
+14:59:06 - 11-24-2009: E3-sysRoomCount -> 8d
+14:59:12 - 11-24-2009: TxRoomLocal3 -> 020799:10:Cathlab:E0031000101100:03
+15:00:06 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+15:00:06 - 11-24-2009: E3-sysMyRoomID -> 7d
+15:00:06 - 11-24-2009: E3-sysRoomCount -> 8d
+15:00:09 - 11-24-2009: E3-pbConfStart -> 1
+15:00:09 - 11-24-2009: E3-General_Buttons_Enable -> 0d
+15:00:09 - 11-24-2009: E3-pgRoomList -> 1
+15:00:09 - 11-24-2009: E3-pg_HwRestart -> 0
+15:00:09 - 11-24-2009: [Console Data] : RoomControl-Rivulet 2 (Cathlab): Conference page entered
+15:00:09 - 11-24-2009: E3-pbConfStart -> 0
+15:00:11 - 11-24-2009: E3-pbRoomNumber4 -> 1
+15:00:11 - 11-24-2009: [Console Data] : RoomControl-Rivulet 2 (Cathlab): Room Button: 4
+15:00:11 - 11-24-2009: [Console Data] : RoomControl-Rivulet 2 (Cathlab): MyRoomID: 7,  sysRoomCount: 8,  RoomAvailable: 1
+15:00:11 - 11-24-2009: [Console Data] : RoomControl-Rivulet 2 (Cathlab): Target Room: 4
+15:00:11 - 11-24-2009: E3-fpbRoomNumber4 -> 1
+15:00:11 - 11-24-2009: E3-TargetRoomID -> 4d
+15:00:11 - 11-24-2009: E3-TargetRoomName -> Control 1
+15:00:11 - 11-24-2009: E3-RC-PulseCloseRoomSelect -> 1
+15:00:11 - 11-24-2009: E3-ConfCallActivate -> 1
+15:00:11 - 11-24-2009: E3-fbConfStartButton -> 1
+15:00:11 - 11-24-2009: TxRoomLocal3 -> 020704:20:Cathlab+1000101:03
+15:00:11 - 11-24-2009: E3-ConferenceState -> 1d
+15:00:11 - 11-24-2009: E3-ConfMessage -> Request To Control 1
+15:00:11 - 11-24-2009: E3-fbCallStateFlash -> 1
+15:00:11 - 11-24-2009: E3-btnConfStartEnable -> 0d
+15:00:11 - 11-24-2009: E3-btnConfCancelEnable -> 1d
+15:00:11 - 11-24-2009: E3-PulseCloseRoomSelect -> 1
+15:00:11 - 11-24-2009: E3-fbFlash -> 1
+15:00:11 - 11-24-2009: E3-pgRoomList -> 0
+15:00:11 - 11-24-2009: E3-pg_HwRestart -> 1
+15:00:11 - 11-24-2009: E3-General_Buttons_Enable -> 1d
+15:00:11 - 11-24-2009: E3-pbRoomNumber4 -> 0
+15:00:11 - 11-24-2009: E3-fpbRoomNumber4 -> 0
+15:00:11 - 11-24-2009: E3-RC-PulseCloseRoomSelect -> 0
+15:00:11 - 11-24-2009: E3-PulseCloseRoomSelect -> 0
+15:00:11 - 11-24-2009: E3-ConfCallActivate -> 0
+15:00:11 - 11-24-2009: E3-fbConfStartButton -> 0
+15:00:12 - 11-24-2009: E3-fbFlash -> 0
+15:00:12 - 11-24-2009: TxRoomLocal3 -> 020799:10:Cathlab:E0031000101104:03
+15:00:13 - 11-24-2009: RxRoomLocal3 -> 020407:21:Control 1+1101101:03
+15:00:13 - 11-24-2009: //E3-RmAttrRemoteSVidCountIn -> 1d
+15:00:13 - 11-24-2009: //E3-RmAttrRemoteRGBCountIn -> 0d
+15:00:13 - 11-24-2009: //E3-RmAttrRemoteHDCountIn -> 1d
+15:00:13 - 11-24-2009: //E3-RmAttrRemoteSVidCountOut -> 1d
+15:00:13 - 11-24-2009: //E3-RmAttrRemoteRGBCountOut -> 0d
+15:00:13 - 11-24-2009: //E3-RmAttrRemoteHDCountOut -> 1d
+15:00:13 - 11-24-2009: E3-ConferenceState -> 5d
+15:00:13 - 11-24-2009: E3-ConfMessage -> Connecting to Control 1
+15:00:13 - 11-24-2009: E3-btnConfCancelEnable -> 0d
+15:00:13 - 11-24-2009: E3-sigConferenceActive -> 1
+15:00:13 - 11-24-2009: E3-sigConferenceNotActive -> 0
+15:00:13 - 11-24-2009: Close_Conf_Out_Select_Pages -> 0
+15:00:13 - 11-24-2009: TxRoomLocal3 -> 020704:25:0+1,Ceiling Camera+2,EP Med+3,EP Med+4,EP Med+:03
+15:00:13 - 11-24-2009: Riv_CMISep_Eth3_status -> 1d
+15:00:13 - 11-24-2009: E3-ConferenceState -> 5d
+15:00:13 - 11-24-2009: E3-ConfMessage -> Connecting to Control 1
+15:00:13 - 11-24-2009: RxRoomLocal3 -> 020407:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03
+15:00:13 - 11-24-2009: E3-txt_ConfInSource1 -> <aaa>
+15:00:13 - 11-24-2009: E3-txt_ConfInSource2 -> <bbb>
+15:00:13 - 11-24-2009: E3-txt_ConfInSource3 -> <ccc>
+15:00:13 - 11-24-2009: E3-txt_ConfInSource4 -> <ddd>
+15:00:13 - 11-24-2009: E3-fbFlash -> 1
+15:00:13 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+0,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+15:00:13 - 11-24-2009: E3-sysMyRoomID -> 7d
+15:00:13 - 11-24-2009: E3-Room4Available -> 0
+15:00:13 - 11-24-2009: E3-sysRoomCount -> 8d
+15:00:13 - 11-24-2009: RxRoomLocal3 -> 020407:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03
+15:00:14 - 11-24-2009: E3-fbFlash -> 0
+15:00:15 - 11-24-2009: E3-fbFlash -> 1
+15:00:16 - 11-24-2009: E3-fbFlash -> 0
+15:00:17 - 11-24-2009: E3-fbFlash -> 1
+15:00:18 - 11-24-2009: E3-fbFlash -> 0
+15:00:19 - 11-24-2009: E3-fbFlash -> 1
+15:00:20 - 11-24-2009: E3-fbFlash -> 0
+15:00:21 - 11-24-2009: E3-fbFlash -> 1
+15:00:22 - 11-24-2009: E3-fbFlash -> 0
+15:00:23 - 11-24-2009: E3-fbFlash -> 1
+15:00:24 - 11-24-2009: E3-fbFlash -> 0
+15:00:25 - 11-24-2009: E3-fbFlash -> 1
+15:00:26 - 11-24-2009: E3-fbFlash -> 0
+15:00:26 - 11-24-2009: Riv_CMISep_Eth3_status -> 2d
+15:00:26 - 11-24-2009: E3-ConferenceState -> 2d
+15:00:26 - 11-24-2009: E3-ConfMessage -> Live With Control 1
+15:00:26 - 11-24-2009: E3-btnConfCancelEnable -> 1d
+15:00:26 - 11-24-2009: //E3-EnableVideoInBtn -> 1d
+15:00:26 - 11-24-2009: //E3-EnableVideoOutBtn -> 1d
+15:00:27 - 11-24-2009: E3-fbFlash -> 1
+15:00:28 - 11-24-2009: E3-fbFlash -> 0
+15:00:29 - 11-24-2009: E3-fbFlash -> 1
+15:00:30 - 11-24-2009: E3-fbFlash -> 0
+15:00:31 - 11-24-2009: E3-fbFlash -> 1
+15:00:32 - 11-24-2009: E3-fbFlash -> 0
+15:00:33 - 11-24-2009: E3-fbFlash -> 1
+15:00:34 - 11-24-2009: E3-pbConfCancel -> 1
+15:00:34 - 11-24-2009: E3-fbConfCancelButton -> 1
+15:00:34 - 11-24-2009: TxRoomLocal3 -> 020704:22:Cathlab+1000101:03
+15:00:34 - 11-24-2009: E3-ConferenceState -> 6d
+15:00:34 - 11-24-2009: E3-ConfMessage -> Disconnecting from Control 1
+15:00:34 - 11-24-2009: E3-btnConfCancelEnable -> 0d
+15:00:34 - 11-24-2009: E3-sigConferenceActive -> 0
+15:00:34 - 11-24-2009: E3-txt_ConfInSource1 -> <No Signal>
+15:00:34 - 11-24-2009: E3-txt_ConfInSource2 -> <No Signal>
+15:00:34 - 11-24-2009: E3-sigConferenceNotActive -> 1
+15:00:34 - 11-24-2009: Close_Conf_Out_Select_Pages -> 1
+15:00:34 - 11-24-2009: E3-txt_ConfInSource3 -> <No Signal>
+15:00:34 - 11-24-2009: E3-General_Buttons_Enable -> 1d
+15:00:34 - 11-24-2009: E3-txt_ConfInSource4 -> <No Signal>
+15:00:34 - 11-24-2009: E3-pg_HwRestart -> 0
+15:00:34 - 11-24-2009: E3-pg_HwRestart -> 1
+15:00:34 - 11-24-2009: E3-fbFlash -> 0
+15:00:34 - 11-24-2009: Riv_CMISep_Eth3_status -> 3d
+15:00:34 - 11-24-2009: E3-ConferenceState -> 6d
+15:00:34 - 11-24-2009: E3-ConfMessage -> Disconnecting from Control 1
+15:00:34 - 11-24-2009: E3-pbConfCancel -> 0
+15:00:34 - 11-24-2009: E3-fbConfCancelButton -> 0
+15:00:34 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+15:00:34 - 11-24-2009: E3-sysMyRoomID -> 7d
+15:00:34 - 11-24-2009: E3-Room4Available -> 1
+15:00:34 - 11-24-2009: E3-sysRoomCount -> 8d
+15:00:35 - 11-24-2009: E3-fbFlash -> 1
+15:00:36 - 11-24-2009: E3-fbFlash -> 0
+15:00:37 - 11-24-2009: E3-fbFlash -> 1
+15:00:38 - 11-24-2009: E3-fbFlash -> 0
+15:00:39 - 11-24-2009: E3-fbFlash -> 1
+15:00:40 - 11-24-2009: E3-fbFlash -> 0
+15:00:41 - 11-24-2009: E3-fbFlash -> 1
+15:00:42 - 11-24-2009: E3-fbFlash -> 0
+15:00:43 - 11-24-2009: E3-fbFlash -> 1
+15:00:43 - 11-24-2009: Riv_CMISep_Eth3_status -> 4d
+15:00:44 - 11-24-2009: Riv_CMISep_Eth3_status -> 0d
+15:00:44 - 11-24-2009: E3-ConferenceState -> 0d
+15:00:44 - 11-24-2009: E3-ConfMessage -> Ready
+15:00:44 - 11-24-2009: E3-fbCallStateFlash -> 0
+15:00:44 - 11-24-2009: E3-btnConfStartEnable -> 1d
+15:00:44 - 11-24-2009: //E3-EnableVideoInBtn -> 0d
+15:00:44 - 11-24-2009: //E3-EnableVideoOutBtn -> 0d
+15:00:44 - 11-24-2009: E3-fbFlash -> 0
+15:01:02 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+0,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+15:01:02 - 11-24-2009: E3-sysMyRoomID -> 7d
+15:01:02 - 11-24-2009: E3-Room5Available -> 0
+15:01:02 - 11-24-2009: E3-sysRoomCount -> 8d
+15:01:07 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+0,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+15:01:07 - 11-24-2009: E3-sysMyRoomID -> 7d
+15:01:07 - 11-24-2009: E3-sysRoomCount -> 8d
+15:01:12 - 11-24-2009: TxRoomLocal3 -> 020799:10:Cathlab:E0031000101104:03
+15:01:22 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+15:01:22 - 11-24-2009: E3-sysMyRoomID -> 7d
+15:01:22 - 11-24-2009: E3-Room5Available -> 1
+15:01:22 - 11-24-2009: E3-sysRoomCount -> 8d
+15:02:07 - 11-24-2009: RxRoomLocal3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+15:02:07 - 11-24-2009: E3-sysMyRoomID -> 7d
+15:02:07 - 11-24-2009: E3-sysRoomCount -> 8d
+15:02:12 - 11-24-2009: TxRoomLocal3 -> 020799:10:Cathlab:E0031000101104:03

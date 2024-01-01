@@ -1,0 +1,1502 @@
+14:38:46 - 11-16-2009: E1-pg_HwRestart -> 1
+14:38:46 - 11-16-2009: E1-pbSource1fb -> 1
+14:38:46 - 11-16-2009: E1-pbTarget4fb -> 1
+14:38:46 - 11-16-2009: E1-btnConfStartEnable -> 1d
+14:38:46 - 11-16-2009: E1-btnPrivacyEnable -> 1d
+14:38:46 - 11-16-2009: sVersion -> S/W Version: 1.3A02
+14:38:46 - 11-16-2009: sLogic -> Logic: 263-0015-00-AA
+14:38:46 - 11-16-2009: sPhoneNumber -> Technical Support: (800) 470-1106
+14:38:46 - 11-16-2009: sFacilityName -> Julie Penrose Health Education
+14:38:46 - 11-16-2009: E1-SysAttrRoomName -> OR\x0D8
+14:38:46 - 11-16-2009: E1-ConfMessage -> Ready
+14:38:46 - 11-16-2009: E1-Room1Name -> Sisters
+14:38:46 - 11-16-2009: E1-Room2Name -> Womens
+14:38:46 - 11-16-2009: E1-Room3Name -> Wetlab
+14:38:46 - 11-16-2009: E1-Room4Name -> Control 1
+14:38:46 - 11-16-2009: E1-Room5Name -> Control 2
+14:38:46 - 11-16-2009: E1-Room6Name -> OR 8
+14:38:46 - 11-16-2009: E1-Room7Name -> Cathlab
+14:38:46 - 11-16-2009: E1-Room8Name -> St. Francis
+14:38:46 - 11-16-2009: RoomEnable3 -> 1
+14:38:46 - 11-16-2009: RoomConnect3 -> 1
+14:38:46 - 11-16-2009: RoomStatus3 -> 2d
+14:38:46 - 11-16-2009: RoomEnable4 -> 1
+14:38:46 - 11-16-2009: RoomConnect4 -> 1
+14:38:46 - 11-16-2009: RoomStatus4 -> 2d
+14:38:46 - 11-16-2009: //IP-ID-08_Connect-F -> 1
+14:38:46 - 11-16-2009: //IP-ID-08_status -> 2d
+14:38:46 - 11-16-2009: RoomEnable9 -> 1
+14:38:46 - 11-16-2009: RoomConnect9 -> 1
+14:38:46 - 11-16-2009: RoomStatus9 -> 2d
+14:38:46 - 11-16-2009: RoomEnable12 -> 1
+14:38:46 - 11-16-2009: RoomConnect12 -> 1
+14:38:46 - 11-16-2009: RoomStatus12 -> 2d
+14:38:46 - 11-16-2009: RivLinkEnable -> 1
+14:38:46 - 11-16-2009: RivLinkConnect -> 1
+14:38:46 - 11-16-2009: RivLinkStatus -> 2d
+14:38:46 - 11-16-2009: Lect_Manual_Focus_FB -> 1
+14:38:46 - 11-16-2009: Brk_Main_Mute_FB -> 1
+14:38:46 - 11-16-2009: Brk_LeftLCD_Camera_FB -> 1
+14:38:46 - 11-16-2009: Brk_RightLCD_Camera_FB -> 1
+14:38:46 - 11-16-2009: Ctrl_Overflow_Disable -> 1
+14:38:46 - 11-16-2009: E6-pbSource1fb -> 1
+14:38:46 - 11-16-2009: E6-pbTarget4fb -> 1
+14:38:46 - 11-16-2009: E6-pgRoomList -> 1
+14:38:46 - 11-16-2009: E7-pgRoomList -> 1
+14:38:46 - 11-16-2009: E7-pbSource1fb -> 1
+14:38:46 - 11-16-2009: E7-pbTarget4fb -> 1
+14:38:46 - 11-16-2009: Focus_Mode -> 1d
+14:38:46 - 11-16-2009: Lect_Podium_Mic_Bar -> 51657d
+14:38:46 - 11-16-2009: Lect_Speech_Mute_Ind -> 1d
+14:38:46 - 11-16-2009: Lect_Program_Mute_Ind -> 1d
+14:38:46 - 11-16-2009: Brk_Wireless_Mute_Ind -> 1d
+14:38:46 - 11-16-2009: VTC_Enable_Buttons -> 1d
+14:38:46 - 11-16-2009: INI_Modes -> 1d
+14:38:46 - 11-16-2009: Offsite_Room_1_Available -> 1d
+14:38:46 - 11-16-2009: E6-GUIRoomState1 -> 2d
+14:38:46 - 11-16-2009: E6-GUIRoomState2 -> 2d
+14:38:46 - 11-16-2009: E6-GUIRoomState3 -> 2d
+14:38:46 - 11-16-2009: E6-GUIRoomState5 -> 1d
+14:38:46 - 11-16-2009: E6-GUIRoomState6 -> 2d
+14:38:46 - 11-16-2009: E6-GUIRoomState7 -> 2d
+14:38:46 - 11-16-2009: E6-GUIRoomState8 -> 2d
+14:38:46 - 11-16-2009: E6-btnConfStartEnable -> 1d
+14:38:46 - 11-16-2009: E6-btnPrivacyEnable -> 1d
+14:38:46 - 11-16-2009: E7-GUIRoomState1 -> 2d
+14:38:46 - 11-16-2009: E7-GUIRoomState2 -> 2d
+14:38:46 - 11-16-2009: E7-GUIRoomState3 -> 2d
+14:38:46 - 11-16-2009: E7-GUIRoomState4 -> 1d
+14:38:46 - 11-16-2009: E7-GUIRoomState6 -> 2d
+14:38:46 - 11-16-2009: E7-GUIRoomState7 -> 2d
+14:38:46 - 11-16-2009: E7-GUIRoomState8 -> 2d
+14:38:46 - 11-16-2009: E7-btnConfStartEnable -> 1d
+14:38:46 - 11-16-2009: E7-btnPrivacyEnable -> 1d
+14:38:46 - 11-16-2009: Lect_Call_Status -> Channel 7 idle
+14:38:46 - 11-16-2009: Lect_Conf_Message$ -> No Conference
+14:38:46 - 11-16-2009: Brk_Connect_Message$ -> Local
+14:38:46 - 11-16-2009: Brk_LeftLCD$ -> Room\x0DCamera
+14:38:46 - 11-16-2009: Brk_RightLCD$ -> Room\x0DCamera
+14:38:46 - 11-16-2009: Brk_Conf_Message$ -> No Conference
+14:38:46 - 11-16-2009: Brk_DVI_Conf_Source_Name -> <No Source>
+14:38:46 - 11-16-2009: Brk_SVid_Conf_Source_Name -> <No Source>
+14:38:46 - 11-16-2009: E6-txt_ConfInSource2 -> <No Signal>
+14:38:46 - 11-16-2009: E7-txt_ConfInSource2 -> <No Signal>
+14:38:46 - 11-16-2009: E6-txt_ConfInSource1 -> <No Signal>
+14:38:46 - 11-16-2009: E7-txt_ConfInSource1 -> <No Signal>
+14:38:46 - 11-16-2009: Lect_DVI_Conf_Source_Name -> <No Source>
+14:38:46 - 11-16-2009: Lect_SVid_Conf_Source_Name -> <No Source>
+14:38:46 - 11-16-2009: E6-RmAttrButtonName -> Control 1
+14:38:46 - 11-16-2009: E6-ConfMessage -> Ready
+14:38:46 - 11-16-2009: E6-Room1Name -> Sisters
+14:38:46 - 11-16-2009: E6-Room2Name -> Womens
+14:38:46 - 11-16-2009: E6-Room3Name -> Wetlab
+14:38:46 - 11-16-2009: E6-Room4Name -> Control 1
+14:38:46 - 11-16-2009: E6-Room5Name -> Control 2
+14:38:46 - 11-16-2009: E6-Room6Name -> OR 8
+14:38:46 - 11-16-2009: E6-Room7Name -> Cathlab
+14:38:46 - 11-16-2009: E6-Room8Name -> St. Francis
+14:38:46 - 11-16-2009: E7-RmAttrButtonName -> Control 2
+14:38:46 - 11-16-2009: E7-ConfMessage -> Ready
+14:38:46 - 11-16-2009: E7-Room1Name -> Sisters
+14:38:46 - 11-16-2009: E7-Room2Name -> Womens
+14:38:46 - 11-16-2009: E7-Room3Name -> Wetlab
+14:38:46 - 11-16-2009: E7-Room4Name -> Control 1
+14:38:46 - 11-16-2009: E7-Room5Name -> Control 2
+14:38:46 - 11-16-2009: E7-Room6Name -> OR 8
+14:38:46 - 11-16-2009: E7-Room7Name -> Cathlab
+14:38:46 - 11-16-2009: E7-Room8Name -> St. Francis
+14:38:46 - 11-16-2009: Init_Stage_1 -> 1
+14:38:46 - 11-16-2009: Init_Stage_2 -> 1
+14:38:46 - 11-16-2009: Init_Stage_3 -> 1
+14:38:46 - 11-16-2009: Init_Stage3_Complete -> 1
+14:38:46 - 11-16-2009: E1-RmAttrConferenceFlag -> 1
+14:38:46 - 11-16-2009: E1-RmAttrPermissionFlag -> 1
+14:38:46 - 11-16-2009: LocalEnable1 -> 1
+14:38:46 - 11-16-2009: E1-RmAttrSVidCountIn -> 1d
+14:38:46 - 11-16-2009: E1-RmAttrHDCountIn -> 1d
+14:38:46 - 11-16-2009: E1-RmAttrSVidCountOut -> 1d
+14:38:46 - 11-16-2009: E1-RmAttrHDCountOut -> 1d
+14:38:46 - 11-16-2009: E1_Init_0_Complete -> 1
+14:38:46 - 11-16-2009: E1_Init_1_Complete -> 1
+14:38:46 - 11-16-2009: E1_Init_2_Complete -> 1
+14:38:46 - 11-16-2009: E1_Init_3_Complete -> 1
+14:38:46 - 11-16-2009: LocalConnect1 -> 1
+14:38:46 - 11-16-2009: E1-Room4Available -> 1
+14:38:46 - 11-16-2009: E1-Room5Available -> 1
+14:38:46 - 11-16-2009: E1-sysRoomCount -> 8d
+14:38:46 - 11-16-2009: E1-sysMyRoomID -> 6d
+14:38:46 - 11-16-2009: //NotNeeded-btnVTCEnable -> 2d
+14:38:46 - 11-16-2009: E1-txt_ConfInSource1 -> <No Signal>
+14:38:46 - 11-16-2009: E1-txt_ConfInSource2 -> <No Signal>
+14:38:46 - 11-16-2009: E1-txt_ConfInSource3 -> <No Signal>
+14:38:46 - 11-16-2009: E1-txt_ConfInSource4 -> <No Signal>
+14:38:46 - 11-16-2009: //E1-Target2Source -> 3d
+14:38:46 - 11-16-2009: E1-TargetRoomName -> Please Select
+14:38:46 - 11-16-2009: E1-Room1Available_FB -> 1
+14:38:46 - 11-16-2009: E6-fbPrivacyNotIndicator -> 1
+14:38:47 - 11-16-2009: E6-sigConferenceNotActive -> 1
+14:38:47 - 11-16-2009: E6-DisableSVideoLoopback -> 1
+14:38:47 - 11-16-2009: E6-Enable_Conference_Routing -> 1
+14:38:47 - 11-16-2009: //E2-pg_HwRestart -> 1
+14:38:47 - 11-16-2009: //E2-pbSource1fb -> 1
+14:38:47 - 11-16-2009: //E2-pbTarget4fb -> 1
+14:38:47 - 11-16-2009: //E2-Target2Source -> 3d
+14:38:47 - 11-16-2009: E2-TargetRoomName -> Please Select
+14:38:47 - 11-16-2009: E2-RmAttrConferenceFlag -> 1
+14:38:47 - 11-16-2009: E2-RmAttrPermissionFlag -> 1
+14:38:47 - 11-16-2009: LocalEnable2 -> 1
+14:38:47 - 11-16-2009: E2-RmAttrSVidCountIn -> 1d
+14:38:47 - 11-16-2009: E2-RmAttrHDCountIn -> 1d
+14:38:47 - 11-16-2009: E2-RmAttrSVidCountOut -> 1d
+14:38:47 - 11-16-2009: E2-RmAttrHDCountOut -> 1d
+14:38:47 - 11-16-2009: E2_Init_0_Complete -> 1
+14:38:47 - 11-16-2009: E2_Init_1_Complete -> 1
+14:38:47 - 11-16-2009: E2_Init_2_Complete -> 1
+14:38:47 - 11-16-2009: E2_Init_3_Complete -> 1
+14:38:47 - 11-16-2009: LocalConnect2 -> 1
+14:38:47 - 11-16-2009: E6-DisableSVideoLoopback2 -> 1
+14:38:47 - 11-16-2009: E6-Enable_Conference_Routing2 -> 1
+14:38:47 - 11-16-2009: //S-4.2.1_Power_Off_Fb -> 1
+14:38:47 - 11-16-2009: Lect_No_Conference -> 1
+14:38:47 - 11-16-2009: //Lect_Projector_Power_Off_Confirm -> 1
+14:38:47 - 11-16-2009: Lect_RearLCD_Power_OFF_FB -> 1
+14:38:47 - 11-16-2009: //S-6.2.1_Power_Off_Fb -> 1
+14:38:47 - 11-16-2009: //S-6.3.1.1_Power_Off_FB -> 1
+14:38:47 - 11-16-2009: //S-6.3.1.1_Input_ExtronSVid_FB -> 1
+14:38:47 - 11-16-2009: //S-6.3.1.1_Audio_Mute_Off_FB -> 1
+14:38:47 - 11-16-2009: Brk_LeftLCD_Power_4 -> 1
+14:38:47 - 11-16-2009: Brk_LeftLCD_Power_3 -> 1
+14:38:47 - 11-16-2009: //S-6.3.2.1_Power_Off_FB -> 1
+14:38:47 - 11-16-2009: //S-6.3.2.1_Input_ExtronSVid_FB -> 1
+14:38:47 - 11-16-2009: Brk_RightLCD_Power_4 -> 1
+14:38:47 - 11-16-2009: Brk_Message -> 1
+14:38:47 - 11-16-2009: Brk_No_Conference -> 1
+14:38:47 - 11-16-2009: //S-6.1.1.1.10_VOLUME-MUTE-OFF-FB -> 1
+14:38:47 - 11-16-2009: Lect_Program_1_Mute_FB_NOT -> 1
+14:38:47 - 11-16-2009: Lect_Speech_Mute_FB_NOT -> 1
+14:38:47 - 11-16-2009: Brk_Wireless_Mute_FB_NOT -> 1
+14:38:47 - 11-16-2009: Cont_Conf_1_Audio_Break -> 1
+14:38:47 - 11-16-2009: Cont_Conf_2_Audio_Break -> 1
+14:38:47 - 11-16-2009: Cont_Conf_1_Mic_Audio_Break -> 1
+14:38:47 - 11-16-2009: Cont_Conf_2_Mic_Audio_Break -> 1
+14:38:47 - 11-16-2009: Cont_Breakout_Audio_Break -> 1
+14:38:47 - 11-16-2009: Cont_Lecture_Audio_Break -> 1
+14:38:47 - 11-16-2009: //S-7.1.1.1.7_VOLUME-MUTE-OFF-FB -> 1
+14:38:47 - 11-16-2009: //S-6.1.1.2.17_VOLUME-BAR -> 50115d
+14:38:47 - 11-16-2009: //S-6.1.1.2.17_VOLUME-MUTE-ON-FB -> 1
+14:38:47 - 11-16-2009: S-6//.1.1.2.19_VOLUME-BAR -> 50115d
+14:38:47 - 11-16-2009: Hardroute_Lecture_DocCam -> 1
+14:38:47 - 11-16-2009: Hardroute_Lecture_DVD -> 1
+14:38:47 - 11-16-2009: //S-6.9.1.1_Power_Off_FB -> 1
+14:38:47 - 11-16-2009: //S-6.9.2.1_Power_Off_FB -> 1
+14:38:47 - 11-16-2009: LocalConnect6 -> 1
+14:38:47 - 11-16-2009: LocalConnect7 -> 1
+14:38:47 - 11-16-2009: ConfHubComplete -> 1
+14:38:47 - 11-16-2009: LocalEnable6 -> 1
+14:38:47 - 11-16-2009: LocalEnable7 -> 1
+14:38:47 - 11-16-2009: E6-RmAttrConferenceFlag -> 1
+14:38:47 - 11-16-2009: E7-RmAttrConferenceFlag -> 1
+14:38:47 - 11-16-2009: E6-RmAttrPermissionFlag -> 1
+14:38:47 - 11-16-2009: E7-RmAttrPermissionFlag -> 1
+14:38:47 - 11-16-2009: E6-RmAttrSVidCountIn -> 1d
+14:38:47 - 11-16-2009: E7-RmAttrSVidCountIn -> 1d
+14:38:47 - 11-16-2009: E6-RmAttrHDCountIn -> 1d
+14:38:47 - 11-16-2009: E7-RmAttrHDCountIn -> 1d
+14:38:47 - 11-16-2009: E6-RmAttrSVidCountOut -> 1d
+14:38:47 - 11-16-2009: E7-RmAttrSVidCountOut -> 1d
+14:38:47 - 11-16-2009: E6-RmAttrHDCountOut -> 1d
+14:38:47 - 11-16-2009: E7-RmAttrHDCountOut -> 1d
+14:38:47 - 11-16-2009: E6_Init_0_Complete -> 1
+14:38:47 - 11-16-2009: E6_Init_1_Complete -> 1
+14:38:47 - 11-16-2009: E6_Init_2_Complete -> 1
+14:38:47 - 11-16-2009: E6_Init_3_Complete -> 1
+14:38:47 - 11-16-2009: E6-Room1Available -> 1
+14:38:47 - 11-16-2009: E6-Room2Available -> 1
+14:38:47 - 11-16-2009: E6-Room3Available -> 1
+14:38:47 - 11-16-2009: E6-Room4Available -> 1
+14:38:47 - 11-16-2009: E6-Room6Available -> 1
+14:38:47 - 11-16-2009: E6-Room7Available -> 1
+14:38:47 - 11-16-2009: E6-Room8Available -> 1
+14:38:47 - 11-16-2009: E6-sysRoomCount -> 8d
+14:38:47 - 11-16-2009: E6-sysMyRoomID -> 4d
+14:38:47 - 11-16-2009: E6-txt_ConfInSource3 -> <No Signal>
+14:38:47 - 11-16-2009: E6-txt_ConfInSource4 -> <No Signal>
+14:38:47 - 11-16-2009: //E6-Target2Source -> 3d
+14:38:47 - 11-16-2009: E6-TargetRoomName -> Please Select
+14:38:47 - 11-16-2009: E7_Init_0_Complete -> 1
+14:38:47 - 11-16-2009: E7_Init_1_Complete -> 1
+14:38:47 - 11-16-2009: E7_Init_2_Complete -> 1
+14:38:47 - 11-16-2009: E7_Init_3_Complete -> 1
+14:38:47 - 11-16-2009: E7-Room1Available -> 1
+14:38:47 - 11-16-2009: E7-Room2Available -> 1
+14:38:47 - 11-16-2009: E7-Room3Available -> 1
+14:38:47 - 11-16-2009: E7-Room5Available -> 1
+14:38:47 - 11-16-2009: E7-Room6Available -> 1
+14:38:47 - 11-16-2009: E7-Room7Available -> 1
+14:38:47 - 11-16-2009: E7-Room8Available -> 1
+14:38:47 - 11-16-2009: E7-sysRoomCount -> 8d
+14:38:47 - 11-16-2009: E7-sysMyRoomID -> 5d
+14:38:47 - 11-16-2009: E7-txt_ConfInSource3 -> <No Signal>
+14:38:47 - 11-16-2009: E7-txt_ConfInSource4 -> <No Signal>
+14:38:47 - 11-16-2009: //E7-Target2Source -> 3d
+14:38:47 - 11-16-2009: E7-TargetRoomName -> Please Select
+14:38:47 - 11-16-2009: E7-sigConferenceNotActive -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Near_End_Camera_is_Active -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Video_Input_is_2_(Aux_Cam) -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Audio_Input_Mic1_is_On -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Audio_Input_Mic2_is_On -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Audio_Input_Mic3_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Audio_Input_Line1_is_Off -> 1
+14:38:47 - 11-16-2009: Lect_VTC_PIP_OFF_FB -> 1
+14:38:47 - 11-16-2009: //Lect_VTCSend_Privacy_OFF_FB -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Volume_Level -> 32768d
+14:38:47 - 11-16-2009: //S-7.5.1_Volume_Mute_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Dial_Call_Quality_Auto_is_Selected -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Dial_Call_Type_IP_is_Selected -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Dial_Call_Restricted_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_DuoVideo_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_MCU_State_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_MCU_State_is_Continuous_Presence -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Filter_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Speaker_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Selfview_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Do_Not_Disturb_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Multisite_Receive_is_On -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Stream_Auto_is_On -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Stream_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Access_Code_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Snapshot_Source_is_Video_1 -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Presentation_Mode_is_Normal -> 1
+14:38:47 - 11-16-2009: //S-6.9.1_Auto_Answer_is_On -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Auto_PIP_is_On -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Number_of_Monitors_is_2 -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_ScreenSaver_is_On -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Encrypt_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Volume_Mute_Input_1_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Volume_Mute_Input_2_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Volume_Mute_Input_3_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Volume_Mute_Input_4_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Volume_Mute_Input_5_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Volume_Mute_Input_6_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Volume_Mute_Output_1_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Volume_Mute_Output_2_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Volume_Mute_Output_3_is_Off -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_ISDN_Bandwidth -> 512d
+14:38:47 - 11-16-2009: //S-6.5.1_LAN_Bandwidth -> 1920d
+14:38:47 - 11-16-2009: //S-6.5.1_Natural_Presentation_Available -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_MCU_Available -> 1
+14:38:47 - 11-16-2009: //S-6.5.1_Tandberg_Video_Switch(TVS)_is_Not_Co -> 1
+14:38:47 - 11-16-2009: Init_Stage0_Complete -> 1
+14:38:47 - 11-16-2009: Init_Stage1_Complete -> 1
+14:38:47 - 11-16-2009: Init_Stage2_Complete -> 1
+14:38:48 - 11-16-2009: [Console Data] : 
+14:38:55 - 11-16-2009: [Console Data] : RACK2>
+14:38:55 - 11-16-2009: E6-pbRoomNumber6 -> 1
+14:38:55 - 11-16-2009: [Console Data] : RoomControl-Endpoint 6: Room Button: 6
+14:38:55 - 11-16-2009: [Console Data] : RoomControl-Endpoint 6: MyRoomID: 4,  sysRoomCount: 8,  RoomAvailable: 1
+14:38:55 - 11-16-2009: [Console Data] : RoomControl-Endpoint 6: Target Room: 6
+14:38:55 - 11-16-2009: E6-fpbRoomNumber6 -> 1
+14:38:55 - 11-16-2009: E6-TargetRoomID -> 6d
+14:38:55 - 11-16-2009: E6-TargetRoomName -> OR 8
+14:38:55 - 11-16-2009: E6-PulseCloseRoomSelect -> 1
+14:38:55 - 11-16-2009: E6-ConfCallActivate -> 1
+14:38:55 - 11-16-2009: E6-fbConfStartButton -> 1
+14:38:55 - 11-16-2009: RxRoomLocal6 -> 020406:20:Control 1+1101101:03
+14:38:55 - 11-16-2009: E6-ConferenceState -> 1d
+14:38:55 - 11-16-2009: E6-PulseCloseRoomSelect_FB -> 1
+14:38:55 - 11-16-2009: TxRoomLocal1 -> 020406:20:Control 1+1101101:03
+14:38:55 - 11-16-2009: E6-pgRoomList -> 0
+14:38:55 - 11-16-2009: E6-pg_HwRestart -> 1
+14:38:55 - 11-16-2009: E6-General_Buttons_Enable -> 1d
+14:38:55 - 11-16-2009: //E1-RmAttrRemoteSVidCountIn -> 1d
+14:38:55 - 11-16-2009: //E1-RmAttrRemoteRGBCountIn -> 0d
+14:38:55 - 11-16-2009: //E1-RmAttrRemoteHDCountIn -> 1d
+14:38:55 - 11-16-2009: //E1-RmAttrRemoteSVidCountOut -> 1d
+14:38:55 - 11-16-2009: //E1-RmAttrRemoteRGBCountOut -> 0d
+14:38:55 - 11-16-2009: //E1-RmAttrRemoteHDCountOut -> 1d
+14:38:55 - 11-16-2009: //E1-RingGenerator -> 1
+14:38:55 - 11-16-2009: E1-ConferenceState -> 1d
+14:38:55 - 11-16-2009: E1-ConfMessage -> Request From Control 1
+14:38:55 - 11-16-2009: E1-fbCallStateFlash -> 1
+14:38:55 - 11-16-2009: E1-btnConfStartEnable -> 0d
+14:38:55 - 11-16-2009: E1-btnConfAcceptEnable -> 1d
+14:38:55 - 11-16-2009: E1-btnConfDeclineEnable -> 1d
+14:38:55 - 11-16-2009: //E1-fbFlash -> 1
+14:38:55 - 11-16-2009: E6-pbRoomNumber6 -> 0
+14:38:55 - 11-16-2009: E6-ConfMessage -> Request To OR 8
+14:38:55 - 11-16-2009: E6-fpbRoomNumber6 -> 0
+14:38:55 - 11-16-2009: E6-fbCallStateFlash -> 1
+14:38:55 - 11-16-2009: E6-fbFlash -> 1
+14:38:55 - 11-16-2009: E6-btnConfStartEnable -> 0d
+14:38:55 - 11-16-2009: E6-btnConfCancelEnable -> 1d
+14:38:56 - 11-16-2009: E6-PulseCloseRoomSelect -> 0
+14:38:56 - 11-16-2009: E6-PulseCloseRoomSelect_FB -> 0
+14:38:56 - 11-16-2009: E6-ConfCallActivate -> 0
+14:38:56 - 11-16-2009: E6-fbConfStartButton -> 0
+14:38:56 - 11-16-2009: //E1-fbFlash -> 0
+14:38:56 - 11-16-2009: E6-fbFlash -> 0
+14:38:56 - 11-16-2009: E1-pbConfAccept -> 1
+14:38:57 - 11-16-2009: E1-fbConfAcceptButton -> 1
+14:38:57 - 11-16-2009: RxRoomLocal1 -> 020604:21:OR 8+1101101:03
+14:38:57 - 11-16-2009: //E1-RingGenerator -> 0
+14:38:57 - 11-16-2009: E1-ConferenceState -> 5d
+14:38:57 - 11-16-2009: E1-ConfMessage -> Connecting to Control 1
+14:38:57 - 11-16-2009: TxRoomLocal6 -> 020604:21:OR 8+1101101:03
+14:38:57 - 11-16-2009: sAudVidRoutes -> enable:6:4:
+14:38:57 - 11-16-2009: [Console Data] : RIV: CMIS Call - Request Connect, callid=1, ept1=6, ept2=4
+14:38:57 - 11-16-2009: [Console Data] : RIV: Setting up Rivulet 1
+14:38:57 - 11-16-2009: [Console Data] : HVP to HVP
+14:38:57 - 11-16-2009: [Console Data] : RIV: Rqst Rivulet Connect OR8-P2-A/1-HVP to CONTROL_ROOM_A-P2-A/1-HVP submitted
+14:38:57 - 11-16-2009: [Console Data] : RIV: Setting up Rivulet 2
+14:38:57 - 11-16-2009: [Console Data] : DVP to DVP, EP1 Out
+14:38:57 - 11-16-2009: [Console Data] : RIV: Rqst Rivulet Connect OR8-P1-A/1-DVP to CONTROL_ROOM_A-P1-A/1-DVP submitted
+14:38:57 - 11-16-2009: [Console Data] : RIV: Processing CMIS Connection Rqst - RQST_CONNECT
+14:38:57 - 11-16-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+14:38:57 - 11-16-2009: //E6-RmAttrRemoteSVidCountIn -> 1d
+14:38:57 - 11-16-2009: //E6-RmAttrRemoteRGBCountIn -> 0d
+14:38:57 - 11-16-2009: //E6-RmAttrRemoteHDCountIn -> 1d
+14:38:57 - 11-16-2009: //E6-RmAttrRemoteSVidCountOut -> 1d
+14:38:57 - 11-16-2009: //E6-RmAttrRemoteRGBCountOut -> 0d
+14:38:57 - 11-16-2009: //E6-RmAttrRemoteHDCountOut -> 1d
+14:38:57 - 11-16-2009: E6-ConferenceState -> 2d
+14:38:57 - 11-16-2009: E6-ConfMessage -> Live With OR 8
+14:38:57 - 11-16-2009: E6-sigConferenceActive -> 1
+14:38:57 - 11-16-2009: //E6-EnableVideoInBtn -> 1d
+14:38:57 - 11-16-2009: //E6-EnableVideoOutBtn -> 1d
+14:38:57 - 11-16-2009: Connect_Control1_to_OR8 -> 1
+14:38:57 - 11-16-2009: E6-EnableRivuletDVI -> 1
+14:38:57 - 11-16-2009: E6-EnableSVidLoopback -> 1
+14:38:57 - 11-16-2009: E6-btnVideoEnable -> 1d
+14:38:57 - 11-16-2009: //E6-Target1Source -> 0d
+14:38:57 - 11-16-2009: E6-sigConfRoute_Trig -> 1
+14:38:57 - 11-16-2009: E6-sigConferenceNotActive -> 0
+14:38:57 - 11-16-2009: Ctrl_Enable_Conf1_Buttons -> 1d
+14:38:57 - 11-16-2009: Connect_RivControl1 -> 1
+14:38:57 - 11-16-2009: Clearone_TX$ -> #11 macro 71\x0D
+14:38:57 - 11-16-2009: Gefen_1_TX$ -> A4\x0D
+14:38:57 - 11-16-2009: Ctrl_Extron_ExtronSVid_1_TR$ -> 5*15!\x0D
+14:38:57 - 11-16-2009: E6-DisableSVideoLoopback -> 0
+14:38:57 - 11-16-2009: E6-DisableSVideoLoopback2 -> 0
+14:38:57 - 11-16-2009: Cont_Rivulet1_Audio_Break -> 1
+14:38:57 - 11-16-2009: Ctrl_Extron_ExtronSVid_TR$ -> 5*15!\x0D
+14:38:57 - 11-16-2009: E6-Enable_Conference_Routing2 -> 0
+14:38:57 - 11-16-2009: Clearone_TX$ -> #11 macro 35\x0D
+14:38:57 - 11-16-2009: Gefen_1_TX$ -> A4\x0D
+14:38:57 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 1 on endpoint 6
+14:38:57 - 11-16-2009: E1-pbConfAccept -> 0
+14:38:57 - 11-16-2009: Riv_CMISep_status6 -> 1d
+14:38:57 - 11-16-2009: E1-fbConfAcceptButton -> 0
+14:38:57 - 11-16-2009: Riv_CMISep_Local1_status -> 1d
+14:38:57 - 11-16-2009: E1-ConferenceState -> 5d
+14:38:57 - 11-16-2009: E1-ConfMessage -> Connecting to Control 1
+14:38:57 - 11-16-2009: E1-btnConfDeclineEnable -> 0d
+14:38:57 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 1 on endpoint 4
+14:38:57 - 11-16-2009: [Console Data] : RIV: Rivulet Connection Rqst - RQST_CONNECT
+14:38:57 - 11-16-2009: Riv_CMISep_status4 -> 1d
+14:38:57 - 11-16-2009: Riv_CMISep_Local6_status -> 1d
+14:38:57 - 11-16-2009: E6-ConferenceState -> 5d
+14:38:57 - 11-16-2009: E6-ConfMessage -> Connecting to OR 8
+14:38:57 - 11-16-2009: E6-btnConfCancelEnable -> 0d
+14:38:57 - 11-16-2009: //Ctrl_Extron_ExtronSVid_Rx$ -> Out15 In05 All\x0D\x0A
+14:38:57 - 11-16-2009: Clearone_RX$ -> \x0D\x0AOK> #11 MACRO 71\x0D\x0AOK> #11 MUTE 4 M 0\x0D\x0AOK> \x0D\x0AOK> #11 MACRO 35\x0D\x0AOK> #11 MTRX R E 4 O 0\x0D\x0AOK> 
+14:38:57 - 11-16-2009: Gefen_1_RX$ -> A4\x0DA4\x0D
+14:38:57 - 11-16-2009: Clearone_RX1$ -> \xFD1\x01\x02\x04M0\xFE
+14:38:57 - 11-16-2009: TxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 494\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?><api-envelope><api-version version = "05.01.00.R002" > </api-version> 
+14:38:57 - 11-16-2009: E1-btnConfAcceptEnable -> 0d
+14:38:57 - 11-16-2009: //E1-sigConferenceActive -> 1
+14:38:57 - 11-16-2009: RxRoomLocal6 -> 020406:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03
+14:38:57 - 11-16-2009: TxRoomLocal1 -> 020406:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03
+14:38:57 - 11-16-2009: E1-txt_ConfInSource1 -> <aaa>
+14:38:57 - 11-16-2009: E1-txt_ConfInSource2 -> <bbb>
+14:38:57 - 11-16-2009: E1-txt_ConfInSource3 -> <ccc>
+14:38:57 - 11-16-2009: E1-txt_ConfInSource4 -> <ddd>
+14:38:57 - 11-16-2009: //E6-Target2Source -> 3d
+14:38:57 - 11-16-2009: TxRivulet -> <correlation id = "2" > </correlation> <binding session-id = "dd6392d2-e918-4966-90c9-ed222a777861" > </binding> <api-cmd-req req = "connect-service" svc-type =
+14:38:57 - 11-16-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+0,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:38:57 - 11-16-2009: E6-sigConfRoute_Trig -> 0
+14:38:57 - 11-16-2009: //E1-fbFlash -> 1
+14:38:57 - 11-16-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+0,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:38:57 - 11-16-2009: E6-fbFlash -> 1
+14:38:57 - 11-16-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+0,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:38:57 - 11-16-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+0,Control 2+0,OR 8+7,Cathlab+8,St. Francis+:03
+14:38:57 - 11-16-2009: E6-sysMyRoomID -> 4d
+14:38:57 - 11-16-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+0,OR 8+7,Cathlab+8,St. Francis+:03
+14:38:57 - 11-16-2009: E7-sysMyRoomID -> 5d
+14:38:57 - 11-16-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+0,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:38:57 - 11-16-2009: E1-sysMyRoomID -> 6d
+14:38:58 - 11-16-2009: TxRoom3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+0,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:38:58 - 11-16-2009: TxRivulet ->  "dynamic" svc-bidir = "true" source-alias = "OR8-P2-A/1-HVP" destination-alias = "CONTROL_ROOM_A-P2-A/1-HVP" ><source-selectors ></source-selectors><destinatio
+14:38:58 - 11-16-2009: RxRoomLocal1 -> 020604:25:0+1,S-Video+2,DVI+3,DVI 2+4,DVI 3+:03
+14:38:58 - 11-16-2009: E6-Room4Available -> 0
+14:38:58 - 11-16-2009: E6-Room6Available -> 0
+14:38:58 - 11-16-2009: E6-sysRoomCount -> 8d
+14:38:58 - 11-16-2009: E1-Room4Available -> 0
+14:38:58 - 11-16-2009: E1-sysRoomCount -> 8d
+14:38:58 - 11-16-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+0,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:38:58 - 11-16-2009: TxRivulet -> n-selectors ></destination-selectors></api-cmd-req></api-envelope>
+14:38:58 - 11-16-2009: [Console Data] : Setting Rivulet Status, line #1, between endpoints 6 and 4
+14:38:58 - 11-16-2009: Riv_Rivep_status6 -> 2d
+14:38:58 - 11-16-2009: //Riv_Rivep_Local1_status -> 2d
+14:38:58 - 11-16-2009: Riv_Rivep_status4 -> 2d
+14:38:58 - 11-16-2009: Riv_Rivep_Local6_status -> 2d
+14:38:58 - 11-16-2009: Riv1_Status_HD -> 2d
+14:38:58 - 11-16-2009: E7-Room6Available -> 0
+14:38:58 - 11-16-2009: E7-GUIRoomState6 -> 1d
+14:38:58 - 11-16-2009: E7-sysRoomCount -> 8d
+14:38:58 - 11-16-2009: RxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 562\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?>\x0D\x0A<api-envelope> \x0A<api-version \x0A\x09version = "05.01.00.R005" >\x0A </api-version> \x0A <correlation \x0A\x09id = "2" >\x0A </correlation> \x0A <binding \x0A\x09 session-id = "dd6392d2-e9
+14:38:58 - 11-16-2009: RxRivulet -> 18-4966-90c9-ed222a777861" >\x0A </binding>\x0A <api-cmd-rsp \x0A\x09 rsp = "connect-service-failure" >\x0A </api-cmd-rsp> \x0A <api-fault \x0A\x09fault-code-list = "SRC_EP_NOT_AVAILABLE" \x0A\x09fault-actor = "RCAS server" \x0A\x09fault-string = "resources not available" \x0A\x09fault-detai
+14:38:58 - 11-16-2009: RxRivulet -> l = "the source endpoint and/or destination endpoint or both are not available"  >\x0A </api-fault>\x0A</api-envelope> \x0A
+14:38:58 - 11-16-2009: TxRoomLocal6 -> 020604:25:0+1,S-Video+2,DVI+3,DVI 2+4,DVI 3+:03
+14:38:58 - 11-16-2009: E6-txt_ConfInSource1 -> <S-Video>
+14:38:58 - 11-16-2009: E6-txt_ConfInSource2 -> <DVI>
+14:38:58 - 11-16-2009: E6-txt_ConfInSource3 -> <DVI 2>
+14:38:58 - 11-16-2009: E6-txt_ConfInSource4 -> <DVI 3>
+14:38:58 - 11-16-2009: [Console Data] : DEBUG: Found <api-envelope> at 95
+14:38:58 - 11-16-2009: [Console Data] : DEBUG: Found </api-envelope> at 600
+14:38:58 - 11-16-2009: [Console Data] : DEBUG: Length of buffer string is 616
+14:38:58 - 11-16-2009: [Console Data] : DEBUG: Length of string removed is 614
+14:38:58 - 11-16-2009: [Console Data] : DEBUG: Length of string remaining is 2
+14:38:58 - 11-16-2009: //E1-fbFlash -> 0
+14:38:58 - 11-16-2009: E6-fbFlash -> 0
+14:38:58 - 11-16-2009: [Console Data] : ******BEGIN RGM Response Data**********
+14:38:58 - 11-16-2009: [Console Data] : Response ID = 1
+14:38:58 - 11-16-2009: [Console Data] : Correlation ID = 2
+14:38:58 - 11-16-2009: [Console Data] : api-cmd-rsp = connect-service-failure
+14:38:58 - 11-16-2009: [Console Data] : api-ep-port-alias-name = 
+14:38:58 - 11-16-2009: [Console Data] : api-cmd-error = the source endpoint and/or destination endpoint or both are not available
+14:38:58 - 11-16-2009: [Console Data] : api-ep-port-alias-status-code = 
+14:38:58 - 11-16-2009: [Console Data] : *** Rivulet Connect Failure Msg: the source endpoint and/or destination endpoint or both are not available***
+14:38:58 - 11-16-2009: [Console Data] : ******END RGM Response Data**********
+14:38:58 - 11-16-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+14:38:58 - 11-16-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+14:38:58 - 11-16-2009: [Console Data] : RIV: Connecting, ResponseID=1, CorrelationID=2, API_CMD_RESP=connect-service-failure
+14:38:58 - 11-16-2009: [Console Data] : RIV: Connecting, CorrelationID=2
+14:38:58 - 11-16-2009: [Console Data] : found reply...coorid=2
+14:38:58 - 11-16-2009: [Console Data] : Setting Rivulet Status, line #1, between endpoints 6 and 4
+14:38:58 - 11-16-2009: Riv_Rivep_status6 -> 8d
+14:38:58 - 11-16-2009: //Riv_Rivep_Local1_status -> 8d
+14:38:58 - 11-16-2009: Riv_Rivep_status4 -> 8d
+14:38:58 - 11-16-2009: Riv_Rivep_Local6_status -> 8d
+14:38:58 - 11-16-2009: Riv1_Status_HD -> 8d
+14:38:58 - 11-16-2009: Riv1_ConnectError -> 1
+14:38:59 - 11-16-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+14:38:59 - 11-16-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+14:38:59 - 11-16-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+14:38:59 - 11-16-2009: //E1-fbFlash -> 1
+14:38:59 - 11-16-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+14:38:59 - 11-16-2009: [Console Data] : RIV: Rivulet Connection Rqst - RQST_CONNECT
+14:38:59 - 11-16-2009: TxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 495\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?><api-envelope><api-version version = "05.01.00.R002" > </api-version> 
+14:38:59 - 11-16-2009: E6-fbFlash -> 1
+14:38:59 - 11-16-2009: TxRivulet -> <correlation id = "3" > </correlation> <binding session-id = "dd6392d2-e918-4966-90c9-ed222a777861" > </binding> <api-cmd-req req = "connect-service" svc-type =
+14:38:59 - 11-16-2009: TxRivulet ->  "dynamic" svc-bidir = "false" source-alias = "OR8-P1-A/1-DVP" destination-alias = "CONTROL_ROOM_A-P1-A/1-DVP" ><source-selectors ></source-selectors><destinati
+14:38:59 - 11-16-2009: TxRivulet -> on-selectors ></destination-selectors></api-cmd-req></api-envelope>
+14:38:59 - 11-16-2009: [Console Data] : Setting Rivulet Status, line #2, between endpoints 6 and 4
+14:38:59 - 11-16-2009: Riv_Rivep_status6 -> 40d
+14:38:59 - 11-16-2009: //Riv_Rivep_Local1_status -> 40d
+14:38:59 - 11-16-2009: Riv_Rivep_status4 -> 40d
+14:38:59 - 11-16-2009: Riv_Rivep_Local6_status -> 40d
+14:38:59 - 11-16-2009: Riv1_Status_SD -> 2d
+14:39:00 - 11-16-2009: RxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 562\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?>\x0D\x0A<api-envelope> \x0A<api-version \x0A\x09version = "05.01.00.R005" >\x0A </api-version> \x0A <correlation \x0A\x09id = "3" >\x0A </correlation> \x0A <binding \x0A\x09 session-id = "dd6392d2-e9
+14:39:00 - 11-16-2009: RxRivulet -> 18-4966-90c9-ed222a777861" >\x0A </binding>\x0A <api-cmd-rsp \x0A\x09 rsp = "connect-service-failure" >\x0A </api-cmd-rsp> \x0A <api-fault \x0A\x09fault-code-list = "SRC_EP_NOT_AVAILABLE" \x0A\x09fault-actor = "RCAS server" \x0A\x09fault-string = "resources not available" \x0A\x09fault-detai
+14:39:00 - 11-16-2009: RxRivulet -> l = "the source endpoint and/or destination endpoint or both are not available"  >\x0A </api-fault>\x0A</api-envelope> \x0A
+14:39:00 - 11-16-2009: [Console Data] : DEBUG: Found <api-envelope> at 95
+14:39:00 - 11-16-2009: [Console Data] : DEBUG: Found </api-envelope> at 600
+14:39:00 - 11-16-2009: [Console Data] : DEBUG: Length of buffer string is 616
+14:39:00 - 11-16-2009: [Console Data] : DEBUG: Length of string removed is 614
+14:39:00 - 11-16-2009: [Console Data] : DEBUG: Length of string remaining is 2
+14:39:00 - 11-16-2009: [Console Data] : ******BEGIN RGM Response Data**********
+14:39:00 - 11-16-2009: [Console Data] : Response ID = 1
+14:39:00 - 11-16-2009: [Console Data] : Correlation ID = 3
+14:39:00 - 11-16-2009: [Console Data] : api-cmd-rsp = connect-service-failure
+14:39:00 - 11-16-2009: [Console Data] : api-ep-port-alias-name = 
+14:39:00 - 11-16-2009: [Console Data] : api-cmd-error = the source endpoint and/or destination endpoint or both are not available
+14:39:00 - 11-16-2009: [Console Data] : api-ep-port-alias-status-code = 
+14:39:00 - 11-16-2009: [Console Data] : *** Rivulet Connect Failure Msg: the source endpoint and/or destination endpoint or both are not available***
+14:39:00 - 11-16-2009: [Console Data] : ******END RGM Response Data**********
+14:39:00 - 11-16-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+14:39:00 - 11-16-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+14:39:00 - 11-16-2009: [Console Data] : RIV: Connecting, ResponseID=1, CorrelationID=3, API_CMD_RESP=connect-service-failure
+14:39:00 - 11-16-2009: [Console Data] : RIV: Connecting, CorrelationID=3
+14:39:00 - 11-16-2009: [Console Data] : found reply...coorid=3
+14:39:00 - 11-16-2009: [Console Data] : Setting Rivulet Status, line #2, between endpoints 6 and 4
+14:39:00 - 11-16-2009: Riv_Rivep_status6 -> 136d
+14:39:00 - 11-16-2009: //Riv_Rivep_Local1_status -> 136d
+14:39:00 - 11-16-2009: Riv_Rivep_status4 -> 136d
+14:39:00 - 11-16-2009: Riv_Rivep_Local6_status -> 136d
+14:39:00 - 11-16-2009: Riv1_Status_SD -> 8d
+14:39:00 - 11-16-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+14:39:00 - 11-16-2009: [Console Data] : RIV: Current Call Connecting:  CMIS error state
+14:39:00 - 11-16-2009: Riv_CMISep_status6 -> 5d
+14:39:00 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 5 on endpoint 6
+14:39:00 - 11-16-2009: [Console Data] : Hub: RIVULET: Error on connection (Reset), 6
+14:39:00 - 11-16-2009: [Console Data] : Hub: ConferenceResetRoom  6
+14:39:00 - 11-16-2009: Riv_CMISep_Local1_status -> 5d
+14:39:00 - 11-16-2009: sAudVidRoutes -> disable:6:4:
+14:39:00 - 11-16-2009: TxRoomLocal6 -> 020604:22:OR 8+100:03
+14:39:00 - 11-16-2009: TxRoomLocal1 -> 020406:22:Control 1+100:03
+14:39:00 - 11-16-2009: [Console Data] : RIV: CMIS Call - Request Disconnect, ept1=6, ept2=4
+14:39:00 - 11-16-2009: [Console Data] : RIV: disconnect rivulet OR8-P2-A/1-HVP to CONTROL_ROOM_A-P2-A/1-HVP
+14:39:00 - 11-16-2009: [Console Data] : Setting Rivulet Status, line #1, between endpoints 6 and 4
+14:39:00 - 11-16-2009: [Console Data] : RIV: disconnect rivulet OR8-P1-A/1-DVP to CONTROL_ROOM_A-P1-A/1-DVP
+14:39:00 - 11-16-2009: [Console Data] : Setting Rivulet Status, line #2, between endpoints 6 and 4
+14:39:00 - 11-16-2009: //E1-RmAttrRemoteSVidCountIn -> 0d
+14:39:00 - 11-16-2009: //E1-RmAttrRemoteRGBCountIn -> 0d
+14:39:00 - 11-16-2009: //E1-RmAttrRemoteHDCountIn -> 0d
+14:39:00 - 11-16-2009: //E1-RmAttrRemoteSVidCountOut -> 1d
+14:39:00 - 11-16-2009: //E1-RmAttrRemoteRGBCountOut -> 0d
+14:39:00 - 11-16-2009: //E1-RmAttrRemoteHDCountOut -> 0d
+14:39:00 - 11-16-2009: E1-ConferenceState -> 6d
+14:39:00 - 11-16-2009: E1-ConfMessage -> Disconnecting from Control 1
+14:39:00 - 11-16-2009: //E1-sigConferenceActive -> 0
+14:39:00 - 11-16-2009: //E1-EnableVideoInBtn -> 1d
+14:39:00 - 11-16-2009: //E1-EnableVideoOutBtn -> 1d
+14:39:00 - 11-16-2009: E1-txt_ConfInSource1 -> <No Signal>
+14:39:00 - 11-16-2009: E1-txt_ConfInSource2 -> <No Signal>
+14:39:00 - 11-16-2009: E1-txt_ConfInSource3 -> <No Signal>
+14:39:00 - 11-16-2009: E1-txt_ConfInSource4 -> <No Signal>
+14:39:00 - 11-16-2009: Connect_Control1_to_OR8 -> 0
+14:39:00 - 11-16-2009: Riv_Rivep_status6 -> 128d
+14:39:00 - 11-16-2009: Riv_Rivep_status4 -> 128d
+14:39:00 - 11-16-2009: //E6-RmAttrRemoteSVidCountIn -> 0d
+14:39:00 - 11-16-2009: //E6-RmAttrRemoteRGBCountIn -> 0d
+14:39:00 - 11-16-2009: //E6-RmAttrRemoteHDCountIn -> 0d
+14:39:00 - 11-16-2009: //E6-RmAttrRemoteSVidCountOut -> 1d
+14:39:00 - 11-16-2009: //E6-RmAttrRemoteRGBCountOut -> 0d
+14:39:00 - 11-16-2009: //E6-RmAttrRemoteHDCountOut -> 0d
+14:39:00 - 11-16-2009: E6-ConferenceState -> 6d
+14:39:00 - 11-16-2009: E6-ConfMessage -> Disconnecting from OR 8
+14:39:00 - 11-16-2009: E6-sigConferenceActive -> 0
+14:39:00 - 11-16-2009: E6-txt_ConfInSource1 -> <No Signal>
+14:39:00 - 11-16-2009: E6-txt_ConfInSource2 -> <No Signal>
+14:39:00 - 11-16-2009: E6-txt_ConfInSource3 -> <No Signal>
+14:39:00 - 11-16-2009: E6-txt_ConfInSource4 -> <No Signal>
+14:39:00 - 11-16-2009: E6-EnableRivuletDVI -> 0
+14:39:00 - 11-16-2009: Connect_RivControl1 -> 0
+14:39:00 - 11-16-2009: //Riv_Rivep_Local1_status -> 128d
+14:39:00 - 11-16-2009: Riv_Rivep_Local6_status -> 128d
+14:39:00 - 11-16-2009: E6-EnableSVidLoopback -> 0
+14:39:00 - 11-16-2009: E6-btnVideoEnable -> 0d
+14:39:00 - 11-16-2009: E6-sigConferenceNotActive -> 1
+14:39:00 - 11-16-2009: E6-Enable_Conference_Routing -> 0
+14:39:00 - 11-16-2009: Cont_Rivulet1_Audio_Break -> 0
+14:39:00 - 11-16-2009: Riv1_Status_HD -> 0d
+14:39:00 - 11-16-2009: E6-DisableSVideoLoopback -> 1
+14:39:00 - 11-16-2009: E6-DisableSVideoLoopback2 -> 1
+14:39:00 - 11-16-2009: E6-sigConferenceNotActive_Pulse -> 1
+14:39:00 - 11-16-2009: Ctrl_Enable_Conf1_Buttons -> 0d
+14:39:00 - 11-16-2009: E6-Enable_Conference_Routing -> 1
+14:39:00 - 11-16-2009: E6-Enable_Conference_Routing2 -> 1
+14:39:00 - 11-16-2009: Riv_Rivep_status6 -> 0d
+14:39:00 - 11-16-2009: //E1-fbFlash -> 0
+14:39:00 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 5 on endpoint 4
+14:39:00 - 11-16-2009: [Console Data] : Hub: RIVULET: Error on connection (Reset), 4
+14:39:00 - 11-16-2009: [Console Data] : Hub: ConferenceResetRoom  4
+14:39:00 - 11-16-2009: //Riv_Rivep_Local1_status -> 0d
+14:39:00 - 11-16-2009: Riv_Rivep_status4 -> 0d
+14:39:00 - 11-16-2009: Riv_Rivep_Local6_status -> 0d
+14:39:00 - 11-16-2009: Riv1_Status_SD -> 0d
+14:39:00 - 11-16-2009: Riv_CMISep_status4 -> 5d
+14:39:00 - 11-16-2009: Riv_CMISep_Local6_status -> 5d
+14:39:00 - 11-16-2009: E6-fbFlash -> 0
+14:39:00 - 11-16-2009: E6-General_Buttons_Enable -> 1d
+14:39:00 - 11-16-2009: //E6-Target1Source -> 0d
+14:39:00 - 11-16-2009: [Console Data] : RIV: Processing CMIS Connection Rqst - RQST_DISCONNECT
+14:39:00 - 11-16-2009: Riv_CMISep_status6 -> 3d
+14:39:00 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 3 on endpoint 6
+14:39:00 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 3 on endpoint 4
+14:39:00 - 11-16-2009: Riv_CMISep_Local1_status -> 3d
+14:39:00 - 11-16-2009: E1-ConferenceState -> 6d
+14:39:00 - 11-16-2009: E1-ConfMessage -> Disconnecting from Control 1
+14:39:00 - 11-16-2009: Riv_CMISep_status4 -> 3d
+14:39:00 - 11-16-2009: Riv_CMISep_Local6_status -> 3d
+14:39:01 - 11-16-2009: [Console Data] : RIVULET: CMIS DISCONNECTING
+14:39:01 - 11-16-2009: E6-sigConferenceNotActive_Pulse -> 0
+14:39:01 - 11-16-2009: //E6-Target2Source -> 3d
+14:39:01 - 11-16-2009: [Console Data] : RIVULET: CMIS DISCONNECTING
+14:39:01 - 11-16-2009: [Console Data] : RIVULET: CMIS DISCONNECTING
+14:39:01 - 11-16-2009: [Console Data] : RIV: Rivulet Connection Rqst - RQST_DISCONNECT, Line 1
+14:39:01 - 11-16-2009: [Console Data] : Don't send Rivulet DISCONNECT, Line 1
+14:39:01 - 11-16-2009: [Console Data] : Setting Rivulet Status, line #1, between endpoints 6 and 4
+14:39:01 - 11-16-2009: [Console Data] : RIV: Rivulet Connection Rqst - RQST_DISCONNECT, Line 2
+14:39:01 - 11-16-2009: [Console Data] : Don't send Rivulet DISCONNECT, Line 2
+14:39:01 - 11-16-2009: [Console Data] : Setting Rivulet Status, line #2, between endpoints 6 and 4
+14:39:01 - 11-16-2009: Riv_Rivep_status6 -> 5d
+14:39:01 - 11-16-2009: //Riv_Rivep_Local1_status -> 5d
+14:39:01 - 11-16-2009: Riv_Rivep_status4 -> 5d
+14:39:01 - 11-16-2009: Riv_Rivep_Local6_status -> 5d
+14:39:01 - 11-16-2009: Riv1_Status_HD -> 5d
+14:39:01 - 11-16-2009: Riv_Rivep_status6 -> 85d
+14:39:01 - 11-16-2009: //Riv_Rivep_Local1_status -> 85d
+14:39:01 - 11-16-2009: Riv_Rivep_status4 -> 85d
+14:39:01 - 11-16-2009: Riv_Rivep_Local6_status -> 85d
+14:39:01 - 11-16-2009: Riv1_Status_SD -> 5d
+14:39:01 - 11-16-2009: [Console Data] : +++++++++ RIVULET:  check_cmis_connections() declaring call DISCONNECTED
+14:39:01 - 11-16-2009: [Console Data] : RIVULET: CMIS DISCONNECTING
+14:39:01 - 11-16-2009: [Console Data] : RIVULET: CMIS DISCONNECTED
+14:39:01 - 11-16-2009: Riv_CMISep_status6 -> 4d
+14:39:01 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 4 on endpoint 6
+14:39:01 - 11-16-2009: Riv_CMISep_Local1_status -> 4d
+14:39:01 - 11-16-2009: Riv_CMISep_status4 -> 4d
+14:39:01 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 4 on endpoint 4
+14:39:01 - 11-16-2009: Riv_CMISep_Local6_status -> 4d
+14:39:01 - 11-16-2009: //E1-fbFlash -> 1
+14:39:01 - 11-16-2009: E6-fbFlash -> 1
+14:39:01 - 11-16-2009: E6-RivErrorOKBtn -> 1
+14:39:01 - 11-16-2009: Riv1_ConnectError -> 0
+14:39:01 - 11-16-2009: E6-RivErrorOKBtn -> 0
+14:39:01 - 11-16-2009: [Console Data] : +++++++++ RIVULET:  check_cmis_connections() declaring call DISCONNECTED
+14:39:01 - 11-16-2009: Riv_CMISep_status6 -> 0d
+14:39:01 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 0 on endpoint 6
+14:39:01 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 0 on endpoint 4
+14:39:01 - 11-16-2009: Riv_CMISep_Local1_status -> 0d
+14:39:01 - 11-16-2009: E1-ConferenceState -> 0d
+14:39:01 - 11-16-2009: E1-ConfMessage -> Ready
+14:39:01 - 11-16-2009: E1-fbCallStateFlash -> 0
+14:39:01 - 11-16-2009: E1-btnConfStartEnable -> 1d
+14:39:01 - 11-16-2009: //E1-EnableVideoInBtn -> 0d
+14:39:01 - 11-16-2009: //E1-EnableVideoOutBtn -> 0d
+14:39:01 - 11-16-2009: //E1-fbFlash -> 0
+14:39:01 - 11-16-2009: Riv_CMISep_status4 -> 0d
+14:39:02 - 11-16-2009: [Console Data] : RIVULET: Clearing Rivulet connection, Line 1
+14:39:02 - 11-16-2009: [Console Data] : RIVULET: Rivulet serviceid= DISCONNECTED
+14:39:02 - 11-16-2009: [Console Data] : RIVULET: Clearing Rivulet connection, Line 2
+14:39:02 - 11-16-2009: [Console Data] : RIVULET: Rivulet serviceid= DISCONNECTED
+14:39:02 - 11-16-2009: Riv_CMISep_Local6_status -> 0d
+14:39:02 - 11-16-2009: E6-fbFlash -> 0
+14:39:03 - 11-16-2009: E6-fbFlash -> 1
+14:39:04 - 11-16-2009: E6-fbFlash -> 0
+14:39:05 - 11-16-2009: E6-fbFlash -> 1
+14:39:06 - 11-16-2009: E6-fbFlash -> 0
+14:39:07 - 11-16-2009: E6-fbFlash -> 1
+14:39:08 - 11-16-2009: E6-fbFlash -> 0
+14:39:09 - 11-16-2009: E6-fbFlash -> 1
+14:39:10 - 11-16-2009: E6-fbFlash -> 0
+14:39:11 - 11-16-2009: E6-fbFlash -> 1
+14:39:12 - 11-16-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+14:39:12 - 11-16-2009: E6-fbFlash -> 0
+14:39:13 - 11-16-2009: RxRoomLocal1 -> 020699:10:OR 8:E0031101101100:03
+14:39:13 - 11-16-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+14:39:13 - 11-16-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+14:39:13 - 11-16-2009: E6-fbFlash -> 1
+14:39:13 - 11-16-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+14:39:14 - 11-16-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+14:39:14 - 11-16-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:39:14 - 11-16-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:39:14 - 11-16-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:39:14 - 11-16-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,OR 8+7,Cathlab+8,St. Francis+:03
+14:39:14 - 11-16-2009: E6-sysMyRoomID -> 4d
+14:39:14 - 11-16-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,OR 8+7,Cathlab+8,St. Francis+:03
+14:39:14 - 11-16-2009: E7-sysMyRoomID -> 5d
+14:39:14 - 11-16-2009: E6-fbFlash -> 0
+14:39:14 - 11-16-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:39:14 - 11-16-2009: E1-sysMyRoomID -> 6d
+14:39:14 - 11-16-2009: TxRoom3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:39:14 - 11-16-2009: E6-Room4Available -> 1
+14:39:14 - 11-16-2009: E6-Room6Available -> 1
+14:39:15 - 11-16-2009: E6-sysRoomCount -> 8d
+14:39:15 - 11-16-2009: E1-Room4Available -> 1
+14:39:15 - 11-16-2009: RxRoom3 -> 020799:10:Cathlab:E0031000101100:03
+14:39:15 - 11-16-2009: E1-sysRoomCount -> 8d
+14:39:15 - 11-16-2009: E7-Room6Available -> 1
+14:39:15 - 11-16-2009: E7-GUIRoomState6 -> 2d
+14:39:15 - 11-16-2009: E7-sysRoomCount -> 8d
+14:39:15 - 11-16-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:39:15 - 11-16-2009: E6-fbFlash -> 1
+14:39:16 - 11-16-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+14:39:16 - 11-16-2009: E6-fbFlash -> 0
+14:39:17 - 11-16-2009: E6-fbFlash -> 1
+14:39:18 - 11-16-2009: E6-fbFlash -> 0
+14:39:19 - 11-16-2009: E6-fbFlash -> 1
+14:39:20 - 11-16-2009: E6-fbFlash -> 0
+14:39:21 - 11-16-2009: E6-fbFlash -> 1
+14:39:22 - 11-16-2009: E6-fbFlash -> 0
+14:39:23 - 11-16-2009: E6-fbFlash -> 1
+14:39:24 - 11-16-2009: E6-fbFlash -> 0
+14:39:25 - 11-16-2009: E6-fbFlash -> 1
+14:39:26 - 11-16-2009: E6-fbFlash -> 0
+14:39:27 - 11-16-2009: E6-fbFlash -> 1
+14:39:28 - 11-16-2009: E6-fbFlash -> 0
+14:39:29 - 11-16-2009: E6-fbFlash -> 1
+14:39:30 - 11-16-2009: E6-fbFlash -> 0
+14:39:31 - 11-16-2009: E6-fbFlash -> 1
+14:39:32 - 11-16-2009: E6-fbFlash -> 0
+14:39:33 - 11-16-2009: E6-fbFlash -> 1
+14:39:34 - 11-16-2009: E6-fbFlash -> 0
+14:39:35 - 11-16-2009: E6-fbFlash -> 1
+14:39:36 - 11-16-2009: E6-fbFlash -> 0
+14:39:37 - 11-16-2009: E6-fbFlash -> 1
+14:39:38 - 11-16-2009: E6-fbFlash -> 0
+14:39:39 - 11-16-2009: E6-fbFlash -> 1
+14:39:40 - 11-16-2009: E6-fbFlash -> 0
+14:39:41 - 11-16-2009: E6-fbFlash -> 1
+14:39:42 - 11-16-2009: E6-fbFlash -> 0
+14:39:43 - 11-16-2009: E6-fbFlash -> 1
+14:39:44 - 11-16-2009: E6-fbFlash -> 0
+14:39:45 - 11-16-2009: E6-fbFlash -> 1
+14:39:46 - 11-16-2009: E6-fbFlash -> 0
+14:39:47 - 11-16-2009: E6-fbFlash -> 1
+14:39:48 - 11-16-2009: E6-fbFlash -> 0
+14:39:49 - 11-16-2009: E6-fbFlash -> 1
+14:39:50 - 11-16-2009: E6-fbFlash -> 0
+14:39:51 - 11-16-2009: E6-fbFlash -> 1
+14:39:52 - 11-16-2009: E6-fbFlash -> 0
+14:39:53 - 11-16-2009: E6-fbFlash -> 1
+14:39:54 - 11-16-2009: E6-fbFlash -> 0
+14:39:55 - 11-16-2009: E6-fbFlash -> 1
+14:39:56 - 11-16-2009: E6-fbFlash -> 0
+14:39:57 - 11-16-2009: E6-fbFlash -> 1
+14:39:58 - 11-16-2009: E6-fbFlash -> 0
+14:39:59 - 11-16-2009: E6-fbFlash -> 1
+14:40:00 - 11-16-2009: E6-fbFlash -> 0
+14:40:01 - 11-16-2009: E6-fbFlash -> 1
+14:40:02 - 11-16-2009: E6-fbFlash -> 0
+14:40:03 - 11-16-2009: E7-pbRoomNumber6 -> 1
+14:40:03 - 11-16-2009: [Console Data] : RoomControl-Endpoint 7: Room Button: 6
+14:40:03 - 11-16-2009: [Console Data] : RoomControl-Endpoint 7: MyRoomID: 5,  sysRoomCount: 8,  RoomAvailable: 1
+14:40:03 - 11-16-2009: [Console Data] : RoomControl-Endpoint 7: Target Room: 6
+14:40:03 - 11-16-2009: E7-fpbRoomNumber6 -> 1
+14:40:03 - 11-16-2009: E7-TargetRoomID -> 6d
+14:40:03 - 11-16-2009: E7-TargetRoomName -> OR 8
+14:40:03 - 11-16-2009: E7-PulseCloseRoomSelect -> 1
+14:40:03 - 11-16-2009: E7-ConfCallActivate -> 1
+14:40:03 - 11-16-2009: E7-fbConfStartButton -> 1
+14:40:03 - 11-16-2009: RxRoomLocal7 -> 020506:20:Control 2+1101101:03
+14:40:03 - 11-16-2009: E7-PulseCloseRoomSelect_FB -> 1
+14:40:03 - 11-16-2009: TxRoomLocal1 -> 020506:20:Control 2+1101101:03
+14:40:03 - 11-16-2009: E7-pgRoomList -> 0
+14:40:03 - 11-16-2009: E7-pg_HwRestart -> 1
+14:40:03 - 11-16-2009: E7-General_Buttons_Enable -> 1d
+14:40:03 - 11-16-2009: //E1-RmAttrRemoteSVidCountIn -> 1d
+14:40:03 - 11-16-2009: //E1-RmAttrRemoteRGBCountIn -> 0d
+14:40:03 - 11-16-2009: //E1-RmAttrRemoteHDCountIn -> 1d
+14:40:03 - 11-16-2009: //E1-RmAttrRemoteSVidCountOut -> 1d
+14:40:03 - 11-16-2009: //E1-RmAttrRemoteRGBCountOut -> 0d
+14:40:03 - 11-16-2009: //E1-RmAttrRemoteHDCountOut -> 1d
+14:40:03 - 11-16-2009: //E1-RingGenerator -> 1
+14:40:03 - 11-16-2009: E1-ConferenceState -> 1d
+14:40:03 - 11-16-2009: E7-pbRoomNumber6 -> 0
+14:40:03 - 11-16-2009: E7-fpbRoomNumber6 -> 0
+14:40:03 - 11-16-2009: E7-ConferenceState -> 1d
+14:40:03 - 11-16-2009: E7-ConfMessage -> Request To OR 8
+14:40:03 - 11-16-2009: E7-fbCallStateFlash -> 1
+14:40:03 - 11-16-2009: //E7-fbFlash -> 1
+14:40:03 - 11-16-2009: E7-btnConfStartEnable -> 0d
+14:40:03 - 11-16-2009: E7-btnConfCancelEnable -> 1d
+14:40:03 - 11-16-2009: E1-ConfMessage -> Request From Control 2
+14:40:03 - 11-16-2009: E1-fbCallStateFlash -> 1
+14:40:03 - 11-16-2009: //E1-fbFlash -> 1
+14:40:03 - 11-16-2009: E1-btnConfStartEnable -> 0d
+14:40:03 - 11-16-2009: E1-btnConfAcceptEnable -> 1d
+14:40:03 - 11-16-2009: E1-btnConfDeclineEnable -> 1d
+14:40:03 - 11-16-2009: E6-fbFlash -> 1
+14:40:04 - 11-16-2009: E7-PulseCloseRoomSelect -> 0
+14:40:04 - 11-16-2009: E7-PulseCloseRoomSelect_FB -> 0
+14:40:04 - 11-16-2009: E7-ConfCallActivate -> 0
+14:40:04 - 11-16-2009: E7-fbConfStartButton -> 0
+14:40:04 - 11-16-2009: //E7-fbFlash -> 0
+14:40:04 - 11-16-2009: //E1-fbFlash -> 0
+14:40:04 - 11-16-2009: E6-fbFlash -> 0
+14:40:05 - 11-16-2009: //E7-fbFlash -> 1
+14:40:05 - 11-16-2009: //E1-fbFlash -> 1
+14:40:05 - 11-16-2009: E6-fbFlash -> 1
+14:40:06 - 11-16-2009: //E7-fbFlash -> 0
+14:40:06 - 11-16-2009: //E1-fbFlash -> 0
+14:40:06 - 11-16-2009: E6-fbFlash -> 0
+14:40:07 - 11-16-2009: //E7-fbFlash -> 1
+14:40:07 - 11-16-2009: //E1-fbFlash -> 1
+14:40:07 - 11-16-2009: E6-fbFlash -> 1
+14:40:08 - 11-16-2009: //E7-fbFlash -> 0
+14:40:08 - 11-16-2009: //E1-fbFlash -> 0
+14:40:08 - 11-16-2009: E6-fbFlash -> 0
+14:40:09 - 11-16-2009: //E7-fbFlash -> 1
+14:40:09 - 11-16-2009: //E1-fbFlash -> 1
+14:40:09 - 11-16-2009: E6-fbFlash -> 1
+14:40:10 - 11-16-2009: //E7-fbFlash -> 0
+14:40:10 - 11-16-2009: //E1-fbFlash -> 0
+14:40:10 - 11-16-2009: E6-fbFlash -> 0
+14:40:11 - 11-16-2009: //E7-fbFlash -> 1
+14:40:11 - 11-16-2009: //E1-fbFlash -> 1
+14:40:11 - 11-16-2009: E6-fbFlash -> 1
+14:40:12 - 11-16-2009: [Console Data] : Update request from Slot-01.IP-ID-04
+14:40:12 - 11-16-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+14:40:12 - 11-16-2009: //E7-fbFlash -> 0
+14:40:12 - 11-16-2009: //E1-fbFlash -> 0
+14:40:12 - 11-16-2009: E6-fbFlash -> 0
+14:40:13 - 11-16-2009: RxRoomLocal1 -> 020699:10:OR 8:E0031101101105:03
+14:40:13 - 11-16-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+14:40:13 - 11-16-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101106:03
+14:40:13 - 11-16-2009: //E7-fbFlash -> 1
+14:40:13 - 11-16-2009: //E1-fbFlash -> 1
+14:40:13 - 11-16-2009: E6-fbFlash -> 1
+14:40:13 - 11-16-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+14:40:14 - 11-16-2009: E1-pbConfAccept -> 1
+14:40:14 - 11-16-2009: E1-fbConfAcceptButton -> 1
+14:40:14 - 11-16-2009: RxRoomLocal1 -> 020605:21:OR 8+1101101:03
+14:40:14 - 11-16-2009: //E1-RingGenerator -> 0
+14:40:14 - 11-16-2009: E1-ConferenceState -> 5d
+14:40:14 - 11-16-2009: E1-ConfMessage -> Connecting to Control 2
+14:40:14 - 11-16-2009: E1-btnConfAcceptEnable -> 0d
+14:40:14 - 11-16-2009: E1-btnConfDeclineEnable -> 0d
+14:40:14 - 11-16-2009: //E1-sigConferenceActive -> 1
+14:40:14 - 11-16-2009: TxRoomLocal7 -> 020605:21:OR 8+1101101:03
+14:40:14 - 11-16-2009: sAudVidRoutes -> enable:6:5:
+14:40:14 - 11-16-2009: [Console Data] : RIV: CMIS Call - Request Connect, callid=1, ept1=6, ept2=5
+14:40:14 - 11-16-2009: [Console Data] : RIV: Setting up Rivulet 1
+14:40:14 - 11-16-2009: [Console Data] : HVP to HVP
+14:40:14 - 11-16-2009: [Console Data] : RIV: Rqst Rivulet Connect OR8-P2-A/1-HVP to CONTROL_ROOM_B-P2-B/1-HVP submitted
+14:40:14 - 11-16-2009: [Console Data] : RIV: Setting up Rivulet 2
+14:40:14 - 11-16-2009: [Console Data] : DVP to DVP, EP1 Out
+14:40:14 - 11-16-2009: [Console Data] : RIV: Rqst Rivulet Connect OR8-P1-A/1-DVP to CONTROL_ROOM_B-P1-B/1-DVP submitted
+14:40:14 - 11-16-2009: //E7-RmAttrRemoteSVidCountIn -> 1d
+14:40:14 - 11-16-2009: //E7-RmAttrRemoteRGBCountIn -> 0d
+14:40:14 - 11-16-2009: //E7-RmAttrRemoteHDCountIn -> 1d
+14:40:14 - 11-16-2009: //E7-RmAttrRemoteSVidCountOut -> 1d
+14:40:14 - 11-16-2009: //E7-RmAttrRemoteRGBCountOut -> 0d
+14:40:14 - 11-16-2009: //E7-RmAttrRemoteHDCountOut -> 1d
+14:40:14 - 11-16-2009: E7-ConferenceState -> 2d
+14:40:14 - 11-16-2009: E7-ConfMessage -> Live With OR 8
+14:40:14 - 11-16-2009: E7-sigConferenceActive -> 1
+14:40:14 - 11-16-2009: //E7-EnableVideoInBtn -> 1d
+14:40:14 - 11-16-2009: //E7-EnableVideoOutBtn -> 1d
+14:40:14 - 11-16-2009: Connect_Control2_to_OR8 -> 1
+14:40:14 - 11-16-2009: E7-btnVideoEnable -> 1d
+14:40:14 - 11-16-2009: //E7-Target1Source -> 0d
+14:40:14 - 11-16-2009: E7-sigConfRoute_Trig -> 1
+14:40:14 - 11-16-2009: E7-sigConferenceNotActive -> 0
+14:40:14 - 11-16-2009: Ctrl_Enable_Conf2_Buttons -> 1d
+14:40:14 - 11-16-2009: Connect_RivControl2 -> 1
+14:40:14 - 11-16-2009: Cont_Rivulet2_Audio_Break -> 1
+14:40:14 - 11-16-2009: Gefen_1_TX$ -> B5\x0D
+14:40:14 - 11-16-2009: Clearone_TX$ -> #11 macro 37\x0D
+14:40:14 - 11-16-2009: E1-pbConfAccept -> 0
+14:40:14 - 11-16-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+14:40:14 - 11-16-2009: E1-fbConfAcceptButton -> 0
+14:40:14 - 11-16-2009: RxRoomLocal7 -> 020506:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03
+14:40:14 - 11-16-2009: TxRoomLocal1 -> 020506:25:0+1,aaa+2,bbb+3,ccc+4,ddd+:03
+14:40:14 - 11-16-2009: E1-txt_ConfInSource1 -> <aaa>
+14:40:14 - 11-16-2009: E1-txt_ConfInSource2 -> <bbb>
+14:40:14 - 11-16-2009: E1-txt_ConfInSource3 -> <ccc>
+14:40:14 - 11-16-2009: E1-txt_ConfInSource4 -> <ddd>
+14:40:14 - 11-16-2009: [Console Data] : RIV: Processing CMIS Connection Rqst - RQST_CONNECT
+14:40:14 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 1 on endpoint 6
+14:40:14 - 11-16-2009: Clearone_RX$ -> \x0D\x0AOK> #11 MACRO 37\x0D\x0AOK> #11 MTRX R E 5 O 0\x0D\x0AOK> 
+14:40:14 - 11-16-2009: Gefen_1_RX$ -> B5\x0D
+14:40:14 - 11-16-2009: Riv_CMISep_status6 -> 1d
+14:40:14 - 11-16-2009: Riv_CMISep_Local1_status -> 1d
+14:40:14 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 1 on endpoint 5
+14:40:14 - 11-16-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+14:40:14 - 11-16-2009: E1-ConferenceState -> 5d
+14:40:14 - 11-16-2009: E1-ConfMessage -> Connecting to Control 2
+14:40:14 - 11-16-2009: //E7-fbFlash -> 0
+14:40:14 - 11-16-2009: Riv_CMISep_status5 -> 1d
+14:40:14 - 11-16-2009: Riv_CMISep_Local7_status -> 1d
+14:40:14 - 11-16-2009: [Console Data] : RIV: Rivulet Connection Rqst - RQST_CONNECT
+14:40:14 - 11-16-2009: //E1-fbFlash -> 0
+14:40:14 - 11-16-2009: //E7-Target2Source -> 3d
+14:40:14 - 11-16-2009: RxRoomLocal1 -> 020605:25:0+1,S-Video+2,DVI+3,DVI 2+4,DVI 3+:03
+14:40:14 - 11-16-2009: TxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 494\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?><api-envelope><api-version version = "05.01.00.R002" > </api-version> 
+14:40:14 - 11-16-2009: E6-fbFlash -> 0
+14:40:15 - 11-16-2009: TxRivulet -> <correlation id = "4" > </correlation> <binding session-id = "dd6392d2-e918-4966-90c9-ed222a777861" > </binding> <api-cmd-req req = "connect-service" svc-type =
+14:40:15 - 11-16-2009: TxRivulet ->  "dynamic" svc-bidir = "true" source-alias = "OR8-P2-A/1-HVP" destination-alias = "CONTROL_ROOM_B-P2-B/1-HVP" ><source-selectors ></source-selectors><destinatio
+14:40:15 - 11-16-2009: [Console Data] : Setting Rivulet Status, line #1, between endpoints 6 and 5
+14:40:15 - 11-16-2009: TxRivulet -> n-selectors ></destination-selectors></api-cmd-req></api-envelope>
+14:40:15 - 11-16-2009: E7-sigConfRoute_Trig -> 0
+14:40:15 - 11-16-2009: RxRoom3 -> 020799:10:Cathlab:E0031000101100:03
+14:40:15 - 11-16-2009: Riv_Rivep_status6 -> 82d
+14:40:15 - 11-16-2009: //Riv_Rivep_Local1_status -> 82d
+14:40:15 - 11-16-2009: Riv_Rivep_status5 -> 2d
+14:40:15 - 11-16-2009: Riv_Rivep_Local7_status -> 2d
+14:40:15 - 11-16-2009: Riv2_Status_HD -> 2d
+14:40:15 - 11-16-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+0,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:40:15 - 11-16-2009: RxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 562\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?>\x0D\x0A<api-envelope> \x0A<api-version \x0A\x09version = "05.01.00.R005" >\x0A </api-version> \x0A <correlation \x0A\x09id = "4" >\x0A </correlation> \x0A <binding \x0A\x09 session-id = "dd6392d2-e9
+14:40:15 - 11-16-2009: RxRivulet -> 18-4966-90c9-ed222a777861" >\x0A </binding>\x0A <api-cmd-rsp \x0A\x09 rsp = "connect-service-failure" >\x0A </api-cmd-rsp> \x0A <api-fault \x0A\x09fault-code-list = "SRC_EP_NOT_AVAILABLE" \x0A\x09fault-actor = "RCAS server" \x0A\x09fault-string = "resources not available" \x0A\x09fault-detai
+14:40:15 - 11-16-2009: RxRivulet -> l = "the source endpoint and/or destination endpoint or both are not available"  >\x0A </api-fault>\x0A</api-envelope> \x0A
+14:40:15 - 11-16-2009: [Console Data] : DEBUG: Found <api-envelope> at 95
+14:40:15 - 11-16-2009: [Console Data] : DEBUG: Found </api-envelope> at 600
+14:40:15 - 11-16-2009: [Console Data] : DEBUG: Length of buffer string is 616
+14:40:15 - 11-16-2009: [Console Data] : DEBUG: Length of string removed is 614
+14:40:15 - 11-16-2009: [Console Data] : DEBUG: Length of string remaining is 2
+14:40:15 - 11-16-2009: [Console Data] : ******BEGIN RGM Response Data**********
+14:40:15 - 11-16-2009: [Console Data] : Response ID = 1
+14:40:15 - 11-16-2009: [Console Data] : Correlation ID = 4
+14:40:15 - 11-16-2009: [Console Data] : api-cmd-rsp = connect-service-failure
+14:40:15 - 11-16-2009: [Console Data] : api-ep-port-alias-name = 
+14:40:15 - 11-16-2009: [Console Data] : api-cmd-error = the source endpoint and/or destination endpoint or both are not available
+14:40:15 - 11-16-2009: [Console Data] : api-ep-port-alias-status-code = 
+14:40:15 - 11-16-2009: [Console Data] : *** Rivulet Connect Failure Msg: the source endpoint and/or destination endpoint or both are not available***
+14:40:15 - 11-16-2009: [Console Data] : ******END RGM Response Data**********
+14:40:15 - 11-16-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+14:40:15 - 11-16-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+14:40:15 - 11-16-2009: [Console Data] : RIV: Connecting, ResponseID=1, CorrelationID=4, API_CMD_RESP=connect-service-failure
+14:40:15 - 11-16-2009: [Console Data] : RIV: Connecting, CorrelationID=4
+14:40:15 - 11-16-2009: [Console Data] : found reply...coorid=4
+14:40:15 - 11-16-2009: [Console Data] : Setting Rivulet Status, line #1, between endpoints 6 and 5
+14:40:15 - 11-16-2009: Riv_Rivep_status6 -> 88d
+14:40:15 - 11-16-2009: //Riv_Rivep_Local1_status -> 88d
+14:40:15 - 11-16-2009: Riv_Rivep_status5 -> 8d
+14:40:15 - 11-16-2009: Riv_Rivep_Local7_status -> 8d
+14:40:15 - 11-16-2009: Riv2_Status_HD -> 8d
+14:40:15 - 11-16-2009: Riv2_ConnectError -> 1
+14:40:15 - 11-16-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+0,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:40:15 - 11-16-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+0,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:40:15 - 11-16-2009: TxRoomLocal7 -> 020605:25:0+1,S-Video+2,DVI+3,DVI 2+4,DVI 3+:03
+14:40:15 - 11-16-2009: E7-txt_ConfInSource1 -> <S-Video>
+14:40:15 - 11-16-2009: E7-txt_ConfInSource2 -> <DVI>
+14:40:15 - 11-16-2009: E7-txt_ConfInSource3 -> <DVI 2>
+14:40:15 - 11-16-2009: E7-txt_ConfInSource4 -> <DVI 3>
+14:40:15 - 11-16-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+14:40:15 - 11-16-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+0,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:40:15 - 11-16-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+0,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:40:15 - 11-16-2009: //E7-fbFlash -> 1
+14:40:15 - 11-16-2009: //E1-fbFlash -> 1
+14:40:15 - 11-16-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+0,OR 8+7,Cathlab+8,St. Francis+:03
+14:40:15 - 11-16-2009: E6-sysMyRoomID -> 4d
+14:40:15 - 11-16-2009: E6-fbFlash -> 1
+14:40:15 - 11-16-2009: E6-Room6Available -> 0
+14:40:15 - 11-16-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+14:40:15 - 11-16-2009: E6-sysRoomCount -> 8d
+14:40:16 - 11-16-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+0,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:40:16 - 11-16-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+0,Control 2+0,OR 8+7,Cathlab+8,St. Francis+:03
+14:40:16 - 11-16-2009: E7-sysMyRoomID -> 5d
+14:40:16 - 11-16-2009: E7-Room5Available -> 0
+14:40:16 - 11-16-2009: E7-Room6Available -> 0
+14:40:16 - 11-16-2009: E7-sysRoomCount -> 8d
+14:40:16 - 11-16-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+14:40:16 - 11-16-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+0,OR 8+7,Cathlab+8,St. Francis+:03
+14:40:16 - 11-16-2009: E6-sysMyRoomID -> 4d
+14:40:16 - 11-16-2009: E6-sysRoomCount -> 8d
+14:40:16 - 11-16-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+0,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:40:16 - 11-16-2009: E1-sysMyRoomID -> 6d
+14:40:16 - 11-16-2009: E1-Room5Available -> 0
+14:40:16 - 11-16-2009: E1-sysRoomCount -> 8d
+14:40:16 - 11-16-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+0,Control 2+0,OR 8+7,Cathlab+8,St. Francis+:03
+14:40:16 - 11-16-2009: E7-sysMyRoomID -> 5d
+14:40:16 - 11-16-2009: E7-sysRoomCount -> 8d
+14:40:16 - 11-16-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+14:40:16 - 11-16-2009: [Console Data] : RIV: Rivulet Connection Rqst - RQST_CONNECT
+14:40:16 - 11-16-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+14:40:16 - 11-16-2009: TxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 495\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?><api-envelope><api-version version = "05.01.00.R002" > </api-version> 
+14:40:16 - 11-16-2009: TxRivulet -> <correlation id = "5" > </correlation> <binding session-id = "dd6392d2-e918-4966-90c9-ed222a777861" > </binding> <api-cmd-req req = "connect-service" svc-type =
+14:40:16 - 11-16-2009: TxRivulet ->  "dynamic" svc-bidir = "false" source-alias = "OR8-P1-A/1-DVP" destination-alias = "CONTROL_ROOM_B-P1-B/1-DVP" ><source-selectors ></source-selectors><destinati
+14:40:16 - 11-16-2009: TxRivulet -> on-selectors ></destination-selectors></api-cmd-req></api-envelope>
+14:40:16 - 11-16-2009: [Console Data] : Setting Rivulet Status, line #2, between endpoints 6 and 5
+14:40:16 - 11-16-2009: Riv_Rivep_status6 -> 40d
+14:40:16 - 11-16-2009: //Riv_Rivep_Local1_status -> 40d
+14:40:16 - 11-16-2009: Riv_Rivep_status5 -> 40d
+14:40:16 - 11-16-2009: Riv_Rivep_Local7_status -> 40d
+14:40:16 - 11-16-2009: Riv2_Status_SD -> 2d
+14:40:16 - 11-16-2009: TxRoom3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+0,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:40:16 - 11-16-2009: RxRivulet -> Content-Type : text/rivapi\x0D\x0AContent-Length : 562\x0D\x0A\x0D\x0A<?xml version="1.0" encoding="UTF-8"?>\x0D\x0A<api-envelope> \x0A<api-version \x0A\x09version = "05.01.00.R005" >\x0A </api-version> \x0A <correlation \x0A\x09id = "5" >\x0A </correlation> \x0A <binding \x0A\x09 session-id = "dd6392d2-e9
+14:40:16 - 11-16-2009: RxRivulet -> 18-4966-90c9-ed222a777861" >\x0A </binding>\x0A <api-cmd-rsp \x0A\x09 rsp = "connect-service-failure" >\x0A </api-cmd-rsp> \x0A <api-fault \x0A\x09fault-code-list = "SRC_EP_NOT_AVAILABLE" \x0A\x09fault-actor = "RCAS server" \x0A\x09fault-string = "resources not available" \x0A\x09fault-detai
+14:40:16 - 11-16-2009: RxRivulet -> l = "the source endpoint and/or destination endpoint or both are not available"  >\x0A </api-fault>\x0A</api-envelope> \x0A
+14:40:16 - 11-16-2009: //E7-fbFlash -> 0
+14:40:16 - 11-16-2009: [Console Data] : DEBUG: Found <api-envelope> at 95
+14:40:16 - 11-16-2009: [Console Data] : DEBUG: Found </api-envelope> at 600
+14:40:16 - 11-16-2009: //E1-fbFlash -> 0
+14:40:16 - 11-16-2009: [Console Data] : DEBUG: Length of buffer string is 616
+14:40:16 - 11-16-2009: E6-fbFlash -> 0
+14:40:17 - 11-16-2009: [Console Data] : DEBUG: Length of string removed is 614
+14:40:17 - 11-16-2009: [Console Data] : DEBUG: Length of string remaining is 2
+14:40:17 - 11-16-2009: [Console Data] : ******BEGIN RGM Response Data**********
+14:40:17 - 11-16-2009: [Console Data] : Response ID = 1
+14:40:17 - 11-16-2009: [Console Data] : Correlation ID = 5
+14:40:17 - 11-16-2009: [Console Data] : api-cmd-rsp = connect-service-failure
+14:40:17 - 11-16-2009: [Console Data] : api-ep-port-alias-name = 
+14:40:17 - 11-16-2009: [Console Data] : api-cmd-error = the source endpoint and/or destination endpoint or both are not available
+14:40:17 - 11-16-2009: [Console Data] : api-ep-port-alias-status-code = 
+14:40:17 - 11-16-2009: [Console Data] : *** Rivulet Connect Failure Msg: the source endpoint and/or destination endpoint or both are not available***
+14:40:17 - 11-16-2009: [Console Data] : ******END RGM Response Data**********
+14:40:17 - 11-16-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+14:40:17 - 11-16-2009: [Console Data] : RIV: Rivulet Connection Status - RIVULET_CONNECTING
+14:40:17 - 11-16-2009: [Console Data] : RIV: Connecting, ResponseID=1, CorrelationID=5, API_CMD_RESP=connect-service-failure
+14:40:17 - 11-16-2009: [Console Data] : RIV: Connecting, CorrelationID=5
+14:40:17 - 11-16-2009: [Console Data] : found reply...coorid=5
+14:40:17 - 11-16-2009: [Console Data] : Setting Rivulet Status, line #2, between endpoints 6 and 5
+14:40:17 - 11-16-2009: Riv_Rivep_status6 -> 136d
+14:40:17 - 11-16-2009: //Riv_Rivep_Local1_status -> 136d
+14:40:17 - 11-16-2009: Riv_Rivep_status5 -> 136d
+14:40:17 - 11-16-2009: Riv_Rivep_Local7_status -> 136d
+14:40:17 - 11-16-2009: Riv2_Status_SD -> 8d
+14:40:17 - 11-16-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+0,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:40:17 - 11-16-2009: E1-sysMyRoomID -> 6d
+14:40:17 - 11-16-2009: E1-sysRoomCount -> 8d
+14:40:17 - 11-16-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+0,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:40:17 - 11-16-2009: TxRoom3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+0,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:40:17 - 11-16-2009: [Console Data] : RIV: CMIS Connection Status - CMIS_CONNECTING
+14:40:17 - 11-16-2009: [Console Data] : RIV: Current Call Connecting:  CMIS error state
+14:40:17 - 11-16-2009: Riv_CMISep_status6 -> 5d
+14:40:17 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 5 on endpoint 6
+14:40:17 - 11-16-2009: [Console Data] : Hub: RIVULET: Error on connection (Reset), 6
+14:40:17 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 5 on endpoint 5
+14:40:17 - 11-16-2009: [Console Data] : Hub: RIVULET: Error on connection (Reset), 5
+14:40:17 - 11-16-2009: [Console Data] : Hub: ConferenceResetRoom  6
+14:40:17 - 11-16-2009: Riv_CMISep_Local1_status -> 5d
+14:40:17 - 11-16-2009: Riv_CMISep_status5 -> 5d
+14:40:17 - 11-16-2009: Riv_CMISep_Local7_status -> 5d
+14:40:17 - 11-16-2009: [Console Data] : RIV: CMIS Call - Request Disconnect, ept1=6, ept2=5
+14:40:17 - 11-16-2009: [Console Data] : RIV: disconnect rivulet OR8-P2-A/1-HVP to CONTROL_ROOM_B-P2-B/1-HVP
+14:40:17 - 11-16-2009: [Console Data] : Setting Rivulet Status, line #1, between endpoints 6 and 5
+14:40:17 - 11-16-2009: [Console Data] : RIV: disconnect rivulet OR8-P1-A/1-DVP to CONTROL_ROOM_B-P1-B/1-DVP
+14:40:17 - 11-16-2009: [Console Data] : Setting Rivulet Status, line #2, between endpoints 6 and 5
+14:40:17 - 11-16-2009: sAudVidRoutes -> disable:6:5:
+14:40:17 - 11-16-2009: Connect_Control2_to_OR8 -> 0
+14:40:17 - 11-16-2009: Riv_Rivep_status6 -> 128d
+14:40:17 - 11-16-2009: Riv_Rivep_status5 -> 128d
+14:40:17 - 11-16-2009: Connect_RivControl2 -> 0
+14:40:17 - 11-16-2009: //Riv_Rivep_Local1_status -> 128d
+14:40:17 - 11-16-2009: Riv_Rivep_Local7_status -> 128d
+14:40:17 - 11-16-2009: Cont_Rivulet2_Audio_Break -> 0
+14:40:17 - 11-16-2009: Riv2_Status_HD -> 0d
+14:40:17 - 11-16-2009: Riv_Rivep_status6 -> 0d
+14:40:17 - 11-16-2009: [Console Data] : Hub: ConferenceResetRoom  5
+14:40:17 - 11-16-2009: //Riv_Rivep_Local1_status -> 0d
+14:40:17 - 11-16-2009: Riv_Rivep_status5 -> 0d
+14:40:17 - 11-16-2009: Riv_Rivep_Local7_status -> 0d
+14:40:17 - 11-16-2009: Riv2_Status_SD -> 0d
+14:40:17 - 11-16-2009: TxRoomLocal7 -> 020605:22:OR 8+100:03
+14:40:17 - 11-16-2009: //E7-RmAttrRemoteSVidCountIn -> 0d
+14:40:17 - 11-16-2009: //E7-RmAttrRemoteRGBCountIn -> 0d
+14:40:17 - 11-16-2009: //E7-RmAttrRemoteHDCountIn -> 0d
+14:40:17 - 11-16-2009: //E7-RmAttrRemoteSVidCountOut -> 1d
+14:40:17 - 11-16-2009: //E7-RmAttrRemoteRGBCountOut -> 0d
+14:40:17 - 11-16-2009: //E7-RmAttrRemoteHDCountOut -> 0d
+14:40:17 - 11-16-2009: E7-ConferenceState -> 0d
+14:40:17 - 11-16-2009: E7-ConfMessage -> Ready
+14:40:17 - 11-16-2009: E7-fbCallStateFlash -> 0
+14:40:17 - 11-16-2009: E7-btnConfStartEnable -> 1d
+14:40:17 - 11-16-2009: E7-btnConfCancelEnable -> 0d
+14:40:17 - 11-16-2009: E7-sigConferenceActive -> 0
+14:40:17 - 11-16-2009: //E7-EnableVideoInBtn -> 0d
+14:40:17 - 11-16-2009: //E7-EnableVideoOutBtn -> 0d
+14:40:17 - 11-16-2009: E7-txt_ConfInSource1 -> <No Signal>
+14:40:17 - 11-16-2009: E7-txt_ConfInSource2 -> <No Signal>
+14:40:17 - 11-16-2009: E7-btnVideoEnable -> 0d
+14:40:17 - 11-16-2009: E7-sigConferenceNotActive -> 1
+14:40:17 - 11-16-2009: E7-sigConferenceNotActive_Pulse -> 1
+14:40:17 - 11-16-2009: Ctrl_Enable_Conf2_Buttons -> 0d
+14:40:17 - 11-16-2009: E7-txt_ConfInSource3 -> <No Signal>
+14:40:17 - 11-16-2009: E7-txt_ConfInSource4 -> <No Signal>
+14:40:17 - 11-16-2009: [Console Data] : RIV: Processing CMIS Connection Rqst - RQST_DISCONNECT
+14:40:17 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 3 on endpoint 6
+14:40:17 - 11-16-2009: E7-General_Buttons_Enable -> 1d
+14:40:17 - 11-16-2009: //E7-Target1Source -> 0d
+14:40:17 - 11-16-2009: Riv_CMISep_status6 -> 3d
+14:40:17 - 11-16-2009: Riv_CMISep_Local1_status -> 3d
+14:40:17 - 11-16-2009: E1-ConferenceState -> 6d
+14:40:17 - 11-16-2009: E1-ConfMessage -> Disconnecting from Control 2
+14:40:17 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 3 on endpoint 5
+14:40:17 - 11-16-2009: [Console Data] : RIVULET: CMIS DISCONNECTING
+14:40:17 - 11-16-2009: //E1-EnableVideoInBtn -> 1d
+14:40:17 - 11-16-2009: //E1-EnableVideoOutBtn -> 1d
+14:40:17 - 11-16-2009: Riv_CMISep_status5 -> 3d
+14:40:17 - 11-16-2009: Riv_CMISep_Local7_status -> 3d
+14:40:17 - 11-16-2009: E7-RivErrorOKBtn -> 1
+14:40:17 - 11-16-2009: Riv2_ConnectError -> 0
+14:40:17 - 11-16-2009: TxRoomLocal1 -> 020506:22:Control 2+100:03
+14:40:17 - 11-16-2009: //E1-RmAttrRemoteSVidCountIn -> 0d
+14:40:17 - 11-16-2009: //E1-RmAttrRemoteRGBCountIn -> 0d
+14:40:17 - 11-16-2009: //E1-RmAttrRemoteHDCountIn -> 0d
+14:40:17 - 11-16-2009: //E1-RmAttrRemoteSVidCountOut -> 1d
+14:40:17 - 11-16-2009: //E1-RmAttrRemoteRGBCountOut -> 0d
+14:40:17 - 11-16-2009: //E1-RmAttrRemoteHDCountOut -> 0d
+14:40:17 - 11-16-2009: E1-ConferenceState -> 6d
+14:40:17 - 11-16-2009: //E7-Target2Source -> 3d
+14:40:17 - 11-16-2009: E7-RivErrorOKBtn -> 0
+14:40:17 - 11-16-2009: E1-ConfMessage -> Disconnecting from Control 2
+14:40:17 - 11-16-2009: //E1-sigConferenceActive -> 0
+14:40:17 - 11-16-2009: E1-txt_ConfInSource1 -> <No Signal>
+14:40:17 - 11-16-2009: E1-txt_ConfInSource2 -> <No Signal>
+14:40:17 - 11-16-2009: E1-txt_ConfInSource3 -> <No Signal>
+14:40:17 - 11-16-2009: E1-txt_ConfInSource4 -> <No Signal>
+14:40:17 - 11-16-2009: E7-sigConferenceNotActive_Pulse -> 0
+14:40:17 - 11-16-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:40:17 - 11-16-2009: [Console Data] : RIVULET: CMIS DISCONNECTING
+14:40:17 - 11-16-2009: //E1-fbFlash -> 1
+14:40:18 - 11-16-2009: E6-fbFlash -> 1
+14:40:18 - 11-16-2009: [Console Data] : RIVULET: CMIS DISCONNECTING
+14:40:18 - 11-16-2009: [Console Data] : RIV: Rivulet Connection Rqst - RQST_DISCONNECT, Line 1
+14:40:18 - 11-16-2009: [Console Data] : Don't send Rivulet DISCONNECT, Line 1
+14:40:18 - 11-16-2009: [Console Data] : Setting Rivulet Status, line #1, between endpoints 6 and 5
+14:40:18 - 11-16-2009: [Console Data] : RIV: Rivulet Connection Rqst - RQST_DISCONNECT, Line 2
+14:40:18 - 11-16-2009: [Console Data] : Don't send Rivulet DISCONNECT, Line 2
+14:40:18 - 11-16-2009: [Console Data] : Setting Rivulet Status, line #2, between endpoints 6 and 5
+14:40:18 - 11-16-2009: Riv_Rivep_status6 -> 5d
+14:40:18 - 11-16-2009: //Riv_Rivep_Local1_status -> 5d
+14:40:18 - 11-16-2009: Riv_Rivep_status5 -> 5d
+14:40:18 - 11-16-2009: Riv_Rivep_Local7_status -> 5d
+14:40:18 - 11-16-2009: Riv2_Status_HD -> 5d
+14:40:18 - 11-16-2009: Riv_Rivep_status6 -> 85d
+14:40:18 - 11-16-2009: //Riv_Rivep_Local1_status -> 85d
+14:40:18 - 11-16-2009: Riv_Rivep_status5 -> 85d
+14:40:18 - 11-16-2009: Riv_Rivep_Local7_status -> 85d
+14:40:18 - 11-16-2009: Riv2_Status_SD -> 5d
+14:40:18 - 11-16-2009: [Console Data] : +++++++++ RIVULET:  check_cmis_connections() declaring call DISCONNECTED
+14:40:18 - 11-16-2009: [Console Data] : RIVULET: CMIS DISCONNECTING
+14:40:18 - 11-16-2009: [Console Data] : RIVULET: CMIS DISCONNECTED
+14:40:18 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 4 on endpoint 6
+14:40:18 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 4 on endpoint 5
+14:40:18 - 11-16-2009: Riv_CMISep_status6 -> 4d
+14:40:18 - 11-16-2009: Riv_CMISep_Local1_status -> 4d
+14:40:18 - 11-16-2009: Riv_CMISep_status5 -> 4d
+14:40:18 - 11-16-2009: Riv_CMISep_Local7_status -> 4d
+14:40:18 - 11-16-2009: [Console Data] : +++++++++ RIVULET:  check_cmis_connections() declaring call DISCONNECTED
+14:40:18 - 11-16-2009: Riv_CMISep_status6 -> 0d
+14:40:18 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 0 on endpoint 6
+14:40:18 - 11-16-2009: [Console Data] : Hub: ENET: Rivulet status 0 on endpoint 5
+14:40:18 - 11-16-2009: Riv_CMISep_Local1_status -> 0d
+14:40:18 - 11-16-2009: E1-ConferenceState -> 0d
+14:40:18 - 11-16-2009: E1-ConfMessage -> Ready
+14:40:18 - 11-16-2009: E1-fbCallStateFlash -> 0
+14:40:18 - 11-16-2009: E1-btnConfStartEnable -> 1d
+14:40:18 - 11-16-2009: //E1-EnableVideoInBtn -> 0d
+14:40:18 - 11-16-2009: //E1-EnableVideoOutBtn -> 0d
+14:40:18 - 11-16-2009: //E1-fbFlash -> 0
+14:40:18 - 11-16-2009: Riv_CMISep_status5 -> 0d
+14:40:18 - 11-16-2009: Riv_CMISep_Local7_status -> 0d
+14:40:18 - 11-16-2009: [Console Data] : RIVULET: Clearing Rivulet connection, Line 1
+14:40:18 - 11-16-2009: [Console Data] : RIVULET: Rivulet serviceid= DISCONNECTED
+14:40:18 - 11-16-2009: [Console Data] : RIVULET: Clearing Rivulet connection, Line 2
+14:40:18 - 11-16-2009: [Console Data] : RIVULET: Rivulet serviceid= DISCONNECTED
+14:40:19 - 11-16-2009: E6-fbFlash -> 0
+14:40:20 - 11-16-2009: E6-fbFlash -> 1
+14:40:21 - 11-16-2009: E6-fbFlash -> 0
+14:40:22 - 11-16-2009: E6-fbFlash -> 1
+14:40:23 - 11-16-2009: E6-fbFlash -> 0
+14:40:24 - 11-16-2009: E6-fbFlash -> 1
+14:40:25 - 11-16-2009: E6-fbFlash -> 0
+14:40:26 - 11-16-2009: E6-fbFlash -> 1
+14:40:27 - 11-16-2009: E6-fbFlash -> 0
+14:40:28 - 11-16-2009: E6-fbFlash -> 1
+14:40:29 - 11-16-2009: E6-fbFlash -> 0
+14:40:30 - 11-16-2009: E6-fbFlash -> 1
+14:40:31 - 11-16-2009: E6-fbFlash -> 0
+14:40:32 - 11-16-2009: E6-fbFlash -> 1
+14:40:33 - 11-16-2009: E6-fbFlash -> 0
+14:40:34 - 11-16-2009: E6-fbFlash -> 1
+14:40:35 - 11-16-2009: E6-fbFlash -> 0
+14:40:36 - 11-16-2009: E6-fbFlash -> 1
+14:40:37 - 11-16-2009: E6-fbFlash -> 0
+14:40:38 - 11-16-2009: E6-fbFlash -> 1
+14:40:39 - 11-16-2009: E6-fbFlash -> 0
+14:40:40 - 11-16-2009: E6-fbFlash -> 1
+14:40:41 - 11-16-2009: E6-fbFlash -> 0
+14:40:42 - 11-16-2009: E6-fbFlash -> 1
+14:40:43 - 11-16-2009: E6-fbFlash -> 0
+14:40:44 - 11-16-2009: E6-fbFlash -> 1
+14:40:45 - 11-16-2009: E6-fbFlash -> 0
+14:40:46 - 11-16-2009: E6-fbFlash -> 1
+14:40:47 - 11-16-2009: E6-fbFlash -> 0
+14:40:48 - 11-16-2009: E6-fbFlash -> 1
+14:40:49 - 11-16-2009: E6-fbFlash -> 0
+14:40:50 - 11-16-2009: E6-fbFlash -> 1
+14:40:51 - 11-16-2009: E6-fbFlash -> 0
+14:40:52 - 11-16-2009: E6-fbFlash -> 1
+14:40:53 - 11-16-2009: E6-fbFlash -> 0
+14:40:54 - 11-16-2009: E6-fbFlash -> 1
+14:40:55 - 11-16-2009: E6-fbFlash -> 0
+14:40:56 - 11-16-2009: E6-fbFlash -> 1
+14:40:57 - 11-16-2009: E6-fbFlash -> 0
+14:40:58 - 11-16-2009: E6-fbFlash -> 1
+14:40:59 - 11-16-2009: E6-fbFlash -> 0
+14:41:00 - 11-16-2009: E6-fbFlash -> 1
+14:41:01 - 11-16-2009: E6-fbFlash -> 0
+14:41:02 - 11-16-2009: E6-fbFlash -> 1
+14:41:03 - 11-16-2009: E6-fbFlash -> 0
+14:41:04 - 11-16-2009: E6-fbFlash -> 1
+14:41:05 - 11-16-2009: E6-fbFlash -> 0
+14:41:06 - 11-16-2009: E6-fbFlash -> 1
+14:41:07 - 11-16-2009: E6-fbFlash -> 0
+14:41:08 - 11-16-2009: E6-fbFlash -> 1
+14:41:09 - 11-16-2009: E6-fbFlash -> 0
+14:41:10 - 11-16-2009: E6-fbFlash -> 1
+14:41:11 - 11-16-2009: E6-fbFlash -> 0
+14:41:12 - 11-16-2009: E6-fbFlash -> 1
+14:41:12 - 11-16-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+14:41:13 - 11-16-2009: E6-fbFlash -> 0
+14:41:13 - 11-16-2009: RxRoomLocal1 -> 020699:10:OR 8:E0031101101100:03
+14:41:13 - 11-16-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+14:41:13 - 11-16-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+14:41:13 - 11-16-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+14:41:14 - 11-16-2009: E6-fbFlash -> 1
+14:41:14 - 11-16-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+14:41:15 - 11-16-2009: E6-fbFlash -> 0
+14:41:15 - 11-16-2009: RxRoom3 -> 020799:10:Cathlab:E0031000101100:03
+14:41:16 - 11-16-2009: E6-fbFlash -> 1
+14:41:16 - 11-16-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+14:41:17 - 11-16-2009: E6-fbFlash -> 0
+14:41:18 - 11-16-2009: E6-fbFlash -> 1
+14:41:18 - 11-16-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:41:18 - 11-16-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:41:18 - 11-16-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:41:18 - 11-16-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,OR 8+7,Cathlab+8,St. Francis+:03
+14:41:18 - 11-16-2009: E6-sysMyRoomID -> 4d
+14:41:18 - 11-16-2009: E6-Room6Available -> 1
+14:41:18 - 11-16-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,OR 8+7,Cathlab+8,St. Francis+:03
+14:41:18 - 11-16-2009: E7-sysMyRoomID -> 5d
+14:41:18 - 11-16-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:41:18 - 11-16-2009: E1-sysMyRoomID -> 6d
+14:41:18 - 11-16-2009: TxRoom3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:41:18 - 11-16-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:41:18 - 11-16-2009: E6-sysRoomCount -> 8d
+14:41:18 - 11-16-2009: E1-Room5Available -> 1
+14:41:18 - 11-16-2009: E1-sysRoomCount -> 8d
+14:41:18 - 11-16-2009: E7-Room5Available -> 1
+14:41:18 - 11-16-2009: E7-Room6Available -> 1
+14:41:18 - 11-16-2009: E7-sysRoomCount -> 8d
+14:41:19 - 11-16-2009: E6-fbFlash -> 0
+14:41:20 - 11-16-2009: E6-fbFlash -> 1
+14:41:21 - 11-16-2009: E6-fbFlash -> 0
+14:41:22 - 11-16-2009: E6-fbFlash -> 1
+14:41:23 - 11-16-2009: E6-fbFlash -> 0
+14:41:24 - 11-16-2009: E6-fbFlash -> 1
+14:41:25 - 11-16-2009: E6-fbFlash -> 0
+14:41:26 - 11-16-2009: E6-fbFlash -> 1
+14:41:27 - 11-16-2009: E6-fbFlash -> 0
+14:41:28 - 11-16-2009: E6-fbFlash -> 1
+14:41:29 - 11-16-2009: E6-fbFlash -> 0
+14:41:30 - 11-16-2009: E6-fbFlash -> 1
+14:41:31 - 11-16-2009: E6-fbFlash -> 0
+14:41:32 - 11-16-2009: E6-fbFlash -> 1
+14:41:33 - 11-16-2009: E6-fbFlash -> 0
+14:41:34 - 11-16-2009: E6-fbFlash -> 1
+14:41:35 - 11-16-2009: E6-fbFlash -> 0
+14:41:36 - 11-16-2009: E6-fbFlash -> 1
+14:41:37 - 11-16-2009: E6-fbFlash -> 0
+14:41:38 - 11-16-2009: E6-fbFlash -> 1
+14:41:39 - 11-16-2009: E6-fbFlash -> 0
+14:41:40 - 11-16-2009: E6-fbFlash -> 1
+14:41:41 - 11-16-2009: E6-fbFlash -> 0
+14:41:42 - 11-16-2009: E6-fbFlash -> 1
+14:41:43 - 11-16-2009: E6-fbFlash -> 0
+14:41:44 - 11-16-2009: E6-fbFlash -> 1
+14:41:45 - 11-16-2009: E6-fbFlash -> 0
+14:41:46 - 11-16-2009: E6-fbFlash -> 1
+14:41:47 - 11-16-2009: E6-fbFlash -> 0
+14:41:48 - 11-16-2009: E6-fbFlash -> 1
+14:41:49 - 11-16-2009: E6-fbFlash -> 0
+14:41:50 - 11-16-2009: E6-fbFlash -> 1
+14:41:51 - 11-16-2009: E6-fbFlash -> 0
+14:41:52 - 11-16-2009: E6-fbFlash -> 1
+14:41:53 - 11-16-2009: E6-fbFlash -> 0
+14:41:54 - 11-16-2009: E6-fbFlash -> 1
+14:41:55 - 11-16-2009: E6-fbFlash -> 0
+14:41:56 - 11-16-2009: E6-fbFlash -> 1
+14:41:57 - 11-16-2009: E6-fbFlash -> 0
+14:41:58 - 11-16-2009: E6-fbFlash -> 1
+14:41:59 - 11-16-2009: E6-fbFlash -> 0
+14:42:00 - 11-16-2009: E6-fbFlash -> 1
+14:42:01 - 11-16-2009: E6-fbFlash -> 0
+14:42:02 - 11-16-2009: E6-fbFlash -> 1
+14:42:03 - 11-16-2009: E6-fbFlash -> 0
+14:42:04 - 11-16-2009: E6-fbFlash -> 1
+14:42:05 - 11-16-2009: E6-fbFlash -> 0
+14:42:06 - 11-16-2009: E6-fbFlash -> 1
+14:42:07 - 11-16-2009: E6-fbFlash -> 0
+14:42:08 - 11-16-2009: E6-fbFlash -> 1
+14:42:09 - 11-16-2009: E6-fbFlash -> 0
+14:42:10 - 11-16-2009: E6-fbFlash -> 1
+14:42:11 - 11-16-2009: E6-fbFlash -> 0
+14:42:12 - 11-16-2009: E6-fbFlash -> 1
+14:42:12 - 11-16-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+14:42:13 - 11-16-2009: E6-fbFlash -> 0
+14:42:13 - 11-16-2009: RxRoomLocal1 -> 020699:10:OR 8:E0031101101100:03
+14:42:13 - 11-16-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+14:42:13 - 11-16-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+14:42:13 - 11-16-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+14:42:14 - 11-16-2009: E6-fbFlash -> 1
+14:42:14 - 11-16-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+14:42:15 - 11-16-2009: E6-fbFlash -> 0
+14:42:15 - 11-16-2009: RxRoom3 -> 020799:10:Cathlab:E0031000101100:03
+14:42:16 - 11-16-2009: E6-fbFlash -> 1
+14:42:16 - 11-16-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+14:42:17 - 11-16-2009: E6-fbFlash -> 0
+14:42:18 - 11-16-2009: E6-fbFlash -> 1
+14:42:19 - 11-16-2009: E6-fbFlash -> 0
+14:42:19 - 11-16-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:42:19 - 11-16-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:42:19 - 11-16-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:42:19 - 11-16-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,OR 8+7,Cathlab+8,St. Francis+:03
+14:42:19 - 11-16-2009: E6-sysMyRoomID -> 4d
+14:42:19 - 11-16-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,OR 8+7,Cathlab+8,St. Francis+:03
+14:42:19 - 11-16-2009: E7-sysMyRoomID -> 5d
+14:42:19 - 11-16-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:42:19 - 11-16-2009: E1-sysMyRoomID -> 6d
+14:42:19 - 11-16-2009: TxRoom3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:42:19 - 11-16-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:42:19 - 11-16-2009: E6-sysRoomCount -> 8d
+14:42:19 - 11-16-2009: E7-sysRoomCount -> 8d
+14:42:19 - 11-16-2009: E1-sysRoomCount -> 8d
+14:42:20 - 11-16-2009: E6-fbFlash -> 1
+14:42:21 - 11-16-2009: E6-fbFlash -> 0
+14:42:22 - 11-16-2009: E6-fbFlash -> 1
+14:42:23 - 11-16-2009: E6-fbFlash -> 0
+14:42:24 - 11-16-2009: E6-fbFlash -> 1
+14:42:25 - 11-16-2009: E6-fbFlash -> 0
+14:42:26 - 11-16-2009: E6-fbFlash -> 1
+14:42:27 - 11-16-2009: E6-fbFlash -> 0
+14:42:28 - 11-16-2009: E6-fbFlash -> 1
+14:42:29 - 11-16-2009: E6-fbFlash -> 0
+14:42:30 - 11-16-2009: E6-fbFlash -> 1
+14:42:31 - 11-16-2009: E6-fbFlash -> 0
+14:42:32 - 11-16-2009: E6-fbFlash -> 1
+14:42:33 - 11-16-2009: E6-fbFlash -> 0
+14:42:34 - 11-16-2009: E6-fbFlash -> 1
+14:42:35 - 11-16-2009: E6-fbFlash -> 0
+14:42:36 - 11-16-2009: E6-fbFlash -> 1
+14:42:37 - 11-16-2009: E6-fbFlash -> 0
+14:42:38 - 11-16-2009: E6-fbFlash -> 1
+14:42:39 - 11-16-2009: E6-fbFlash -> 0
+14:42:40 - 11-16-2009: E6-fbFlash -> 1
+14:42:41 - 11-16-2009: E6-fbFlash -> 0
+14:42:42 - 11-16-2009: E6-fbFlash -> 1
+14:42:43 - 11-16-2009: E6-fbFlash -> 0
+14:42:44 - 11-16-2009: E6-fbFlash -> 1
+14:42:45 - 11-16-2009: E6-fbFlash -> 0
+14:42:46 - 11-16-2009: E6-fbFlash -> 1
+14:42:47 - 11-16-2009: E6-fbFlash -> 0
+14:42:48 - 11-16-2009: E6-fbFlash -> 1
+14:42:49 - 11-16-2009: E6-fbFlash -> 0
+14:42:50 - 11-16-2009: E6-fbFlash -> 1
+14:42:51 - 11-16-2009: E6-fbFlash -> 0
+14:42:52 - 11-16-2009: E6-fbFlash -> 1
+14:42:53 - 11-16-2009: E6-fbFlash -> 0
+14:42:54 - 11-16-2009: E6-fbFlash -> 1
+14:42:55 - 11-16-2009: E6-fbFlash -> 0
+14:42:56 - 11-16-2009: E6-fbFlash -> 1
+14:42:57 - 11-16-2009: E6-fbFlash -> 0
+14:42:58 - 11-16-2009: E6-fbFlash -> 1
+14:42:59 - 11-16-2009: E6-fbFlash -> 0
+14:43:00 - 11-16-2009: E6-fbFlash -> 1
+14:43:01 - 11-16-2009: E6-fbFlash -> 0
+14:43:02 - 11-16-2009: E6-fbFlash -> 1
+14:43:03 - 11-16-2009: E6-fbFlash -> 0
+14:43:04 - 11-16-2009: E6-fbFlash -> 1
+14:43:05 - 11-16-2009: E6-fbFlash -> 0
+14:43:06 - 11-16-2009: E6-fbFlash -> 1
+14:43:07 - 11-16-2009: E6-fbFlash -> 0
+14:43:08 - 11-16-2009: E6-fbFlash -> 1
+14:43:09 - 11-16-2009: E6-fbFlash -> 0
+14:43:10 - 11-16-2009: E6-fbFlash -> 1
+14:43:11 - 11-16-2009: E6-fbFlash -> 0
+14:43:12 - 11-16-2009: E6-fbFlash -> 1
+14:43:12 - 11-16-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+14:43:13 - 11-16-2009: E6-fbFlash -> 0
+14:43:13 - 11-16-2009: RxRoomLocal1 -> 020699:10:OR 8:E0031101101100:03
+14:43:13 - 11-16-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+14:43:13 - 11-16-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+14:43:13 - 11-16-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+14:43:14 - 11-16-2009: E6-fbFlash -> 1
+14:43:14 - 11-16-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+14:43:15 - 11-16-2009: E6-fbFlash -> 0
+14:43:15 - 11-16-2009: RxRoom3 -> 020799:10:Cathlab:E0031000101100:03
+14:43:16 - 11-16-2009: E6-fbFlash -> 1
+14:43:16 - 11-16-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+14:43:17 - 11-16-2009: E6-fbFlash -> 0
+14:43:18 - 11-16-2009: E6-fbFlash -> 1
+14:43:19 - 11-16-2009: E6-fbFlash -> 0
+14:43:19 - 11-16-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:43:19 - 11-16-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:43:19 - 11-16-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:43:20 - 11-16-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,OR 8+7,Cathlab+8,St. Francis+:03
+14:43:20 - 11-16-2009: E6-sysMyRoomID -> 4d
+14:43:20 - 11-16-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,OR 8+7,Cathlab+8,St. Francis+:03
+14:43:20 - 11-16-2009: E7-sysMyRoomID -> 5d
+14:43:20 - 11-16-2009: E6-fbFlash -> 1
+14:43:20 - 11-16-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:43:20 - 11-16-2009: E1-sysMyRoomID -> 6d
+14:43:20 - 11-16-2009: TxRoom3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:43:20 - 11-16-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:43:20 - 11-16-2009: E6-sysRoomCount -> 8d
+14:43:20 - 11-16-2009: E7-sysRoomCount -> 8d
+14:43:20 - 11-16-2009: E1-sysRoomCount -> 8d
+14:43:21 - 11-16-2009: E6-fbFlash -> 0
+14:43:22 - 11-16-2009: E6-fbFlash -> 1
+14:43:23 - 11-16-2009: E6-fbFlash -> 0
+14:43:24 - 11-16-2009: E6-fbFlash -> 1
+14:43:25 - 11-16-2009: E6-fbFlash -> 0
+14:43:26 - 11-16-2009: E6-fbFlash -> 1
+14:43:27 - 11-16-2009: E6-fbFlash -> 0
+14:43:28 - 11-16-2009: E6-fbFlash -> 1
+14:43:29 - 11-16-2009: E6-fbFlash -> 0
+14:43:30 - 11-16-2009: E6-fbFlash -> 1
+14:43:31 - 11-16-2009: E6-fbFlash -> 0
+14:43:32 - 11-16-2009: E6-fbFlash -> 1
+14:43:33 - 11-16-2009: E6-fbFlash -> 0
+14:43:34 - 11-16-2009: E6-fbFlash -> 1
+14:43:35 - 11-16-2009: E6-fbFlash -> 0
+14:43:36 - 11-16-2009: E6-fbFlash -> 1
+14:43:37 - 11-16-2009: E6-fbFlash -> 0
+14:43:38 - 11-16-2009: E6-fbFlash -> 1
+14:43:39 - 11-16-2009: E6-fbFlash -> 0
+14:43:40 - 11-16-2009: E6-fbFlash -> 1
+14:43:41 - 11-16-2009: E6-fbFlash -> 0
+14:43:42 - 11-16-2009: E6-fbFlash -> 1
+14:43:43 - 11-16-2009: E6-fbFlash -> 0
+14:43:44 - 11-16-2009: E6-fbFlash -> 1
+14:43:45 - 11-16-2009: E6-fbFlash -> 0
+14:43:46 - 11-16-2009: E6-fbFlash -> 1
+14:43:47 - 11-16-2009: E6-fbFlash -> 0
+14:43:48 - 11-16-2009: E6-fbFlash -> 1
+14:43:49 - 11-16-2009: E6-fbFlash -> 0
+14:43:50 - 11-16-2009: E6-fbFlash -> 1
+14:43:51 - 11-16-2009: E6-fbFlash -> 0
+14:43:52 - 11-16-2009: E6-fbFlash -> 1
+14:43:53 - 11-16-2009: E6-fbFlash -> 0
+14:43:54 - 11-16-2009: E6-fbFlash -> 1
+14:43:55 - 11-16-2009: E6-fbFlash -> 0
+14:43:56 - 11-16-2009: E6-fbFlash -> 1
+14:43:57 - 11-16-2009: E6-fbFlash -> 0
+14:43:58 - 11-16-2009: E6-fbFlash -> 1
+14:43:59 - 11-16-2009: E6-fbFlash -> 0
+14:44:00 - 11-16-2009: E6-fbFlash -> 1
+14:44:01 - 11-16-2009: E6-fbFlash -> 0
+14:44:02 - 11-16-2009: E6-fbFlash -> 1
+14:44:03 - 11-16-2009: E6-fbFlash -> 0
+14:44:04 - 11-16-2009: E6-fbFlash -> 1
+14:44:05 - 11-16-2009: E6-fbFlash -> 0
+14:44:06 - 11-16-2009: E6-fbFlash -> 1
+14:44:07 - 11-16-2009: E6-fbFlash -> 0
+14:44:08 - 11-16-2009: E6-fbFlash -> 1
+14:44:09 - 11-16-2009: E6-fbFlash -> 0
+14:44:10 - 11-16-2009: E6-fbFlash -> 1
+14:44:11 - 11-16-2009: E6-fbFlash -> 0
+14:44:12 - 11-16-2009: E6-fbFlash -> 1
+14:44:12 - 11-16-2009: RxRoomLocal2 -> 020899:10:St. Francis:E0031101101100:03
+14:44:13 - 11-16-2009: E6-fbFlash -> 0
+14:44:13 - 11-16-2009: RxRoomLocal1 -> 020699:10:OR 8:E0031101101100:03
+14:44:13 - 11-16-2009: RxRoomLocal6 -> 020499:10:Control 1:E0031101101100:03
+14:44:13 - 11-16-2009: RxRoomLocal7 -> 020599:10:Control 2:E0031101101100:03
+14:44:13 - 11-16-2009: RxRoom9 -> 020299:10:Womens:O0031000101100:03
+14:44:14 - 11-16-2009: E6-fbFlash -> 1
+14:44:14 - 11-16-2009: RxRoom12 -> 020199:10:Sisters:O0031000101100:03
+14:44:15 - 11-16-2009: E6-fbFlash -> 0
+14:44:15 - 11-16-2009: RxRoom3 -> 020799:10:Cathlab:E0031000101100:03
+14:44:16 - 11-16-2009: E6-fbFlash -> 1
+14:44:16 - 11-16-2009: RxRoom4 -> 020399:10:Wetlab:E0031000101100:03
+14:44:17 - 11-16-2009: E6-fbFlash -> 0
+14:44:18 - 11-16-2009: E6-fbFlash -> 1
+14:44:19 - 11-16-2009: E6-fbFlash -> 0
+14:44:20 - 11-16-2009: E6-fbFlash -> 1
+14:44:20 - 11-16-2009: TxRoom12 -> 029901:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:44:20 - 11-16-2009: TxRoom9 -> 029902:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:44:20 - 11-16-2009: TxRoom4 -> 029903:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:44:20 - 11-16-2009: TxRoomLocal6 -> 029904:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+4,Control 1+0,Control 2+6,OR 8+7,Cathlab+8,St. Francis+:03
+14:44:20 - 11-16-2009: E6-sysMyRoomID -> 4d
+14:44:20 - 11-16-2009: TxRoomLocal7 -> 029905:11:H0030800025+1,Sisters+2,Womens+3,Wetlab+0,Control 1+5,Control 2+6,OR 8+7,Cathlab+8,St. Francis+:03
+14:44:20 - 11-16-2009: E7-sysMyRoomID -> 5d
+14:44:20 - 11-16-2009: TxRoomLocal1 -> 029906:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:44:20 - 11-16-2009: E1-sysMyRoomID -> 6d
+14:44:20 - 11-16-2009: TxRoom3 -> 029907:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:44:21 - 11-16-2009: TxRoomLocal2 -> 029908:11:H0030800025+0,Sisters+0,Womens+0,Wetlab+4,Control 1+5,Control 2+0,OR 8+0,Cathlab+0,St. Francis+:03
+14:44:21 - 11-16-2009: E6-sysRoomCount -> 8d
+14:44:21 - 11-16-2009: E7-sysRoomCount -> 8d
+14:44:21 - 11-16-2009: E6-fbFlash -> 0
+14:44:21 - 11-16-2009: E1-sysRoomCount -> 8d
+14:44:22 - 11-16-2009: E6-fbFlash -> 1
+14:44:23 - 11-16-2009: E6-fbFlash -> 0
+14:44:24 - 11-16-2009: E6-fbFlash -> 1
+14:44:25 - 11-16-2009: E6-fbFlash -> 0
+14:44:26 - 11-16-2009: E6-fbFlash -> 1
+14:44:27 - 11-16-2009: E6-fbFlash -> 0
+14:44:28 - 11-16-2009: E6-fbFlash -> 1
+14:44:29 - 11-16-2009: E6-fbFlash -> 0

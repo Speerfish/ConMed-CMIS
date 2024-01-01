@@ -1,0 +1,210 @@
+11:43:03 - 10-05-2009: [Console Data] : 
+11:43:08 - 10-05-2009: [Console Data] : RACK2>
+11:43:25 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+11:43:25 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+11:43:25 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+11:44:26 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+11:44:26 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+11:44:27 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+11:45:28 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+11:45:30 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+11:45:31 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+11:46:28 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+11:46:29 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+11:46:29 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+11:47:28 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+11:47:28 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+11:47:28 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+11:48:29 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+11:48:30 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+11:48:30 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+11:48:39 - 10-05-2009: [Console Data] : Update request from Slot-01.IP-ID-0C
+11:49:29 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+11:49:29 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+11:49:29 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+11:50:30 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+11:50:30 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+11:50:30 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+11:51:31 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+11:51:31 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+11:51:31 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+11:52:31 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+11:52:31 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+11:52:32 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+11:53:32 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+11:53:32 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+11:53:32 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+11:54:33 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+11:54:33 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+11:54:33 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+11:55:33 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+11:55:34 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+11:55:34 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+11:56:34 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+11:56:34 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+11:56:34 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+11:57:44 - 10-05-2009: [Console Data] :      Endpoint 4
+11:57:44 - 10-05-2009: [Console Data] :           type  7
+11:57:44 - 10-05-2009: [Console Data] :           view[4]: 1 2 3 4 6 7 8 
+11:57:44 - 10-05-2009: [Console Data] :           connection, type 2, index 6
+11:57:44 - 10-05-2009: [Console Data] :           CMIS-ept=4, rivulet-ept=1: CONTROL_ROOM_A-P2-A/1-HVP HD B
+11:57:44 - 10-05-2009: [Console Data] : **** CMIS ENDPOINT - BEGIN *****
+11:57:44 - 10-05-2009: [Console Data] : Endpoint: 4
+11:57:44 - 10-05-2009: [Console Data] : Managing 1 Rivulet Endpoints
+11:57:44 - 10-05-2009: [Console Data] : Rivulet: line=1, riv_epid=1, name=CONTROL_ROOM_A-P2-A/1-HVP, type=4
+11:57:44 - 10-05-2009: [Console Data] : **** CMIS ENDPOINT - END *****
+11:57:44 - 10-05-2009: [Console Data] :           CMIS-ept=4, rivulet-ept=2: CONTROL_ROOM_A-P1-A/1-DVP SD I
+11:57:44 - 10-05-2009: [Console Data] : **** CMIS ENDPOINT - BEGIN *****
+11:57:44 - 10-05-2009: [Console Data] : Endpoint: 4
+11:57:44 - 10-05-2009: [Console Data] : Managing 2 Rivulet Endpoints
+11:57:44 - 10-05-2009: [Console Data] : Rivulet: line=1, riv_epid=1, name=CONTROL_ROOM_A-P2-A/1-HVP, type=4
+11:57:44 - 10-05-2009: [Console Data] : Rivulet: line=2, riv_epid=2, name=CONTROL_ROOM_A-P1-A/1-DVP, type=5
+11:57:44 - 10-05-2009: [Console Data] : **** CMIS ENDPOINT - END *****
+11:57:44 - 10-05-2009: [Console Data] :           Local Room attributes:
+11:57:44 - 10-05-2009: [Console Data] :                Conferencing 1, Permission 1, Name [Control 1], Button [Control 1]
+11:57:44 - 10-05-2009: [Console Data] :           Endpoint complete
+11:57:44 - 10-05-2009: [Console Data] : Hub: ConferenceEndDeadCall invoked
+11:57:44 - 10-05-2009: [Console Data] : Hub: ConferenceEndDeadCall: No change
+11:57:44 - 10-05-2009: [Console Data] :      Endpoint 5
+11:57:44 - 10-05-2009: [Console Data] :           type  7
+11:57:44 - 10-05-2009: [Console Data] :           view[5]: 1 2 3 5 6 7 8 
+11:57:44 - 10-05-2009: [Console Data] :           connection, type 2, index 7
+11:57:44 - 10-05-2009: [Console Data] :           CMIS-ept=5, rivulet-ept=3: CONTROL_ROOM_B-P2-B/1-HVP HD B
+11:57:44 - 10-05-2009: [Console Data] : **** CMIS ENDPOINT - BEGIN *****
+11:57:44 - 10-05-2009: [Console Data] : Endpoint: 5
+11:57:44 - 10-05-2009: [Console Data] : Managing 1 Rivulet Endpoints
+11:57:44 - 10-05-2009: [Console Data] : Rivulet: line=1, riv_epid=3, name=CONTROL_ROOM_B-P2-B/1-HVP, type=4
+11:57:44 - 10-05-2009: [Console Data] : **** CMIS ENDPOINT - END *****
+11:57:44 - 10-05-2009: [Console Data] :           CMIS-ept=5, rivulet-ept=4: CONTROL_ROOM_B-P1-B/1-DVP SD I
+11:57:44 - 10-05-2009: [Console Data] : **** CMIS ENDPOINT - BEGIN *****
+11:57:44 - 10-05-2009: [Console Data] : Endpoint: 5
+11:57:44 - 10-05-2009: [Console Data] : Managing 2 Rivulet Endpoints
+11:57:44 - 10-05-2009: [Console Data] : Rivulet: line=1, riv_epid=3, name=CONTROL_ROOM_B-P2-B/1-HVP, type=4
+11:57:44 - 10-05-2009: [Console Data] : Rivulet: line=2, riv_epid=4, name=CONTROL_ROOM_B-P1-B/1-DVP, type=5
+11:57:44 - 10-05-2009: [Console Data] : **** CMIS ENDPOINT - END *****
+11:57:44 - 10-05-2009: [Console Data] :           Local Room attributes:
+11:57:44 - 10-05-2009: [Console Data] :                Conferencing 1, Permission 1, Name [Control 2], Button [Control 2]
+11:57:44 - 10-05-2009: [Console Data] :           Endpoint complete
+11:57:44 - 10-05-2009: [Console Data] :      Endpoint 6
+11:57:44 - 10-05-2009: [Console Data] :           type  7
+11:57:44 - 10-05-2009: [Console Data] :           view[6]: 4 5 
+11:57:44 - 10-05-2009: [Console Data] :           connection, type 2, index 1
+11:57:45 - 10-05-2009: [Console Data] :           CMIS-ept=6, rivulet-ept=5: OR8-P2-A/1-HVP HD B
+11:57:45 - 10-05-2009: [Console Data] : **** CMIS ENDPOINT - BEGIN *****
+11:57:45 - 10-05-2009: [Console Data] : Endpoint: 6
+11:57:45 - 10-05-2009: [Console Data] : Managing 1 Rivulet Endpoints
+11:57:45 - 10-05-2009: [Console Data] : Rivulet: line=1, riv_epid=5, name=OR8-P2-A/1-HVP, type=4
+11:57:45 - 10-05-2009: [Console Data] : **** CMIS ENDPOINT - END *****
+11:57:45 - 10-05-2009: [Console Data] :           CMIS-ept=6, rivulet-ept=6: OR8-P1-A/1-DVP SD O
+11:57:45 - 10-05-2009: [Console Data] : **** CMIS ENDPOINT - BEGIN *****
+11:57:45 - 10-05-2009: [Console Data] : Endpoint: 6
+11:57:45 - 10-05-2009: [Console Data] : Managing 2 Rivulet Endpoints
+11:57:45 - 10-05-2009: [Console Data] : Rivulet: line=1, riv_epid=5, name=OR8-P2-A/1-HVP, type=4
+11:57:45 - 10-05-2009: [Console Data] : Rivulet: line=2, riv_epid=6, name=OR8-P1-A/1-DVP, type=6
+11:57:45 - 10-05-2009: [Console Data] : **** CMIS ENDPOINT - END *****
+11:57:45 - 10-05-2009: [Console Data] :           Local Room attributes:
+11:57:45 - 10-05-2009: [Console Data] :                Conferencing 1, Permission 1, Name [OR 8], Button [OR 8]
+11:57:45 - 10-05-2009: [Console Data] :           Endpoint complete
+11:57:45 - 10-05-2009: [Console Data] :      Endpoint 7
+11:57:45 - 10-05-2009: [Console Data] :           type  1
+11:57:45 - 10-05-2009: [Console Data] :           view[7]: 4 5 
+11:57:45 - 10-05-2009: [Console Data] :           connection, type 1, index 3
+11:57:45 - 10-05-2009: [Console Data] :           CMIS-ept=7, rivulet-ept=7: Cathlab-P2-A/1-HVP HD B
+11:57:45 - 10-05-2009: [Console Data] : **** CMIS ENDPOINT - BEGIN *****
+11:57:45 - 10-05-2009: [Console Data] : Endpoint: 7
+11:57:45 - 10-05-2009: [Console Data] : Managing 1 Rivulet Endpoints
+11:57:45 - 10-05-2009: [Console Data] : Rivulet: line=1, riv_epid=7, name=Cathlab-P2-A/1-HVP, type=4
+11:57:45 - 10-05-2009: [Console Data] : **** CMIS ENDPOINT - END *****
+11:57:45 - 10-05-2009: [Console Data] :           CMIS-ept=7, rivulet-ept=8: Cathlab-P1-A/1-DVP SD O
+11:57:45 - 10-05-2009: [Console Data] : **** CMIS ENDPOINT - BEGIN *****
+11:57:45 - 10-05-2009: [Console Data] : Endpoint: 7
+11:57:45 - 10-05-2009: [Console Data] : Managing 2 Rivulet Endpoints
+11:57:45 - 10-05-2009: [Console Data] : Rivulet: line=1, riv_epid=7, name=Cathlab-P2-A/1-HVP, type=4
+11:57:45 - 10-05-2009: [Console Data] : Rivulet: line=2, riv_epid=8, name=Cathlab-P1-A/1-DVP, type=6
+11:57:45 - 10-05-2009: [Console Data] : **** CMIS ENDPOINT - END *****
+11:57:45 - 10-05-2009: [Console Data] :           Endpoint complete
+11:57:45 - 10-05-2009: [Console Data] :      Endpoint 8
+11:57:45 - 10-05-2009: [Console Data] :           type  7
+11:57:45 - 10-05-2009: [Console Data] :           view[8]: 4 5 
+11:57:45 - 10-05-2009: [Console Data] :           connection, type 2, index 2
+11:57:45 - 10-05-2009: [Console Data] :           Local Room attributes:
+11:57:45 - 10-05-2009: [Console Data] :                Conferencing 1, Permission 1, Name [St. Francis], Button [St. Francis]
+11:57:45 - 10-05-2009: [Console Data] :           Endpoint complete
+11:57:45 - 10-05-2009: [Console Data] : Hub: File parse done
+11:57:45 - 10-05-2009: [Console Data] : Hub: Endpoint  1 (RoomIndex  0):  0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:45 - 10-05-2009: [Console Data] : Hub: Endpoint  2 (RoomIndex  0):  0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:45 - 10-05-2009: [Console Data] : Hub: Endpoint  3 (RoomIndex  0):  0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:45 - 10-05-2009: [Console Data] : Hub: Endpoint  4 (RoomIndex  0):  1 1 1 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:45 - 10-05-2009: [Console Data] : Hub: Endpoint  5 (RoomIndex  0):  1 1 1 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:45 - 10-05-2009: [Console Data] : Hub: Endpoint  6 (RoomIndex  0):  0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:45 - 10-05-2009: [Console Data] : Hub: Endpoint  7 (RoomIndex  0):  0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:45 - 10-05-2009: [Console Data] : Hub: Endpoint  8 (RoomIndex  0):  0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:45 - 10-05-2009: [Console Data] : Hub: Endpoint  9 (RoomIndex  0):  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:45 - 10-05-2009: [Console Data] : Hub: Endpoint 10 (RoomIndex  0):  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:45 - 10-05-2009: [Console Data] : Hub: Endpoint 11 (RoomIndex  0):  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:45 - 10-05-2009: [Console Data] : Hub: Endpoint 12 (RoomIndex  0):  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint 13 (RoomIndex  0):  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint 14 (RoomIndex  0):  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint 15 (RoomIndex  0):  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint 16 (RoomIndex  0):  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint 17 (RoomIndex  0):  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint 18 (RoomIndex  0):  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint 19 (RoomIndex  0):  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint 20 (RoomIndex  0):  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint 21 (RoomIndex  0):  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint 22 (RoomIndex  0):  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint 23 (RoomIndex  0):  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint 24 (RoomIndex  0):  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint  1 Type 1, index =  1, giRoomCount 1
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint  2 Type 1, index =  2, giRoomCount 2
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint  3 Type 1, index =  3, giRoomCount 3
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint  4 Type 7, index =  4, giRoomCount 4
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint  5 Type 7, index =  5, giRoomCount 5
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint  6 Type 7, index =  6, giRoomCount 6
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint  7 Type 1, index =  7, giRoomCount 7
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint  8 Type 7, index =  8, giRoomCount 8
+11:57:46 - 10-05-2009: [Console Data] : Inverse maps:
+11:57:46 - 10-05-2009: [Console Data] :      Ethernet 0 0 7 3 0 0 0 0 2 0 0 1 0 0 0 0 
+11:57:46 - 10-05-2009: [Console Data] :      Local 6 8 0 0 0 4 5 0 
+11:57:46 - 10-05-2009: [Console Data] :      Rooms 1 2 3 4 5 6 7 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+11:57:46 - 10-05-2009: [Console Data] : Hub: Initialization complete
+11:57:46 - 10-05-2009: [Console Data] : Hub: ConferenceEnableRoom  8
+11:57:46 - 10-05-2009: [Console Data] : Hub: Endpoint Initialization complete
+11:57:46 - 10-05-2009: [Console Data] : Hub: ENET: Connection status 2 on port 12
+11:57:46 - 10-05-2009: [Console Data] : Hub: diConnectRoomEthernet 12
+11:57:46 - 10-05-2009: [Console Data] : Hub: Connected to ethernet endpoint 12, index  1, room  1
+11:57:46 - 10-05-2009: [Console Data] : Hub: Sent System Status message to endpoint index  1
+11:57:46 - 10-05-2009: [Console Data] : Hub: ENET: Connection status 2 on port  9
+11:57:46 - 10-05-2009: [Console Data] : Hub: diConnectRoomEthernet  9
+11:57:46 - 10-05-2009: [Console Data] : Hub: Connected to ethernet endpoint  9, index  2, room  2
+11:57:46 - 10-05-2009: [Console Data] : Hub: Sent System Status message to endpoint index  2
+11:57:46 - 10-05-2009: [Console Data] : Hub: ENET: Connection status 2 on port  4
+11:57:46 - 10-05-2009: [Console Data] : Hub: diConnectRoomEthernet  4
+11:57:46 - 10-05-2009: [Console Data] : Hub: Connected to ethernet endpoint  4, index  3, room  3
+11:57:46 - 10-05-2009: [Console Data] : Hub: Sent System Status message to endpoint index  3
+11:57:46 - 10-05-2009: [Console Data] : Hub: ConferenceEnableRoom  1
+11:57:46 - 10-05-2009: [Console Data] : Hub: ConferenceEnableRoom  2
+11:57:46 - 10-05-2009: [Console Data] : Hub: ConferenceEnableRoom  3
+11:57:47 - 10-05-2009: [Console Data] : Hub: Conference start update loop
+11:57:47 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+11:57:47 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+11:57:47 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+11:58:48 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+11:58:48 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+11:58:48 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+11:59:07 - 10-05-2009: [Console Data] : RoomControl-Endpoint 6: Conference page entered
+11:59:09 - 10-05-2009: [Console Data] : RoomControl-Endpoint 7: Conference page entered
+11:59:48 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+11:59:48 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+11:59:48 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+12:00:49 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+12:00:49 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+12:00:49 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+12:01:49 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+12:01:49 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+12:01:49 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
+12:02:50 - 10-05-2009: [Console Data] : Hub: ConferenceDisableRoom  8
+12:02:50 - 10-05-2009: [Console Data] : Hub: Endpoint  8 timed out, set to offline
+12:02:50 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 04 expects 003
+12:02:50 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 05 expects 003
+12:02:50 - 10-05-2009: [Console Data] : EndpointComm-: Error: Hub is speaking protocol 001, Room 06 expects 003
