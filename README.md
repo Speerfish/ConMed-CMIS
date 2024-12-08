@@ -13,3 +13,5 @@
 [The PMBOK® Guide describes scope creep as “adding features and functionality (project scope) without addressing the effects on time, costs, and resources, or without customer approval” (PMI, 2008, p 440).
 Change on projects is inevitable, so the possibility for scope creep is also inevitable. Perhaps this is the reason why taming scope creep is so challenging.
 We don't mean to imply that additional functionality or work is not desirable on projects. We also don't mean that scope creep occurs just because requirements change. The key part is whether changes are authorized or not.](https://www.pmi.org/learning/library/top-five-causes-scope-creep-6675)
+
+![PMBOK 4 Glossary - Scope, Scope Baseline, Scope Change, Scope Creep, Scope Management Plan](https://github.com/user-attachments/assets/7a3c73f3-11b8-4e1e-a59a-37d1e2273344)
