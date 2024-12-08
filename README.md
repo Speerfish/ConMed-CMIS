@@ -6,6 +6,8 @@
 
 [Shipping first-time code is like going into debt. A little debt speeds development so long as it is paid back promptly with refactoring. The danger occurs when the debt is not repaid. Every minute spent on code that is not quite right for the programming task of the moment counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unfactored implementation, object-oriented or otherwise.](https://www.agilealliance.org/introduction-to-the-technical-debt-concept/)
 
+![SBOK Quality Planning - Technical Debt, Continuous Integration & Sustainable Pace, Quality Control & Quality Assurance](https://github.com/user-attachments/assets/01389342-1804-4cd3-af0d-4fe63848a313)
+
 [“Technical debt (also known as design debt or code debt) is a concept in software development that reflects the implied cost of additional rework caused by choosing an easy solution now instead of using a better approach that would take longer.”](https://www.scrum.org/resources/blog/technical-debt-scrum-who-responsible)
 
 ![No Scope Creep](https://github.com/user-attachments/assets/0bedba06-a49d-4b1e-b2a8-7814fdd90ee7)
