@@ -8,8 +8,8 @@
 
 [“Technical debt (also known as design debt or code debt) is a concept in software development that reflects the implied cost of additional rework caused by choosing an easy solution now instead of using a better approach that would take longer.”](https://www.scrum.org/resources/blog/technical-debt-scrum-who-responsible)
 
+![No Scope Creep](https://github.com/user-attachments/assets/0bedba06-a49d-4b1e-b2a8-7814fdd90ee7)
+
 [The PMBOK® Guide describes scope creep as “adding features and functionality (project scope) without addressing the effects on time, costs, and resources, or without customer approval” (PMI, 2008, p 440).
 Change on projects is inevitable, so the possibility for scope creep is also inevitable. Perhaps this is the reason why taming scope creep is so challenging.
 We don't mean to imply that additional functionality or work is not desirable on projects. We also don't mean that scope creep occurs just because requirements change. The key part is whether changes are authorized or not.](https://www.pmi.org/learning/library/top-five-causes-scope-creep-6675)
-
-![No Scope Creep](https://github.com/user-attachments/assets/0bedba06-a49d-4b1e-b2a8-7814fdd90ee7)
