@@ -19,3 +19,6 @@ Change on projects is inevitable, so the possibility for scope creep is also ine
 We don't mean to imply that additional functionality or work is not desirable on projects. We also don't mean that scope creep occurs just because requirements change. The key part is whether changes are authorized or not.](https://www.pmi.org/learning/library/top-five-causes-scope-creep-6675)
 
 ![PMBOK 4 Glossary - Scope, Scope Baseline, Scope Change, Scope Creep, Scope Management Plan](https://github.com/user-attachments/assets/7a3c73f3-11b8-4e1e-a59a-37d1e2273344)
+
+[Troubled/Distressed projects generally don't have a proper budget to complete the original SOW with a 2nd developer. Since the project is usually underbid from the onset.]
+![image](https://github.com/user-attachments/assets/6f5e596a-7717-476a-8fd7-6026555e059d)
