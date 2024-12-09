@@ -4,7 +4,7 @@
 
 ![Untitled 001](https://github.com/user-attachments/assets/dd0a6e90-08fd-4d20-9e19-7ba1833b09eb)
 
-![No Technical Debt](https://github.com/user-attachments/assets/53ee2e1f-a9eb-4f43-a729-494800294893)
+![No Technical Debt](https://github.com/user-attachments/assets/2c57ba3f-f68c-4900-9f5b-96ba83a44b5a)
 
 [Shipping first-time code is like going into debt. A little debt speeds development so long as it is paid back promptly with refactoring. The danger occurs when the debt is not repaid. Every minute spent on code that is not quite right for the programming task of the moment counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unfactored implementation, object-oriented or otherwise.](https://www.agilealliance.org/introduction-to-the-technical-debt-concept/)
 
